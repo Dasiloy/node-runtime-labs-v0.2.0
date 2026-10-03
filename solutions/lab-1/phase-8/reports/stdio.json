@@ -1,0 +1,28 @@
+{
+  "stdout": {
+    "bytes": 44
+  },
+  "stderr": {
+    "bytes": 0
+  },
+  "events": [
+    {
+      "type": "stdout",
+      "at": 30.087,
+      "bytes": 11,
+      "preview": "warming up\n"
+    },
+    {
+      "type": "stdout",
+      "at": 498.322,
+      "bytes": 28,
+      "preview": "blocking json work finished\n"
+    },
+    {
+      "type": "stdout",
+      "at": 1529.19,
+      "bytes": 5,
+      "preview": "done\n"
+    }
+  ]
+}

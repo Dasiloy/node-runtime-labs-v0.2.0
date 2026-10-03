@@ -1,0 +1,22 @@
+{
+  "name": "custom-binary-protocol-gateway",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TCP gateway for a custom binary protocol.",
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "gateway": "node src/cli.js",
+    "server": "node src/cli.js server",
+    "client": "node src/cli.js client",
+    "protocol": "node src/cli.js protocol",
+    "encode": "node src/cli.js encode",
+    "decode": "node src/cli.js decode",
+    "receiver": "node src/cli.js receiver",
+    "load": "node src/cli.js load",
+    "report": "node src/cli.js report",
+    "test": "node --test"
+  }
+}

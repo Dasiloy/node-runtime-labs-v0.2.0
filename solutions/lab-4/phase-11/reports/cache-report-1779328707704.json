@@ -1,0 +1,105 @@
+{
+  "entry": "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/a.cjs",
+  "pid": 872,
+  "preserveSymlinks": false,
+  "cacheEntries": [
+    {
+      "id": "/nodebook-labs-workspace/lab-4/phase-11/src/probes/cache-probe.cjs",
+      "filename": "/nodebook-labs-workspace/lab-4/phase-11/src/probes/cache-probe.cjs",
+      "loaded": true,
+      "children": []
+    },
+    {
+      "id": ".",
+      "filename": "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/a.cjs",
+      "loaded": true,
+      "children": [
+        "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/b.cjs"
+      ]
+    },
+    {
+      "id": "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/b.cjs",
+      "filename": "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/b.cjs",
+      "loaded": true,
+      "children": [
+        "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/a.cjs"
+      ]
+    }
+  ],
+  "loadEvents": [
+    {
+      "request": "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/a.cjs",
+      "parent": null,
+      "resolved": "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/a.cjs",
+      "cacheHitBefore": false,
+      "isMain": true
+    },
+    {
+      "request": "./b.cjs",
+      "parent": "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/a.cjs",
+      "resolved": "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/b.cjs",
+      "cacheHitBefore": false,
+      "isMain": false
+    },
+    {
+      "request": "./a.cjs",
+      "parent": "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/b.cjs",
+      "resolved": "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/a.cjs",
+      "cacheHitBefore": true,
+      "isMain": false
+    }
+  ],
+  "partialObservations": [
+    {
+      "request": "./a.cjs",
+      "parent": "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/b.cjs",
+      "resolved": "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/a.cjs",
+      "exportedKeys": [
+        "name"
+      ]
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "/nodebook-labs-workspace/lab-4/phase-11/src/probes/cache-probe.cjs",
+        "filename": "/nodebook-labs-workspace/lab-4/phase-11/src/probes/cache-probe.cjs",
+        "loaded": true
+      },
+      {
+        "id": "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/a.cjs",
+        "filename": "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/a.cjs",
+        "loaded": true
+      },
+      {
+        "id": "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/b.cjs",
+        "filename": "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/b.cjs",
+        "loaded": true
+      }
+    ],
+    "edges": [
+      {
+        "from": "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/a.cjs",
+        "to": "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/b.cjs"
+      },
+      {
+        "from": "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/b.cjs",
+        "to": "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/a.cjs"
+      }
+    ]
+  },
+  "cycles": [
+    {
+      "path": [
+        "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/a.cjs",
+        "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/b.cjs",
+        "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/a.cjs"
+      ],
+      "closingEdge": {
+        "from": "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/b.cjs",
+        "to": "/nodebook-labs-workspace/lab-4/phase-11/fixtures/generated/cycles/a.cjs"
+      }
+    }
+  ],
+  "reportPath": "/nodebook-labs-workspace/lab-4/phase-11/reports/cache-report-1779328707704.json"
+}

@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "fail-fast",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "failAfterDelay",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "success-mid",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 80
+      }
+    },
+    {
+      "id": "success-slow",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 150
+      }
+    },
+    {
+      "id": "fail-slow",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "failAfterDelay",
+      "metadata": {
+        "delayMs": 120
+      }
+    },
+    {
+      "id": "success-late",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 200
+      }
+    }
+  ]
+}

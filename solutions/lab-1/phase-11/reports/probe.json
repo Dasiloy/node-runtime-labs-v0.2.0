@@ -1,0 +1,26 @@
+{
+  "runId": "b546a81e-d835-439b-bb47-c8b14307ac17",
+  "probeFile": "/nodebook-labs-workspace/lab-1/phase-11/out/probe-b546a81e-d835-439b-bb47-c8b14307ac17.ndjson",
+  "events": [
+    {
+      "at": 27,
+      "type": "probe-ready",
+      "pid": 1353081,
+      "nodeVersion": "v24.15.0",
+      "execArgv": [
+        "--import",
+        "file:///nodebook-labs-workspace/lab-1/phase-11/src/probe/register.js"
+      ],
+      "runId": "b546a81e-d835-439b-bb47-c8b14307ac17"
+    },
+    {
+      "at": 27,
+      "type": "memory-sample",
+      "rss": 74653696,
+      "heapTotal": 6754304,
+      "heapUsed": 5268624,
+      "external": 1937010,
+      "arrayBuffers": 27494
+    }
+  ]
+}

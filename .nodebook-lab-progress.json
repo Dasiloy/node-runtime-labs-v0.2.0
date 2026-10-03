@@ -1,0 +1,83 @@
+{
+  "version": 2,
+  "updatedAt": "2026-10-03T14:08:05.211Z",
+  "labs": {
+    "01-node-runtime-flight-recorder": {
+      "currentChallenge": "main",
+      "challenges": {
+        "main": {
+          "currentPhase": 0,
+          "completedPhases": [],
+          "stepProgress": {},
+          "notes": {}
+        }
+      }
+    },
+    "02-binary-file-store-append-only-log-database": {
+      "currentChallenge": "main",
+      "challenges": {
+        "main": {
+          "currentPhase": 0,
+          "completedPhases": [],
+          "stepProgress": {},
+          "notes": {}
+        }
+      }
+    },
+    "03-stream-processing-workbench": {
+      "currentChallenge": "main",
+      "challenges": {
+        "main": {
+          "currentPhase": 0,
+          "completedPhases": [],
+          "stepProgress": {},
+          "notes": {}
+        }
+      }
+    },
+    "04-module-resolution-inspector": {
+      "currentChallenge": "main",
+      "challenges": {
+        "main": {
+          "currentPhase": 0,
+          "completedPhases": [],
+          "stepProgress": {},
+          "notes": {}
+        }
+      }
+    },
+    "05-atomic-file-watcher-incremental-build-cache": {
+      "currentChallenge": "main",
+      "challenges": {
+        "main": {
+          "currentPhase": 0,
+          "completedPhases": [],
+          "stepProgress": {},
+          "notes": {}
+        }
+      }
+    },
+    "06-async-task-runtime-local-job-orchestrator": {
+      "currentChallenge": "main",
+      "challenges": {
+        "main": {
+          "currentPhase": 0,
+          "completedPhases": [],
+          "stepProgress": {},
+          "notes": {}
+        }
+      }
+    },
+    "07-custom-binary-protocol-gateway": {
+      "currentChallenge": "main",
+      "challenges": {
+        "main": {
+          "currentPhase": 0,
+          "completedPhases": [],
+          "stepProgress": {},
+          "notes": {}
+        }
+      }
+    }
+  }
+}

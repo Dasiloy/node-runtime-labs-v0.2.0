@@ -1,0 +1,8 @@
+{
+  "mode": "persisted-index",
+  "entryCount": 2,
+  "segmentSize": 205,
+  "indexLoadMs": 1.7423269999999995,
+  "replayMs": 0,
+  "lookupMs": 0.0013819999999995503
+}

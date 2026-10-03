@@ -1,0 +1,32 @@
+{
+  "taskFile": "/nodebook-labs-workspace/lab-6/phase-3/tasks/function-failure.json",
+  "taskCount": 2,
+  "tasks": [
+    {
+      "taskId": "function-throw",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:11:07.394Z",
+      "status": "failed",
+      "error": {
+        "kind": "thrown",
+        "message": "fixture threw",
+        "stack": "Error: fixture threw\n    at throwFailure (file:///nodebook-labs-workspace/lab-6/phase-3/tasks/fixtures.js:8:9)\n    at runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-3/src/runner.js:109:16)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-3/src/runner.js:151:12)\n    at async file:///nodebook-labs-workspace/lab-6/phase-3/src/cli.js:40:20"
+      },
+      "endedAt": "2026-05-21T02:11:07.395Z",
+      "elapsedMs": 1.0549140000000001
+    },
+    {
+      "taskId": "function-reject",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:11:07.395Z",
+      "status": "failed",
+      "error": {
+        "kind": "rejected",
+        "message": "fixture rejected",
+        "stack": "Error: fixture rejected\n    at rejectFailure (file:///nodebook-labs-workspace/lab-6/phase-3/tasks/fixtures.js:13:9)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-3/src/runner.js:124:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-3/src/runner.js:151:12)\n    at async file:///nodebook-labs-workspace/lab-6/phase-3/src/cli.js:40:20"
+      },
+      "endedAt": "2026-05-21T02:11:07.401Z",
+      "elapsedMs": 5.451031000000004
+    }
+  ]
+}

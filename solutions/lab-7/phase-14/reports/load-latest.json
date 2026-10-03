@@ -1,0 +1,107 @@
+{
+  "startedAt": "2026-05-21T01:46:43.306Z",
+  "finishedAt": "2026-05-21T01:46:43.348Z",
+  "durationMs": 41.25375,
+  "options": {
+    "host": "127.0.0.1",
+    "port": 41234,
+    "clients": 5,
+    "frames": 50,
+    "frameSize": 256,
+    "rate": 0,
+    "malformedRatio": 0,
+    "chunkSize": 0,
+    "durationMs": 0,
+    "ackTimeoutMs": 2000,
+    "report": "reports/load-latest.json",
+    "metricsUrl": "http://127.0.0.1:9090/metrics"
+  },
+  "totals": {
+    "connected": 5,
+    "framesSent": 50,
+    "bytesSent": 19850,
+    "acksReceived": 0,
+    "ackTimeouts": 0,
+    "protocolErrorsInjected": 0,
+    "socketErrors": 0,
+    "duplicateRequestIds": 0
+  },
+  "throughput": {
+    "framesPerSecond": 1212.0110293003668,
+    "bytesPerSecond": 481168.3786322456
+  },
+  "latency": {
+    "count": 0,
+    "p50": 0,
+    "p95": 0,
+    "max": 0
+  },
+  "perClient": [
+    {
+      "clientIndex": 0,
+      "connected": true,
+      "framesSent": 10,
+      "bytesSent": 3970,
+      "acksReceived": 0,
+      "ackTimeouts": 0,
+      "protocolErrorsInjected": 0,
+      "socketErrors": 0,
+      "ackLatenciesMs": [],
+      "duplicateRequestIds": 0
+    },
+    {
+      "clientIndex": 1,
+      "connected": true,
+      "framesSent": 10,
+      "bytesSent": 3970,
+      "acksReceived": 0,
+      "ackTimeouts": 0,
+      "protocolErrorsInjected": 0,
+      "socketErrors": 0,
+      "ackLatenciesMs": [],
+      "duplicateRequestIds": 0
+    },
+    {
+      "clientIndex": 2,
+      "connected": true,
+      "framesSent": 10,
+      "bytesSent": 3970,
+      "acksReceived": 0,
+      "ackTimeouts": 0,
+      "protocolErrorsInjected": 0,
+      "socketErrors": 0,
+      "ackLatenciesMs": [],
+      "duplicateRequestIds": 0
+    },
+    {
+      "clientIndex": 3,
+      "connected": true,
+      "framesSent": 10,
+      "bytesSent": 3970,
+      "acksReceived": 0,
+      "ackTimeouts": 0,
+      "protocolErrorsInjected": 0,
+      "socketErrors": 0,
+      "ackLatenciesMs": [],
+      "duplicateRequestIds": 0
+    },
+    {
+      "clientIndex": 4,
+      "connected": true,
+      "framesSent": 10,
+      "bytesSent": 3970,
+      "acksReceived": 0,
+      "ackTimeouts": 0,
+      "protocolErrorsInjected": 0,
+      "socketErrors": 0,
+      "ackLatenciesMs": [],
+      "duplicateRequestIds": 0
+    }
+  ],
+  "metricsPeaks": {
+    "activeConnections": 5,
+    "fileBufferedBytes": 0,
+    "httpQueued": 0,
+    "rss": 90136576
+  }
+}

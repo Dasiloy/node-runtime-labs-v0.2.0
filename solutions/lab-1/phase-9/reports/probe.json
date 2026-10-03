@@ -1,0 +1,306 @@
+{
+  "runId": "2f0b56c5-272a-430a-96af-e8ac078e6e30",
+  "probeFile": "/nodebook-labs-workspace/lab-1/phase-9/out/probe-2f0b56c5-272a-430a-96af-e8ac078e6e30.ndjson",
+  "events": [
+    {
+      "at": 30,
+      "type": "probe-ready",
+      "pid": 1352107,
+      "nodeVersion": "v24.15.0",
+      "execArgv": [
+        "--import",
+        "file:///nodebook-labs-workspace/lab-1/phase-9/src/probe/register.js"
+      ],
+      "runId": "2f0b56c5-272a-430a-96af-e8ac078e6e30"
+    },
+    {
+      "at": 30,
+      "type": "memory-sample",
+      "rss": 75063296,
+      "heapTotal": 7016448,
+      "heapUsed": 5266808,
+      "external": 1932319,
+      "arrayBuffers": 22803
+    },
+    {
+      "at": 280,
+      "type": "memory-sample",
+      "rss": 82792448,
+      "heapTotal": 11997184,
+      "heapUsed": 8159520,
+      "external": 3698110,
+      "arrayBuffers": 31911
+    },
+    {
+      "at": 281,
+      "type": "cpu-sample",
+      "userMicros": 24693,
+      "systemMicros": 6964,
+      "totalMicros": 31657,
+      "wallMs": 250.293,
+      "cpuPercent": 12.648
+    },
+    {
+      "at": 281,
+      "type": "event-loop-sample",
+      "unit": "nanoseconds",
+      "min": 10043392,
+      "max": 10092543,
+      "mean": 10062754.909090908,
+      "stddev": 9338.83248936733,
+      "p50": 10067967,
+      "p95": 10084351,
+      "p99": 10092543,
+      "exceeds": 0,
+      "intervalDriftNs": 0
+    },
+    {
+      "at": 282,
+      "type": "active-handles",
+      "resources": [
+        "PipeWrap",
+        "PipeWrap",
+        "TCPServerWrap"
+      ],
+      "resourceCounts": {
+        "PipeWrap": 2,
+        "TCPServerWrap": 1
+      },
+      "privateHandles": [
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Server"
+        }
+      ]
+    },
+    {
+      "at": 531,
+      "type": "memory-sample",
+      "rss": 83185664,
+      "heapTotal": 11997184,
+      "heapUsed": 8196424,
+      "external": 3698110,
+      "arrayBuffers": 31911
+    },
+    {
+      "at": 531,
+      "type": "cpu-sample",
+      "userMicros": 1468,
+      "systemMicros": 163,
+      "totalMicros": 1631,
+      "wallMs": 249.922,
+      "cpuPercent": 0.653
+    },
+    {
+      "at": 531,
+      "type": "event-loop-sample",
+      "unit": "nanoseconds",
+      "min": 10027008,
+      "max": 10092543,
+      "mean": 10061824,
+      "stddev": 10641.720161703182,
+      "p50": 10067967,
+      "p95": 10084351,
+      "p99": 10092543,
+      "exceeds": 0,
+      "intervalDriftNs": 63670.99999999937
+    },
+    {
+      "at": 531,
+      "type": "active-handles",
+      "resources": [
+        "PipeWrap",
+        "PipeWrap",
+        "TCPServerWrap"
+      ],
+      "resourceCounts": {
+        "PipeWrap": 2,
+        "TCPServerWrap": 1
+      },
+      "privateHandles": [
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Server"
+        }
+      ]
+    },
+    {
+      "at": 781,
+      "type": "memory-sample",
+      "rss": 83185664,
+      "heapTotal": 11997184,
+      "heapUsed": 8214480,
+      "external": 3698110,
+      "arrayBuffers": 31911
+    },
+    {
+      "at": 781,
+      "type": "cpu-sample",
+      "userMicros": 996,
+      "systemMicros": 132,
+      "totalMicros": 1128,
+      "wallMs": 250.36,
+      "cpuPercent": 0.451
+    },
+    {
+      "at": 781,
+      "type": "event-loop-sample",
+      "unit": "nanoseconds",
+      "min": 10043392,
+      "max": 10076159,
+      "mean": 10059597.913043479,
+      "stddev": 5330.723010861239,
+      "p50": 10059775,
+      "p95": 10067967,
+      "p99": 10076159,
+      "exceeds": 0,
+      "intervalDriftNs": 345901.0000000262
+    },
+    {
+      "at": 781,
+      "type": "active-handles",
+      "resources": [
+        "PipeWrap",
+        "PipeWrap",
+        "TCPServerWrap"
+      ],
+      "resourceCounts": {
+        "PipeWrap": 2,
+        "TCPServerWrap": 1
+      },
+      "privateHandles": [
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Server"
+        }
+      ]
+    },
+    {
+      "at": 1031,
+      "type": "memory-sample",
+      "rss": 83185664,
+      "heapTotal": 11997184,
+      "heapUsed": 8231264,
+      "external": 3698110,
+      "arrayBuffers": 31911
+    },
+    {
+      "at": 1031,
+      "type": "cpu-sample",
+      "userMicros": 212,
+      "systemMicros": 575,
+      "totalMicros": 787,
+      "wallMs": 250.066,
+      "cpuPercent": 0.315
+    },
+    {
+      "at": 1031,
+      "type": "event-loop-sample",
+      "unit": "nanoseconds",
+      "min": 9052160,
+      "max": 10067967,
+      "mean": 10016768,
+      "stddev": 200330.97307539175,
+      "p50": 10059775,
+      "p95": 10067967,
+      "p99": 10067967,
+      "exceeds": 0,
+      "intervalDriftNs": 128752.9999999606
+    },
+    {
+      "at": 1031,
+      "type": "active-handles",
+      "resources": [
+        "PipeWrap",
+        "PipeWrap",
+        "TCPServerWrap"
+      ],
+      "resourceCounts": {
+        "PipeWrap": 2,
+        "TCPServerWrap": 1
+      },
+      "privateHandles": [
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Server"
+        }
+      ]
+    },
+    {
+      "at": 1280,
+      "type": "memory-sample",
+      "rss": 83185664,
+      "heapTotal": 11997184,
+      "heapUsed": 8248608,
+      "external": 3698110,
+      "arrayBuffers": 31911
+    },
+    {
+      "at": 1280,
+      "type": "cpu-sample",
+      "userMicros": 740,
+      "systemMicros": 252,
+      "totalMicros": 992,
+      "wallMs": 249.248,
+      "cpuPercent": 0.398
+    },
+    {
+      "at": 1281,
+      "type": "event-loop-sample",
+      "unit": "nanoseconds",
+      "min": 10035200,
+      "max": 10084351,
+      "mean": 10061824,
+      "stddev": 8608.099132019024,
+      "p50": 10067967,
+      "p95": 10084351,
+      "p99": 10084351,
+      "exceeds": 0,
+      "intervalDriftNs": 0
+    },
+    {
+      "at": 1281,
+      "type": "active-handles",
+      "resources": [
+        "PipeWrap",
+        "PipeWrap",
+        "TCPServerWrap"
+      ],
+      "resourceCounts": {
+        "PipeWrap": 2,
+        "TCPServerWrap": 1
+      },
+      "privateHandles": [
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Server"
+        }
+      ]
+    }
+  ]
+}

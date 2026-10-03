@@ -1,0 +1,13 @@
+{
+  "sourcePath": "a.txt",
+  "builtAt": "2026-05-21T02:01:34.591Z",
+  "builderVersion": "lab-5-builder-v1",
+  "inputHash": "74a82204fcc768ba3cdddb0665635bad2a25b60e3a3c98ff48d4c5a60c9b0e27",
+  "inputMetadata": {
+    "size": 67,
+    "mtimeMs": 1779328894436.4922,
+    "mode": 33188,
+    "identity": "66306:13118845",
+    "type": "file"
+  }
+}

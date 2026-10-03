@@ -1,0 +1,528 @@
+{
+  "schemaVersion": 1,
+  "runId": "a6351573-ee72-422e-b834-efe88482fb5e",
+  "command": {
+    "target": {
+      "input": "fixtures/mixed-load.js",
+      "path": "/nodebook-labs-workspace/lab-1/phase-13/fixtures/mixed-load.js"
+    },
+    "targetArgs": [],
+    "argv": [
+      "/usr/bin/env node",
+      "--import",
+      "file:///nodebook-labs-workspace/lab-1/phase-13/src/probe/register.js",
+      "/nodebook-labs-workspace/lab-1/phase-13/fixtures/mixed-load.js"
+    ]
+  },
+  "startedAt": "2026-05-21T02:01:39.219Z",
+  "endedAt": "2026-05-21T02:01:40.153Z",
+  "durationMs": 933.791,
+  "node": {
+    "version": "v24.15.0",
+    "execPath": "/usr/bin/env node",
+    "execArgv": [
+      "--import",
+      "file:///nodebook-labs-workspace/lab-1/phase-13/src/probe/register.js"
+    ],
+    "nodeFlags": [
+      "--import",
+      "file:///nodebook-labs-workspace/lab-1/phase-13/src/probe/register.js"
+    ],
+    "envFiles": [],
+    "envFileKeys": [],
+    "envOverrides": {}
+  },
+  "lifecycle": {
+    "pid": 1352442,
+    "startedAt": "2026-05-21T02:01:39.219Z",
+    "exitedAt": "2026-05-21T02:01:40.153Z",
+    "exitCode": 0,
+    "signal": null,
+    "elapsedMs": 933.791,
+    "timedOut": false
+  },
+  "stdio": {
+    "stdout": {
+      "bytes": 56
+    },
+    "stderr": {
+      "bytes": 154
+    },
+    "events": [
+      {
+        "type": "stdout",
+        "at": 29.26,
+        "bytes": 17,
+        "preview": "mixed load start\n"
+      },
+      {
+        "type": "stderr",
+        "at": 29.784,
+        "bytes": 128,
+        "preview": "(node:1352442) [MIXED_LOAD] Warning: mixed-load warning\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+      },
+      {
+        "type": "stderr",
+        "at": 131.738,
+        "bytes": 26,
+        "preview": "allocated external memory\n"
+      },
+      {
+        "type": "stdout",
+        "at": 779.369,
+        "bytes": 19,
+        "preview": "cpu spike finished\n"
+      },
+      {
+        "type": "stdout",
+        "at": 929.203,
+        "bytes": 20,
+        "preview": "retained buffers: 1\n"
+      }
+    ]
+  },
+  "memory": {
+    "samples": [
+      {
+        "at": 28,
+        "type": "memory-sample",
+        "rss": 75091968,
+        "heapTotal": 6754304,
+        "heapUsed": 5269608,
+        "external": 1937010,
+        "arrayBuffers": 27494
+      },
+      {
+        "at": 278,
+        "type": "memory-sample",
+        "rss": 84275200,
+        "heapTotal": 7802880,
+        "heapUsed": 4996848,
+        "external": 10320983,
+        "arrayBuffers": 8411427
+      },
+      {
+        "at": 780,
+        "type": "memory-sample",
+        "rss": 92819456,
+        "heapTotal": 8065024,
+        "heapUsed": 5357776,
+        "external": 10320983,
+        "arrayBuffers": 8411427
+      }
+    ],
+    "peaks": {
+      "peakRss": 92819456,
+      "peakHeapUsed": 5357776,
+      "peakExternal": 10320983,
+      "peakArrayBuffers": 8411427
+    }
+  },
+  "cpu": {
+    "samples": [
+      {
+        "at": 279,
+        "type": "cpu-sample",
+        "userMicros": 2163,
+        "systemMicros": 3181,
+        "totalMicros": 5344,
+        "wallMs": 250.214,
+        "cpuPercent": 2.136
+      },
+      {
+        "at": 780,
+        "type": "cpu-sample",
+        "userMicros": 499445,
+        "systemMicros": 538,
+        "totalMicros": 499983,
+        "wallMs": 501.308,
+        "cpuPercent": 99.736
+      }
+    ],
+    "totalCpuMicros": 505327,
+    "hottestSample": {
+      "at": 780,
+      "type": "cpu-sample",
+      "userMicros": 499445,
+      "systemMicros": 538,
+      "totalMicros": 499983,
+      "wallMs": 501.308,
+      "cpuPercent": 99.736
+    }
+  },
+  "eventLoop": {
+    "samples": [
+      {
+        "at": 279,
+        "type": "event-loop-sample",
+        "unit": "nanoseconds",
+        "min": 8065024,
+        "max": 12206079,
+        "mean": 10055082.666666666,
+        "stddev": 604518.432282167,
+        "p50": 10067967,
+        "p95": 10108927,
+        "p99": 12206079,
+        "exceeds": 0,
+        "intervalDriftNs": 0
+      },
+      {
+        "at": 780,
+        "type": "event-loop-sample",
+        "unit": "nanoseconds",
+        "min": 9223372036854776000,
+        "max": 251476357.99999988,
+        "mean": 0,
+        "stddev": 0,
+        "p50": 511,
+        "p95": 251476357.99999988,
+        "p99": 251476357.99999988,
+        "exceeds": 0,
+        "intervalDriftNs": 251476357.99999988
+      }
+    ],
+    "summary": {
+      "maxDelayMs": 251.4763579999999,
+      "meanDelayMs": 10.055082666666666,
+      "p95Ms": 251.4763579999999,
+      "p99Ms": 251.4763579999999
+    }
+  },
+  "handles": {
+    "samples": [
+      {
+        "at": 280,
+        "type": "active-handles",
+        "resources": [
+          "PipeWrap",
+          "PipeWrap",
+          "Timeout",
+          "Timeout"
+        ],
+        "resourceCounts": {
+          "PipeWrap": 2,
+          "Timeout": 2
+        },
+        "privateHandles": [
+          {
+            "className": "Socket"
+          },
+          {
+            "className": "Socket"
+          }
+        ],
+        "categoryCounts": {
+          "ipc": 2,
+          "timer": 2
+        }
+      },
+      {
+        "at": 784,
+        "type": "active-handles",
+        "resources": [
+          "PipeWrap",
+          "PipeWrap",
+          "Timeout"
+        ],
+        "resourceCounts": {
+          "PipeWrap": 2,
+          "Timeout": 1
+        },
+        "privateHandles": [
+          {
+            "className": "Socket"
+          },
+          {
+            "className": "Socket"
+          }
+        ],
+        "categoryCounts": {
+          "ipc": 2,
+          "timer": 1
+        }
+      }
+    ],
+    "latest": {
+      "at": 784,
+      "type": "active-handles",
+      "resources": [
+        "PipeWrap",
+        "PipeWrap",
+        "Timeout"
+      ],
+      "resourceCounts": {
+        "PipeWrap": 2,
+        "Timeout": 1
+      },
+      "privateHandles": [
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Socket"
+        }
+      ],
+      "categoryCounts": {
+        "ipc": 2,
+        "timer": 1
+      }
+    },
+    "summary": {
+      "categoryCounts": {
+        "ipc": 2,
+        "timer": 1
+      },
+      "resourceCounts": {
+        "PipeWrap": 2,
+        "Timeout": 1
+      }
+    }
+  },
+  "failures": {
+    "warnings": [
+      {
+        "at": 30,
+        "type": "warning",
+        "name": "Warning",
+        "message": "mixed-load warning",
+        "stack": "Warning: mixed-load warning\n    at file:///nodebook-labs-workspace/lab-1/phase-13/fixtures/mixed-load.js:1:9\n    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async node:internal/modules/esm/loader:639:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)",
+        "code": "MIXED_LOAD"
+      }
+    ],
+    "unhandledRejections": [],
+    "uncaughtExceptions": []
+  },
+  "timeline": [
+    {
+      "at": 0,
+      "type": "lifecycle-start",
+      "source": "parent",
+      "data": {
+        "startedAt": "2026-05-21T02:01:39.219Z"
+      }
+    },
+    {
+      "at": 28,
+      "type": "probe-ready",
+      "source": "probe",
+      "data": {
+        "pid": 1352442,
+        "nodeVersion": "v24.15.0",
+        "execArgv": [
+          "--import",
+          "file:///nodebook-labs-workspace/lab-1/phase-13/src/probe/register.js"
+        ],
+        "runId": "a6351573-ee72-422e-b834-efe88482fb5e"
+      }
+    },
+    {
+      "at": 28,
+      "type": "memory-sample",
+      "source": "probe",
+      "data": {
+        "rss": 75091968,
+        "heapTotal": 6754304,
+        "heapUsed": 5269608,
+        "external": 1937010,
+        "arrayBuffers": 27494
+      }
+    },
+    {
+      "at": 29.26,
+      "type": "stdout",
+      "source": "child-stdio",
+      "data": {
+        "bytes": 17,
+        "preview": "mixed load start\n"
+      }
+    },
+    {
+      "at": 29.784,
+      "type": "stderr",
+      "source": "child-stdio",
+      "data": {
+        "bytes": 128,
+        "preview": "(node:1352442) [MIXED_LOAD] Warning: mixed-load warning\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+      }
+    },
+    {
+      "at": 30,
+      "type": "warning",
+      "source": "probe",
+      "data": {
+        "name": "Warning",
+        "message": "mixed-load warning",
+        "stack": "Warning: mixed-load warning\n    at file:///nodebook-labs-workspace/lab-1/phase-13/fixtures/mixed-load.js:1:9\n    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async node:internal/modules/esm/loader:639:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)",
+        "code": "MIXED_LOAD"
+      }
+    },
+    {
+      "at": 131.738,
+      "type": "stderr",
+      "source": "child-stdio",
+      "data": {
+        "bytes": 26,
+        "preview": "allocated external memory\n"
+      }
+    },
+    {
+      "at": 278,
+      "type": "memory-sample",
+      "source": "probe",
+      "data": {
+        "rss": 84275200,
+        "heapTotal": 7802880,
+        "heapUsed": 4996848,
+        "external": 10320983,
+        "arrayBuffers": 8411427
+      }
+    },
+    {
+      "at": 279,
+      "type": "cpu-sample",
+      "source": "probe",
+      "data": {
+        "userMicros": 2163,
+        "systemMicros": 3181,
+        "totalMicros": 5344,
+        "wallMs": 250.214,
+        "cpuPercent": 2.136
+      }
+    },
+    {
+      "at": 279,
+      "type": "event-loop-sample",
+      "source": "probe",
+      "data": {
+        "unit": "nanoseconds",
+        "min": 8065024,
+        "max": 12206079,
+        "mean": 10055082.666666666,
+        "stddev": 604518.432282167,
+        "p50": 10067967,
+        "p95": 10108927,
+        "p99": 12206079,
+        "exceeds": 0,
+        "intervalDriftNs": 0
+      }
+    },
+    {
+      "at": 280,
+      "type": "active-handles",
+      "source": "probe",
+      "data": {
+        "resources": [
+          "PipeWrap",
+          "PipeWrap",
+          "Timeout",
+          "Timeout"
+        ],
+        "resourceCounts": {
+          "PipeWrap": 2,
+          "Timeout": 2
+        },
+        "privateHandles": [
+          {
+            "className": "Socket"
+          },
+          {
+            "className": "Socket"
+          }
+        ]
+      }
+    },
+    {
+      "at": 779.369,
+      "type": "stdout",
+      "source": "child-stdio",
+      "data": {
+        "bytes": 19,
+        "preview": "cpu spike finished\n"
+      }
+    },
+    {
+      "at": 780,
+      "type": "memory-sample",
+      "source": "probe",
+      "data": {
+        "rss": 92819456,
+        "heapTotal": 8065024,
+        "heapUsed": 5357776,
+        "external": 10320983,
+        "arrayBuffers": 8411427
+      }
+    },
+    {
+      "at": 780,
+      "type": "cpu-sample",
+      "source": "probe",
+      "data": {
+        "userMicros": 499445,
+        "systemMicros": 538,
+        "totalMicros": 499983,
+        "wallMs": 501.308,
+        "cpuPercent": 99.736
+      }
+    },
+    {
+      "at": 780,
+      "type": "event-loop-sample",
+      "source": "probe",
+      "data": {
+        "unit": "nanoseconds",
+        "min": 9223372036854776000,
+        "max": 251476357.99999988,
+        "mean": 0,
+        "stddev": 0,
+        "p50": 511,
+        "p95": 251476357.99999988,
+        "p99": 251476357.99999988,
+        "exceeds": 0,
+        "intervalDriftNs": 251476357.99999988
+      }
+    },
+    {
+      "at": 784,
+      "type": "active-handles",
+      "source": "probe",
+      "data": {
+        "resources": [
+          "PipeWrap",
+          "PipeWrap",
+          "Timeout"
+        ],
+        "resourceCounts": {
+          "PipeWrap": 2,
+          "Timeout": 1
+        },
+        "privateHandles": [
+          {
+            "className": "Socket"
+          },
+          {
+            "className": "Socket"
+          }
+        ]
+      }
+    },
+    {
+      "at": 929.203,
+      "type": "stdout",
+      "source": "child-stdio",
+      "data": {
+        "bytes": 20,
+        "preview": "retained buffers: 1\n"
+      }
+    },
+    {
+      "at": 933.791,
+      "type": "lifecycle-close",
+      "source": "parent",
+      "data": {
+        "exitCode": 0,
+        "signal": null,
+        "timedOut": false
+      }
+    }
+  ]
+}

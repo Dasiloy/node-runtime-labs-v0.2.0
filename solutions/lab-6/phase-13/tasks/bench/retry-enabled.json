@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "retry",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "flaky",
+      "retries": {
+        "maxAttempts": 2,
+        "backoffMs": 10
+      },
+      "metadata": {
+        "failuresBeforeSuccess": 1,
+        "delayMs": 1
+      }
+    }
+  ]
+}

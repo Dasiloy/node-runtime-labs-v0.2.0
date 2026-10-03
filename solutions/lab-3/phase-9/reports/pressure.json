@@ -1,0 +1,128 @@
+{
+  "mode": "pressure",
+  "status": "completed",
+  "input": {
+    "path": "data/access.ndjson",
+    "source": {
+      "kind": "file",
+      "inputPath": "/nodebook-labs-workspace/lab-3/phase-9/data/access.ndjson",
+      "compressed": false,
+      "declaredBytes": 1075872,
+      "readHwm": null
+    },
+    "bytes": 1075872
+  },
+  "output": {
+    "path": null,
+    "bytes": 81932
+  },
+  "counts": {
+    "rows": 5000,
+    "matches": 381
+  },
+  "timing": {
+    "startedAt": "2026-05-21T01:59:28.326Z",
+    "endedAt": "2026-05-21T01:59:28.365Z",
+    "elapsedMs": 39.442099
+  },
+  "memory": {
+    "current": {
+      "rss": 96194560,
+      "heapUsed": 6770592,
+      "heapTotal": 11472896,
+      "external": 2186653,
+      "arrayBuffers": 330464
+    },
+    "peak": {
+      "rss": 96194560,
+      "heapUsed": 6770592,
+      "heapTotal": 11472896,
+      "external": 2186653,
+      "arrayBuffers": 330464
+    }
+  },
+  "bytes": {
+    "bytesRead": 1075872,
+    "compressedBytesRead": 0,
+    "uncompressedBytesRead": 1075872,
+    "outputUncompressed": 81932,
+    "written": 81932
+  },
+  "details": {
+    "where": "status >= 500",
+    "slowWriteMs": 5,
+    "writeHwm": 16384,
+    "sampleMs": 25,
+    "sink": {
+      "chunks": 2,
+      "bytes": 81932,
+      "drainCount": 1,
+      "writableLength": 0,
+      "writableHighWaterMark": 16384,
+      "maxBufferedBytes": 65734,
+      "writableLengthSamples": [
+        65734,
+        16198
+      ]
+    },
+    "plugins": {
+      "config": {
+        "redact": [],
+        "select": [],
+        "enrich": []
+      },
+      "executionOrder": [
+        "filter",
+        "stringify"
+      ]
+    }
+  },
+  "timeline": [
+    {
+      "elapsedMs": 27.916324999999997,
+      "memory": {
+        "rss": 82763776,
+        "heapUsed": 5604512,
+        "external": 2077623
+      },
+      "readableLength": 0,
+      "writableLength": 0,
+      "bytesRead": 786432,
+      "bytesWritten": 0,
+      "rowsSeen": 3655,
+      "rowsMatched": 277,
+      "throughputBytesPerSec": 0,
+      "drainCount": 0
+    },
+    {
+      "elapsedMs": 39.34187999999999,
+      "memory": {
+        "rss": 89903104,
+        "heapUsed": 6757864,
+        "external": 2186653
+      },
+      "readableLength": 0,
+      "writableLength": 0,
+      "bytesRead": 1075872,
+      "bytesWritten": 81932,
+      "rowsSeen": 5000,
+      "rowsMatched": 381,
+      "throughputBytesPerSec": 7170942.680683788,
+      "drainCount": 1
+    }
+  ],
+  "drainEvents": [
+    {
+      "elapsedMs": 34.653935000000004,
+      "writableLength": 0
+    }
+  ],
+  "summary": {
+    "maxReadableLength": 0,
+    "maxWritableLength": 0,
+    "maxRss": 89903104,
+    "totalDrains": 1,
+    "totalBytes": 81932,
+    "elapsedMs": 39.442099
+  }
+}

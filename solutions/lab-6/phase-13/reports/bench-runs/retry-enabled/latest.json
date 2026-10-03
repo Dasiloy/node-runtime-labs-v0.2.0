@@ -1,0 +1,74 @@
+{
+  "run": {
+    "runId": "5e7780e5-767f-44fa-9066-f953be5ace77",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-13/tasks/bench/retry-enabled.json",
+    "mode": "allSettled",
+    "status": "success",
+    "startedAt": "2026-05-21T02:12:08.655Z",
+    "endedAt": "2026-05-21T02:12:08.668Z",
+    "elapsedMs": 12.80657199999996,
+    "stoppedReason": null,
+    "canceledAt": null,
+    "cancelReason": null,
+    "canceledTaskIds": [],
+    "shutdownStartedAt": null,
+    "shutdownSignal": null,
+    "shutdownMode": null
+  },
+  "metrics": {
+    "taskCount": 1,
+    "completedCount": 1,
+    "failedCount": 0,
+    "timedOutCount": 0,
+    "canceledCount": 0,
+    "blockedCount": 0,
+    "skippedCount": 0,
+    "startedCount": 1,
+    "settledCount": 1,
+    "retryCount": 1,
+    "maxActive": 1,
+    "queueLengthMax": 1,
+    "successCount": 1,
+    "interruptedCount": 0
+  },
+  "tasks": [
+    {
+      "taskId": "retry",
+      "attempt": 2,
+      "startedAt": "2026-05-21T02:12:08.668Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:08.668Z",
+      "elapsedMs": 0.2817000000000007,
+      "attempts": [
+        {
+          "taskId": "retry",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.655Z",
+          "timeoutMs": null,
+          "status": "failed",
+          "error": {
+            "kind": "rejected",
+            "message": "deterministic flaky failure on attempt 1",
+            "stack": "Error: deterministic flaky failure on attempt 1\n    at flaky (file:///nodebook-labs-workspace/lab-6/phase-13/tasks/fixtures.js:33:11)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:329:20)"
+          },
+          "endedAt": "2026-05-21T02:12:08.657Z",
+          "elapsedMs": 1.4784500000000662,
+          "nextDelayMs": 10
+        },
+        {
+          "taskId": "retry",
+          "attempt": 2,
+          "startedAt": "2026-05-21T02:12:08.668Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.668Z",
+          "elapsedMs": 0.2817000000000007
+        }
+      ],
+      "attemptCount": 2,
+      "queuedAt": "2026-05-21T02:12:08.655Z",
+      "queueMs": 13
+    }
+  ]
+}

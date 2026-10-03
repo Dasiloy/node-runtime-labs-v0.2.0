@@ -1,0 +1,44 @@
+{
+  "mode": "naive",
+  "status": "completed",
+  "input": {
+    "path": "data/access.ndjson",
+    "bytes": 1075872
+  },
+  "output": {
+    "path": "out/errors-naive.ndjson",
+    "bytes": 81932
+  },
+  "counts": {
+    "rows": 5000,
+    "matches": 381
+  },
+  "timing": {
+    "startedAt": "2026-05-21T01:59:24.019Z",
+    "endedAt": "2026-05-21T01:59:24.030Z",
+    "elapsedMs": 10.144566000000001
+  },
+  "memory": {
+    "current": {
+      "rss": 94654464,
+      "heapUsed": 4846696,
+      "heapTotal": 10424320,
+      "external": 3862120,
+      "arrayBuffers": 1181403
+    },
+    "peak": {
+      "rss": 94654464,
+      "heapUsed": 4846696,
+      "heapTotal": 10424320,
+      "external": 3862120,
+      "arrayBuffers": 1181403
+    }
+  },
+  "bytes": {
+    "read": 1075872,
+    "written": 81932
+  },
+  "details": {
+    "where": "status >= 500"
+  }
+}

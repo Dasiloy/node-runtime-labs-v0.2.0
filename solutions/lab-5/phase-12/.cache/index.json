@@ -1,0 +1,260 @@
+{
+  "version": 1,
+  "root": "/nodebook-labs-workspace/lab-5/phase-12/watched",
+  "createdAt": "2026-05-21T01:24:05.328Z",
+  "updatedAt": "2026-05-21T02:03:35.696Z",
+  "options": {
+    "metadata": true,
+    "hash": true,
+    "followSymlinks": false
+  },
+  "filesByPath": {
+    "a.txt": {
+      "path": "a.txt",
+      "type": "file",
+      "size": 13,
+      "mtimeMs": 1779327324153.3284,
+      "ctimeMs": 1779327342062.9263,
+      "birthtimeMs": 1779327342062.8687,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13118971,
+      "nlink": 1,
+      "identity": "66306:13118971",
+      "hashAlgorithm": "sha256",
+      "hash": "ea802056a6c12b7cb0cf3d2e835f7d940a3a57c2561b884dec6109820081e549",
+      "hashBytes": 13
+    },
+    "link.txt": {
+      "path": "link.txt",
+      "type": "symlink",
+      "size": 18,
+      "mtimeMs": 1779328928300.668,
+      "ctimeMs": 1779328928300.668,
+      "birthtimeMs": 1779328928300.668,
+      "mode": 41471,
+      "permissions": "0777",
+      "dev": 66306,
+      "ino": 13119300,
+      "nlink": 1,
+      "identity": "66306:13119300",
+      "linkTarget": "symlink-target.txt"
+    },
+    "nested/c.txt": {
+      "path": "nested/c.txt",
+      "type": "file",
+      "size": 19,
+      "mtimeMs": 1779327324154.3284,
+      "ctimeMs": 1779327342062.8687,
+      "birthtimeMs": 1779327342062.8381,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13118970,
+      "nlink": 1,
+      "identity": "66306:13118970",
+      "hashAlgorithm": "sha256",
+      "hash": "3d0a4801879e40996e0ce69d0be8bd7ec518b763aabd915224b0261bd377a901",
+      "hashBytes": 19
+    },
+    "new.txt": {
+      "path": "new.txt",
+      "type": "file",
+      "size": 9,
+      "mtimeMs": 1779327324154.3284,
+      "ctimeMs": 1779327342062.9648,
+      "birthtimeMs": 1779327342062.9263,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13118972,
+      "nlink": 1,
+      "identity": "66306:13118972",
+      "hashAlgorithm": "sha256",
+      "hash": "0f15384d18789b1ebf3043dc7b6bc27273c8576373fbeb6f3e15854b588141c0",
+      "hashBytes": 9
+    },
+    "no-read-verify.txt": {
+      "path": "no-read-verify.txt",
+      "type": "file",
+      "size": 7,
+      "mtimeMs": 1779329015563.121,
+      "ctimeMs": 1779329015563.121,
+      "birthtimeMs": 1779329015563.121,
+      "mode": 32768,
+      "permissions": "0000",
+      "dev": 66306,
+      "ino": 13119296,
+      "nlink": 1,
+      "identity": "66306:13119296"
+    },
+    "private-link.txt": {
+      "path": "private-link.txt",
+      "type": "symlink",
+      "size": 11,
+      "mtimeMs": 1779327509146.3323,
+      "ctimeMs": 1779327509146.3323,
+      "birthtimeMs": 1779327509146.3323,
+      "mode": 41471,
+      "permissions": "0777",
+      "dev": 66306,
+      "ino": 13119409,
+      "nlink": 1,
+      "identity": "66306:13119409",
+      "linkTarget": "private.txt"
+    },
+    "private.txt": {
+      "path": "private.txt",
+      "type": "file",
+      "size": 7,
+      "mtimeMs": 1779327539869.699,
+      "ctimeMs": 1779327540044.499,
+      "birthtimeMs": 1779327509144.3323,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13119408,
+      "nlink": 1,
+      "identity": "66306:13119408",
+      "hashAlgorithm": "sha256",
+      "hash": "b37e50cedcd3e3f1ff64f4afc0422084ae694253cf399326868e07a35f4a45fb",
+      "hashBytes": 7
+    },
+    "symlink-target.txt": {
+      "path": "symlink-target.txt",
+      "type": "file",
+      "size": 7,
+      "mtimeMs": 1779328928300.668,
+      "ctimeMs": 1779328928300.668,
+      "birthtimeMs": 1779328928300.668,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13119299,
+      "nlink": 1,
+      "identity": "66306:13119299",
+      "hashAlgorithm": "sha256",
+      "hash": "c97ecfda4d205190b973232dcfdb0c29748521c2534dd866bcc782f30b086738",
+      "hashBytes": 7
+    }
+  },
+  "buildCache": {
+    "version": 1,
+    "builderVersion": "lab-5-builder-v1",
+    "entries": {
+      "a.txt": {
+        "inputHash": "ea802056a6c12b7cb0cf3d2e835f7d940a3a57c2561b884dec6109820081e549",
+        "inputMetadata": {
+          "size": 13,
+          "mtimeMs": 1779327324153.3284,
+          "mode": 33188,
+          "identity": "66306:13118971",
+          "type": "file"
+        },
+        "outputPath": "build-output/a.txt.json",
+        "outputHash": "1f69a6f9918b8919c162e34cc464d69b8ea7b6a3b516bc68d2541fe30c00160d",
+        "builtAt": "2026-05-21T02:02:35.416Z",
+        "builderVersion": "lab-5-builder-v1"
+      },
+      "a/one.txt": {
+        "inputHash": "8658c513d419c7a094585052709f8f0e069a075aa28b10f4756ac486758945e7",
+        "inputMetadata": {
+          "size": 9,
+          "mtimeMs": 1779327161469.435,
+          "mode": 33188,
+          "identity": "66306:13116587",
+          "type": "file"
+        },
+        "outputPath": "build-output/a__one.txt.json",
+        "outputHash": "ca9a9d701c50c775414631ae8886b2ea8274feff7ddb20c3c5aad9338e742ad6",
+        "builtAt": "2026-05-21T01:33:18.916Z",
+        "builderVersion": "lab-5-builder-v1"
+      },
+      "b/two.txt": {
+        "inputHash": "27dd8ed44a83ff94d557f9fd0412ed5a8cbca69ea04922d88c01184a07300a5a",
+        "inputMetadata": {
+          "size": 4,
+          "mtimeMs": 1779326475140.5562,
+          "mode": 33188,
+          "identity": "66306:13116589",
+          "type": "file"
+        },
+        "outputPath": "build-output/b__two.txt.json",
+        "outputHash": "2144ddc4ab4c00171eadfd7efeeb54db8e80860313e6c2b3f88e7f0d42855377",
+        "builtAt": "2026-05-21T01:33:18.917Z",
+        "builderVersion": "lab-5-builder-v1"
+      },
+      "new.txt": {
+        "inputHash": "0f15384d18789b1ebf3043dc7b6bc27273c8576373fbeb6f3e15854b588141c0",
+        "inputMetadata": {
+          "size": 9,
+          "mtimeMs": 1779327324154.3284,
+          "mode": 33188,
+          "identity": "66306:13118972",
+          "type": "file"
+        },
+        "outputPath": "build-output/new.txt.json",
+        "outputHash": "fc7e4f9ba020b9bc8a920e7f4c92662ce1788a3d8703848a179b4ee52e21872f",
+        "builtAt": "2026-05-21T02:02:35.418Z",
+        "builderVersion": "lab-5-builder-v1"
+      },
+      "target.txt": {
+        "inputHash": "c97ecfda4d205190b973232dcfdb0c29748521c2534dd866bcc782f30b086738",
+        "inputMetadata": {
+          "size": 7,
+          "mtimeMs": 1779326527044.7725,
+          "mode": 33188,
+          "identity": "66306:13116594",
+          "type": "file"
+        },
+        "outputPath": "build-output/target.txt.json",
+        "outputHash": "f306a0045fcd48c03b8674b2c4a90588f3e6d8456e9909f4485282cdf7650feb",
+        "builtAt": "2026-05-21T01:33:18.919Z",
+        "builderVersion": "lab-5-builder-v1"
+      },
+      "nested/c.txt": {
+        "inputHash": "3d0a4801879e40996e0ce69d0be8bd7ec518b763aabd915224b0261bd377a901",
+        "inputMetadata": {
+          "size": 19,
+          "mtimeMs": 1779327324154.3284,
+          "mode": 33188,
+          "identity": "66306:13118970",
+          "type": "file"
+        },
+        "outputPath": "build-output/nested__c.txt.json",
+        "outputHash": "bbeaba269f4664d495c6090a178a1e4186d17c3e8de5f5a1a55bed680e1a2093",
+        "builtAt": "2026-05-21T02:02:35.417Z",
+        "builderVersion": "lab-5-builder-v1"
+      },
+      "private.txt": {
+        "inputHash": "b37e50cedcd3e3f1ff64f4afc0422084ae694253cf399326868e07a35f4a45fb",
+        "inputMetadata": {
+          "size": 7,
+          "mtimeMs": 1779327539869.699,
+          "mode": 33188,
+          "identity": "66306:13119408",
+          "type": "file"
+        },
+        "outputPath": "build-output/private.txt.json",
+        "outputHash": "68a3e3536708c016708ac418439751dcd45b8233534fead31c12ab3980ac31f9",
+        "builtAt": "2026-05-21T02:02:35.418Z",
+        "builderVersion": "lab-5-builder-v1"
+      },
+      "symlink-target.txt": {
+        "inputHash": "c97ecfda4d205190b973232dcfdb0c29748521c2534dd866bcc782f30b086738",
+        "inputMetadata": {
+          "size": 7,
+          "mtimeMs": 1779328928300.668,
+          "mode": 33188,
+          "identity": "66306:13119299",
+          "type": "file"
+        },
+        "outputPath": "build-output/symlink-target.txt.json",
+        "outputHash": "d143184f921ae31b27785d0c56f91e391bfda9e18e35cda0622402c5c22dcba1",
+        "builtAt": "2026-05-21T02:02:35.419Z",
+        "builderVersion": "lab-5-builder-v1"
+      }
+    }
+  }
+}

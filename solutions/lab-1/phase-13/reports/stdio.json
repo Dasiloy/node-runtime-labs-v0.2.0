@@ -1,0 +1,40 @@
+{
+  "stdout": {
+    "bytes": 56
+  },
+  "stderr": {
+    "bytes": 154
+  },
+  "events": [
+    {
+      "type": "stdout",
+      "at": 29.26,
+      "bytes": 17,
+      "preview": "mixed load start\n"
+    },
+    {
+      "type": "stderr",
+      "at": 29.784,
+      "bytes": 128,
+      "preview": "(node:1352442) [MIXED_LOAD] Warning: mixed-load warning\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    {
+      "type": "stderr",
+      "at": 131.738,
+      "bytes": 26,
+      "preview": "allocated external memory\n"
+    },
+    {
+      "type": "stdout",
+      "at": 779.369,
+      "bytes": 19,
+      "preview": "cpu spike finished\n"
+    },
+    {
+      "type": "stdout",
+      "at": 929.203,
+      "bytes": 20,
+      "preview": "retained buffers: 1\n"
+    }
+  ]
+}

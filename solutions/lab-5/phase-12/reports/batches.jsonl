@@ -1,0 +1,1 @@
+{"batchId":"batch-1","startedAt":"2026-05-21T01:35:24.154Z","settledAt":"2026-05-21T01:35:24.308Z","debounceMs":150,"rawEventCount":8,"logicalEventCount":4,"paths":["a.txt","b.txt","nested/.c.txt.19.9cd87526.tmp","nested/c.txt","new.txt"],"diffCounts":{"added":1,"changed":2,"deleted":1,"unchanged":0}}

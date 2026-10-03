@@ -1,0 +1,25 @@
+{
+  "id": "03-stream-processing-workbench",
+  "number": "03",
+  "slug": "stream-processing-workbench",
+  "title": "Stream Processing Workbench",
+  "status": "draft",
+  "difficulty": "8.5/10",
+  "concepts": [
+    "NDJSON generation",
+    "whole-file baseline",
+    "runtime measurement",
+    "source adapters",
+    "line splitting",
+    "filter DSL",
+    "transform plugins",
+    "slow writable sinks",
+    "backpressure timeline",
+    "compression and cancellation"
+  ],
+  "summary": "Build a controlled stream processing workbench for experimenting with NDJSON data, source adapters, transforms, backpressure, compression, cancellation, and memory.",
+  "challengeOrder": [
+    "main"
+  ],
+  "defaultChallenge": "main"
+}

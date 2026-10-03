@@ -1,0 +1,80 @@
+{
+  "runId": "17100d01-1da9-47d2-8583-76abaf267515",
+  "probeFile": "/nodebook-labs-workspace/lab-1/phase-7/out/probe-17100d01-1da9-47d2-8583-76abaf267515.ndjson",
+  "events": [
+    {
+      "at": 29,
+      "type": "probe-ready",
+      "pid": 1351766,
+      "nodeVersion": "v24.15.0",
+      "execArgv": [
+        "--import",
+        "file:///nodebook-labs-workspace/lab-1/phase-7/src/probe/register.js"
+      ],
+      "runId": "17100d01-1da9-47d2-8583-76abaf267515"
+    },
+    {
+      "at": 29,
+      "type": "memory-sample",
+      "rss": 74440704,
+      "heapTotal": 7016448,
+      "heapUsed": 5262312,
+      "external": 1932319,
+      "arrayBuffers": 22803
+    },
+    {
+      "at": 1231,
+      "type": "memory-sample",
+      "rss": 83873792,
+      "heapTotal": 8327168,
+      "heapUsed": 5895312,
+      "external": 1932375,
+      "arrayBuffers": 22819
+    },
+    {
+      "at": 1231,
+      "type": "cpu-sample",
+      "userMicros": 1191043,
+      "systemMicros": 4086,
+      "totalMicros": 1195129,
+      "wallMs": 1201.973,
+      "cpuPercent": 99.431
+    },
+    {
+      "at": 1332,
+      "type": "memory-sample",
+      "rss": 83873792,
+      "heapTotal": 8327168,
+      "heapUsed": 4937280,
+      "external": 1932375,
+      "arrayBuffers": 22819
+    },
+    {
+      "at": 1332,
+      "type": "cpu-sample",
+      "userMicros": 604,
+      "systemMicros": 0,
+      "totalMicros": 604,
+      "wallMs": 100.72,
+      "cpuPercent": 0.6
+    },
+    {
+      "at": 1432,
+      "type": "memory-sample",
+      "rss": 83873792,
+      "heapTotal": 8327168,
+      "heapUsed": 4941312,
+      "external": 1932375,
+      "arrayBuffers": 22819
+    },
+    {
+      "at": 1433,
+      "type": "cpu-sample",
+      "userMicros": 313,
+      "systemMicros": 0,
+      "totalMicros": 313,
+      "wallMs": 100.436,
+      "cpuPercent": 0.312
+    }
+  ]
+}

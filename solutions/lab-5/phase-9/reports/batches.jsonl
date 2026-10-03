@@ -1,0 +1,2 @@
+{"batchId":"batch-1","startedAt":"2026-05-21T01:37:33.313Z","settledAt":"2026-05-21T01:37:33.613Z","debounceMs":300,"rawEventCount":2,"logicalEventCount":2,"paths":["a.txt","b.txt"],"diffCounts":{"added":0,"changed":2,"deleted":0,"unchanged":2}}
+{"batchId":"batch-1","startedAt":"2026-05-21T02:01:34.397Z","settledAt":"2026-05-21T02:01:34.588Z","debounceMs":150,"rawEventCount":2,"logicalEventCount":1,"paths":["a.txt"],"diffCounts":{"added":0,"changed":1,"deleted":0,"unchanged":3}}

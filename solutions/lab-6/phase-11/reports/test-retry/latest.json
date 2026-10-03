@@ -1,0 +1,71 @@
+{
+  "run": {
+    "runId": "624c3808-fd58-4406-89b0-4adfc93c7034",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-11/tasks/flaky-success.json",
+    "mode": "allSettled",
+    "status": "success",
+    "startedAt": "2026-05-21T02:11:59.205Z",
+    "endedAt": "2026-05-21T02:11:59.215Z",
+    "elapsedMs": 10.514742999999996,
+    "stoppedReason": null,
+    "canceledAt": null,
+    "cancelReason": null,
+    "canceledTaskIds": []
+  },
+  "metrics": {
+    "taskCount": 1,
+    "completedCount": 1,
+    "failedCount": 0,
+    "timedOutCount": 0,
+    "canceledCount": 0,
+    "blockedCount": 0,
+    "skippedCount": 0,
+    "startedCount": 1,
+    "settledCount": 1,
+    "retryCount": 1,
+    "maxActive": 1,
+    "queueLengthMax": 1,
+    "successCount": 1,
+    "interruptedCount": 0
+  },
+  "tasks": [
+    {
+      "taskId": "flaky-success",
+      "attempt": 2,
+      "startedAt": "2026-05-21T02:11:59.214Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:11:59.215Z",
+      "elapsedMs": 1.0709540000000004,
+      "attempts": [
+        {
+          "taskId": "flaky-success",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:11:59.206Z",
+          "timeoutMs": null,
+          "status": "failed",
+          "error": {
+            "kind": "rejected",
+            "message": "deterministic flaky failure on attempt 1",
+            "stack": "Error: deterministic flaky failure on attempt 1\n    at flaky (file:///nodebook-labs-workspace/lab-6/phase-11/tasks/fixtures.js:33:11)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-11/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-11/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-11/src/runner.js:329:20)"
+          },
+          "endedAt": "2026-05-21T02:11:59.208Z",
+          "elapsedMs": 2.0008519999999947,
+          "nextDelayMs": 5
+        },
+        {
+          "taskId": "flaky-success",
+          "attempt": 2,
+          "startedAt": "2026-05-21T02:11:59.214Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:11:59.215Z",
+          "elapsedMs": 1.0709540000000004
+        }
+      ],
+      "attemptCount": 2,
+      "queuedAt": "2026-05-21T02:11:59.206Z",
+      "queueMs": 8
+    }
+  ]
+}

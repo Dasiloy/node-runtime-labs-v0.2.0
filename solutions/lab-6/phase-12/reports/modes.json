@@ -1,0 +1,20 @@
+{
+  "allSettled": {
+    "mode": "allSettled",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-12/tasks/cancel-after.json",
+    "startedCount": 2,
+    "settledCount": 10,
+    "stoppedReason": null,
+    "finalStatusCounts": {
+      "successCount": 0,
+      "failedCount": 0,
+      "timedOutCount": 0,
+      "canceledCount": 10,
+      "blockedCount": 0,
+      "skippedCount": 0,
+      "interruptedCount": 0
+    },
+    "maxActive": 2,
+    "queueLengthMax": 10
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "binary-file-store-append-only-log-database",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "db": "node src/cli.js",
+    "put": "node src/cli.js put",
+    "get": "node src/cli.js get",
+    "scan": "node src/cli.js scan",
+    "delete": "node src/cli.js delete",
+    "inspect": "node src/cli.js inspect",
+    "inspect-format": "node src/inspect-format.js",
+    "encode": "node src/encode-cli.js",
+    "decode": "node src/cli.js decode",
+    "recover": "node src/cli.js recover",
+    "compact": "node src/cli.js compact",
+    "bench": "node src/cli.js bench",
+    "test": "node --test"
+  }
+}

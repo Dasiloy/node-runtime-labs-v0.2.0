@@ -1,0 +1,365 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "bench-delay-0",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-1",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-2",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-3",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-4",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-5",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-6",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-7",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-8",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-9",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-10",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-11",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-12",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-13",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-14",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-15",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-16",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-17",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-18",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-19",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-20",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-21",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-22",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-23",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-24",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-25",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-26",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-27",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-28",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-29",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-30",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-31",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-32",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-33",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-34",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-35",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-36",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-37",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-38",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    },
+    {
+      "id": "bench-delay-39",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 30
+      }
+    }
+  ]
+}

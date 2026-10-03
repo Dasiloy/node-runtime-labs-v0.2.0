@@ -1,0 +1,74 @@
+{
+  "mode": "stream",
+  "status": "completed",
+  "input": {
+    "path": "data/access.ndjson",
+    "source": {
+      "kind": "file",
+      "inputPath": "/nodebook-labs-workspace/lab-3/phase-7/data/access.ndjson",
+      "compressed": false,
+      "declaredBytes": 1075872,
+      "readHwm": null
+    },
+    "bytes": 1075872
+  },
+  "output": {
+    "path": "out/stream.ndjson",
+    "bytes": 23900
+  },
+  "counts": {
+    "rows": 5000,
+    "matches": 381
+  },
+  "timing": {
+    "startedAt": "2026-05-21T01:59:27.984Z",
+    "endedAt": "2026-05-21T01:59:28.015Z",
+    "elapsedMs": 30.407009
+  },
+  "memory": {
+    "current": {
+      "rss": 95608832,
+      "heapUsed": 6321568,
+      "heapTotal": 10948608,
+      "external": 2128819,
+      "arrayBuffers": 272630
+    },
+    "peak": {
+      "rss": 95608832,
+      "heapUsed": 6321568,
+      "heapTotal": 10948608,
+      "external": 2128819,
+      "arrayBuffers": 272630
+    }
+  },
+  "bytes": {
+    "bytesRead": 1075872,
+    "compressedBytesRead": 0,
+    "uncompressedBytesRead": 1075872,
+    "outputUncompressed": 23900,
+    "written": 23900
+  },
+  "details": {
+    "where": "status >= 500",
+    "plugins": {
+      "config": {
+        "redact": [
+          "ip"
+        ],
+        "select": [
+          "id",
+          "status",
+          "path",
+          "ip"
+        ],
+        "enrich": []
+      },
+      "executionOrder": [
+        "filter",
+        "redact",
+        "select",
+        "stringify"
+      ]
+    }
+  }
+}

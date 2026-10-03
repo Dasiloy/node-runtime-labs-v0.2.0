@@ -1,0 +1,87 @@
+[
+  {
+    "batchId": "batch-1",
+    "kind": "change",
+    "path": "a.txt",
+    "reasons": [
+      "hash",
+      "size",
+      "mtimeMs",
+      "ctimeMs"
+    ],
+    "tempPaths": [],
+    "rawEventIds": [
+      "event-1",
+      "event-2",
+      "event-3",
+      "event-5",
+      "event-4",
+      "event-6",
+      "event-7",
+      "event-8"
+    ]
+  },
+  {
+    "batchId": "batch-1",
+    "kind": "delete",
+    "path": "b.txt",
+    "reasons": [
+      "missing"
+    ],
+    "tempPaths": [],
+    "rawEventIds": [
+      "event-1",
+      "event-2",
+      "event-3",
+      "event-5",
+      "event-4",
+      "event-6",
+      "event-7",
+      "event-8"
+    ]
+  },
+  {
+    "batchId": "batch-1",
+    "kind": "atomic-replace",
+    "path": "nested/c.txt",
+    "reasons": [
+      "hash",
+      "size",
+      "mtimeMs",
+      "ctimeMs",
+      "identity"
+    ],
+    "tempPaths": [
+      "nested/.c.txt.19.9cd87526.tmp"
+    ],
+    "rawEventIds": [
+      "event-1",
+      "event-2",
+      "event-3",
+      "event-5",
+      "event-4",
+      "event-6",
+      "event-7",
+      "event-8"
+    ]
+  },
+  {
+    "batchId": "batch-1",
+    "kind": "add",
+    "path": "new.txt",
+    "reasons": [
+      "path"
+    ],
+    "tempPaths": [],
+    "rawEventIds": [
+      "event-1",
+      "event-2",
+      "event-3",
+      "event-5",
+      "event-4",
+      "event-6",
+      "event-7",
+      "event-8"
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "pid": 1351670,
+  "startedAt": "2026-05-21T02:01:29.407Z",
+  "exitedAt": "2026-05-21T02:01:30.919Z",
+  "exitCode": 0,
+  "signal": null,
+  "elapsedMs": 1512.445,
+  "timedOut": true
+}

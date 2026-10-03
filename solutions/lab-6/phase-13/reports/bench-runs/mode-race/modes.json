@@ -1,0 +1,20 @@
+{
+  "race": {
+    "mode": "race",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-13/tasks/mixed-results.json",
+    "startedCount": 3,
+    "settledCount": 5,
+    "stoppedReason": "first_settled",
+    "finalStatusCounts": {
+      "successCount": 0,
+      "failedCount": 1,
+      "timedOutCount": 0,
+      "canceledCount": 2,
+      "blockedCount": 0,
+      "skippedCount": 2,
+      "interruptedCount": 0
+    },
+    "maxActive": 3,
+    "queueLengthMax": 5
+  }
+}

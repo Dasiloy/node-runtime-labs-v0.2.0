@@ -1,0 +1,266 @@
+{
+  "run": {
+    "runId": "74c2bf59-1e58-4b61-b7b3-04272b9d27ee",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-11/tasks/cancel-after.json",
+    "mode": "allSettled",
+    "status": "success",
+    "startedAt": "2026-05-21T01:56:12.605Z",
+    "endedAt": "2026-05-21T01:56:17.614Z",
+    "elapsedMs": 5009.158517,
+    "stoppedReason": null,
+    "canceledAt": null,
+    "cancelReason": null,
+    "canceledTaskIds": [],
+    "shutdownStartedAt": null,
+    "shutdownSignal": null,
+    "shutdownMode": null
+  },
+  "metrics": {
+    "taskCount": 10,
+    "completedCount": 10,
+    "failedCount": 0,
+    "timedOutCount": 0,
+    "canceledCount": 0,
+    "blockedCount": 0,
+    "skippedCount": 0,
+    "startedCount": 10,
+    "settledCount": 10,
+    "retryCount": 0,
+    "maxActive": 2,
+    "queueLengthMax": 10,
+    "successCount": 10,
+    "interruptedCount": 0
+  },
+  "tasks": [
+    {
+      "taskId": "cancel-1",
+      "attempt": 1,
+      "startedAt": "2026-05-21T01:56:12.606Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T01:56:13.609Z",
+      "elapsedMs": 1002.626798,
+      "attempts": [
+        {
+          "taskId": "cancel-1",
+          "attempt": 1,
+          "startedAt": "2026-05-21T01:56:12.606Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T01:56:13.609Z",
+          "elapsedMs": 1002.626798
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T01:56:12.606Z",
+      "queueMs": 0
+    },
+    {
+      "taskId": "cancel-2",
+      "attempt": 1,
+      "startedAt": "2026-05-21T01:56:12.607Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T01:56:13.609Z",
+      "elapsedMs": 1002.599487,
+      "attempts": [
+        {
+          "taskId": "cancel-2",
+          "attempt": 1,
+          "startedAt": "2026-05-21T01:56:12.607Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T01:56:13.609Z",
+          "elapsedMs": 1002.599487
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T01:56:12.606Z",
+      "queueMs": 1
+    },
+    {
+      "taskId": "cancel-3",
+      "attempt": 1,
+      "startedAt": "2026-05-21T01:56:13.609Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T01:56:14.610Z",
+      "elapsedMs": 1000.883501,
+      "attempts": [
+        {
+          "taskId": "cancel-3",
+          "attempt": 1,
+          "startedAt": "2026-05-21T01:56:13.609Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T01:56:14.610Z",
+          "elapsedMs": 1000.883501
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T01:56:12.606Z",
+      "queueMs": 1003
+    },
+    {
+      "taskId": "cancel-4",
+      "attempt": 1,
+      "startedAt": "2026-05-21T01:56:13.609Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T01:56:14.611Z",
+      "elapsedMs": 1001.096601,
+      "attempts": [
+        {
+          "taskId": "cancel-4",
+          "attempt": 1,
+          "startedAt": "2026-05-21T01:56:13.609Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T01:56:14.611Z",
+          "elapsedMs": 1001.096601
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T01:56:12.606Z",
+      "queueMs": 1003
+    },
+    {
+      "taskId": "cancel-5",
+      "attempt": 1,
+      "startedAt": "2026-05-21T01:56:14.610Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T01:56:15.611Z",
+      "elapsedMs": 1000.8210429999997,
+      "attempts": [
+        {
+          "taskId": "cancel-5",
+          "attempt": 1,
+          "startedAt": "2026-05-21T01:56:14.610Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T01:56:15.611Z",
+          "elapsedMs": 1000.8210429999997
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T01:56:12.606Z",
+      "queueMs": 2004
+    },
+    {
+      "taskId": "cancel-6",
+      "attempt": 1,
+      "startedAt": "2026-05-21T01:56:14.611Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T01:56:15.611Z",
+      "elapsedMs": 1000.7402609999999,
+      "attempts": [
+        {
+          "taskId": "cancel-6",
+          "attempt": 1,
+          "startedAt": "2026-05-21T01:56:14.611Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T01:56:15.611Z",
+          "elapsedMs": 1000.7402609999999
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T01:56:12.606Z",
+      "queueMs": 2005
+    },
+    {
+      "taskId": "cancel-7",
+      "attempt": 1,
+      "startedAt": "2026-05-21T01:56:15.611Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T01:56:16.612Z",
+      "elapsedMs": 1000.935919,
+      "attempts": [
+        {
+          "taskId": "cancel-7",
+          "attempt": 1,
+          "startedAt": "2026-05-21T01:56:15.611Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T01:56:16.612Z",
+          "elapsedMs": 1000.935919
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T01:56:12.606Z",
+      "queueMs": 3005
+    },
+    {
+      "taskId": "cancel-8",
+      "attempt": 1,
+      "startedAt": "2026-05-21T01:56:15.611Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T01:56:16.613Z",
+      "elapsedMs": 1001.2548590000001,
+      "attempts": [
+        {
+          "taskId": "cancel-8",
+          "attempt": 1,
+          "startedAt": "2026-05-21T01:56:15.611Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T01:56:16.613Z",
+          "elapsedMs": 1001.2548590000001
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T01:56:12.606Z",
+      "queueMs": 3005
+    },
+    {
+      "taskId": "cancel-9",
+      "attempt": 1,
+      "startedAt": "2026-05-21T01:56:16.612Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T01:56:17.613Z",
+      "elapsedMs": 1001.0664449999995,
+      "attempts": [
+        {
+          "taskId": "cancel-9",
+          "attempt": 1,
+          "startedAt": "2026-05-21T01:56:16.612Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T01:56:17.613Z",
+          "elapsedMs": 1001.0664449999995
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T01:56:12.606Z",
+      "queueMs": 4006
+    },
+    {
+      "taskId": "cancel-10",
+      "attempt": 1,
+      "startedAt": "2026-05-21T01:56:16.613Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T01:56:17.614Z",
+      "elapsedMs": 1001.0052689999998,
+      "attempts": [
+        {
+          "taskId": "cancel-10",
+          "attempt": 1,
+          "startedAt": "2026-05-21T01:56:16.613Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T01:56:17.614Z",
+          "elapsedMs": 1001.0052689999998
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T01:56:12.606Z",
+      "queueMs": 4007
+    }
+  ]
+}

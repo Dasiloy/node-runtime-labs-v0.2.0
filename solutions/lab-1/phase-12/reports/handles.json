@@ -1,0 +1,90 @@
+{
+  "samples": [
+    {
+      "at": 279,
+      "type": "active-handles",
+      "resources": [
+        "PipeWrap",
+        "PipeWrap",
+        "Timeout",
+        "Timeout"
+      ],
+      "resourceCounts": {
+        "PipeWrap": 2,
+        "Timeout": 2
+      },
+      "privateHandles": [
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Socket"
+        }
+      ],
+      "categoryCounts": {
+        "ipc": 2,
+        "timer": 2
+      }
+    },
+    {
+      "at": 779,
+      "type": "active-handles",
+      "resources": [
+        "PipeWrap",
+        "PipeWrap",
+        "Timeout"
+      ],
+      "resourceCounts": {
+        "PipeWrap": 2,
+        "Timeout": 1
+      },
+      "privateHandles": [
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Socket"
+        }
+      ],
+      "categoryCounts": {
+        "ipc": 2,
+        "timer": 1
+      }
+    }
+  ],
+  "latest": {
+    "at": 779,
+    "type": "active-handles",
+    "resources": [
+      "PipeWrap",
+      "PipeWrap",
+      "Timeout"
+    ],
+    "resourceCounts": {
+      "PipeWrap": 2,
+      "Timeout": 1
+    },
+    "privateHandles": [
+      {
+        "className": "Socket"
+      },
+      {
+        "className": "Socket"
+      }
+    ],
+    "categoryCounts": {
+      "ipc": 2,
+      "timer": 1
+    }
+  },
+  "summary": {
+    "categoryCounts": {
+      "ipc": 2,
+      "timer": 1
+    },
+    "resourceCounts": {
+      "PipeWrap": 2,
+      "Timeout": 1
+    }
+  }
+}

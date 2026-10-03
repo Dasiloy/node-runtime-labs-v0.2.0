@@ -1,0 +1,17 @@
+{
+  "rows": 5000,
+  "matches": 381,
+  "elapsedMs": 15.560981000000002,
+  "peakMemory": {
+    "rss": 87744512,
+    "heapTotal": 10162176,
+    "heapUsed": 4828472,
+    "external": 3861720,
+    "arrayBuffers": 1181003
+  },
+  "inputFile": "data/access.ndjson",
+  "outputFile": "out/errors-naive.ndjson",
+  "inputBytes": 1075872,
+  "outputBytes": 81932,
+  "where": "status >= 500"
+}

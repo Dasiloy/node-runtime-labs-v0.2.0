@@ -1,0 +1,90 @@
+{
+  "entry": "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/index.cjs",
+  "pid": 852,
+  "preserveSymlinks": false,
+  "cacheEntries": [
+    {
+      "id": "/nodebook-labs-workspace/lab-4/phase-10/src/probes/cache-probe.cjs",
+      "filename": "/nodebook-labs-workspace/lab-4/phase-10/src/probes/cache-probe.cjs",
+      "loaded": true,
+      "children": []
+    },
+    {
+      "id": ".",
+      "filename": "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/index.cjs",
+      "loaded": true,
+      "children": [
+        "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/left.cjs",
+        "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/right.cjs",
+        "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/shared.cjs"
+      ]
+    },
+    {
+      "id": "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/left.cjs",
+      "filename": "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/left.cjs",
+      "loaded": true,
+      "children": [
+        "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/shared.cjs"
+      ]
+    },
+    {
+      "id": "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/shared.cjs",
+      "filename": "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/shared.cjs",
+      "loaded": true,
+      "children": []
+    },
+    {
+      "id": "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/right.cjs",
+      "filename": "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/right.cjs",
+      "loaded": true,
+      "children": [
+        "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/shared.cjs"
+      ]
+    }
+  ],
+  "loadEvents": [
+    {
+      "request": "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/index.cjs",
+      "parent": null,
+      "resolved": "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/index.cjs",
+      "cacheHitBefore": false,
+      "isMain": true
+    },
+    {
+      "request": "./left.cjs",
+      "parent": "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/index.cjs",
+      "resolved": "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/left.cjs",
+      "cacheHitBefore": false,
+      "isMain": false
+    },
+    {
+      "request": "./shared.cjs",
+      "parent": "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/left.cjs",
+      "resolved": "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/shared.cjs",
+      "cacheHitBefore": false,
+      "isMain": false
+    },
+    {
+      "request": "./right.cjs",
+      "parent": "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/index.cjs",
+      "resolved": "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/right.cjs",
+      "cacheHitBefore": false,
+      "isMain": false
+    },
+    {
+      "request": "./shared.cjs",
+      "parent": "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/right.cjs",
+      "resolved": "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/shared.cjs",
+      "cacheHitBefore": true,
+      "isMain": false
+    },
+    {
+      "request": "./shared.cjs",
+      "parent": "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/index.cjs",
+      "resolved": "/nodebook-labs-workspace/lab-4/phase-10/fixtures/generated/cache-demo/shared.cjs",
+      "cacheHitBefore": true,
+      "isMain": false
+    }
+  ],
+  "partialObservations": []
+}

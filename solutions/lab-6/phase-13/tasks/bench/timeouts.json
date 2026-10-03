@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "short",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 10
+      }
+    },
+    {
+      "id": "long-a",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 100
+      }
+    },
+    {
+      "id": "long-b",
+      "type": "function",
+      "module": "../fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 100
+      }
+    }
+  ]
+}

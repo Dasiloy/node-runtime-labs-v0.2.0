@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "segment": "/nodebook-labs-workspace/lab-2/phase-8/data/segment-0001.dat",
+  "segmentSize": 106,
+  "updatedAt": "2026-05-21T01:27:18.097Z",
+  "entries": [
+    {
+      "key": "name",
+      "type": "PUT",
+      "segment": "/nodebook-labs-workspace/lab-2/phase-8/data/segment-0001.dat",
+      "offset": 71,
+      "length": 35,
+      "timestamp": 1779326838093
+    }
+  ]
+}

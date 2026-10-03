@@ -1,0 +1,61 @@
+{
+  "generatedAt": "2026-05-21T02:01:34.590Z",
+  "counts": {
+    "added": 0,
+    "changed": 1,
+    "deleted": 0,
+    "unchanged": 3
+  },
+  "added": [],
+  "changed": [
+    {
+      "path": "a.txt",
+      "reasons": [
+        "hash",
+        "size",
+        "mtimeMs",
+        "ctimeMs"
+      ],
+      "previous": {
+        "path": "a.txt",
+        "type": "file",
+        "size": 17,
+        "mtimeMs": 1779327453311.0305,
+        "ctimeMs": 1779327453311.0305,
+        "birthtimeMs": 1779327342054.1716,
+        "mode": 33188,
+        "permissions": "0644",
+        "dev": 66306,
+        "ino": 13118845,
+        "nlink": 1,
+        "identity": "66306:13118845",
+        "hashAlgorithm": "sha256",
+        "hash": "57b0a08557bf4a613155aa5ec3acb88abcd837f1d37258335177a1e28d0c29a1",
+        "hashBytes": 17
+      },
+      "current": {
+        "path": "a.txt",
+        "type": "file",
+        "size": 67,
+        "mtimeMs": 1779328894436.4922,
+        "ctimeMs": 1779328894436.4922,
+        "birthtimeMs": 1779327342054.1716,
+        "mode": 33188,
+        "permissions": "0644",
+        "dev": 66306,
+        "ino": 13118845,
+        "nlink": 1,
+        "identity": "66306:13118845",
+        "hashAlgorithm": "sha256",
+        "hash": "74a82204fcc768ba3cdddb0665635bad2a25b60e3a3c98ff48d4c5a60c9b0e27",
+        "hashBytes": 67
+      }
+    }
+  ],
+  "deleted": [],
+  "unchanged": [
+    "b.txt",
+    "nested/c.txt",
+    "new.txt"
+  ]
+}

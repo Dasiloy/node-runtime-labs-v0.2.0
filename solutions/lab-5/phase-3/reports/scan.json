@@ -1,0 +1,175 @@
+{
+  "root": "/nodebook-labs-workspace/lab-5/phase-3/watched",
+  "generatedAt": "2026-05-21T01:58:28.218Z",
+  "counts": {
+    "files": 6,
+    "directories": 3,
+    "ignored": 2,
+    "errors": 0
+  },
+  "files": [
+    {
+      "path": "a.txt",
+      "type": "file",
+      "size": 5,
+      "mtimeMs": 1779326581203.107,
+      "ctimeMs": 1779326581203.107,
+      "birthtimeMs": 1779326581202.0945,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13115998,
+      "nlink": 1,
+      "identity": "66306:13115998",
+      "hashAlgorithm": "sha256",
+      "hash": "a6328afc76e9db71da297ebff4b0d3e7a7eb3b01d917c05a6573fef121b6ecb6",
+      "hashBytes": 5
+    },
+    {
+      "path": "a/one.txt",
+      "type": "file",
+      "size": 4,
+      "mtimeMs": 1779326475140.5562,
+      "ctimeMs": 1779326549058.1829,
+      "birthtimeMs": 1779326549058.1565,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13115862,
+      "nlink": 1,
+      "identity": "66306:13115862",
+      "hashAlgorithm": "sha256",
+      "hash": "2c8b08da5ce60398e1f19af0e5dccc744df274b826abe585eaba68c525434806",
+      "hashBytes": 4
+    },
+    {
+      "path": "b.txt",
+      "type": "file",
+      "size": 5,
+      "mtimeMs": 1779326581203.107,
+      "ctimeMs": 1779326581203.107,
+      "birthtimeMs": 1779326581203.107,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13115999,
+      "nlink": 1,
+      "identity": "66306:13115999",
+      "hashAlgorithm": "sha256",
+      "hash": "a6328afc76e9db71da297ebff4b0d3e7a7eb3b01d917c05a6573fef121b6ecb6",
+      "hashBytes": 5
+    },
+    {
+      "path": "b/two.txt",
+      "type": "file",
+      "size": 4,
+      "mtimeMs": 1779326475140.5562,
+      "ctimeMs": 1779326549058.2444,
+      "birthtimeMs": 1779326549058.1829,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13115864,
+      "nlink": 1,
+      "identity": "66306:13115864",
+      "hashAlgorithm": "sha256",
+      "hash": "27dd8ed44a83ff94d557f9fd0412ed5a8cbca69ea04922d88c01184a07300a5a",
+      "hashBytes": 4
+    },
+    {
+      "path": "link.txt",
+      "type": "symlink",
+      "size": 10,
+      "mtimeMs": 1779326527044.7725,
+      "ctimeMs": 1779326549058.4294,
+      "birthtimeMs": 1779326549058.4294,
+      "mode": 41471,
+      "permissions": "0777",
+      "dev": 66306,
+      "ino": 13115870,
+      "nlink": 1,
+      "identity": "66306:13115870",
+      "linkTarget": "target.txt"
+    },
+    {
+      "path": "target.txt",
+      "type": "file",
+      "size": 7,
+      "mtimeMs": 1779326527044.7725,
+      "ctimeMs": 1779326549058.4294,
+      "birthtimeMs": 1779326549058.3782,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13115869,
+      "nlink": 1,
+      "identity": "66306:13115869",
+      "hashAlgorithm": "sha256",
+      "hash": "c97ecfda4d205190b973232dcfdb0c29748521c2534dd866bcc782f30b086738",
+      "hashBytes": 7
+    }
+  ],
+  "directories": [
+    {
+      "path": ".",
+      "type": "directory",
+      "size": 4096,
+      "mtimeMs": 1779326581203.107,
+      "ctimeMs": 1779326581203.107,
+      "birthtimeMs": 1779326549058.079,
+      "mode": 16877,
+      "permissions": "0755",
+      "dev": 66306,
+      "ino": 13115860,
+      "nlink": 6,
+      "identity": "66306:13115860"
+    },
+    {
+      "path": "a",
+      "type": "directory",
+      "size": 4096,
+      "mtimeMs": 1779326475139.4392,
+      "ctimeMs": 1779326549058.1829,
+      "birthtimeMs": 1779326549058.079,
+      "mode": 16877,
+      "permissions": "0755",
+      "dev": 66306,
+      "ino": 13115861,
+      "nlink": 2,
+      "identity": "66306:13115861"
+    },
+    {
+      "path": "b",
+      "type": "directory",
+      "size": 4096,
+      "mtimeMs": 1779326475140.5562,
+      "ctimeMs": 1779326549058.2444,
+      "birthtimeMs": 1779326549058.1829,
+      "mode": 16877,
+      "permissions": "0755",
+      "dev": 66306,
+      "ino": 13115863,
+      "nlink": 2,
+      "identity": "66306:13115863"
+    }
+  ],
+  "ignored": [
+    {
+      "path": ".cache",
+      "reason": "default-ignore"
+    },
+    {
+      "path": "reports",
+      "reason": "default-ignore"
+    }
+  ],
+  "skipped": [
+    {
+      "path": "link.txt",
+      "kind": "symlink",
+      "action": "hash",
+      "reason": "non-regular-file"
+    }
+  ],
+  "errors": []
+}

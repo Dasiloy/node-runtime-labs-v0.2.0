@@ -1,0 +1,22 @@
+{
+  "time": "2026-05-21T01:59:50.428Z",
+  "event": "shutdown",
+  "mode": "poll",
+  "pollIntervalMs": 100,
+  "debounceMs": 40,
+  "registeredFiles": 3,
+  "elapsedPollingIntervals": 6,
+  "estimatedStatChecks": 18,
+  "pollCallbacks": 1,
+  "discoveryScans": 1,
+  "events": 1,
+  "watchers": 0,
+  "pollers": 0,
+  "queue": {
+    "active": 0,
+    "pending": 0,
+    "concurrency": 2,
+    "activeJobs": [],
+    "pendingJobs": []
+  }
+}

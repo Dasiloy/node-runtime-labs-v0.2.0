@@ -1,0 +1,116 @@
+{
+  "mode": "stream",
+  "status": "aborted",
+  "input": {
+    "path": "data/access.ndjson",
+    "source": {
+      "kind": "file",
+      "inputPath": "/nodebook-labs-workspace/lab-3/phase-11/data/access.ndjson",
+      "compressed": false,
+      "declaredBytes": 1075872,
+      "readHwm": null
+    },
+    "bytes": 262144
+  },
+  "output": {
+    "path": "out/stream.ndjson",
+    "bytes": 81932
+  },
+  "counts": {
+    "rows": 1000,
+    "matches": 71
+  },
+  "timing": {
+    "startedAt": "2026-05-21T01:59:28.976Z",
+    "endedAt": "2026-05-21T01:59:28.996Z",
+    "elapsedMs": 19.791757000000004
+  },
+  "memory": {
+    "current": {
+      "rss": 86081536,
+      "heapUsed": 6019224,
+      "heapTotal": 9113600,
+      "external": 2077823,
+      "arrayBuffers": 221634
+    },
+    "peak": {
+      "rss": 86081536,
+      "heapUsed": 6019224,
+      "heapTotal": 9113600,
+      "external": 2077823,
+      "arrayBuffers": 221634
+    }
+  },
+  "bytes": {
+    "bytesRead": 262144,
+    "compressedBytesRead": 0,
+    "uncompressedBytesRead": 262144,
+    "outputUncompressed": 8377,
+    "written": 81932
+  },
+  "details": {
+    "where": "status >= 500",
+    "plugins": {
+      "config": {
+        "redact": [],
+        "select": [],
+        "enrich": []
+      },
+      "executionOrder": [
+        "filter",
+        "stringify"
+      ]
+    },
+    "errorMessage": "The operation was aborted",
+    "abort": {
+      "abortAfterRows": 1000,
+      "abortAfterMs": null,
+      "rowThresholdCounts": "parsed rows",
+      "keepPartial": true
+    },
+    "cleanup": {
+      "tempOutputPath": "/nodebook-labs-workspace/lab-3/phase-11/out/stream.ndjson.tmp",
+      "partialBytes": 8377,
+      "partialRemoved": false,
+      "finalPromoted": false,
+      "cleanupError": null
+    }
+  },
+  "pipelineStatus": "aborted",
+  "completed": false,
+  "errorCode": "ABORT_ERR",
+  "stageCloses": [
+    {
+      "name": "lineSplitter",
+      "closedAt": "2026-05-21T01:59:28.995Z"
+    },
+    {
+      "name": "jsonParser",
+      "closedAt": "2026-05-21T01:59:28.995Z"
+    },
+    {
+      "name": "abortAfterRows",
+      "closedAt": "2026-05-21T01:59:28.995Z"
+    },
+    {
+      "name": "filter",
+      "closedAt": "2026-05-21T01:59:28.995Z"
+    },
+    {
+      "name": "plugins",
+      "closedAt": "2026-05-21T01:59:28.995Z"
+    },
+    {
+      "name": "stringifier",
+      "closedAt": "2026-05-21T01:59:28.995Z"
+    },
+    {
+      "name": "destination",
+      "closedAt": "2026-05-21T01:59:28.995Z"
+    },
+    {
+      "name": "source",
+      "closedAt": "2026-05-21T01:59:28.996Z"
+    }
+  ]
+}

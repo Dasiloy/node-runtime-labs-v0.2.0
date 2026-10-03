@@ -1,0 +1,50 @@
+{
+  "mode": "stream",
+  "status": "completed",
+  "input": {
+    "path": "data/access.ndjson.gz",
+    "source": {
+      "kind": "gzip",
+      "inputPath": "/nodebook-labs-workspace/lab-3/phase-4/data/access.ndjson.gz",
+      "compressed": true,
+      "declaredBytes": 350299,
+      "readHwm": null
+    },
+    "bytes": 1075872
+  },
+  "output": {
+    "path": null,
+    "bytes": 0
+  },
+  "counts": {
+    "rows": null,
+    "matches": 0
+  },
+  "timing": {
+    "startedAt": "2026-05-21T01:59:24.416Z",
+    "endedAt": "2026-05-21T01:59:24.431Z",
+    "elapsedMs": 15.067353
+  },
+  "memory": {
+    "current": {
+      "rss": 84668416,
+      "heapUsed": 5531552,
+      "heapTotal": 8327168,
+      "external": 3443731,
+      "arrayBuffers": 1587542
+    },
+    "peak": {
+      "rss": 84668416,
+      "heapUsed": 5531552,
+      "heapTotal": 8327168,
+      "external": 3443731,
+      "arrayBuffers": 1587542
+    }
+  },
+  "bytes": {
+    "bytesRead": 1075872,
+    "compressedBytesRead": 350299,
+    "uncompressedBytesRead": 1075872
+  },
+  "details": {}
+}

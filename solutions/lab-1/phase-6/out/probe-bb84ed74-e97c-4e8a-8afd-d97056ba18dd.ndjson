@@ -1,0 +1,10 @@
+{"at":26,"type":"probe-ready","pid":1351719,"nodeVersion":"v24.15.0","execArgv":["--import","file:///nodebook-labs-workspace/lab-1/phase-6/src/probe/register.js"],"runId":"bb84ed74-e97c-4e8a-8afd-d97056ba18dd"}
+{"at":26,"type":"memory-sample","rss":74891264,"heapTotal":6492160,"heapUsed":5130200,"external":1891875,"arrayBuffers":22803}
+{"at":127,"type":"memory-sample","rss":74891264,"heapTotal":6754304,"heapUsed":5185504,"external":1891915,"arrayBuffers":22803}
+{"at":226,"type":"memory-sample","rss":78917632,"heapTotal":6754304,"heapUsed":5203272,"external":6086219,"arrayBuffers":4217107}
+{"at":327,"type":"memory-sample","rss":83132416,"heapTotal":6754304,"heapUsed":5208264,"external":10280523,"arrayBuffers":8411411}
+{"at":428,"type":"memory-sample","rss":87343104,"heapTotal":6754304,"heapUsed":5230624,"external":14474827,"arrayBuffers":12605715}
+{"at":529,"type":"memory-sample","rss":91549696,"heapTotal":6754304,"heapUsed":5244712,"external":18669131,"arrayBuffers":16800019}
+{"at":628,"type":"memory-sample","rss":95637504,"heapTotal":6754304,"heapUsed":5268632,"external":22863435,"arrayBuffers":20994323}
+{"at":729,"type":"memory-sample","rss":99848192,"heapTotal":6754304,"heapUsed":5273568,"external":27057739,"arrayBuffers":25188627}
+{"at":830,"type":"memory-sample","rss":104206336,"heapTotal":6754304,"heapUsed":5292672,"external":31252043,"arrayBuffers":29382931}

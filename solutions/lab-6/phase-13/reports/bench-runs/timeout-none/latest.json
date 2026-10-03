@@ -1,0 +1,105 @@
+{
+  "run": {
+    "runId": "e393a3ff-334a-400e-8937-6bb9f4e60e7c",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-13/tasks/bench/timeouts.json",
+    "mode": "allSettled",
+    "status": "success",
+    "startedAt": "2026-05-21T02:12:08.515Z",
+    "endedAt": "2026-05-21T02:12:08.616Z",
+    "elapsedMs": 101.31368599999996,
+    "stoppedReason": null,
+    "canceledAt": null,
+    "cancelReason": null,
+    "canceledTaskIds": [],
+    "shutdownStartedAt": null,
+    "shutdownSignal": null,
+    "shutdownMode": null
+  },
+  "metrics": {
+    "taskCount": 3,
+    "completedCount": 3,
+    "failedCount": 0,
+    "timedOutCount": 0,
+    "canceledCount": 0,
+    "blockedCount": 0,
+    "skippedCount": 0,
+    "startedCount": 3,
+    "settledCount": 3,
+    "retryCount": 0,
+    "maxActive": 3,
+    "queueLengthMax": 3,
+    "successCount": 3,
+    "interruptedCount": 0
+  },
+  "tasks": [
+    {
+      "taskId": "short",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:08.515Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:08.526Z",
+      "elapsedMs": 10.949159000000009,
+      "attempts": [
+        {
+          "taskId": "short",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.515Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.526Z",
+          "elapsedMs": 10.949159000000009
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:08.515Z",
+      "queueMs": 0
+    },
+    {
+      "taskId": "long-a",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:08.515Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:08.616Z",
+      "elapsedMs": 100.69431200000008,
+      "attempts": [
+        {
+          "taskId": "long-a",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.515Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.616Z",
+          "elapsedMs": 100.69431200000008
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:08.515Z",
+      "queueMs": 0
+    },
+    {
+      "taskId": "long-b",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:08.515Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:08.616Z",
+      "elapsedMs": 100.77943200000004,
+      "attempts": [
+        {
+          "taskId": "long-b",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.515Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.616Z",
+          "elapsedMs": 100.77943200000004
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:08.515Z",
+      "queueMs": 0
+    }
+  ]
+}

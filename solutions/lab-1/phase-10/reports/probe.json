@@ -1,0 +1,33 @@
+{
+  "runId": "50c5a662-b014-467f-a0d6-2f2422808790",
+  "probeFile": "/nodebook-labs-workspace/lab-1/phase-10/out/probe-50c5a662-b014-467f-a0d6-2f2422808790.ndjson",
+  "events": [
+    {
+      "at": 32,
+      "type": "probe-ready",
+      "pid": 1352281,
+      "nodeVersion": "v24.15.0",
+      "execArgv": [
+        "--import",
+        "file:///nodebook-labs-workspace/lab-1/phase-10/src/probe/register.js"
+      ],
+      "runId": "50c5a662-b014-467f-a0d6-2f2422808790"
+    },
+    {
+      "at": 32,
+      "type": "memory-sample",
+      "rss": 74911744,
+      "heapTotal": 7016448,
+      "heapUsed": 5269544,
+      "external": 1937010,
+      "arrayBuffers": 27494
+    },
+    {
+      "at": 84,
+      "type": "uncaught-exception",
+      "name": "Error",
+      "message": "synchronous crash from timer",
+      "stack": "Error: synchronous crash from timer\n    at Timeout._onTimeout (file:///nodebook-labs-workspace/lab-1/phase-10/fixtures/uncaught-exception.js:2:9)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+    }
+  ]
+}

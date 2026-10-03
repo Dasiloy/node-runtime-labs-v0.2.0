@@ -1,0 +1,8 @@
+{
+  "originalSize": 163,
+  "recoveredSize": 138,
+  "lostBytes": 25,
+  "failureOffset": 138,
+  "failureReason": "incomplete-header",
+  "validRecordCount": 4
+}

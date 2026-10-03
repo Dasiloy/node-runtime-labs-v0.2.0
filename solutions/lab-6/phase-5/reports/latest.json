@@ -1,0 +1,96 @@
+{
+  "run": {
+    "runId": "d9d5fdb5-ccb2-474c-8c7b-6a6ad4268b58",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-5/tasks/mixed-results.json",
+    "mode": "any",
+    "status": "success",
+    "startedAt": "2026-05-21T02:11:32.900Z",
+    "endedAt": "2026-05-21T02:11:33.052Z",
+    "elapsedMs": 152.277823,
+    "stoppedReason": "first_success",
+    "canceledAt": null,
+    "cancelReason": null,
+    "canceledTaskIds": []
+  },
+  "metrics": {
+    "taskCount": 5,
+    "completedCount": 2,
+    "failedCount": 2,
+    "timedOutCount": 0,
+    "canceledCount": 0,
+    "blockedCount": 0,
+    "skippedCount": 1,
+    "startedCount": 4,
+    "settledCount": 5,
+    "retryCount": 0,
+    "maxActive": 3,
+    "queueLengthMax": 5,
+    "successCount": 2,
+    "interruptedCount": 0
+  },
+  "tasks": [
+    {
+      "taskId": "fail-fast",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:11:32.900Z",
+      "status": "failed",
+      "error": {
+        "kind": "rejected",
+        "message": "failed after 30ms",
+        "stack": "Error: failed after 30ms\n    at failAfterDelay (file:///nodebook-labs-workspace/lab-6/phase-5/tasks/fixtures.js:25:9)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-5/src/runner.js:124:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-5/src/runner.js:151:12)"
+      },
+      "endedAt": "2026-05-21T02:11:32.932Z",
+      "elapsedMs": 31.553385000000002,
+      "queuedAt": "2026-05-21T02:11:32.900Z",
+      "queueMs": 0
+    },
+    {
+      "taskId": "success-mid",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:11:32.901Z",
+      "status": "success",
+      "endedAt": "2026-05-21T02:11:32.982Z",
+      "elapsedMs": 80.704972,
+      "queuedAt": "2026-05-21T02:11:32.900Z",
+      "queueMs": 1
+    },
+    {
+      "taskId": "success-slow",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:11:32.901Z",
+      "status": "success",
+      "endedAt": "2026-05-21T02:11:33.052Z",
+      "elapsedMs": 151.108474,
+      "queuedAt": "2026-05-21T02:11:32.900Z",
+      "queueMs": 1
+    },
+    {
+      "taskId": "fail-slow",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:11:32.932Z",
+      "status": "failed",
+      "error": {
+        "kind": "rejected",
+        "message": "failed after 120ms",
+        "stack": "Error: failed after 120ms\n    at failAfterDelay (file:///nodebook-labs-workspace/lab-6/phase-5/tasks/fixtures.js:25:9)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-5/src/runner.js:124:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-5/src/runner.js:151:12)"
+      },
+      "endedAt": "2026-05-21T02:11:33.052Z",
+      "elapsedMs": 119.94363999999999,
+      "queuedAt": "2026-05-21T02:11:32.900Z",
+      "queueMs": 32
+    },
+    {
+      "taskId": "success-late",
+      "status": "skipped",
+      "queuedAt": "2026-05-21T02:11:32.900Z",
+      "startedAt": null,
+      "endedAt": "2026-05-21T02:11:32.982Z",
+      "elapsedMs": 0,
+      "queueMs": 82,
+      "error": {
+        "kind": "skipped",
+        "message": "Run stopped by mode: first_success"
+      }
+    }
+  ]
+}

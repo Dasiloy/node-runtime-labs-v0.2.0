@@ -1,0 +1,1 @@
+{"id":1,"connectionId":1,"remoteAddress":"127.0.0.1","remotePort":40066,"localPort":41234,"openedAt":"2026-05-21T01:33:20.787Z","closedAt":"2026-05-21T01:33:21.789Z","durationMs":1002,"lastActivityAt":"2026-05-21T01:33:20.787Z","bytesRead":0,"framesRead":0,"protocolErrors":0,"backpressurePauses":0,"closeReason":"idle-timeout"}

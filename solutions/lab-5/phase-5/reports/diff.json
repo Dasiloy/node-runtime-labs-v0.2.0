@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-05-21T02:02:08.581Z",
+  "counts": {
+    "added": 0,
+    "changed": 0,
+    "deleted": 0,
+    "unchanged": 7
+  },
+  "added": [],
+  "changed": [],
+  "deleted": [],
+  "unchanged": [
+    "a.txt",
+    "a/one.txt",
+    "b/two.txt",
+    "link.txt",
+    "new.txt",
+    "target.txt",
+    "verify-diff-1779328928303.txt"
+  ]
+}

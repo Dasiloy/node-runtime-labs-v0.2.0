@@ -1,0 +1,12 @@
+{
+  "id": "00-lab-slug",
+  "number": "00",
+  "slug": "lab-slug",
+  "title": "Lab Title",
+  "status": "draft",
+  "difficulty": "Core",
+  "concepts": [],
+  "summary": "One sentence describing what the learner builds.",
+  "challengeOrder": ["main"],
+  "defaultChallenge": "main"
+}

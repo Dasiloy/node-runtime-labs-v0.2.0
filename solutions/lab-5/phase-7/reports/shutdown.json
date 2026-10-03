@@ -1,0 +1,15 @@
+{
+  "reason": "verification",
+  "signal": null,
+  "closed": {
+    "watchers": 0,
+    "pollers": 3,
+    "timers": 1
+  },
+  "cacheSaved": false,
+  "queueDrained": true,
+  "pendingJobs": [],
+  "activeJobs": [],
+  "pendingEvents": 0,
+  "durationMs": 1
+}

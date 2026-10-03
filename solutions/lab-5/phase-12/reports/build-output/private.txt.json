@@ -1,0 +1,13 @@
+{
+  "sourcePath": "private.txt",
+  "builtAt": "2026-05-21T02:02:35.418Z",
+  "builderVersion": "lab-5-builder-v1",
+  "inputHash": "b37e50cedcd3e3f1ff64f4afc0422084ae694253cf399326868e07a35f4a45fb",
+  "inputMetadata": {
+    "size": 7,
+    "mtimeMs": 1779327539869.699,
+    "mode": 33188,
+    "identity": "66306:13119408",
+    "type": "file"
+  }
+}

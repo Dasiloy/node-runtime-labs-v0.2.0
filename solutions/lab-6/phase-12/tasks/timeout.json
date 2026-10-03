@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "timeout-function",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "timeoutMs": 100,
+      "metadata": {
+        "delayMs": 1000
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "lab-5-atomic-file-watcher",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Atomic file watcher and incremental build cache lab.",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "scan": "node src/cli.js scan",
+    "watch": "node src/cli.js watch",
+    "demo-watch": "node src/demo-watch.js",
+    "simulate-atomic": "node src/simulate-atomic-write.js"
+  }
+}

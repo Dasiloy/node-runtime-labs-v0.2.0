@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "spawn-error",
+      "type": "command",
+      "command": "node-runtime-lab-missing-executable",
+      "args": []
+    }
+  ]
+}

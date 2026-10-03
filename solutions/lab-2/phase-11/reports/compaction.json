@@ -1,0 +1,11 @@
+{
+  "beforeSize": 344,
+  "afterSize": 68,
+  "recordsRead": 10,
+  "recordsWritten": 2,
+  "tombstonesDropped": 2,
+  "overwrittenRecordsDropped": 6,
+  "durationMs": 18.560449000000002,
+  "timestampRule": "preserve-original",
+  "cleanupActions": []
+}

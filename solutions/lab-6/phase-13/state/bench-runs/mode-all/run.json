@@ -1,0 +1,556 @@
+{
+  "runId": "05dd20f3-222b-4117-9b87-d64ae855125d",
+  "taskFile": "/nodebook-labs-workspace/lab-6/phase-13/tasks/mixed-results.json",
+  "startedAt": "2026-05-21T02:12:08.670Z",
+  "updatedAt": "2026-05-21T02:12:08.702Z",
+  "status": "failed",
+  "options": {
+    "concurrency": 3,
+    "mode": "all",
+    "timeout": null,
+    "cancelAfterMs": null,
+    "shutdownMode": "cancel"
+  },
+  "tasksById": {
+    "fail-fast": {
+      "definition": {
+        "id": "fail-fast",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "failAfterDelay",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "failed",
+      "queuedAt": "2026-05-21T02:12:08.670Z",
+      "startedAt": "2026-05-21T02:12:08.670Z",
+      "result": {
+        "taskId": "fail-fast",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.670Z",
+        "timeoutMs": null,
+        "status": "failed",
+        "error": {
+          "kind": "rejected",
+          "message": "failed after 30ms",
+          "stack": "Error: failed after 30ms\n    at failAfterDelay (file:///nodebook-labs-workspace/lab-6/phase-13/tasks/fixtures.js:25:9)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:329:20)"
+        },
+        "endedAt": "2026-05-21T02:12:08.701Z",
+        "elapsedMs": 30.623356000000058,
+        "attempts": [
+          {
+            "taskId": "fail-fast",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.670Z",
+            "timeoutMs": null,
+            "status": "failed",
+            "error": {
+              "kind": "rejected",
+              "message": "failed after 30ms",
+              "stack": "Error: failed after 30ms\n    at failAfterDelay (file:///nodebook-labs-workspace/lab-6/phase-13/tasks/fixtures.js:25:9)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:329:20)"
+            },
+            "endedAt": "2026-05-21T02:12:08.701Z",
+            "elapsedMs": 30.623356000000058
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.670Z",
+        "queueMs": 0
+      },
+      "attempts": [
+        {
+          "taskId": "fail-fast",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.670Z",
+          "timeoutMs": null,
+          "status": "failed",
+          "error": {
+            "kind": "rejected",
+            "message": "failed after 30ms",
+            "stack": "Error: failed after 30ms\n    at failAfterDelay (file:///nodebook-labs-workspace/lab-6/phase-13/tasks/fixtures.js:25:9)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:329:20)"
+          },
+          "endedAt": "2026-05-21T02:12:08.701Z",
+          "elapsedMs": 30.623356000000058
+        }
+      ]
+    },
+    "success-mid": {
+      "definition": {
+        "id": "success-mid",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 80
+        }
+      },
+      "status": "canceled",
+      "queuedAt": "2026-05-21T02:12:08.670Z",
+      "startedAt": "2026-05-21T02:12:08.670Z",
+      "result": {
+        "taskId": "success-mid",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.670Z",
+        "timeoutMs": null,
+        "status": "canceled",
+        "canceledAt": "2026-05-21T02:12:08.701Z",
+        "error": {
+          "kind": "canceled",
+          "message": "first_failure"
+        },
+        "endedAt": "2026-05-21T02:12:08.702Z",
+        "elapsedMs": 31.11226499999998,
+        "attempts": [
+          {
+            "taskId": "success-mid",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.670Z",
+            "timeoutMs": null,
+            "status": "canceled",
+            "canceledAt": "2026-05-21T02:12:08.701Z",
+            "error": {
+              "kind": "canceled",
+              "message": "first_failure"
+            },
+            "endedAt": "2026-05-21T02:12:08.702Z",
+            "elapsedMs": 31.11226499999998
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.670Z",
+        "queueMs": 0
+      },
+      "attempts": [
+        {
+          "taskId": "success-mid",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.670Z",
+          "timeoutMs": null,
+          "status": "canceled",
+          "canceledAt": "2026-05-21T02:12:08.701Z",
+          "error": {
+            "kind": "canceled",
+            "message": "first_failure"
+          },
+          "endedAt": "2026-05-21T02:12:08.702Z",
+          "elapsedMs": 31.11226499999998
+        }
+      ]
+    },
+    "success-slow": {
+      "definition": {
+        "id": "success-slow",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 150
+        }
+      },
+      "status": "canceled",
+      "queuedAt": "2026-05-21T02:12:08.670Z",
+      "startedAt": "2026-05-21T02:12:08.670Z",
+      "result": {
+        "taskId": "success-slow",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.670Z",
+        "timeoutMs": null,
+        "status": "canceled",
+        "canceledAt": "2026-05-21T02:12:08.701Z",
+        "error": {
+          "kind": "canceled",
+          "message": "first_failure"
+        },
+        "endedAt": "2026-05-21T02:12:08.702Z",
+        "elapsedMs": 31.079392999999982,
+        "attempts": [
+          {
+            "taskId": "success-slow",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.670Z",
+            "timeoutMs": null,
+            "status": "canceled",
+            "canceledAt": "2026-05-21T02:12:08.701Z",
+            "error": {
+              "kind": "canceled",
+              "message": "first_failure"
+            },
+            "endedAt": "2026-05-21T02:12:08.702Z",
+            "elapsedMs": 31.079392999999982
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.670Z",
+        "queueMs": 0
+      },
+      "attempts": [
+        {
+          "taskId": "success-slow",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.670Z",
+          "timeoutMs": null,
+          "status": "canceled",
+          "canceledAt": "2026-05-21T02:12:08.701Z",
+          "error": {
+            "kind": "canceled",
+            "message": "first_failure"
+          },
+          "endedAt": "2026-05-21T02:12:08.702Z",
+          "elapsedMs": 31.079392999999982
+        }
+      ]
+    },
+    "fail-slow": {
+      "definition": {
+        "id": "fail-slow",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "failAfterDelay",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 120
+        }
+      },
+      "status": "skipped",
+      "queuedAt": "2026-05-21T02:12:08.670Z",
+      "result": {
+        "taskId": "fail-slow",
+        "status": "skipped",
+        "queuedAt": "2026-05-21T02:12:08.670Z",
+        "startedAt": null,
+        "endedAt": "2026-05-21T02:12:08.701Z",
+        "elapsedMs": 0,
+        "queueMs": 31,
+        "error": {
+          "kind": "skipped",
+          "message": "Run stopped by mode: first_failure"
+        }
+      },
+      "attempts": []
+    },
+    "success-late": {
+      "definition": {
+        "id": "success-late",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 200
+        }
+      },
+      "status": "skipped",
+      "queuedAt": "2026-05-21T02:12:08.670Z",
+      "result": {
+        "taskId": "success-late",
+        "status": "skipped",
+        "queuedAt": "2026-05-21T02:12:08.670Z",
+        "startedAt": null,
+        "endedAt": "2026-05-21T02:12:08.701Z",
+        "elapsedMs": 0,
+        "queueMs": 31,
+        "error": {
+          "kind": "skipped",
+          "message": "Run stopped by mode: first_failure"
+        }
+      },
+      "attempts": []
+    }
+  },
+  "events": [
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.670Z",
+      "taskId": "fail-fast",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.670Z",
+      "taskId": "success-mid",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.670Z",
+      "taskId": "success-slow",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:failure",
+      "timestamp": "2026-05-21T02:12:08.701Z",
+      "taskId": "fail-fast",
+      "attempt": 1,
+      "status": "failed",
+      "error": {
+        "kind": "rejected",
+        "message": "failed after 30ms",
+        "stack": "Error: failed after 30ms\n    at failAfterDelay (file:///nodebook-labs-workspace/lab-6/phase-13/tasks/fixtures.js:25:9)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:329:20)"
+      }
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.701Z",
+      "taskId": "fail-fast",
+      "status": "failed"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.701Z",
+      "taskId": "fail-slow",
+      "status": "skipped"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.701Z",
+      "taskId": "success-late",
+      "status": "skipped"
+    },
+    {
+      "type": "task:failure",
+      "timestamp": "2026-05-21T02:12:08.702Z",
+      "taskId": "success-mid",
+      "attempt": 1,
+      "status": "canceled",
+      "error": {
+        "kind": "canceled",
+        "message": "first_failure"
+      }
+    },
+    {
+      "type": "task:failure",
+      "timestamp": "2026-05-21T02:12:08.702Z",
+      "taskId": "success-slow",
+      "attempt": 1,
+      "status": "canceled",
+      "error": {
+        "kind": "canceled",
+        "message": "first_failure"
+      }
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.702Z",
+      "taskId": "success-mid",
+      "status": "canceled"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.702Z",
+      "taskId": "success-slow",
+      "status": "canceled"
+    }
+  ],
+  "endedAt": "2026-05-21T02:12:08.702Z",
+  "report": {
+    "run": {
+      "runId": "05dd20f3-222b-4117-9b87-d64ae855125d",
+      "taskFile": "/nodebook-labs-workspace/lab-6/phase-13/tasks/mixed-results.json",
+      "mode": "all",
+      "status": "failed",
+      "startedAt": "2026-05-21T02:12:08.670Z",
+      "endedAt": "2026-05-21T02:12:08.702Z",
+      "elapsedMs": 31.68480199999999,
+      "stoppedReason": "first_failure",
+      "canceledAt": null,
+      "cancelReason": null,
+      "canceledTaskIds": [
+        "success-mid",
+        "success-slow"
+      ],
+      "shutdownStartedAt": null,
+      "shutdownSignal": null,
+      "shutdownMode": null
+    },
+    "metrics": {
+      "taskCount": 5,
+      "completedCount": 0,
+      "failedCount": 1,
+      "timedOutCount": 0,
+      "canceledCount": 2,
+      "blockedCount": 0,
+      "skippedCount": 2,
+      "startedCount": 3,
+      "settledCount": 5,
+      "retryCount": 0,
+      "maxActive": 3,
+      "queueLengthMax": 5,
+      "successCount": 0,
+      "interruptedCount": 0
+    },
+    "tasks": [
+      {
+        "taskId": "fail-fast",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.670Z",
+        "timeoutMs": null,
+        "status": "failed",
+        "error": {
+          "kind": "rejected",
+          "message": "failed after 30ms",
+          "stack": "Error: failed after 30ms\n    at failAfterDelay (file:///nodebook-labs-workspace/lab-6/phase-13/tasks/fixtures.js:25:9)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:329:20)"
+        },
+        "endedAt": "2026-05-21T02:12:08.701Z",
+        "elapsedMs": 30.623356000000058,
+        "attempts": [
+          {
+            "taskId": "fail-fast",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.670Z",
+            "timeoutMs": null,
+            "status": "failed",
+            "error": {
+              "kind": "rejected",
+              "message": "failed after 30ms",
+              "stack": "Error: failed after 30ms\n    at failAfterDelay (file:///nodebook-labs-workspace/lab-6/phase-13/tasks/fixtures.js:25:9)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:329:20)"
+            },
+            "endedAt": "2026-05-21T02:12:08.701Z",
+            "elapsedMs": 30.623356000000058
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.670Z",
+        "queueMs": 0
+      },
+      {
+        "taskId": "success-mid",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.670Z",
+        "timeoutMs": null,
+        "status": "canceled",
+        "canceledAt": "2026-05-21T02:12:08.701Z",
+        "error": {
+          "kind": "canceled",
+          "message": "first_failure"
+        },
+        "endedAt": "2026-05-21T02:12:08.702Z",
+        "elapsedMs": 31.11226499999998,
+        "attempts": [
+          {
+            "taskId": "success-mid",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.670Z",
+            "timeoutMs": null,
+            "status": "canceled",
+            "canceledAt": "2026-05-21T02:12:08.701Z",
+            "error": {
+              "kind": "canceled",
+              "message": "first_failure"
+            },
+            "endedAt": "2026-05-21T02:12:08.702Z",
+            "elapsedMs": 31.11226499999998
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.670Z",
+        "queueMs": 0
+      },
+      {
+        "taskId": "success-slow",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.670Z",
+        "timeoutMs": null,
+        "status": "canceled",
+        "canceledAt": "2026-05-21T02:12:08.701Z",
+        "error": {
+          "kind": "canceled",
+          "message": "first_failure"
+        },
+        "endedAt": "2026-05-21T02:12:08.702Z",
+        "elapsedMs": 31.079392999999982,
+        "attempts": [
+          {
+            "taskId": "success-slow",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.670Z",
+            "timeoutMs": null,
+            "status": "canceled",
+            "canceledAt": "2026-05-21T02:12:08.701Z",
+            "error": {
+              "kind": "canceled",
+              "message": "first_failure"
+            },
+            "endedAt": "2026-05-21T02:12:08.702Z",
+            "elapsedMs": 31.079392999999982
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.670Z",
+        "queueMs": 0
+      },
+      {
+        "taskId": "fail-slow",
+        "status": "skipped",
+        "queuedAt": "2026-05-21T02:12:08.670Z",
+        "startedAt": null,
+        "endedAt": "2026-05-21T02:12:08.701Z",
+        "elapsedMs": 0,
+        "queueMs": 31,
+        "error": {
+          "kind": "skipped",
+          "message": "Run stopped by mode: first_failure"
+        }
+      },
+      {
+        "taskId": "success-late",
+        "status": "skipped",
+        "queuedAt": "2026-05-21T02:12:08.670Z",
+        "startedAt": null,
+        "endedAt": "2026-05-21T02:12:08.701Z",
+        "elapsedMs": 0,
+        "queueMs": 31,
+        "error": {
+          "kind": "skipped",
+          "message": "Run stopped by mode: first_failure"
+        }
+      }
+    ]
+  }
+}

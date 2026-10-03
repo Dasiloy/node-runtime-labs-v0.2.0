@@ -1,0 +1,905 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "delay-001",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-002",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-003",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-004",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-005",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-006",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-007",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-008",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-009",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-010",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-011",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-012",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-013",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-014",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-015",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-016",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-017",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-018",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-019",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-020",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-021",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-022",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-023",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-024",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-025",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-026",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-027",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-028",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-029",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-030",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-031",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-032",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-033",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-034",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-035",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-036",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-037",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-038",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-039",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-040",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-041",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-042",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-043",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-044",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-045",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-046",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-047",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-048",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-049",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-050",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-051",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-052",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-053",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-054",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-055",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-056",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-057",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-058",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-059",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-060",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-061",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-062",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-063",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-064",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-065",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-066",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-067",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-068",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-069",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-070",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-071",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-072",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-073",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-074",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-075",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-076",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-077",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-078",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-079",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-080",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-081",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-082",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-083",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-084",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-085",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-086",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-087",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-088",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-089",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-090",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-091",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-092",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-093",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-094",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-095",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-096",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-097",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-098",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-099",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    },
+    {
+      "id": "delay-100",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 25
+      }
+    }
+  ]
+}

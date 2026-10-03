@@ -1,0 +1,25 @@
+{
+  "id": "07-custom-binary-protocol-gateway",
+  "number": "07",
+  "slug": "custom-binary-protocol-gateway",
+  "title": "Custom Binary Protocol Gateway",
+  "status": "draft",
+  "difficulty": "9.5/10",
+  "concepts": [
+    "custom binary protocol",
+    "length-prefixed frames",
+    "Buffer encoding and decoding",
+    "TCP socket chunking",
+    "per-connection parser state",
+    "malformed frame handling",
+    "socket lifecycle management",
+    "backpressure-aware file sink",
+    "HTTP forwarding concurrency",
+    "runtime metrics and graceful shutdown"
+  ],
+  "summary": "Build a TCP server that accepts a custom binary protocol, parses partial packets, validates frames, handles malformed input, applies backpressure, and forwards normalized events to files or HTTP.",
+  "challengeOrder": [
+    "main"
+  ],
+  "defaultChallenge": "main"
+}

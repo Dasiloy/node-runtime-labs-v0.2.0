@@ -1,0 +1,40 @@
+{
+  "traces": [
+    {
+      "importer": "src/index.cjs",
+      "specifier": "./local"
+    },
+    {
+      "importer": "src/index.cjs",
+      "specifier": "./missing"
+    },
+    {
+      "importer": "src/index.cjs",
+      "specifier": "node:fs"
+    },
+    {
+      "importer": "src/index.cjs",
+      "specifier": "pkg-main"
+    },
+    {
+      "importer": "src/index.cjs",
+      "specifier": "pkg-main-broken"
+    },
+    {
+      "importer": "src/index.cjs",
+      "specifier": "pkg-exports/feature"
+    },
+    {
+      "importer": "src/index.cjs",
+      "specifier": "pkg-exports/internal.js"
+    },
+    {
+      "importer": "src/index.cjs",
+      "specifier": "pkg-esm"
+    },
+    {
+      "importer": "src/nested/consumer.cjs",
+      "specifier": "pkg-shadow"
+    }
+  ]
+}

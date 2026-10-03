@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "root": "/nodebook-labs-workspace/lab-5/phase-14/watched",
+  "createdAt": "2026-05-21T01:24:05.694Z",
+  "updatedAt": "2026-05-21T02:06:18.896Z",
+  "options": {
+    "metadata": true,
+    "hash": true,
+    "followSymlinks": false
+  },
+  "filesByPath": {
+    "a.txt": {
+      "path": "a.txt",
+      "type": "file",
+      "size": 17,
+      "mtimeMs": 1779329178731.9695,
+      "ctimeMs": 1779329178731.9695,
+      "birthtimeMs": 1779329178731.9695,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13119297,
+      "nlink": 1,
+      "identity": "66306:13119297",
+      "hashAlgorithm": "sha256",
+      "hash": "bcdf973c9e6cd8de1de27f03dd369f81ee0e70862091e41d3a12338e7b7f65ae",
+      "hashBytes": 17
+    },
+    "nested/c.txt": {
+      "path": "nested/c.txt",
+      "type": "file",
+      "size": 19,
+      "mtimeMs": 1779328817392.0923,
+      "ctimeMs": 1779328817393.0923,
+      "birthtimeMs": 1779328817392.0923,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13119070,
+      "nlink": 1,
+      "identity": "66306:13119070",
+      "hashAlgorithm": "sha256",
+      "hash": "3d0a4801879e40996e0ce69d0be8bd7ec518b763aabd915224b0261bd377a901",
+      "hashBytes": 19
+    },
+    "new.txt": {
+      "path": "new.txt",
+      "type": "file",
+      "size": 9,
+      "mtimeMs": 1779328817392.0923,
+      "ctimeMs": 1779328817392.0923,
+      "birthtimeMs": 1779328817392.0923,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13119068,
+      "nlink": 1,
+      "identity": "66306:13119068",
+      "hashAlgorithm": "sha256",
+      "hash": "0f15384d18789b1ebf3043dc7b6bc27273c8576373fbeb6f3e15854b588141c0",
+      "hashBytes": 9
+    }
+  },
+  "buildCache": {
+    "version": 1,
+    "builderVersion": "lab-5-builder-v1",
+    "entries": {}
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "samples": [
+    {
+      "at": 130,
+      "type": "cpu-sample",
+      "userMicros": 1642,
+      "systemMicros": 925,
+      "totalMicros": 2567,
+      "wallMs": 100.718,
+      "cpuPercent": 2.549
+    },
+    {
+      "at": 229,
+      "type": "cpu-sample",
+      "userMicros": 1066,
+      "systemMicros": 16,
+      "totalMicros": 1082,
+      "wallMs": 99.694,
+      "cpuPercent": 1.085
+    },
+    {
+      "at": 499,
+      "type": "cpu-sample",
+      "userMicros": 152360,
+      "systemMicros": 46686,
+      "totalMicros": 199046,
+      "wallMs": 269.329,
+      "cpuPercent": 73.904
+    },
+    {
+      "at": 598,
+      "type": "cpu-sample",
+      "userMicros": 13932,
+      "systemMicros": 269,
+      "totalMicros": 14201,
+      "wallMs": 99.604,
+      "cpuPercent": 14.257
+    },
+    {
+      "at": 699,
+      "type": "cpu-sample",
+      "userMicros": 1022,
+      "systemMicros": 19,
+      "totalMicros": 1041,
+      "wallMs": 100.569,
+      "cpuPercent": 1.035
+    },
+    {
+      "at": 799,
+      "type": "cpu-sample",
+      "userMicros": 697,
+      "systemMicros": 0,
+      "totalMicros": 697,
+      "wallMs": 100.321,
+      "cpuPercent": 0.695
+    },
+    {
+      "at": 899,
+      "type": "cpu-sample",
+      "userMicros": 872,
+      "systemMicros": 0,
+      "totalMicros": 872,
+      "wallMs": 100.312,
+      "cpuPercent": 0.869
+    },
+    {
+      "at": 1000,
+      "type": "cpu-sample",
+      "userMicros": 646,
+      "systemMicros": 80,
+      "totalMicros": 726,
+      "wallMs": 100.311,
+      "cpuPercent": 0.724
+    },
+    {
+      "at": 1100,
+      "type": "cpu-sample",
+      "userMicros": 793,
+      "systemMicros": 0,
+      "totalMicros": 793,
+      "wallMs": 100.41,
+      "cpuPercent": 0.79
+    },
+    {
+      "at": 1201,
+      "type": "cpu-sample",
+      "userMicros": 852,
+      "systemMicros": 0,
+      "totalMicros": 852,
+      "wallMs": 100.372,
+      "cpuPercent": 0.849
+    },
+    {
+      "at": 1301,
+      "type": "cpu-sample",
+      "userMicros": 590,
+      "systemMicros": 85,
+      "totalMicros": 675,
+      "wallMs": 100.275,
+      "cpuPercent": 0.673
+    },
+    {
+      "at": 1400,
+      "type": "cpu-sample",
+      "userMicros": 764,
+      "systemMicros": 0,
+      "totalMicros": 764,
+      "wallMs": 99.333,
+      "cpuPercent": 0.769
+    },
+    {
+      "at": 1500,
+      "type": "cpu-sample",
+      "userMicros": 557,
+      "systemMicros": 95,
+      "totalMicros": 652,
+      "wallMs": 100.22,
+      "cpuPercent": 0.651
+    }
+  ],
+  "totalCpuMicros": 223968,
+  "hottestSample": {
+    "at": 499,
+    "type": "cpu-sample",
+    "userMicros": 152360,
+    "systemMicros": 46686,
+    "totalMicros": 199046,
+    "wallMs": 269.329,
+    "cpuPercent": 73.904
+  }
+}

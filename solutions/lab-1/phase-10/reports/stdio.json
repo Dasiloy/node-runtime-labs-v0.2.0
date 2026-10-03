@@ -1,0 +1,16 @@
+{
+  "stdout": {
+    "bytes": 0
+  },
+  "stderr": {
+    "bytes": 453
+  },
+  "events": [
+    {
+      "type": "stderr",
+      "at": 84.873,
+      "bytes": 453,
+      "preview": "file:///nodebook-labs-workspace/lab-1/phase-10/fixtures/uncaught-exception.js:2\n  throw new Error(\"synchronous crash from timer\");\n  ^\n\nEr"
+    }
+  ]
+}

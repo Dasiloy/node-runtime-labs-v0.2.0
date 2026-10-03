@@ -1,0 +1,156 @@
+{
+  "generatedAt": "2026-05-21T02:11:00.238Z",
+  "environment": {
+    "node": "v24.15.0",
+    "platform": "linux",
+    "arch": "x64",
+    "cpuCount": 24
+  },
+  "options": {
+    "count": 5000,
+    "keySpace": 1000,
+    "getCount": 2000,
+    "sync": false,
+    "checksumsEnabled": true
+  },
+  "cases": [
+    {
+      "name": "sequential puts",
+      "durationMs": 1051.936838,
+      "operations": 5000,
+      "opsPerSec": 4753.137089015985,
+      "memoryBefore": {
+        "rss": 77242368,
+        "heapUsed": 4626272,
+        "external": 1849491,
+        "arrayBuffers": 24779
+      },
+      "memoryAfter": {
+        "rss": 98942976,
+        "heapUsed": 5225024,
+        "external": 3120611,
+        "arrayBuffers": 33171
+      },
+      "segmentSize": 500000,
+      "indexSize": 1209094
+    },
+    {
+      "name": "repeated puts",
+      "durationMs": 1018.2242130000002,
+      "operations": 5000,
+      "opsPerSec": 4910.509823046213,
+      "memoryBefore": {
+        "rss": 98942976,
+        "heapUsed": 5160800,
+        "external": 1852973,
+        "arrayBuffers": 32971
+      },
+      "memoryAfter": {
+        "rss": 103100416,
+        "heapUsed": 5235432,
+        "external": 2155183,
+        "arrayBuffers": 287725
+      },
+      "segmentSize": 500000,
+      "indexSize": 242206,
+      "keySpace": 1000
+    },
+    {
+      "name": "indexed gets",
+      "durationMs": 216.37934399999995,
+      "operations": 2000,
+      "opsPerSec": 9243.026450805768,
+      "memoryBefore": {
+        "rss": 103100416,
+        "heapUsed": 5195880,
+        "external": 1852773,
+        "arrayBuffers": 33171
+      },
+      "memoryAfter": {
+        "rss": 104820736,
+        "heapUsed": 5254536,
+        "external": 1928941,
+        "arrayBuffers": 52063
+      },
+      "indexMode": "persisted-index",
+      "entryCount": 1000,
+      "segmentSize": 500000
+    },
+    {
+      "name": "full scan",
+      "durationMs": 222.09888899999987,
+      "operations": 5000,
+      "opsPerSec": 22512.49442314861,
+      "memoryBefore": {
+        "rss": 104820736,
+        "heapUsed": 5202280,
+        "external": 1852573,
+        "arrayBuffers": 32971
+      },
+      "memoryAfter": {
+        "rss": 104820736,
+        "heapUsed": 5214680,
+        "external": 1905377,
+        "arrayBuffers": 32971
+      },
+      "recordsRead": 5000
+    },
+    {
+      "name": "recovery after truncated tail",
+      "durationMs": 449.2464209999998,
+      "operations": 1,
+      "opsPerSec": 2.2259498423472146,
+      "memoryBefore": {
+        "rss": 104820736,
+        "heapUsed": 5206168,
+        "external": 1853173,
+        "arrayBuffers": 32971
+      },
+      "memoryAfter": {
+        "rss": 105111552,
+        "heapUsed": 5254992,
+        "external": 2309927,
+        "arrayBuffers": 459769
+      },
+      "recoveryMs": 449.2464209999998,
+      "recoveredSize": 499900,
+      "lostBytes": 93,
+      "validRecordCount": 4999
+    },
+    {
+      "name": "compaction after overwrites and deletes",
+      "durationMs": 545.950159,
+      "operations": 1,
+      "opsPerSec": 1.831669033363172,
+      "memoryBefore": {
+        "rss": 111403008,
+        "heapUsed": 5280976,
+        "external": 2086636,
+        "arrayBuffers": 213007
+      },
+      "memoryAfter": {
+        "rss": 127524864,
+        "heapUsed": 5310616,
+        "external": 4869430,
+        "arrayBuffers": 2956460
+      },
+      "compactionMs": 545.950159,
+      "beforeSize": 768500,
+      "afterSize": 50000,
+      "recordsRead": 8000,
+      "recordsWritten": 500,
+      "tombstonesDropped": 500,
+      "overwrittenRecordsDropped": 7000
+    }
+  ],
+  "segmentSize": 50000,
+  "indexSize": 120593,
+  "memory": {
+    "rss": 127524864,
+    "heapUsed": 5288864,
+    "external": 1852973,
+    "arrayBuffers": 33171
+  },
+  "recoveryMs": 449.2464209999998,
+  "compactionMs": 545.950159
+}

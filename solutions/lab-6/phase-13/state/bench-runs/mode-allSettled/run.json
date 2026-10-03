@@ -1,0 +1,615 @@
+{
+  "runId": "af38d7a2-3126-4ab6-820c-278102f3a7b8",
+  "taskFile": "/nodebook-labs-workspace/lab-6/phase-13/tasks/mixed-results.json",
+  "startedAt": "2026-05-21T02:12:08.706Z",
+  "updatedAt": "2026-05-21T02:12:08.987Z",
+  "status": "failed",
+  "options": {
+    "concurrency": 3,
+    "mode": "allSettled",
+    "timeout": null,
+    "cancelAfterMs": null,
+    "shutdownMode": "cancel"
+  },
+  "tasksById": {
+    "fail-fast": {
+      "definition": {
+        "id": "fail-fast",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "failAfterDelay",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "failed",
+      "queuedAt": "2026-05-21T02:12:08.706Z",
+      "startedAt": "2026-05-21T02:12:08.706Z",
+      "result": {
+        "taskId": "fail-fast",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.706Z",
+        "timeoutMs": null,
+        "status": "failed",
+        "error": {
+          "kind": "rejected",
+          "message": "failed after 30ms",
+          "stack": "Error: failed after 30ms\n    at failAfterDelay (file:///nodebook-labs-workspace/lab-6/phase-13/tasks/fixtures.js:25:9)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:329:20)"
+        },
+        "endedAt": "2026-05-21T02:12:08.737Z",
+        "elapsedMs": 31.02243599999997,
+        "attempts": [
+          {
+            "taskId": "fail-fast",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.706Z",
+            "timeoutMs": null,
+            "status": "failed",
+            "error": {
+              "kind": "rejected",
+              "message": "failed after 30ms",
+              "stack": "Error: failed after 30ms\n    at failAfterDelay (file:///nodebook-labs-workspace/lab-6/phase-13/tasks/fixtures.js:25:9)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:329:20)"
+            },
+            "endedAt": "2026-05-21T02:12:08.737Z",
+            "elapsedMs": 31.02243599999997
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.706Z",
+        "queueMs": 0
+      },
+      "attempts": [
+        {
+          "taskId": "fail-fast",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.706Z",
+          "timeoutMs": null,
+          "status": "failed",
+          "error": {
+            "kind": "rejected",
+            "message": "failed after 30ms",
+            "stack": "Error: failed after 30ms\n    at failAfterDelay (file:///nodebook-labs-workspace/lab-6/phase-13/tasks/fixtures.js:25:9)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:329:20)"
+          },
+          "endedAt": "2026-05-21T02:12:08.737Z",
+          "elapsedMs": 31.02243599999997
+        }
+      ]
+    },
+    "success-mid": {
+      "definition": {
+        "id": "success-mid",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 80
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.706Z",
+      "startedAt": "2026-05-21T02:12:08.706Z",
+      "result": {
+        "taskId": "success-mid",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.706Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.786Z",
+        "elapsedMs": 80.2600460000001,
+        "attempts": [
+          {
+            "taskId": "success-mid",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.706Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.786Z",
+            "elapsedMs": 80.2600460000001
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.706Z",
+        "queueMs": 0
+      },
+      "attempts": [
+        {
+          "taskId": "success-mid",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.706Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.786Z",
+          "elapsedMs": 80.2600460000001
+        }
+      ]
+    },
+    "success-slow": {
+      "definition": {
+        "id": "success-slow",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 150
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.706Z",
+      "startedAt": "2026-05-21T02:12:08.706Z",
+      "result": {
+        "taskId": "success-slow",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.706Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.857Z",
+        "elapsedMs": 150.7315349999999,
+        "attempts": [
+          {
+            "taskId": "success-slow",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.706Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.857Z",
+            "elapsedMs": 150.7315349999999
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.706Z",
+        "queueMs": 0
+      },
+      "attempts": [
+        {
+          "taskId": "success-slow",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.706Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.857Z",
+          "elapsedMs": 150.7315349999999
+        }
+      ]
+    },
+    "fail-slow": {
+      "definition": {
+        "id": "fail-slow",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "failAfterDelay",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 120
+        }
+      },
+      "status": "failed",
+      "queuedAt": "2026-05-21T02:12:08.706Z",
+      "startedAt": "2026-05-21T02:12:08.737Z",
+      "result": {
+        "taskId": "fail-slow",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.737Z",
+        "timeoutMs": null,
+        "status": "failed",
+        "error": {
+          "kind": "rejected",
+          "message": "failed after 120ms",
+          "stack": "Error: failed after 120ms\n    at failAfterDelay (file:///nodebook-labs-workspace/lab-6/phase-13/tasks/fixtures.js:25:9)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:329:20)"
+        },
+        "endedAt": "2026-05-21T02:12:08.857Z",
+        "elapsedMs": 119.94562399999995,
+        "attempts": [
+          {
+            "taskId": "fail-slow",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.737Z",
+            "timeoutMs": null,
+            "status": "failed",
+            "error": {
+              "kind": "rejected",
+              "message": "failed after 120ms",
+              "stack": "Error: failed after 120ms\n    at failAfterDelay (file:///nodebook-labs-workspace/lab-6/phase-13/tasks/fixtures.js:25:9)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:329:20)"
+            },
+            "endedAt": "2026-05-21T02:12:08.857Z",
+            "elapsedMs": 119.94562399999995
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.706Z",
+        "queueMs": 31
+      },
+      "attempts": [
+        {
+          "taskId": "fail-slow",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.737Z",
+          "timeoutMs": null,
+          "status": "failed",
+          "error": {
+            "kind": "rejected",
+            "message": "failed after 120ms",
+            "stack": "Error: failed after 120ms\n    at failAfterDelay (file:///nodebook-labs-workspace/lab-6/phase-13/tasks/fixtures.js:25:9)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:329:20)"
+          },
+          "endedAt": "2026-05-21T02:12:08.857Z",
+          "elapsedMs": 119.94562399999995
+        }
+      ]
+    },
+    "success-late": {
+      "definition": {
+        "id": "success-late",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 200
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.706Z",
+      "startedAt": "2026-05-21T02:12:08.786Z",
+      "result": {
+        "taskId": "success-late",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.786Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.987Z",
+        "elapsedMs": 200.26314800000023,
+        "attempts": [
+          {
+            "taskId": "success-late",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.786Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.987Z",
+            "elapsedMs": 200.26314800000023
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.706Z",
+        "queueMs": 80
+      },
+      "attempts": [
+        {
+          "taskId": "success-late",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.786Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.987Z",
+          "elapsedMs": 200.26314800000023
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.706Z",
+      "taskId": "fail-fast",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.706Z",
+      "taskId": "success-mid",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.706Z",
+      "taskId": "success-slow",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:failure",
+      "timestamp": "2026-05-21T02:12:08.737Z",
+      "taskId": "fail-fast",
+      "attempt": 1,
+      "status": "failed",
+      "error": {
+        "kind": "rejected",
+        "message": "failed after 30ms",
+        "stack": "Error: failed after 30ms\n    at failAfterDelay (file:///nodebook-labs-workspace/lab-6/phase-13/tasks/fixtures.js:25:9)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:329:20)"
+      }
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.737Z",
+      "taskId": "fail-fast",
+      "status": "failed"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.737Z",
+      "taskId": "fail-slow",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.786Z",
+      "taskId": "success-mid",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.786Z",
+      "taskId": "success-mid",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.786Z",
+      "taskId": "success-late",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.857Z",
+      "taskId": "success-slow",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.857Z",
+      "taskId": "success-slow",
+      "status": "success"
+    },
+    {
+      "type": "task:failure",
+      "timestamp": "2026-05-21T02:12:08.857Z",
+      "taskId": "fail-slow",
+      "attempt": 1,
+      "status": "failed",
+      "error": {
+        "kind": "rejected",
+        "message": "failed after 120ms",
+        "stack": "Error: failed after 120ms\n    at failAfterDelay (file:///nodebook-labs-workspace/lab-6/phase-13/tasks/fixtures.js:25:9)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:329:20)"
+      }
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.857Z",
+      "taskId": "fail-slow",
+      "status": "failed"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.987Z",
+      "taskId": "success-late",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.987Z",
+      "taskId": "success-late",
+      "status": "success"
+    }
+  ],
+  "endedAt": "2026-05-21T02:12:08.987Z",
+  "report": {
+    "run": {
+      "runId": "af38d7a2-3126-4ab6-820c-278102f3a7b8",
+      "taskFile": "/nodebook-labs-workspace/lab-6/phase-13/tasks/mixed-results.json",
+      "mode": "allSettled",
+      "status": "failed",
+      "startedAt": "2026-05-21T02:12:08.706Z",
+      "endedAt": "2026-05-21T02:12:08.987Z",
+      "elapsedMs": 281.12393299999985,
+      "stoppedReason": null,
+      "canceledAt": null,
+      "cancelReason": null,
+      "canceledTaskIds": [],
+      "shutdownStartedAt": null,
+      "shutdownSignal": null,
+      "shutdownMode": null
+    },
+    "metrics": {
+      "taskCount": 5,
+      "completedCount": 3,
+      "failedCount": 2,
+      "timedOutCount": 0,
+      "canceledCount": 0,
+      "blockedCount": 0,
+      "skippedCount": 0,
+      "startedCount": 5,
+      "settledCount": 5,
+      "retryCount": 0,
+      "maxActive": 3,
+      "queueLengthMax": 5,
+      "successCount": 3,
+      "interruptedCount": 0
+    },
+    "tasks": [
+      {
+        "taskId": "fail-fast",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.706Z",
+        "timeoutMs": null,
+        "status": "failed",
+        "error": {
+          "kind": "rejected",
+          "message": "failed after 30ms",
+          "stack": "Error: failed after 30ms\n    at failAfterDelay (file:///nodebook-labs-workspace/lab-6/phase-13/tasks/fixtures.js:25:9)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:329:20)"
+        },
+        "endedAt": "2026-05-21T02:12:08.737Z",
+        "elapsedMs": 31.02243599999997,
+        "attempts": [
+          {
+            "taskId": "fail-fast",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.706Z",
+            "timeoutMs": null,
+            "status": "failed",
+            "error": {
+              "kind": "rejected",
+              "message": "failed after 30ms",
+              "stack": "Error: failed after 30ms\n    at failAfterDelay (file:///nodebook-labs-workspace/lab-6/phase-13/tasks/fixtures.js:25:9)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:329:20)"
+            },
+            "endedAt": "2026-05-21T02:12:08.737Z",
+            "elapsedMs": 31.02243599999997
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.706Z",
+        "queueMs": 0
+      },
+      {
+        "taskId": "success-mid",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.706Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.786Z",
+        "elapsedMs": 80.2600460000001,
+        "attempts": [
+          {
+            "taskId": "success-mid",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.706Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.786Z",
+            "elapsedMs": 80.2600460000001
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.706Z",
+        "queueMs": 0
+      },
+      {
+        "taskId": "success-slow",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.706Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.857Z",
+        "elapsedMs": 150.7315349999999,
+        "attempts": [
+          {
+            "taskId": "success-slow",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.706Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.857Z",
+            "elapsedMs": 150.7315349999999
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.706Z",
+        "queueMs": 0
+      },
+      {
+        "taskId": "fail-slow",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.737Z",
+        "timeoutMs": null,
+        "status": "failed",
+        "error": {
+          "kind": "rejected",
+          "message": "failed after 120ms",
+          "stack": "Error: failed after 120ms\n    at failAfterDelay (file:///nodebook-labs-workspace/lab-6/phase-13/tasks/fixtures.js:25:9)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:329:20)"
+        },
+        "endedAt": "2026-05-21T02:12:08.857Z",
+        "elapsedMs": 119.94562399999995,
+        "attempts": [
+          {
+            "taskId": "fail-slow",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.737Z",
+            "timeoutMs": null,
+            "status": "failed",
+            "error": {
+              "kind": "rejected",
+              "message": "failed after 120ms",
+              "stack": "Error: failed after 120ms\n    at failAfterDelay (file:///nodebook-labs-workspace/lab-6/phase-13/tasks/fixtures.js:25:9)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-13/src/runner.js:329:20)"
+            },
+            "endedAt": "2026-05-21T02:12:08.857Z",
+            "elapsedMs": 119.94562399999995
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.706Z",
+        "queueMs": 31
+      },
+      {
+        "taskId": "success-late",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.786Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.987Z",
+        "elapsedMs": 200.26314800000023,
+        "attempts": [
+          {
+            "taskId": "success-late",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.786Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.987Z",
+            "elapsedMs": 200.26314800000023
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.706Z",
+        "queueMs": 80
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "root": "/nodebook-labs-workspace/lab-5/phase-1/watched",
+  "generatedAt": "2026-05-21T01:58:28.050Z",
+  "counts": {
+    "files": 2,
+    "directories": 3,
+    "ignored": 2,
+    "errors": 0
+  },
+  "files": [
+    {
+      "path": "a/one.txt"
+    },
+    {
+      "path": "b/two.txt"
+    }
+  ],
+  "ignored": [
+    {
+      "path": ".cache",
+      "reason": "default-ignore"
+    },
+    {
+      "path": "reports",
+      "reason": "default-ignore"
+    }
+  ],
+  "errors": []
+}

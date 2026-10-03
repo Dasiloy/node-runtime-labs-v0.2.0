@@ -1,0 +1,13 @@
+{
+  "warnings": [],
+  "unhandledRejections": [],
+  "uncaughtExceptions": [
+    {
+      "at": 84,
+      "type": "uncaught-exception",
+      "name": "Error",
+      "message": "synchronous crash from timer",
+      "stack": "Error: synchronous crash from timer\n    at Timeout._onTimeout (file:///nodebook-labs-workspace/lab-1/phase-10/fixtures/uncaught-exception.js:2:9)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+    }
+  ]
+}

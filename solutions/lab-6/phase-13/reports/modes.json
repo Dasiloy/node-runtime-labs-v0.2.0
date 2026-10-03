@@ -1,0 +1,20 @@
+{
+  "allSettled": {
+    "mode": "allSettled",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-4/tasks/dependent-failure.json",
+    "startedCount": 1,
+    "settledCount": 2,
+    "stoppedReason": null,
+    "finalStatusCounts": {
+      "successCount": 0,
+      "failedCount": 1,
+      "timedOutCount": 0,
+      "canceledCount": 0,
+      "blockedCount": 1,
+      "skippedCount": 0,
+      "interruptedCount": 0
+    },
+    "maxActive": 1,
+    "queueLengthMax": 1
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "run": {
+    "runId": "f4ee30a0-0bc8-4ee0-a3e3-5b723f4a4a3c",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-6/tasks/timeout.json",
+    "mode": "allSettled",
+    "status": "failed",
+    "startedAt": "2026-05-21T02:11:40.413Z",
+    "endedAt": "2026-05-21T02:11:40.515Z",
+    "elapsedMs": 101.40561000000001,
+    "stoppedReason": null,
+    "canceledAt": null,
+    "cancelReason": null,
+    "canceledTaskIds": []
+  },
+  "metrics": {
+    "taskCount": 1,
+    "completedCount": 0,
+    "failedCount": 0,
+    "timedOutCount": 1,
+    "canceledCount": 0,
+    "blockedCount": 0,
+    "skippedCount": 0,
+    "startedCount": 1,
+    "settledCount": 1,
+    "retryCount": 0,
+    "maxActive": 1,
+    "queueLengthMax": 1,
+    "successCount": 0,
+    "interruptedCount": 0
+  },
+  "tasks": [
+    {
+      "taskId": "timeout-function",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:11:40.414Z",
+      "timeoutMs": 100,
+      "status": "timed_out",
+      "timedOutAt": "2026-05-21T02:11:40.514Z",
+      "error": {
+        "kind": "timeout",
+        "message": "Task exceeded timeout of 100ms"
+      },
+      "endedAt": "2026-05-21T02:11:40.515Z",
+      "elapsedMs": 100.86275900000001,
+      "queuedAt": "2026-05-21T02:11:40.414Z",
+      "queueMs": 0
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "run": {
+    "runId": "03a283e1-f7f7-4bf7-bd18-bd694da1be57",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-9/tasks/flaky.json",
+    "mode": "allSettled",
+    "status": "success",
+    "startedAt": "2026-05-21T02:11:49.362Z",
+    "endedAt": "2026-05-21T02:11:49.472Z",
+    "elapsedMs": 109.28440500000002,
+    "stoppedReason": null,
+    "canceledAt": null,
+    "cancelReason": null,
+    "canceledTaskIds": []
+  },
+  "metrics": {
+    "taskCount": 2,
+    "completedCount": 2,
+    "failedCount": 0,
+    "timedOutCount": 0,
+    "canceledCount": 0,
+    "blockedCount": 0,
+    "skippedCount": 0,
+    "startedCount": 2,
+    "settledCount": 2,
+    "retryCount": 3,
+    "maxActive": 1,
+    "queueLengthMax": 2,
+    "successCount": 2,
+    "interruptedCount": 0
+  },
+  "tasks": [
+    {
+      "taskId": "flaky-second-attempt",
+      "attempt": 2,
+      "startedAt": "2026-05-21T02:11:49.390Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:11:49.395Z",
+      "elapsedMs": 5.447484000000003,
+      "attempts": [
+        {
+          "taskId": "flaky-second-attempt",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:11:49.363Z",
+          "timeoutMs": null,
+          "status": "failed",
+          "error": {
+            "kind": "rejected",
+            "message": "deterministic flaky failure on attempt 1",
+            "stack": "Error: deterministic flaky failure on attempt 1\n    at flaky (file:///nodebook-labs-workspace/lab-6/phase-9/tasks/fixtures.js:33:11)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-9/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-9/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-9/src/runner.js:329:20)"
+          },
+          "endedAt": "2026-05-21T02:11:49.369Z",
+          "elapsedMs": 6.3472159999999995,
+          "nextDelayMs": 20
+        },
+        {
+          "taskId": "flaky-second-attempt",
+          "attempt": 2,
+          "startedAt": "2026-05-21T02:11:49.390Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:11:49.395Z",
+          "elapsedMs": 5.447484000000003
+        }
+      ],
+      "attemptCount": 2,
+      "queuedAt": "2026-05-21T02:11:49.363Z",
+      "queueMs": 27
+    },
+    {
+      "taskId": "flaky-third-attempt",
+      "attempt": 3,
+      "startedAt": "2026-05-21T02:11:49.466Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:11:49.472Z",
+      "elapsedMs": 5.386117999999982,
+      "attempts": [
+        {
+          "taskId": "flaky-third-attempt",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:11:49.396Z",
+          "timeoutMs": null,
+          "status": "failed",
+          "error": {
+            "kind": "rejected",
+            "message": "deterministic flaky failure on attempt 1",
+            "stack": "Error: deterministic flaky failure on attempt 1\n    at flaky (file:///nodebook-labs-workspace/lab-6/phase-9/tasks/fixtures.js:33:11)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-9/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-9/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-9/src/runner.js:329:20)"
+          },
+          "endedAt": "2026-05-21T02:11:49.402Z",
+          "elapsedMs": 5.549235000000003,
+          "nextDelayMs": 20
+        },
+        {
+          "taskId": "flaky-third-attempt",
+          "attempt": 2,
+          "startedAt": "2026-05-21T02:11:49.421Z",
+          "timeoutMs": null,
+          "status": "failed",
+          "error": {
+            "kind": "rejected",
+            "message": "deterministic flaky failure on attempt 2",
+            "stack": "Error: deterministic flaky failure on attempt 2\n    at flaky (file:///nodebook-labs-workspace/lab-6/phase-9/tasks/fixtures.js:33:11)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-9/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-9/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-9/src/runner.js:329:20)"
+          },
+          "endedAt": "2026-05-21T02:11:49.427Z",
+          "elapsedMs": 5.501525999999998,
+          "nextDelayMs": 40
+        },
+        {
+          "taskId": "flaky-third-attempt",
+          "attempt": 3,
+          "startedAt": "2026-05-21T02:11:49.466Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:11:49.472Z",
+          "elapsedMs": 5.386117999999982
+        }
+      ],
+      "attemptCount": 3,
+      "queuedAt": "2026-05-21T02:11:49.363Z",
+      "queueMs": 103
+    }
+  ]
+}

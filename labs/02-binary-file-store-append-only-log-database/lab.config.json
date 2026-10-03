@@ -1,0 +1,25 @@
+{
+  "id": "02-binary-file-store-append-only-log-database",
+  "number": "02",
+  "slug": "binary-file-store-append-only-log-database",
+  "title": "Binary File Store / Append-Only Log Database",
+  "status": "draft",
+  "difficulty": "9/10",
+  "concepts": [
+    "binary record layout",
+    "Buffer offsets",
+    "append-only segment files",
+    "checksum validation",
+    "in-memory indexes",
+    "index persistence",
+    "crash recovery",
+    "tombstones",
+    "compaction",
+    "Buffer ownership"
+  ],
+  "summary": "Build a tiny local database with binary records, append-only storage, indexes, checksums, crash recovery, tombstones, and compaction.",
+  "challengeOrder": [
+    "main"
+  ],
+  "defaultChallenge": "main"
+}

@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-05-21T02:03:35.696Z",
+  "counts": {
+    "added": 1,
+    "changed": 0,
+    "deleted": 0,
+    "unchanged": 7
+  },
+  "added": [
+    {
+      "path": "no-read-verify.txt",
+      "current": {
+        "path": "no-read-verify.txt",
+        "type": "file",
+        "size": 7,
+        "mtimeMs": 1779329015563.121,
+        "ctimeMs": 1779329015563.121,
+        "birthtimeMs": 1779329015563.121,
+        "mode": 32768,
+        "permissions": "0000",
+        "dev": 66306,
+        "ino": 13119296,
+        "nlink": 1,
+        "identity": "66306:13119296"
+      }
+    }
+  ],
+  "changed": [],
+  "deleted": [],
+  "unchanged": [
+    "a.txt",
+    "link.txt",
+    "nested/c.txt",
+    "new.txt",
+    "private-link.txt",
+    "private.txt",
+    "symlink-target.txt"
+  ]
+}

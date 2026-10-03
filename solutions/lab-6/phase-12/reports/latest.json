@@ -1,0 +1,217 @@
+{
+  "run": {
+    "runId": "4dae783a-2d86-4f17-98e0-f262c268eddf",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-12/tasks/cancel-after.json",
+    "mode": "allSettled",
+    "status": "failed",
+    "startedAt": "2026-05-21T02:11:59.233Z",
+    "endedAt": "2026-05-21T02:11:59.497Z",
+    "elapsedMs": 263.925612,
+    "stoppedReason": null,
+    "canceledAt": "2026-05-21T02:11:59.496Z",
+    "cancelReason": "shutdown:SIGINT",
+    "canceledTaskIds": [
+      "cancel-3",
+      "cancel-4",
+      "cancel-5",
+      "cancel-6",
+      "cancel-7",
+      "cancel-8",
+      "cancel-9",
+      "cancel-10",
+      "cancel-1",
+      "cancel-2"
+    ],
+    "shutdownStartedAt": "2026-05-21T02:11:59.496Z",
+    "shutdownSignal": "SIGINT",
+    "shutdownMode": "cancel"
+  },
+  "metrics": {
+    "taskCount": 10,
+    "completedCount": 0,
+    "failedCount": 0,
+    "timedOutCount": 0,
+    "canceledCount": 10,
+    "blockedCount": 0,
+    "skippedCount": 0,
+    "startedCount": 2,
+    "settledCount": 10,
+    "retryCount": 0,
+    "maxActive": 2,
+    "queueLengthMax": 10,
+    "successCount": 0,
+    "interruptedCount": 0
+  },
+  "tasks": [
+    {
+      "taskId": "cancel-1",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:11:59.234Z",
+      "timeoutMs": null,
+      "status": "canceled",
+      "canceledAt": "2026-05-21T02:11:59.496Z",
+      "error": {
+        "kind": "canceled",
+        "message": "shutdown:SIGINT"
+      },
+      "endedAt": "2026-05-21T02:11:59.497Z",
+      "elapsedMs": 262.307921,
+      "attempts": [
+        {
+          "taskId": "cancel-1",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:11:59.234Z",
+          "timeoutMs": null,
+          "status": "canceled",
+          "canceledAt": "2026-05-21T02:11:59.496Z",
+          "error": {
+            "kind": "canceled",
+            "message": "shutdown:SIGINT"
+          },
+          "endedAt": "2026-05-21T02:11:59.497Z",
+          "elapsedMs": 262.307921
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:11:59.234Z",
+      "queueMs": 0
+    },
+    {
+      "taskId": "cancel-2",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:11:59.235Z",
+      "timeoutMs": null,
+      "status": "canceled",
+      "canceledAt": "2026-05-21T02:11:59.496Z",
+      "error": {
+        "kind": "canceled",
+        "message": "shutdown:SIGINT"
+      },
+      "endedAt": "2026-05-21T02:11:59.497Z",
+      "elapsedMs": 261.705678,
+      "attempts": [
+        {
+          "taskId": "cancel-2",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:11:59.235Z",
+          "timeoutMs": null,
+          "status": "canceled",
+          "canceledAt": "2026-05-21T02:11:59.496Z",
+          "error": {
+            "kind": "canceled",
+            "message": "shutdown:SIGINT"
+          },
+          "endedAt": "2026-05-21T02:11:59.497Z",
+          "elapsedMs": 261.705678
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:11:59.234Z",
+      "queueMs": 1
+    },
+    {
+      "taskId": "cancel-3",
+      "status": "canceled",
+      "queuedAt": "2026-05-21T02:11:59.234Z",
+      "startedAt": null,
+      "endedAt": "2026-05-21T02:11:59.496Z",
+      "elapsedMs": 0,
+      "queueMs": 262,
+      "error": {
+        "kind": "canceled",
+        "message": "shutdown:SIGINT"
+      }
+    },
+    {
+      "taskId": "cancel-4",
+      "status": "canceled",
+      "queuedAt": "2026-05-21T02:11:59.234Z",
+      "startedAt": null,
+      "endedAt": "2026-05-21T02:11:59.496Z",
+      "elapsedMs": 0,
+      "queueMs": 262,
+      "error": {
+        "kind": "canceled",
+        "message": "shutdown:SIGINT"
+      }
+    },
+    {
+      "taskId": "cancel-5",
+      "status": "canceled",
+      "queuedAt": "2026-05-21T02:11:59.234Z",
+      "startedAt": null,
+      "endedAt": "2026-05-21T02:11:59.496Z",
+      "elapsedMs": 0,
+      "queueMs": 262,
+      "error": {
+        "kind": "canceled",
+        "message": "shutdown:SIGINT"
+      }
+    },
+    {
+      "taskId": "cancel-6",
+      "status": "canceled",
+      "queuedAt": "2026-05-21T02:11:59.234Z",
+      "startedAt": null,
+      "endedAt": "2026-05-21T02:11:59.496Z",
+      "elapsedMs": 0,
+      "queueMs": 262,
+      "error": {
+        "kind": "canceled",
+        "message": "shutdown:SIGINT"
+      }
+    },
+    {
+      "taskId": "cancel-7",
+      "status": "canceled",
+      "queuedAt": "2026-05-21T02:11:59.234Z",
+      "startedAt": null,
+      "endedAt": "2026-05-21T02:11:59.496Z",
+      "elapsedMs": 0,
+      "queueMs": 262,
+      "error": {
+        "kind": "canceled",
+        "message": "shutdown:SIGINT"
+      }
+    },
+    {
+      "taskId": "cancel-8",
+      "status": "canceled",
+      "queuedAt": "2026-05-21T02:11:59.234Z",
+      "startedAt": null,
+      "endedAt": "2026-05-21T02:11:59.496Z",
+      "elapsedMs": 0,
+      "queueMs": 262,
+      "error": {
+        "kind": "canceled",
+        "message": "shutdown:SIGINT"
+      }
+    },
+    {
+      "taskId": "cancel-9",
+      "status": "canceled",
+      "queuedAt": "2026-05-21T02:11:59.234Z",
+      "startedAt": null,
+      "endedAt": "2026-05-21T02:11:59.496Z",
+      "elapsedMs": 0,
+      "queueMs": 262,
+      "error": {
+        "kind": "canceled",
+        "message": "shutdown:SIGINT"
+      }
+    },
+    {
+      "taskId": "cancel-10",
+      "status": "canceled",
+      "queuedAt": "2026-05-21T02:11:59.234Z",
+      "startedAt": null,
+      "endedAt": "2026-05-21T02:11:59.496Z",
+      "elapsedMs": 0,
+      "queueMs": 262,
+      "error": {
+        "kind": "canceled",
+        "message": "shutdown:SIGINT"
+      }
+    }
+  ]
+}

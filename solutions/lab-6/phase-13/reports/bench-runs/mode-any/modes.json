@@ -1,0 +1,20 @@
+{
+  "any": {
+    "mode": "any",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-13/tasks/mixed-results.json",
+    "startedCount": 4,
+    "settledCount": 5,
+    "stoppedReason": "first_success",
+    "finalStatusCounts": {
+      "successCount": 1,
+      "failedCount": 1,
+      "timedOutCount": 0,
+      "canceledCount": 2,
+      "blockedCount": 0,
+      "skippedCount": 1,
+      "interruptedCount": 0
+    },
+    "maxActive": 3,
+    "queueLengthMax": 5
+  }
+}

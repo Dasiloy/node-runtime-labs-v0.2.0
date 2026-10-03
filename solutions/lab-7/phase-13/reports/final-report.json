@@ -1,0 +1,12 @@
+{
+  "reason": "SIGINT",
+  "startedAt": "2026-05-21T01:44:28.188Z",
+  "finishedAt": "2026-05-21T01:44:28.240Z",
+  "durationMs": 52,
+  "openConnectionsAtShutdown": 1,
+  "droppedFrames": 0,
+  "drainedEvents": 0,
+  "forcedSocketCloses": 1,
+  "sinkCloseTimeMs": 0,
+  "sinkClosed": true
+}

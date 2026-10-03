@@ -1,0 +1,13 @@
+{
+  "parentSignals": [],
+  "forwardedSignals": [
+    {
+      "signal": "SIGTERM",
+      "at": 1503.98,
+      "forced": false,
+      "reason": "timeout"
+    }
+  ],
+  "forceKilled": false,
+  "signal": "SIGTERM"
+}

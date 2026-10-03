@@ -1,0 +1,8 @@
+{
+  "rows": 1000,
+  "payloadBytes": 32,
+  "errorRatio": 0.08,
+  "seed": 42,
+  "outputFile": "data/access.ndjson",
+  "bytesWritten": 182040
+}

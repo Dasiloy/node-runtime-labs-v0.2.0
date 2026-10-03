@@ -1,0 +1,26 @@
+{
+  "parentSignals": [
+    {
+      "signal": "SIGINT",
+      "at": 1686.332
+    },
+    {
+      "signal": "SIGINT",
+      "at": 1686.54
+    }
+  ],
+  "forwardedSignals": [
+    {
+      "signal": "SIGINT",
+      "at": 1686.417,
+      "forced": false
+    },
+    {
+      "signal": "SIGINT",
+      "at": 1686.547,
+      "forced": false
+    }
+  ],
+  "forceKilled": false,
+  "signal": null
+}

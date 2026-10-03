@@ -1,0 +1,71 @@
+{
+  "run": {
+    "runId": "ac60fb16-8436-404c-ad96-40f33ee3531d",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-9/tasks/flaky-success.json",
+    "mode": "allSettled",
+    "status": "success",
+    "startedAt": "2026-05-21T02:11:49.453Z",
+    "endedAt": "2026-05-21T02:11:49.461Z",
+    "elapsedMs": 7.374186999999999,
+    "stoppedReason": null,
+    "canceledAt": null,
+    "cancelReason": null,
+    "canceledTaskIds": []
+  },
+  "metrics": {
+    "taskCount": 1,
+    "completedCount": 1,
+    "failedCount": 0,
+    "timedOutCount": 0,
+    "canceledCount": 0,
+    "blockedCount": 0,
+    "skippedCount": 0,
+    "startedCount": 1,
+    "settledCount": 1,
+    "retryCount": 1,
+    "maxActive": 1,
+    "queueLengthMax": 1,
+    "successCount": 1,
+    "interruptedCount": 0
+  },
+  "tasks": [
+    {
+      "taskId": "flaky-success",
+      "attempt": 2,
+      "startedAt": "2026-05-21T02:11:49.459Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:11:49.461Z",
+      "elapsedMs": 1.310102999999998,
+      "attempts": [
+        {
+          "taskId": "flaky-success",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:11:49.454Z",
+          "timeoutMs": null,
+          "status": "failed",
+          "error": {
+            "kind": "rejected",
+            "message": "deterministic flaky failure on attempt 1",
+            "stack": "Error: deterministic flaky failure on attempt 1\n    at flaky (file:///nodebook-labs-workspace/lab-6/phase-9/tasks/fixtures.js:33:11)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-9/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-9/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-9/src/runner.js:329:20)"
+          },
+          "endedAt": "2026-05-21T02:11:49.454Z",
+          "elapsedMs": 0.5485310000000041,
+          "nextDelayMs": 5
+        },
+        {
+          "taskId": "flaky-success",
+          "attempt": 2,
+          "startedAt": "2026-05-21T02:11:49.459Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:11:49.461Z",
+          "elapsedMs": 1.310102999999998
+        }
+      ],
+      "attemptCount": 2,
+      "queuedAt": "2026-05-21T02:11:49.454Z",
+      "queueMs": 5
+    }
+  ]
+}

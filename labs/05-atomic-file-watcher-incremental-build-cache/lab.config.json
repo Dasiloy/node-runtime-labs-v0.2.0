@@ -1,0 +1,25 @@
+{
+  "id": "05-atomic-file-watcher-incremental-build-cache",
+  "number": "05",
+  "slug": "atomic-file-watcher-incremental-build-cache",
+  "title": "Atomic File Watcher + Incremental Build Cache",
+  "status": "draft",
+  "difficulty": "8.5/10",
+  "concepts": [
+    "file tree scanning",
+    "metadata snapshots",
+    "content hashing",
+    "persistent cache files",
+    "diff classification",
+    "native file watching",
+    "polling fallback",
+    "atomic write normalization",
+    "debounced rebuild batches",
+    "incremental build cache"
+  ],
+  "summary": "Build a watch-mode CLI that scans files, tracks metadata and hashes, handles atomic writes, debounces rebuilds, and persists an incremental build cache.",
+  "challengeOrder": [
+    "main"
+  ],
+  "defaultChallenge": "main"
+}

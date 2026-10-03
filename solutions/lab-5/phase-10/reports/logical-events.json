@@ -1,0 +1,54 @@
+[
+  {
+    "batchId": "batch-1",
+    "kind": "add",
+    "path": "verify-1779328742424-1.txt",
+    "reasons": [
+      "path"
+    ],
+    "tempPaths": [],
+    "rawEventIds": [
+      "event-1",
+      "event-2"
+    ]
+  },
+  {
+    "batchId": "batch-2",
+    "kind": "add",
+    "path": "verify-1779328742424-2.txt",
+    "reasons": [
+      "path"
+    ],
+    "tempPaths": [],
+    "rawEventIds": [
+      "event-3",
+      "event-4"
+    ]
+  },
+  {
+    "batchId": "batch-3",
+    "kind": "add",
+    "path": "verify-1779328742424-3.txt",
+    "reasons": [
+      "path"
+    ],
+    "tempPaths": [],
+    "rawEventIds": [
+      "event-5",
+      "event-6"
+    ]
+  },
+  {
+    "batchId": "batch-4",
+    "kind": "add",
+    "path": "verify-1779328742424-4.txt",
+    "reasons": [
+      "path"
+    ],
+    "tempPaths": [],
+    "rawEventIds": [
+      "event-7",
+      "event-8"
+    ]
+  }
+]

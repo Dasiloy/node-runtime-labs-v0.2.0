@@ -1,0 +1,209 @@
+{
+  "root": "/nodebook-labs-workspace/lab-5/phase-12/watched",
+  "generatedAt": "2026-05-21T02:03:35.681Z",
+  "platform": "linux",
+  "options": {
+    "metadata": true,
+    "hash": true,
+    "followSymlinks": false
+  },
+  "counts": {
+    "files": 8,
+    "directories": 2,
+    "ignored": 0,
+    "skipped": 2,
+    "errors": 1
+  },
+  "files": [
+    {
+      "path": "a.txt",
+      "type": "file",
+      "size": 13,
+      "mtimeMs": 1779327324153.3284,
+      "ctimeMs": 1779327342062.9263,
+      "birthtimeMs": 1779327342062.8687,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13118971,
+      "nlink": 1,
+      "identity": "66306:13118971",
+      "hashAlgorithm": "sha256",
+      "hash": "ea802056a6c12b7cb0cf3d2e835f7d940a3a57c2561b884dec6109820081e549",
+      "hashBytes": 13
+    },
+    {
+      "path": "link.txt",
+      "type": "symlink",
+      "size": 18,
+      "mtimeMs": 1779328928300.668,
+      "ctimeMs": 1779328928300.668,
+      "birthtimeMs": 1779328928300.668,
+      "mode": 41471,
+      "permissions": "0777",
+      "dev": 66306,
+      "ino": 13119300,
+      "nlink": 1,
+      "identity": "66306:13119300",
+      "linkTarget": "symlink-target.txt"
+    },
+    {
+      "path": "nested/c.txt",
+      "type": "file",
+      "size": 19,
+      "mtimeMs": 1779327324154.3284,
+      "ctimeMs": 1779327342062.8687,
+      "birthtimeMs": 1779327342062.8381,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13118970,
+      "nlink": 1,
+      "identity": "66306:13118970",
+      "hashAlgorithm": "sha256",
+      "hash": "3d0a4801879e40996e0ce69d0be8bd7ec518b763aabd915224b0261bd377a901",
+      "hashBytes": 19
+    },
+    {
+      "path": "new.txt",
+      "type": "file",
+      "size": 9,
+      "mtimeMs": 1779327324154.3284,
+      "ctimeMs": 1779327342062.9648,
+      "birthtimeMs": 1779327342062.9263,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13118972,
+      "nlink": 1,
+      "identity": "66306:13118972",
+      "hashAlgorithm": "sha256",
+      "hash": "0f15384d18789b1ebf3043dc7b6bc27273c8576373fbeb6f3e15854b588141c0",
+      "hashBytes": 9
+    },
+    {
+      "path": "no-read-verify.txt",
+      "type": "file",
+      "size": 7,
+      "mtimeMs": 1779329015563.121,
+      "ctimeMs": 1779329015563.121,
+      "birthtimeMs": 1779329015563.121,
+      "mode": 32768,
+      "permissions": "0000",
+      "dev": 66306,
+      "ino": 13119296,
+      "nlink": 1,
+      "identity": "66306:13119296"
+    },
+    {
+      "path": "private-link.txt",
+      "type": "symlink",
+      "size": 11,
+      "mtimeMs": 1779327509146.3323,
+      "ctimeMs": 1779327509146.3323,
+      "birthtimeMs": 1779327509146.3323,
+      "mode": 41471,
+      "permissions": "0777",
+      "dev": 66306,
+      "ino": 13119409,
+      "nlink": 1,
+      "identity": "66306:13119409",
+      "linkTarget": "private.txt"
+    },
+    {
+      "path": "private.txt",
+      "type": "file",
+      "size": 7,
+      "mtimeMs": 1779327539869.699,
+      "ctimeMs": 1779327540044.499,
+      "birthtimeMs": 1779327509144.3323,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13119408,
+      "nlink": 1,
+      "identity": "66306:13119408",
+      "hashAlgorithm": "sha256",
+      "hash": "b37e50cedcd3e3f1ff64f4afc0422084ae694253cf399326868e07a35f4a45fb",
+      "hashBytes": 7
+    },
+    {
+      "path": "symlink-target.txt",
+      "type": "file",
+      "size": 7,
+      "mtimeMs": 1779328928300.668,
+      "ctimeMs": 1779328928300.668,
+      "birthtimeMs": 1779328928300.668,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13119299,
+      "nlink": 1,
+      "identity": "66306:13119299",
+      "hashAlgorithm": "sha256",
+      "hash": "c97ecfda4d205190b973232dcfdb0c29748521c2534dd866bcc782f30b086738",
+      "hashBytes": 7
+    }
+  ],
+  "directories": [
+    {
+      "path": ".",
+      "type": "directory",
+      "size": 4096,
+      "mtimeMs": 1779329015563.121,
+      "ctimeMs": 1779329015563.121,
+      "birthtimeMs": 1779327342062.7441,
+      "mode": 16877,
+      "permissions": "0755",
+      "dev": 66306,
+      "ino": 13118968,
+      "nlink": 3,
+      "identity": "66306:13118968"
+    },
+    {
+      "path": "nested",
+      "type": "directory",
+      "size": 4096,
+      "mtimeMs": 1779327324155.3284,
+      "ctimeMs": 1779327342062.8687,
+      "birthtimeMs": 1779327342062.7441,
+      "mode": 16877,
+      "permissions": "0755",
+      "dev": 66306,
+      "ino": 13118969,
+      "nlink": 2,
+      "identity": "66306:13118969"
+    }
+  ],
+  "ignored": [],
+  "skipped": [
+    {
+      "path": "link.txt",
+      "kind": "symlink",
+      "action": "follow",
+      "reason": "follow-symlinks-disabled"
+    },
+    {
+      "path": "private-link.txt",
+      "kind": "symlink",
+      "action": "follow",
+      "reason": "follow-symlinks-disabled"
+    }
+  ],
+  "errors": [
+    {
+      "path": "no-read-verify.txt",
+      "code": "EACCES",
+      "message": "EACCES: permission denied, open '/nodebook-labs-workspace/lab-5/phase-12/watched/no-read-verify.txt'",
+      "phase": "hash"
+    }
+  ],
+  "notes": [],
+  "cache": {
+    "path": ".cache/index.json",
+    "loaded": true,
+    "loadMs": 0.5321710000000017,
+    "saveMs": 0.9543650000000028,
+    "disabled": false
+  }
+}

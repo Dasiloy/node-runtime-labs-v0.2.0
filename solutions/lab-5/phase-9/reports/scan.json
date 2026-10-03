@@ -1,0 +1,121 @@
+{
+  "root": "/nodebook-labs-workspace/lab-5/phase-9/watched",
+  "generatedAt": "2026-05-21T02:01:34.588Z",
+  "platform": "linux",
+  "options": {
+    "metadata": true,
+    "hash": true,
+    "followSymlinks": false
+  },
+  "counts": {
+    "files": 4,
+    "directories": 2,
+    "ignored": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "files": [
+    {
+      "path": "a.txt",
+      "type": "file",
+      "size": 67,
+      "mtimeMs": 1779328894436.4922,
+      "ctimeMs": 1779328894436.4922,
+      "birthtimeMs": 1779327342054.1716,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13118845,
+      "nlink": 1,
+      "identity": "66306:13118845",
+      "hashAlgorithm": "sha256",
+      "hash": "74a82204fcc768ba3cdddb0665635bad2a25b60e3a3c98ff48d4c5a60c9b0e27",
+      "hashBytes": 67
+    },
+    {
+      "path": "b.txt",
+      "type": "file",
+      "size": 4,
+      "mtimeMs": 1779327453311.0305,
+      "ctimeMs": 1779327453311.0305,
+      "birthtimeMs": 1779327431650.913,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13118849,
+      "nlink": 1,
+      "identity": "66306:13118849",
+      "hashAlgorithm": "sha256",
+      "hash": "f288623ee73a16eb4e2e51ed403847b534ca46ba1d2062ed641fe946f627f7a1",
+      "hashBytes": 4
+    },
+    {
+      "path": "nested/c.txt",
+      "type": "file",
+      "size": 19,
+      "mtimeMs": 1779327324154.3284,
+      "ctimeMs": 1779327342054.1716,
+      "birthtimeMs": 1779327342054.1396,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13118844,
+      "nlink": 1,
+      "identity": "66306:13118844",
+      "hashAlgorithm": "sha256",
+      "hash": "3d0a4801879e40996e0ce69d0be8bd7ec518b763aabd915224b0261bd377a901",
+      "hashBytes": 19
+    },
+    {
+      "path": "new.txt",
+      "type": "file",
+      "size": 9,
+      "mtimeMs": 1779327324154.3284,
+      "ctimeMs": 1779327342054.2527,
+      "birthtimeMs": 1779327342054.2134,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13118846,
+      "nlink": 1,
+      "identity": "66306:13118846",
+      "hashAlgorithm": "sha256",
+      "hash": "0f15384d18789b1ebf3043dc7b6bc27273c8576373fbeb6f3e15854b588141c0",
+      "hashBytes": 9
+    }
+  ],
+  "directories": [
+    {
+      "path": ".",
+      "type": "directory",
+      "size": 4096,
+      "mtimeMs": 1779327431650.913,
+      "ctimeMs": 1779327431650.913,
+      "birthtimeMs": 1779327342054.042,
+      "mode": 16877,
+      "permissions": "0755",
+      "dev": 66306,
+      "ino": 13118842,
+      "nlink": 3,
+      "identity": "66306:13118842"
+    },
+    {
+      "path": "nested",
+      "type": "directory",
+      "size": 4096,
+      "mtimeMs": 1779327324155.3284,
+      "ctimeMs": 1779327342054.1716,
+      "birthtimeMs": 1779327342054.042,
+      "mode": 16877,
+      "permissions": "0755",
+      "dev": 66306,
+      "ino": 13118843,
+      "nlink": 2,
+      "identity": "66306:13118843"
+    }
+  ],
+  "ignored": [],
+  "skipped": [],
+  "errors": [],
+  "notes": []
+}

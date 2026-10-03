@@ -1,0 +1,20 @@
+{
+  "allSettled": {
+    "mode": "allSettled",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-13/tasks/bench/timeouts.json",
+    "startedCount": 3,
+    "settledCount": 3,
+    "stoppedReason": null,
+    "finalStatusCounts": {
+      "successCount": 1,
+      "failedCount": 0,
+      "timedOutCount": 2,
+      "canceledCount": 0,
+      "blockedCount": 0,
+      "skippedCount": 0,
+      "interruptedCount": 0
+    },
+    "maxActive": 3,
+    "queueLengthMax": 3
+  }
+}

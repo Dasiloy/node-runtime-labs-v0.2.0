@@ -1,0 +1,17 @@
+{
+  "runId": "139ff0d9-3bfb-4124-928b-5dea522f1c1f",
+  "probeFile": "/nodebook-labs-workspace/lab-1/phase-5/out/probe-139ff0d9-3bfb-4124-928b-5dea522f1c1f.ndjson",
+  "events": [
+    {
+      "at": 28,
+      "type": "probe-ready",
+      "pid": 1351670,
+      "nodeVersion": "v24.15.0",
+      "execArgv": [
+        "--import",
+        "file:///nodebook-labs-workspace/lab-1/phase-5/src/probe/register.js"
+      ],
+      "runId": "139ff0d9-3bfb-4124-928b-5dea522f1c1f"
+    }
+  ]
+}

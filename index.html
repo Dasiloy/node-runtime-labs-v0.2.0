@@ -1,0 +1,2626 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Node Runtime Labs</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Instrument+Serif:ital@0;1&display=swap");
+
+      :root {
+        --bg: #969693;
+        --sidebar: #101011;
+        --surface: #171717;
+        --surface-soft: #202020;
+        --surface-mint: #d8d8cb;
+        --ink: #f4f4ec;
+        --ink-soft: #d9d9cf;
+        --muted: #9f9f98;
+        --muted-2: #73736d;
+        --line: rgba(255, 255, 255, 0.1);
+        --line-strong: rgba(255, 255, 255, 0.18);
+
+        --accent: #fff34d;
+        --accent-2: #f4e93a;
+        --accent-dark: #111111;
+        --accent-soft: #fff34d;
+        --accent-glow: rgba(255, 243, 77, 0.24);
+
+        --warn-soft: #fff34d;
+        --warn-line: rgba(255, 243, 77, 0.5);
+        --danger-soft: #2a1713;
+        --complete: #33f28f;
+        --complete-2: #b8ffd7;
+        --complete-dark: #06150d;
+        --complete-soft: rgba(51, 242, 143, 0.14);
+        --complete-line: rgba(51, 242, 143, 0.45);
+        --complete-glow: rgba(51, 242, 143, 0.24);
+
+        --shadow-xs: 0 2px 0 rgba(0, 0, 0, 0.22);
+        --shadow-sm: 0 16px 38px rgba(0, 0, 0, 0.22);
+        --shadow: 0 34px 90px rgba(0, 0, 0, 0.34);
+
+        --radius-sm: 0;
+        --radius: 0;
+        --radius-lg: 0;
+
+        --body:
+          "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system,
+          BlinkMacSystemFont, "Segoe UI", sans-serif;
+        --heading: "Instrument Serif", Georgia, serif;
+        --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background:
+          radial-gradient(
+            circle at 10% 0%,
+            rgba(255, 255, 255, 0.1),
+            transparent 28rem
+          ),
+          radial-gradient(
+            circle at 92% 8%,
+            rgba(255, 243, 77, 0.12),
+            transparent 22rem
+          ),
+          linear-gradient(135deg, #8f8f8c 0%, #9b9b98 48%, #858582 100%);
+        color: var(--ink);
+        font-family: var(--body);
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+
+      button,
+      textarea {
+        font: inherit;
+      }
+
+      button {
+        border: 1px solid var(--line);
+        background: #1b1b1b;
+        color: var(--ink);
+        cursor: pointer;
+        transition:
+          transform 160ms ease,
+          box-shadow 160ms ease,
+          border-color 160ms ease,
+          background 160ms ease,
+          color 160ms ease;
+      }
+
+      button:hover:not(:disabled) {
+        border-color: rgba(255, 243, 77, 0.56);
+        color: var(--accent);
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+      }
+
+      button:active:not(:disabled) {
+        transform: translateY(1px);
+      }
+      button:disabled {
+        cursor: default;
+        opacity: 0.45;
+      }
+
+      .app {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 348px minmax(0, 1fr);
+      }
+
+      .sidebar {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow: auto;
+        padding: 28px 20px;
+        background:
+          radial-gradient(
+            circle at 50% 0%,
+            rgba(255, 255, 255, 0.08),
+            transparent 18rem
+          ),
+          linear-gradient(180deg, #090909 0%, #141414 100%);
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .brand {
+        margin: 0 6px 24px;
+      }
+
+      .brand h1 {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 0;
+        font-size: 24px;
+        line-height: 1.12;
+        letter-spacing: -0.045em;
+        color: #f7f7ef;
+      }
+
+      .brand h1::before {
+        content: "✦";
+        display: inline-grid;
+        place-items: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 0;
+        color: #121212;
+        background: var(--accent);
+        font-size: 20px;
+        box-shadow: 0 0 0 6px rgba(255, 243, 77, 0.1);
+      }
+
+      .brand p {
+        margin: 12px 0 0;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.55;
+        max-width: 260px;
+      }
+
+      .lab-list {
+        display: grid;
+        gap: 12px;
+      }
+
+      .lab-card {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 42px minmax(0, 1fr) auto;
+        gap: 13px;
+        text-align: left;
+        border-radius: 0;
+        padding: 16px;
+        background: rgba(255, 255, 255, 0.06);
+        border-color: rgba(255, 255, 255, 0.1);
+        box-shadow: var(--shadow-xs);
+        backdrop-filter: blur(14px);
+      }
+
+      .lab-card.active {
+        border-color: rgba(255, 243, 77, 0.72);
+        background:
+          radial-gradient(
+            circle at 92% 12%,
+            rgba(255, 243, 77, 0.28),
+            transparent 7rem
+          ),
+          linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.13),
+            rgba(255, 255, 255, 0.05)
+          );
+        box-shadow:
+          0 0 0 1px rgba(255, 243, 77, 0.14),
+          0 18px 44px rgba(0, 0, 0, 0.32);
+      }
+
+      .lab-icon {
+        width: 42px;
+        height: 42px;
+        display: grid;
+        place-items: center;
+        border-radius: 0;
+        color: var(--accent);
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .lab-card.active .lab-icon {
+        color: #111;
+        background: var(--accent);
+        border-color: transparent;
+      }
+
+      .lab-card.complete {
+        border-color: rgba(51, 242, 143, 0.68);
+        background:
+          radial-gradient(
+            circle at 92% 10%,
+            rgba(51, 242, 143, 0.34),
+            transparent 7rem
+          ),
+          linear-gradient(
+            135deg,
+            rgba(51, 242, 143, 0.16),
+            rgba(255, 255, 255, 0.05)
+          );
+        box-shadow:
+          0 0 0 1px rgba(51, 242, 143, 0.16),
+          0 18px 44px rgba(0, 0, 0, 0.34);
+      }
+
+      .lab-card.complete .lab-icon {
+        color: var(--complete-dark);
+        background: var(--complete);
+        border-color: transparent;
+        box-shadow: 0 0 0 5px rgba(51, 242, 143, 0.12);
+      }
+
+      .lab-card.complete .lab-card-title,
+      .lab-card.complete .lab-card-percent {
+        color: var(--complete-2);
+      }
+
+      .lab-card-main {
+        min-width: 0;
+      }
+
+      .lab-card-title {
+        display: block;
+        font-weight: 790;
+        line-height: 1.22;
+        letter-spacing: -0.025em;
+        color: #f4f4ed;
+      }
+
+      .lab-card-percent {
+        font-size: 15px;
+        font-weight: 800;
+        color: var(--ink-soft);
+      }
+
+      .lab-card.active .lab-card-percent {
+        color: var(--accent);
+      }
+
+      .lab-card.complete.active .lab-card-percent {
+        color: var(--complete-2);
+      }
+
+      .lab-card-meta {
+        margin-top: 8px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .lab-card-state {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        width: fit-content;
+        margin-top: 10px;
+        padding: 4px 8px;
+        border: 1px solid var(--complete-line);
+        border-radius: 0;
+        color: var(--complete-dark);
+        background: var(--complete);
+        font-size: 11px;
+        font-weight: 900;
+        line-height: 1;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+
+      .progress-bar {
+        grid-column: 2 / -1;
+        height: 6px;
+        overflow: hidden;
+        border-radius: 0;
+        background: rgba(255, 255, 255, 0.12);
+      }
+
+      .progress-fill {
+        display: block;
+        position: relative;
+        height: 100%;
+        min-width: 0;
+        width: 0;
+        border-radius: 0;
+        background: linear-gradient(90deg, var(--accent), #ffffff);
+        box-shadow: 0 0 18px rgba(255, 243, 77, 0.42);
+      }
+
+      .lab-card.complete .progress-fill {
+        background: linear-gradient(90deg, var(--complete), #ffffff);
+        box-shadow: 0 0 20px rgba(51, 242, 143, 0.58);
+      }
+
+      .all-labs-button {
+        width: 100%;
+        margin-top: 16px;
+        min-height: 46px;
+        border-radius: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        color: var(--ink-soft);
+        background: rgba(255, 255, 255, 0.07);
+        font-weight: 720;
+      }
+
+      .workspace {
+        min-width: 0;
+        padding: 16px 18px 28px;
+        background: black;
+      }
+
+      .phase-shell {
+        max-width: 1560px;
+        margin: 0 auto;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        overflow: visible;
+      }
+
+      .phase-top {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 16px 18px 20px;
+        margin-bottom: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 0;
+        background:
+          radial-gradient(
+            circle at 94% 0%,
+            rgba(255, 243, 77, 0.16),
+            transparent 12rem
+          ),
+          linear-gradient(
+            180deg,
+            rgba(24, 24, 24, 0.96),
+            rgba(14, 14, 14, 0.96)
+          );
+        box-shadow: var(--shadow-sm);
+      }
+
+      .phase-top.phase-complete {
+        border-color: var(--complete-line);
+        background:
+          radial-gradient(
+            circle at 92% 4%,
+            rgba(51, 242, 143, 0.24),
+            transparent 14rem
+          ),
+          linear-gradient(180deg, rgba(18, 34, 26, 0.98), rgba(8, 16, 12, 0.98));
+        box-shadow:
+          0 0 0 1px rgba(51, 242, 143, 0.12),
+          0 22px 50px rgba(0, 0, 0, 0.36);
+      }
+
+      .phase-title {
+        display: grid;
+        grid-template-columns: 66px minmax(0, 1fr);
+        gap: 16px;
+        align-items: center;
+        min-width: 0;
+      }
+
+      .phase-title-icon {
+        width: 66px;
+        height: 66px;
+        border-radius: 0;
+        display: grid;
+        place-items: center;
+        color: #111;
+        background: var(--accent);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        box-shadow: 0 14px 30px rgba(255, 243, 77, 0.14);
+      }
+
+      .phase-top.phase-complete .phase-title-icon {
+        color: var(--complete-dark);
+        background: var(--complete);
+        box-shadow:
+          0 0 0 6px rgba(51, 242, 143, 0.12),
+          0 16px 34px rgba(51, 242, 143, 0.16);
+      }
+
+      .phase-title h2 {
+        display: inline;
+        margin: 0;
+        font-size: clamp(24px, 2.2vw, 34px);
+        line-height: 1.08;
+        letter-spacing: auto;
+        color: #f8f8f1;
+      }
+
+      .phase-title p {
+        margin: 8px 0 0;
+        color: var(--muted);
+        font-size: 15px;
+      }
+
+      .status-pill,
+      .step-count,
+      .verify-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        width: fit-content;
+        border: 1px solid rgba(255, 243, 77, 0.28);
+        border-radius: 0;
+        color: #111;
+        background: var(--accent);
+        font-size: 13px;
+        font-weight: 800;
+        white-space: nowrap;
+      }
+
+      .status-pill {
+        margin-left: 10px;
+        padding: 5px 10px;
+        vertical-align: 5px;
+      }
+
+      .status-pill.complete,
+      .verify-pill.complete,
+      .step-count.complete {
+        border-color: var(--complete-line);
+        color: var(--complete-dark);
+        background: var(--complete);
+        box-shadow: 0 0 0 4px rgba(51, 242, 143, 0.1);
+      }
+
+      .verify-pill {
+        padding: 8px 12px;
+        border-radius: 0;
+      }
+
+      .actions {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      .btn {
+        min-height: 46px;
+        padding: 0 18px;
+        border-radius: 0;
+        white-space: nowrap;
+        font-weight: 730;
+        background: rgba(255, 255, 255, 0.08);
+        box-shadow: var(--shadow-xs);
+      }
+
+      .btn.icon-only {
+        width: 46px;
+        padding: 0;
+        font-size: 20px;
+        line-height: 1;
+      }
+
+      .btn.primary {
+        background: var(--accent);
+        border-color: transparent;
+        color: #111;
+        box-shadow: 0 4px 8px rgba(255, 243, 77, 0.22);
+      }
+
+      .btn.primary:hover:not(:disabled) {
+        background: #fff86f;
+        border-color: transparent;
+        color: #111;
+      }
+
+      .phase-top.phase-complete .btn.primary {
+        color: var(--complete);
+        background: rgba(0, 0, 0, 0.22);
+        border-color: var(--complete-line);
+        box-shadow: 0 0 0 4px rgba(51, 242, 143, 0.08);
+      }
+
+      .phase-top.phase-complete .btn.primary:hover:not(:disabled) {
+        color: var(--complete-dark);
+        background: var(--complete);
+        border-color: transparent;
+      }
+
+      .challenge-nav {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        padding: 8px;
+        margin-bottom: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 0;
+        background: rgba(17, 17, 17, 0.78);
+        box-shadow: var(--shadow-xs);
+        backdrop-filter: blur(16px);
+      }
+
+      .challenge-tab {
+        min-height: 38px;
+        border-radius: 0;
+        padding: 0 14px;
+        font-size: 13px;
+        font-weight: 800;
+        background: transparent;
+      }
+
+      .challenge-tab.current {
+        background: var(--accent);
+        border-color: transparent;
+        color: #111;
+      }
+
+      .phase-nav {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(52px, 1fr));
+        gap: 0;
+        padding: 0;
+        margin-bottom: 18px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 0;
+        background: rgba(17, 17, 17, 0.86);
+        box-shadow: var(--shadow-xs);
+      }
+
+      .phase-dot {
+        min-height: 54px;
+        border: 0;
+        border-right: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 0;
+        display: grid;
+        place-items: center;
+        gap: 5px;
+        padding: 10px 8px;
+        color: var(--muted);
+        background: transparent;
+        font-size: 12px;
+        font-weight: 740;
+      }
+
+      .phase-dot:last-child {
+        border-right: 0;
+      }
+
+      .phase-dot-number {
+        display: grid;
+        place-items: center;
+        min-width: 30px;
+        height: 30px;
+        border-radius: 0;
+        color: var(--ink-soft);
+        background: rgba(255, 255, 255, 0.08);
+        font-size: 13px;
+        font-weight: 900;
+        line-height: 1;
+      }
+
+      .phase-dot-label {
+        display: none;
+        max-width: 100%;
+        overflow: hidden;
+        text-align: center;
+        line-height: 1.18;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+
+      .phase-dot.current {
+        position: relative;
+        color: #111;
+        background: var(--accent);
+        border-color: transparent;
+      }
+
+      .phase-dot.current::after {
+        content: "";
+        position: absolute;
+        left: 18px;
+        right: 18px;
+        bottom: 0;
+        height: 4px;
+        border-radius: 0;
+        background: #111;
+      }
+
+      .phase-dot.current .phase-dot-number {
+        color: #111;
+        background: rgba(0, 0, 0, 0.1);
+      }
+
+      .phase-dot.done .phase-dot-number {
+        color: var(--complete-dark);
+        background: var(--complete);
+      }
+
+      .phase-dot.done {
+        color: var(--complete-2);
+        background: rgba(51, 242, 143, 0.1);
+      }
+
+      .phase-dot.current.done {
+        color: var(--complete-dark);
+        background: var(--complete);
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16);
+      }
+
+      .phase-dot.current.done::after {
+        background: var(--complete-dark);
+      }
+
+      .phase-dot.current.done .phase-dot-number {
+        color: var(--complete);
+        background: rgba(0, 0, 0, 0.72);
+      }
+
+      .phase-body {
+        display: grid;
+        gap: 18px;
+      }
+
+      .phase-overview,
+      .implementation-panel,
+      .callout,
+      .note-box,
+      .hero-card,
+      .block {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background:
+          radial-gradient(
+            circle at 100% 0%,
+            rgba(255, 255, 255, 0.07),
+            transparent 12rem
+          ),
+          linear-gradient(
+            180deg,
+            rgba(24, 24, 24, 0.96),
+            rgba(13, 13, 13, 0.96)
+          );
+        border-radius: 0;
+        box-shadow: var(--shadow-sm);
+      }
+
+      .phase-overview {
+        padding: 24px;
+      }
+
+      .overview-lead {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        align-items: flex-start;
+        margin-bottom: 22px;
+      }
+
+      .overview-title-row {
+        display: grid;
+        grid-template-columns: 44px minmax(0, 1fr);
+        gap: 16px;
+        align-items: start;
+      }
+
+      .phase-number-badge {
+        width: 44px;
+        height: 44px;
+        display: grid;
+        place-items: center;
+        border-radius: 0;
+        color: #111;
+        background: var(--accent);
+        font-size: 18px;
+        font-weight: 900;
+      }
+
+      .overview-lead h3 {
+        margin: 0;
+        font-size: clamp(24px, 2vw, 30px);
+        line-height: 1.12;
+        letter-spacing: -0.055em;
+        color: #f8f8f1;
+      }
+
+      .overview-lead p {
+        margin: 7px 0 0;
+        color: var(--muted);
+        font-size: 15px;
+      }
+
+      .overview-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
+        gap: 18px;
+        align-items: stretch;
+      }
+
+      .overview-card,
+      .side-card,
+      .current-step-card,
+      .verify-block,
+      .hint-disclosure {
+        min-width: 0;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 0;
+        background: rgba(255, 255, 255, 0.055);
+        box-shadow: var(--shadow-xs);
+      }
+
+      .overview-card {
+        padding: 22px;
+      }
+      .overview-stack {
+        display: grid;
+        gap: 18px;
+      }
+      .side-card {
+        padding: 20px;
+      }
+
+      .section-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0 0 14px;
+        color: var(--accent);
+        font-size: 16px;
+        font-weight: 850;
+        letter-spacing: -0.03em;
+      }
+
+      .section-title svg {
+        flex: 0 0 auto;
+      }
+
+      .overview-section h4,
+      .lesson-section h4,
+      .verify-part h5,
+      .verification-rail h4 {
+        margin: 0 0 8px;
+        color: var(--accent);
+        font-size: 13px;
+        letter-spacing: 0;
+      }
+
+      .what-prove {
+        margin-top: 18px;
+        padding: 14px 16px;
+        border-radius: 0;
+        background:
+          radial-gradient(
+            circle at 92% 20%,
+            rgba(255, 243, 77, 0.22),
+            transparent 7rem
+          ),
+          rgba(255, 255, 255, 0.07);
+        border: 1px solid rgba(255, 243, 77, 0.16);
+      }
+
+      .file-list,
+      .rail-list,
+      .chip-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .file-list li,
+      .rail-list li,
+      .chip,
+      .rendered code {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 0;
+        background: rgba(255, 255, 255, 0.08);
+        color: #f3f3ea;
+        padding: 2px 4px;
+        font-family: var(--mono);
+        font-size: 12px;
+        box-shadow: var(--shadow-xs);
+      }
+
+      .rendered {
+        overflow-wrap: anywhere;
+        color: var(--ink);
+      }
+
+      .rendered p {
+        margin: 0 0 13px;
+      }
+      .rendered p:last-child {
+        margin-bottom: 0;
+      }
+      .rendered ul,
+      .rendered ol {
+        padding-left: 20px;
+        margin: 0;
+      }
+      .rendered li {
+        margin: 7px 0;
+      }
+      .rendered strong {
+        color: #fff;
+      }
+      .rendered em {
+        color: var(--muted);
+      }
+
+      .rendered pre {
+        margin: 10px 0 12px;
+        overflow: auto;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 0;
+        background: #070707;
+        color: #f6f6ef;
+        padding: 14px;
+        box-shadow: var(--shadow-xs);
+      }
+
+      .verify-part pre {
+        max-width: 100%;
+        margin: 0;
+        overflow: auto;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 0;
+        background: #070707;
+        color: #f6f6ef;
+        padding: 14px;
+        box-shadow: var(--shadow-xs);
+      }
+
+      .rendered pre code {
+        display: block;
+        background: transparent;
+        color: inherit;
+        border: 0;
+        border-radius: 0;
+        padding: 0;
+        white-space: pre;
+        box-shadow: none;
+      }
+
+      .verify-part pre code {
+        display: block;
+        background: transparent;
+        color: inherit;
+        border: 0;
+        border-radius: 0;
+        padding: 0;
+        white-space: pre-wrap;
+        overflow-wrap: anywhere;
+        box-shadow: none;
+      }
+
+      .implementation-panel {
+        overflow: hidden;
+      }
+
+      .implementation-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        align-items: flex-start;
+        padding: 22px 24px 14px;
+        border-bottom: 0;
+        background: transparent;
+      }
+
+      .implementation-head h3 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+        color: var(--accent);
+        font-size: 20px;
+        letter-spacing: -0.04em;
+      }
+
+      .implementation-head p {
+        margin: 8px 0 0;
+        color: var(--muted);
+      }
+
+      .step-count {
+        padding: 8px 12px;
+      }
+
+      .step-intro {
+        margin: 0 24px 14px;
+        padding: 0;
+        color: var(--ink-soft);
+      }
+
+      .lesson-layout {
+        display: grid;
+        grid-template-columns: 292px minmax(0, 1fr) 274px;
+        align-items: start;
+        gap: 18px;
+        padding: 16px 24px 24px;
+      }
+
+      .lesson-sidebar,
+      .verification-rail {
+        position: sticky;
+        top: 18px;
+        display: grid;
+        gap: 12px;
+      }
+
+      .lesson-sidebar {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 0;
+        padding: 14px;
+        background: rgba(255, 255, 255, 0.055);
+      }
+
+      .lesson-sidebar-title {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: baseline;
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 850;
+      }
+
+      .step-list {
+        display: grid;
+        gap: 8px;
+      }
+
+      .step-summary {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 30px minmax(0, 1fr);
+        gap: 10px;
+        text-align: left;
+        border: 1px solid transparent;
+        border-radius: 0;
+        background: transparent;
+        padding: 10px;
+      }
+
+      .step-summary-number {
+        width: 30px;
+        height: 30px;
+        display: grid;
+        place-items: center;
+        border-radius: 0;
+        background: rgba(255, 255, 255, 0.1);
+        color: var(--ink-soft);
+        font-weight: 850;
+        font-size: 13px;
+      }
+
+      .step-summary.current {
+        border-color: rgba(255, 243, 77, 0.22);
+        background: rgba(255, 243, 77, 0.13);
+        box-shadow: var(--shadow-xs);
+      }
+
+      .step-summary.done .step-summary-number {
+        background: var(--complete);
+        color: var(--complete-dark);
+      }
+
+      .step-summary.done {
+        border-color: rgba(51, 242, 143, 0.26);
+        background: rgba(51, 242, 143, 0.1);
+      }
+
+      .step-summary.done.current {
+        border-color: rgba(51, 242, 143, 0.5);
+        background:
+          radial-gradient(
+            circle at 94% 12%,
+            rgba(51, 242, 143, 0.24),
+            transparent 6rem
+          ),
+          rgba(51, 242, 143, 0.14);
+      }
+
+      .step-summary h4 {
+        margin: 4px 0 4px;
+        font-size: 14px;
+        line-height: 1.22;
+        letter-spacing: -0.025em;
+        color: #f5f5ee;
+      }
+
+      .step-summary p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.4;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .step-status {
+        display: inline-flex;
+        width: fit-content;
+        margin-top: 8px;
+        color: var(--accent);
+        font-size: 11px;
+        font-weight: 850;
+      }
+
+      .step-summary.done .step-status {
+        color: var(--complete);
+      }
+
+      .lesson-main {
+        min-width: 0;
+      }
+
+      .lesson {
+        display: grid;
+        gap: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 0;
+        background: rgba(255, 255, 255, 0.055);
+        padding: 24px;
+        box-shadow: var(--shadow-xs);
+      }
+
+      .lesson-header {
+        display: grid;
+        gap: 8px;
+        padding-bottom: 4px;
+        border-bottom: 0;
+      }
+
+      .step-kicker {
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+
+      .lesson-header h3 {
+        margin: 0;
+        font-size: clamp(24px, 2vw, 32px);
+        line-height: 1.09;
+        letter-spacing: -0.06em;
+        color: #f8f8f1;
+      }
+
+      .lesson-outcome {
+        margin: 0;
+        color: var(--muted);
+        font-size: 16px;
+      }
+
+      .lesson-section {
+        min-width: 0;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 0;
+        padding: 16px;
+        background: rgba(255, 255, 255, 0.06);
+      }
+
+      .lesson-section.primary {
+        border-color: rgba(255, 243, 77, 0.32);
+        background:
+          radial-gradient(
+            circle at 90% 12%,
+            rgba(255, 243, 77, 0.22),
+            transparent 9rem
+          ),
+          rgba(255, 255, 255, 0.08);
+        font-size: 16px;
+      }
+
+      .lesson-section.primary h4 {
+        font-size: 14px;
+      }
+
+      .lesson-section.trap {
+        border-color: rgba(255, 243, 77, 0.36);
+        background: rgba(255, 243, 77, 0.1);
+      }
+
+      .hint-disclosure {
+        padding: 15px 16px;
+        background: rgba(255, 255, 255, 0.055);
+      }
+
+      .hint-disclosure summary {
+        color: var(--accent);
+        cursor: pointer;
+        font-weight: 850;
+      }
+
+      .hint-disclosure .rendered {
+        margin-top: 12px;
+      }
+
+      .verify-block {
+        display: grid;
+        gap: 14px;
+        background: rgba(255, 255, 255, 0.055);
+        padding: 18px;
+      }
+
+      .verify-block h4 {
+        margin: 0;
+        font-size: 17px;
+        letter-spacing: -0.03em;
+        color: #f8f8f1;
+      }
+
+      .verify-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .verify-part {
+        min-width: 0;
+      }
+      .verify-part.full {
+        grid-column: 1 / -1;
+      }
+
+      .verification-actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        padding-top: 4px;
+      }
+
+      .verification-state {
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .verify-button.verified {
+        background: var(--complete);
+        border-color: transparent;
+        color: var(--complete-dark);
+        box-shadow: 0 0 0 4px rgba(51, 242, 143, 0.1);
+      }
+
+      .verification-rail {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 0;
+        padding: 16px;
+        background: rgba(255, 255, 255, 0.055);
+      }
+
+      .verification-rail.done {
+        border-color: rgba(51, 242, 143, 0.32);
+        background: rgba(51, 242, 143, 0.09);
+      }
+
+      .rail-block {
+        display: grid;
+        gap: 6px;
+        padding-bottom: 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .rail-block:last-child {
+        padding-bottom: 0;
+        border-bottom: 0;
+      }
+
+      .rail-block p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .rail-command {
+        display: block;
+        overflow-wrap: anywhere;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 0;
+        background: #070707;
+        color: #f3f3ea;
+        padding: 10px;
+        font-family: var(--mono);
+        font-size: 12px;
+      }
+
+      .callout {
+        padding: 18px 20px;
+      }
+
+      .callout-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 14px;
+        align-items: center;
+      }
+
+      .callout-header h3 {
+        margin: 0;
+        font-size: 17px;
+        letter-spacing: -0.03em;
+        color: #f8f8f1;
+      }
+
+      .hidden-help {
+        display: none;
+        margin-top: 14px;
+      }
+
+      .hidden-help.open {
+        display: block;
+      }
+
+      .note-box {
+        padding: 20px;
+      }
+
+      .note-box label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 850;
+        color: #f8f8f1;
+      }
+
+      textarea {
+        width: 100%;
+        min-height: 110px;
+        resize: vertical;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: 0;
+        padding: 12px 14px;
+        color: #f6f6ef;
+        background: rgba(0, 0, 0, 0.3);
+        outline: none;
+        transition:
+          border-color 160ms ease,
+          box-shadow 160ms ease;
+      }
+
+      textarea::placeholder {
+        color: rgba(246, 246, 239, 0.42);
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .brand h1,
+      .lab-card-title,
+      .phase-title h2,
+      .phase-dot-label,
+      .overview-lead h3,
+      .overview-section h4,
+      .implementation-head h3,
+      .lesson-sidebar-title,
+      .step-summary h4,
+      .lesson-header h3,
+      .lesson-section h4,
+      .section-title,
+      .verify-block h4,
+      .verify-part h5,
+      .verification-rail h4,
+      .callout-header h3,
+      .step-kicker {
+        font-family: var(--heading);
+        letter-spacing: 0;
+      }
+
+      textarea:focus {
+        border-color: rgba(255, 243, 77, 0.58);
+        box-shadow: 0 0 0 4px var(--accent-glow);
+      }
+
+      .status-line {
+        min-height: 20px;
+        margin-top: 8px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .empty {
+        padding: 28px;
+        color: var(--muted);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 0;
+        background: rgba(17, 17, 17, 0.86);
+      }
+
+      @media (max-width: 1180px) {
+        .app {
+          grid-template-columns: 300px minmax(0, 1fr);
+        }
+        .overview-grid,
+        .lesson-layout {
+          grid-template-columns: 1fr;
+        }
+        .lesson-sidebar,
+        .verification-rail {
+          position: static;
+        }
+        .verification-rail {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 860px) {
+        .app {
+          grid-template-columns: 1fr;
+        }
+        .sidebar {
+          position: static;
+          height: auto;
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+        }
+        .workspace {
+          padding: 14px;
+        }
+        .phase-top,
+        .overview-lead {
+          flex-direction: column;
+        }
+        .phase-title {
+          grid-template-columns: 1fr;
+        }
+        .phase-title-icon {
+          display: none;
+        }
+        .actions {
+          justify-content: flex-start;
+        }
+        .phase-nav {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .phase-dot {
+          min-height: 82px;
+        }
+        .phase-dot-label {
+          display: -webkit-box;
+        }
+        .verify-grid,
+        .verification-rail {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <h1>Node Runtime Labs</h1>
+          <p>
+            Phase-based implementation plans. Progress stays on this machine.
+          </p>
+        </div>
+        <div class="lab-list" id="labList"></div>
+      </aside>
+
+      <main class="workspace">
+        <section class="phase-shell" id="phasePanel">
+          <div class="empty">Loading labs...</div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      const state = {
+        labs: [],
+        progress: { labs: {} },
+        selectedLabId: localStorage.getItem("nodebook:selectedLab") || "",
+        selectedChallengeId: "",
+        selectedPhase: 0,
+        expandedStepId: "",
+        noteTimer: null,
+        helpOpen: false,
+        debugOpen: false,
+      };
+
+      const els = {
+        labList: document.querySelector("#labList"),
+        phasePanel: document.querySelector("#phasePanel"),
+      };
+
+      const icons = {
+        flask: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 3h6M10 3v5.2l-5.6 9.5A2.2 2.2 0 0 0 6.3 21h11.4a2.2 2.2 0 0 0 1.9-3.3L14 8.2V3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.5 16h9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>`,
+        wave: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 12h3l2-7 4 14 3-10 2 6h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+        database: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><ellipse cx="12" cy="5" rx="7" ry="3" stroke="currentColor" stroke-width="1.8"/><path d="M5 5v14c0 1.7 3.1 3 7 3s7-1.3 7-3V5M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>`,
+        stream: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h6m4 0h6M4 17h6m4 0h6M10 7a2 2 0 1 0 4 0 2 2 0 0 0-4 0Zm0 10a2 2 0 1 0 4 0 2 2 0 0 0-4 0Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>`,
+        puzzle: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 3h6v4h2a2 2 0 1 1 0 4h-2v3h-4v2a2 2 0 1 1-4 0v-2H3V8h4V6a3 3 0 0 1 2-3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>`,
+        folder: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 7.5A2.5 2.5 0 0 1 5.5 5h4l2 2h7A2.5 2.5 0 0 1 21 9.5v7A2.5 2.5 0 0 1 18.5 19h-13A2.5 2.5 0 0 1 3 16.5v-9Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>`,
+        clock: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>`,
+        book: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H7a3 3 0 0 0-3 3V5.5Zm0 0V22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+        shield: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 20 6v5c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6l8-3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m8.5 12 2.2 2.2 4.8-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+        cap: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m3 8.5 9-4 9 4-9 4-9-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M7 11v4c2.8 2 7.2 2 10 0v-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>`,
+        star: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m12 3 2.3 5.5 5.7.5-4.3 3.8 1.3 5.7-5-3-5 3 1.3-5.7L4 9l5.7-.5L12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>`,
+        grid: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 5h5v5H5V5Zm9 0h5v5h-5V5ZM5 14h5v5H5v-5Zm9 0h5v5h-5v-5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>`,
+        more: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 6.5h.01M12 12h.01M12 17.5h.01" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/></svg>`,
+      };
+
+      function labIcon(title) {
+        const lower = String(title || "").toLowerCase();
+        if (lower.includes("binary") || lower.includes("database"))
+          return icons.database;
+        if (lower.includes("stream")) return icons.stream;
+        if (lower.includes("module")) return icons.puzzle;
+        if (lower.includes("watcher") || lower.includes("cache"))
+          return icons.folder;
+        if (lower.includes("async") || lower.includes("task"))
+          return icons.clock;
+        return icons.wave;
+      }
+
+      boot();
+
+      async function boot() {
+        await loadState();
+        bindEvents();
+        selectInitialLab();
+        render();
+      }
+
+      async function loadState() {
+        const response = await fetch("/api/state");
+        if (!response.ok) throw new Error("Unable to load lab state");
+        const data = await response.json();
+        state.labs = data.labs;
+        state.progress = data.progress;
+      }
+
+      function bindEvents() {
+        document.addEventListener("click", async (event) => {
+          const labButton = event.target.closest("[data-lab-id]");
+          if (labButton) {
+            selectLab(labButton.dataset.labId);
+            return;
+          }
+
+          const challengeButton = event.target.closest("[data-challenge-id]");
+          if (challengeButton) {
+            await selectChallenge(challengeButton.dataset.challengeId);
+            return;
+          }
+
+          const phaseButton = event.target.closest("[data-phase-index]");
+          if (phaseButton) {
+            await setCurrentPhase(Number(phaseButton.dataset.phaseIndex));
+            return;
+          }
+
+          const action = event.target.closest("[data-action]")?.dataset.action;
+          if (!action) return;
+
+          if (action === "prev") await movePhase(-1);
+          if (action === "next") await movePhase(1);
+          if (action === "complete") await toggleComplete();
+          if (action === "expand-step") {
+            const stepId =
+              event.target.closest("[data-step-id]")?.dataset.stepId;
+            if (stepId) {
+              state.expandedStepId = stepId;
+              renderPhasePanel();
+            }
+          }
+          if (action === "toggle-step")
+            await toggleStep(event.target.closest("[data-step-id]"));
+          if (action === "reset") await resetCurrentLab();
+          if (action === "hint") {
+            state.helpOpen = !state.helpOpen;
+            renderPhasePanel();
+          }
+          if (action === "debug") {
+            state.debugOpen = !state.debugOpen;
+            renderPhasePanel();
+          }
+        });
+
+        document.addEventListener("input", (event) => {
+          if (event.target.id !== "phaseNote") return;
+          queueNoteSave(event.target.value);
+        });
+      }
+
+      function selectInitialLab() {
+        const saved = state.labs.find((lab) => lab.id === state.selectedLabId);
+        const first = state.labs[0];
+        const selected = saved || first;
+        if (selected) selectLab(selected.id, { save: false });
+      }
+
+      function selectLab(labId, options = { save: true }) {
+        const lab = state.labs.find((item) => item.id === labId);
+        if (!lab) return;
+
+        state.selectedLabId = lab.id;
+        const labProgress = getLabProgress(lab);
+        const savedChallengeId = localStorage.getItem(
+          `nodebook:selectedChallenge:${lab.id}`,
+        );
+        const challenge =
+          lab.challenges.find((item) => item.id === savedChallengeId) ||
+          lab.challenges.find(
+            (item) => item.id === labProgress.currentChallenge,
+          ) ||
+          lab.challenges.find((item) => item.id === lab.defaultChallenge) ||
+          lab.challenges[0];
+
+        state.selectedChallengeId = challenge?.id || "";
+        state.selectedPhase = challenge
+          ? getChallengeProgress(lab, challenge).currentPhase || 0
+          : 0;
+        state.expandedStepId = "";
+        state.helpOpen = false;
+        state.debugOpen = false;
+
+        if (options.save) {
+          localStorage.setItem("nodebook:selectedLab", lab.id);
+        }
+
+        render();
+      }
+
+      function getSelectedLab() {
+        return state.labs.find((lab) => lab.id === state.selectedLabId);
+      }
+
+      function getSelectedChallenge() {
+        const lab = getSelectedLab();
+        return lab?.challenges.find(
+          (challenge) => challenge.id === state.selectedChallengeId,
+        );
+      }
+
+      function getSelectedPhase() {
+        const challenge = getSelectedChallenge();
+        return challenge?.phases[state.selectedPhase];
+      }
+
+      function getLabProgress(lab) {
+        return (
+          state.progress.labs[lab.id] || {
+            currentChallenge: lab.defaultChallenge || "",
+            challenges: {},
+          }
+        );
+      }
+
+      function getChallengeProgress(lab, challenge) {
+        return (
+          getLabProgress(lab).challenges?.[challenge.id] || {
+            currentPhase: 0,
+            completedPhases: [],
+            stepProgress: {},
+            notes: {},
+          }
+        );
+      }
+
+      function render() {
+        renderLabList();
+        renderPhasePanel();
+      }
+
+      function renderLabList() {
+        els.labList.innerHTML =
+          state.labs
+            .map((lab) => {
+              const total = lab.phaseCount || 0;
+              const done = lab.challenges.reduce((sum, challenge) => {
+                return (
+                  sum +
+                  getChallengeProgress(lab, challenge).completedPhases.length
+                );
+              }, 0);
+              const percent =
+                total === 0 ? 0 : Math.round((done / total) * 100);
+              const labComplete = total > 0 && done >= total;
+              const classes = [
+                "lab-card",
+                lab.id === state.selectedLabId ? "active" : "",
+                labComplete ? "complete" : "",
+              ]
+                .filter(Boolean)
+                .join(" ");
+              const challengeLabel = `${lab.challengeCount} challenge${lab.challengeCount === 1 ? "" : "s"}`;
+
+              return `
+              <button class="${classes}" data-lab-id="${escapeAttr(lab.id)}">
+                <span class="lab-icon">${labIcon(lab.title)}</span>
+                <span class="lab-card-main">
+                  <span class="lab-card-title">${escapeHtml(lab.title)}</span>
+                  <span class="lab-card-meta">${challengeLabel} • ${done}/${total} phases • ${escapeHtml(lab.status)}</span>
+                  ${labComplete ? `<span class="lab-card-state">✓ Complete</span>` : ""}
+                </span>
+                <span class="lab-card-percent">${percent}%</span>
+                <span class="progress-bar"><span class="progress-fill" style="width:${percent}%"></span></span>
+              </button>
+            `;
+            })
+            .join("") + ``;
+      }
+
+      function renderPhasePanel() {
+        const lab = getSelectedLab();
+        if (!lab) {
+          els.phasePanel.innerHTML = `<div class="empty">No labs found.</div>`;
+          return;
+        }
+
+        const challenge = getSelectedChallenge();
+        const phase = getSelectedPhase();
+        if (!challenge || !phase) {
+          els.phasePanel.innerHTML = `
+            <div class="phase-top">
+              <div class="phase-title">
+                <span class="phase-title-icon">${icons.wave}</span>
+                <div>
+                  <h2>${escapeHtml(lab.title)}</h2>
+                  <p>No challenge phases have been added yet.</p>
+                </div>
+              </div>
+            </div>
+          `;
+          return;
+        }
+
+        const progress = getChallengeProgress(lab, challenge);
+        const completedSet = new Set(progress.completedPhases);
+        const done = completedSet.has(state.selectedPhase);
+        const buildSteps = parseBuildSteps(phase.sections.Build || "");
+        const stepProgress = getStepProgress(progress, state.selectedPhase);
+        const activeStepId = chooseExpandedStep(buildSteps.items, stepProgress);
+        const challengeNav = renderChallengeNav(lab);
+        const phaseNav = renderPhaseNav(challenge, completedSet);
+        const hints =
+          phase.sections.Hints ||
+          "No hint has been written for this phase yet.";
+        const debug =
+          phase.sections["Debugging notes"] ||
+          "No debugging notes have been written for this phase yet.";
+        const note = progress.notes?.[state.selectedPhase] || "";
+        const completedCount = stepProgress.size;
+        const totalSteps = buildSteps.items.length;
+        const challengePercent = challenge.phaseCount
+          ? Math.round(
+              (progress.completedPhases.length / challenge.phaseCount) * 100,
+            )
+          : 0;
+        const challengeComplete =
+          challenge.phaseCount > 0 &&
+          progress.completedPhases.length >= challenge.phaseCount;
+
+        els.phasePanel.innerHTML = `
+          <div class="phase-top${done ? " phase-complete" : ""}">
+            <div class="phase-title">
+              <span class="phase-title-icon">${done ? icons.shield : icons.wave}</span>
+              <div>
+                <h2>${escapeHtml(challenge.title)} <span class="status-pill ${challengeComplete ? "complete" : ""}">${challengePercent}% complete</span>${done ? ` <span class="status-pill complete">✓ Phase complete</span>` : ""}</h2>
+                <p>Phase-based implementation • ${progress.completedPhases.length}/${challenge.phaseCount} phases complete • ${completedCount}/${totalSteps || 0} steps verified • ${done ? "Completed" : "In progress"}</p>
+              </div>
+            </div>
+            <div class="actions">
+              <button class="btn" data-action="prev" ${state.selectedPhase === 0 ? "disabled" : ""}>Previous</button>
+              <button class="btn" data-action="next" ${state.selectedPhase >= challenge.phaseCount - 1 ? "disabled" : ""}>Next</button>
+              <button class="btn primary" data-action="complete">✓ ${done ? "Mark incomplete" : "Mark complete"}</button>
+              <button class="btn icon-only" data-action="reset" title="Reset lab">${icons.more}</button>
+            </div>
+          </div>
+          ${challengeNav}
+          <div class="phase-nav">${phaseNav}</div>
+          <div class="phase-body">
+            ${renderPhaseOverview(phase, buildSteps, completedCount, totalSteps)}
+            ${renderImplementationPlan(phase, buildSteps, stepProgress, activeStepId)}
+            <div class="callout">
+              <div class="callout-header">
+                <h3>Stuck on this phase?</h3>
+                <button class="btn" data-action="hint">${state.helpOpen ? "Hide hint" : "Get a hint"}</button>
+              </div>
+              <div class="hidden-help ${state.helpOpen ? "open" : ""}">
+                <div class="rendered">${renderMarkdown(hints)}</div>
+              </div>
+            </div>
+            <div class="callout">
+              <div class="callout-header">
+                <h3>Something behaving differently?</h3>
+                <button class="btn" data-action="debug">${state.debugOpen ? "Hide debugging notes" : "Show debugging notes"}</button>
+              </div>
+              <div class="hidden-help ${state.debugOpen ? "open" : ""}">
+                <div class="rendered">${renderMarkdown(debug)}</div>
+              </div>
+            </div>
+            <div class="note-box">
+              <label for="phaseNote">Local notes for this phase</label>
+              <textarea id="phaseNote" placeholder="Capture useful context, gotchas, or commands here…">${escapeHtml(note)}</textarea>
+              <div class="status-line" id="noteStatus">Saved in .nodebook-lab-progress.json</div>
+            </div>
+          </div>
+        `;
+      }
+
+      function renderChallengeNav(lab) {
+        if (lab.challenges.length <= 1) return "";
+
+        return `
+          <div class="challenge-nav">
+            ${lab.challenges
+              .map((challenge) => {
+                const classes = [
+                  "challenge-tab",
+                  challenge.id === state.selectedChallengeId ? "current" : "",
+                ]
+                  .filter(Boolean)
+                  .join(" ");
+                return `<button class="${classes}" data-challenge-id="${escapeAttr(challenge.id)}">${escapeHtml(challenge.title)}</button>`;
+              })
+              .join("")}
+          </div>
+        `;
+      }
+
+      function block(title, markdown) {
+        return `
+          <div class="block ${title === "Implementation plan" ? "full" : ""}">
+            <h3>${escapeHtml(title)}</h3>
+            <div class="rendered">${renderMarkdown(markdown || "_No content yet._")}</div>
+          </div>
+        `;
+      }
+
+      function renderPhaseNav(challenge, completedSet) {
+        return challenge.phases
+          .map((item, index) => {
+            const classes = [
+              "phase-dot",
+              index === state.selectedPhase ? "current" : "",
+              completedSet.has(index) ? "done" : "",
+            ]
+              .filter(Boolean)
+              .join(" ");
+            const phaseNumber = String(item.index).padStart(2, "0");
+
+            return `
+              <button class="${classes}" data-phase-index="${index}" title="Phase ${item.index}: ${escapeAttr(item.title)}">
+                <span class="phase-dot-number">${escapeHtml(phaseNumber)}</span>
+                <span class="phase-dot-label">${escapeHtml(item.title)}</span>
+              </button>
+            `;
+          })
+          .join("");
+      }
+
+      function renderPhaseOverview(
+        phase,
+        buildSteps,
+        completedCount = 0,
+        totalSteps = 0,
+      ) {
+        const overview = getPhaseOverview(phase, buildSteps);
+
+        return `
+          <section class="phase-overview">
+            <div class="overview-lead">
+              <div class="overview-title-row">
+                <span class="phase-number-badge">${escapeHtml(phase.index)}</span>
+              <div>
+                <h3>Phase ${phase.index}: ${escapeHtml(phase.title)}</h3>
+                <p>${escapeHtml(overview.goal)}</p>
+              </div>
+            </div>
+              <span class="verify-pill ${totalSteps > 0 && completedCount >= totalSteps ? "complete" : ""}">${icons.shield} ${completedCount}/${totalSteps || 0} steps verified</span>
+            </div>
+            <div class="overview-grid">
+              <article class="overview-card">
+                <h4 class="section-title">${icons.book} Overview</h4>
+                <div class="rendered">${renderMarkdown(overview.build)}</div>
+                <div class="what-prove">
+                  <h4 class="section-title">${icons.star} What you’ll prove</h4>
+                  <div class="rendered">${renderMarkdown(overview.prove)}</div>
+                </div>
+              </article>
+              <div class="overview-stack">
+                <article class="side-card">
+                  <h4 class="section-title">${icons.folder} Files you’ll touch</h4>
+                  ${renderFileList(overview.files)}
+                </article>
+                <article class="side-card">
+                  <h4 class="section-title">${icons.shield} Final verification</h4>
+                  <div class="rendered">${renderMarkdown(overview.finalVerification)}</div>
+                </article>
+              </div>
+            </div>
+          </section>
+        `;
+      }
+
+      function renderImplementationPlan(
+        phase,
+        buildSteps,
+        completedSteps,
+        activeStepId,
+      ) {
+        if (buildSteps.items.length === 0) {
+          return block(
+            "Implementation plan",
+            buildSteps.intro || "_No implementation steps yet._",
+          );
+        }
+
+        const completedCount = buildSteps.items.filter((step) =>
+          completedSteps.has(step.id),
+        ).length;
+        const activeStep =
+          buildSteps.items.find((step) => step.id === activeStepId) ||
+          buildSteps.items[0];
+        const allStepsDone =
+          buildSteps.items.length > 0 &&
+          completedCount >= buildSteps.items.length;
+
+        return `
+          <section class="implementation-panel">
+            <div class="implementation-head">
+              <div>
+                <h3>${icons.cap} Implementation Lessons</h3>
+                <p>Open one step, build the boundary, verify the evidence, then mark it complete.</p>
+              </div>
+              <div class="step-count ${allStepsDone ? "complete" : ""}">${completedCount}/${buildSteps.items.length} verified</div>
+            </div>
+            ${buildSteps.intro ? `<div class="step-intro rendered">${renderMarkdown(buildSteps.intro)}</div>` : ""}
+            <div class="lesson-layout">
+              <aside class="lesson-sidebar" aria-label="Steps">
+                <div class="lesson-sidebar-title">
+                  <span>Steps</span>
+                  <span>${completedCount}/${buildSteps.items.length} complete</span>
+                </div>
+                <div class="step-list">
+                  ${buildSteps.items.map((step) => renderStepSummary(step, phase, completedSteps, activeStep.id)).join("")}
+                </div>
+              </aside>
+              <main class="lesson-main">
+                ${renderExpandedStep(activeStep, phase, completedSteps)}
+              </main>
+              ${renderVerificationRail(activeStep, phase, completedSteps)}
+            </div>
+          </section>
+        `;
+      }
+
+      function renderStepSummary(step, phase, completedSteps, activeStepId) {
+        const isDone = completedSteps.has(step.id);
+        const isCurrent = step.id === activeStepId;
+        const lesson = lessonForStep(step, phase);
+        const classes = [
+          "step-summary",
+          isDone ? "done" : "",
+          isCurrent ? "current" : "",
+        ]
+          .filter(Boolean)
+          .join(" ");
+
+        return `
+          <button class="${classes}" data-action="expand-step" data-step-id="${escapeAttr(step.id)}">
+            <span class="step-summary-number">${isDone ? "✓" : step.number}</span>
+            <span>
+              <h4>${escapeHtml(step.title)}</h4>
+              <p>${escapeHtml(lesson.shortOutcome)}</p>
+              <span class="step-status">${isDone ? "Verified" : "In progress"}</span>
+            </span>
+          </button>
+        `;
+      }
+
+      function renderExpandedStep(step, phase, completedSteps) {
+        const lesson = lessonForStep(step, phase);
+        const isDone = completedSteps.has(step.id);
+
+        return `
+          <article class="lesson">
+            <header class="lesson-header">
+              <span class="step-kicker">Step ${step.number} of ${parseBuildSteps(phase.sections.Build || "").items.length}</span>
+              <h3>${escapeHtml(step.title)}</h3>
+              <p class="lesson-outcome">${escapeHtml(lesson.shortOutcome)}</p>
+            </header>
+            ${lessonSection("What you’re building", lesson.whatBuilding, "primary")}
+            ${lessonSection("Why this step exists", lesson.why)}
+            ${lessonSection("Design boundaries", lesson.boundaries)}
+            ${renderHintDisclosure(lesson.hint)}
+            ${lessonSection("Note", lesson.trap, "trap")}
+            ${renderVerificationBlock(lesson, isDone)}
+            ${lessonSection("Reflection", lesson.reflection)}
+            <div class="verification-actions">
+              <button class="btn primary verify-button ${isDone ? "verified" : ""}" data-action="toggle-step" data-step-id="${escapeAttr(step.id)}" aria-pressed="${isDone ? "true" : "false"}">
+                ${isDone ? "✓ Verified" : "I verified this step"}
+              </button>
+              <span class="verification-state">${isDone ? "Status: Verified" : "Status: Not verified"}</span>
+            </div>
+          </article>
+        `;
+      }
+
+      function lessonSection(title, markdown, className = "") {
+        if (!markdown?.trim()) return "";
+        return `
+          <section class="lesson-section ${className}">
+            <h4>${escapeHtml(title)}</h4>
+            <div class="rendered">${renderMarkdown(markdown)}</div>
+          </section>
+        `;
+      }
+
+      function renderHintDisclosure(markdown) {
+        if (!markdown?.trim()) return "";
+        return `
+          <details class="hint-disclosure">
+            <summary>Need a nudge? Show hint</summary>
+            <div class="rendered">${renderMarkdown(markdown)}</div>
+          </details>
+        `;
+      }
+
+      function renderVerificationBlock(lesson) {
+        if (lesson.verify?.trim()) {
+          return `
+            <section class="verify-block">
+              <h4>Verify it works</h4>
+              <div class="rendered">${renderMarkdown(lesson.verify)}</div>
+            </section>
+          `;
+        }
+
+        return `
+          <section class="verify-block">
+            <h4>Verify it works</h4>
+            <div class="verify-grid">
+              <div class="verify-part">
+                <h5>Run</h5>
+                ${lesson.command ? `<pre><code>${escapeHtml(lesson.command)}</code></pre>` : `<div class="rendered"><p>Use the phase command once this step has observable behavior.</p></div>`}
+              </div>
+              <div class="verify-part">
+                <h5>You should see</h5>
+                <div class="rendered">${renderMarkdown(lesson.expected)}</div>
+              </div>
+              <div class="verify-part full">
+                <h5>Evidence</h5>
+                <div class="rendered">${renderMarkdown(lesson.evidence)}</div>
+              </div>
+            </div>
+          </section>
+        `;
+      }
+
+      function renderVerificationRail(step, phase, completedSteps) {
+        const lesson = lessonForStep(step, phase);
+        const isDone = completedSteps.has(step.id);
+
+        return `
+          <aside class="verification-rail ${isDone ? "done" : ""}" aria-label="Current verification">
+            <div class="rail-block">
+              <h4>Current step</h4>
+              <p>Step ${step.number}: ${escapeHtml(step.title)}</p>
+            </div>
+            <div class="rail-block">
+              <h4>Files touched</h4>
+              ${renderRailFileList(lesson.files)}
+            </div>
+            <div class="rail-block">
+              <h4>Run</h4>
+              <code class="rail-command">${escapeHtml(lesson.command || "Use the phase command after implementing the step.")}</code>
+            </div>
+            <div class="rail-block">
+              <h4>Expected artifact</h4>
+              <p>${escapeHtml(lesson.artifact)}</p>
+            </div>
+            <div class="rail-block">
+              <h4>Status</h4>
+              <p>${isDone ? "Verified" : "In progress"}</p>
+            </div>
+          </aside>
+        `;
+      }
+
+      function chooseExpandedStep(items, completedSteps) {
+        if (items.length === 0) return "";
+
+        const saved = items.find((step) => step.id === state.expandedStepId);
+        const next =
+          saved ||
+          items.find((step) => !completedSteps.has(step.id)) ||
+          items[0];
+        state.expandedStepId = next.id;
+        return next.id;
+      }
+
+      function getPhaseOverview(phase, buildSteps) {
+        const goal = firstSentence(
+          stripMarkdown(phaseSectionValue(phase, ["Goal"]) || phase.title),
+        );
+        const files = extractPaths(
+          [
+            phaseSectionValue(phase, [
+              "Files you'll touch",
+              "Files you’ll touch",
+            ]),
+            phaseSectionValue(phase, ["Build"]),
+            phaseSectionValue(phase, ["Run"]),
+            phaseSectionValue(phase, ["Checkpoint"]),
+          ]
+            .filter(Boolean)
+            .join("\n"),
+        );
+        const build =
+          phaseSectionValue(phase, [
+            "What you'll build",
+            "What you’ll build",
+          ]) ||
+          phaseSectionValue(phase, ["Why this matters"]) ||
+          buildSteps.intro ||
+          phaseSectionValue(phase, ["Goal"]) ||
+          "";
+        const prove =
+          phaseSectionValue(phase, [
+            "What you'll prove",
+            "What you’ll prove",
+          ]) ||
+          phaseSectionValue(phase, ["Expected behavior"]) ||
+          phaseSectionValue(phase, ["Checkpoint"]) ||
+          "The phase produces observable evidence before you move on.";
+        const finalVerification =
+          phaseSectionValue(phase, ["Final verification"]) ||
+          [
+            phaseSectionValue(phase, ["Run"])
+              ? `Run ${inlineBacktick(extractCommand(phaseSectionValue(phase, ["Run"])) || stripMarkdown(firstSentence(phaseSectionValue(phase, ["Run"]))))}.`
+              : "",
+            phaseSectionValue(phase, ["Checkpoint"]) || "",
+          ]
+            .filter(Boolean)
+            .join("\n\n");
+
+        return {
+          goal,
+          build,
+          prove,
+          files,
+          finalVerification,
+        };
+      }
+
+      function lessonForStep(step, phase) {
+        const explicitWhatBuilding = stepFieldValue(step, [
+          "What you're building",
+          "What you’re building",
+        ]);
+        const task = explicitWhatBuilding || stepFieldValue(step, ["Task"]);
+        const why =
+          stepFieldValue(step, [
+            "Why this step exists",
+            "Mechanics",
+            "Why this matters",
+          ]) ||
+          phaseSectionValue(phase, ["Why this matters"]) ||
+          "";
+        const hint = stepFieldValue(step, ["Implementation hint", "Hint"]);
+        const checkpoint = stepFieldValue(step, ["Checkpoint"]);
+        const verify = stepFieldValue(step, ["Verify it works"]);
+        const files = unique([
+          ...extractPaths(task),
+          ...extractPaths(why),
+          ...extractPaths(hint),
+          ...extractPaths(checkpoint),
+          ...extractPaths(verify),
+          ...extractPaths(phaseSectionValue(phase, ["Run"])),
+        ]);
+        const command = extractCommand(
+          `${verify}\n${checkpoint}\n${phaseSectionValue(phase, ["Run"]) || ""}`,
+        );
+        const evidence =
+          checkpoint ||
+          verify ||
+          phaseSectionValue(phase, ["Checkpoint"]) ||
+          "The step has observable behavior that matches the phase expectation.";
+
+        return {
+          shortOutcome:
+            stepFieldValue(step, ["Short outcome", "Outcome"]) ||
+            firstSentence(stripMarkdown(task)) ||
+            `Complete ${step.title}.`,
+          whatBuilding: explicitWhatBuilding || task,
+          why,
+          boundaries: stepFieldValue(step, ["Design boundaries"]),
+          hint,
+          trap: stepFieldValue(step, ["Common trap"]),
+          verify,
+          command,
+          expected:
+            phaseSectionValue(phase, ["Expected behavior"]) ||
+            firstSentence(stripMarkdown(evidence)),
+          evidence,
+          reflection:
+            stepFieldValue(step, ["Reflection"]) ||
+            phaseSectionValue(phase, ["Reflection"]) ||
+            "",
+          files,
+          artifact: expectedArtifact(files, evidence),
+        };
+      }
+
+      function expectedArtifact(files, evidence) {
+        const report = files.find((file) => file.startsWith("reports/"));
+        if (report) return report;
+        const source = files.find((file) => file.startsWith("src/"));
+        if (source) return source;
+        const client = files.find((file) => file.startsWith("client/"));
+        if (client) return client;
+        const data = files.find((file) => file.startsWith("data/"));
+        if (data) return data;
+        const docs = files.find((file) => file.startsWith("docs/"));
+        if (docs) return docs;
+        const test = files.find((file) => file.startsWith("test/"));
+        if (test) return test;
+        const fixture = files.find((file) => file.startsWith("fixtures/"));
+        if (fixture) return fixture;
+        const evidencePath = extractPaths(evidence).find(Boolean);
+        return (
+          evidencePath ||
+          "Terminal output or report evidence named by the checkpoint."
+        );
+      }
+
+      function renderFileList(files) {
+        const items = files.length
+          ? files
+          : ["Project files named by the phase steps"];
+        return `<ul class="file-list">${items.map((file) => `<li>${escapeHtml(file)}</li>`).join("")}</ul>`;
+      }
+
+      function renderRailFileList(files) {
+        const items = files.length ? files.slice(0, 5) : ["Step files"];
+        return `<ul class="rail-list">${items.map((file) => `<li>${escapeHtml(file)}</li>`).join("")}</ul>`;
+      }
+
+      function phaseSectionValue(phase, names) {
+        for (const name of names) {
+          const value = phase.sections[name];
+          if (typeof value === "string" && value.trim()) return value.trim();
+        }
+        return "";
+      }
+
+      function stepFieldValue(step, names) {
+        for (const name of names) {
+          const value = step.fields[name];
+          if (typeof value === "string" && value.trim()) return value.trim();
+        }
+        return "";
+      }
+
+      function extractPaths(markdown) {
+        if (!markdown) return [];
+        const matches = [];
+        const text = stripFencedCode(markdown);
+        for (const match of text.matchAll(/`([^`]+)`/g)) {
+          const value = match[1].trim();
+          if (looksLikePath(value)) matches.push(value);
+        }
+        for (const match of text.matchAll(
+          /\b(?:src|fixtures|reports|out|files|client|data|docs|test|tests)\/[A-Za-z0-9._/-]*|\bpackage\.json\b|\.env\b/g,
+        )) {
+          const value = match[0].trim();
+          if (looksLikePath(value)) matches.push(value);
+        }
+        return unique(matches).slice(0, 8);
+      }
+
+      function looksLikePath(value) {
+        if (!value || value.includes(" ")) return false;
+        if (value.startsWith("--")) return false;
+        if (value.startsWith("node:")) return false;
+        return (
+          /^(src|fixtures|reports|out|files)\//.test(value) ||
+          /^(client|data|docs|test|tests)\//.test(value) ||
+          value === "package.json" ||
+          value === ".env" ||
+          /\.(js|json|md|html|env)$/i.test(value)
+        );
+      }
+
+      function extractCommand(markdown) {
+        if (!markdown) return "";
+        const fenced = markdown.match(/```(?:txt|sh|bash)?\s*\n([\s\S]*?)```/);
+        if (fenced?.[1]?.trim()) return fenced[1].trim().split("\n")[0].trim();
+        const inlineCommand = markdown.match(
+          /`((?:npm|node|npx|pnpm|yarn|curl|cat|ls|mkdir)[^`]*)`/,
+        );
+        if (inlineCommand?.[1]?.trim()) return inlineCommand[1].trim();
+        const plain = stripMarkdown(markdown).match(
+          /\b(?:npm|node|npx|pnpm|yarn)\s+[^\n.]+/,
+        );
+        return plain?.[0]?.trim() || "";
+      }
+
+      function firstSentence(text) {
+        const cleaned = String(text || "")
+          .replace(/\s+/g, " ")
+          .trim();
+        if (!cleaned) return "";
+        const match = cleaned.match(/^(.+?[.!?])(?:\s|$)/);
+        return (match?.[1] || cleaned).trim();
+      }
+
+      function stripMarkdown(markdown) {
+        return String(markdown || "")
+          .replace(/```[\s\S]*?```/g, "")
+          .replace(/`([^`]+)`/g, "$1")
+          .replace(/\*\*([^*]+)\*\*/g, "$1")
+          .replace(/_([^_]+)_/g, "$1")
+          .replace(/^[-*]\s+/gm, "")
+          .replace(/^#+\s+/gm, "")
+          .trim();
+      }
+
+      function inlineBacktick(value) {
+        return value ? `\`${value}\`` : "";
+      }
+
+      function unique(items) {
+        return [...new Set(items.filter(Boolean))];
+      }
+
+      function parseBuildSteps(markdown) {
+        const matches = [
+          ...markdown.matchAll(
+            /^(?:#### Step\s+(\d+):\s+(.+)|[-*]\s+\[[ xX]\]\s+\*\*Step\s+(\d+):\s+(.+?)\*\*)$/gm,
+          ),
+        ];
+        if (matches.length === 0) {
+          return { intro: markdown.trim(), items: [] };
+        }
+
+        const intro = markdown.slice(0, matches[0].index).trim();
+        const items = matches.map((match, index) => {
+          const start = match.index + match[0].length;
+          const end = matches[index + 1]?.index ?? markdown.length;
+          const fields = parseStepFields(markdown.slice(start, end).trim());
+          const number = Number(match[1] ?? match[3]);
+          return {
+            id: `step-${number}`,
+            number,
+            title: (match[2] ?? match[4]).trim(),
+            fields,
+          };
+        });
+
+        return { intro, items };
+      }
+
+      function parseStepFields(markdown) {
+        const fields = {};
+        let current = "";
+
+        for (const line of markdown.replace(/\r\n/g, "\n").split("\n")) {
+          const match = line
+            .trim()
+            .match(
+              /^(?:[-*]\s+\[[ xX]\]\s+)?\*\*(Short outcome|Outcome|What you're building|What you’re building|Why this step exists|Design boundaries|Implementation hint|Common trap|Verify it works|Reflection|Task|Mechanic|Mechanics|Why this matters|Hint|Checkpoint)\*\*:?\s*(.*)$/,
+            );
+          if (match) {
+            current = normalizeStepFieldName(match[1]);
+            fields[current] = match[2]?.trim() || "";
+            continue;
+          }
+
+          if (!current) continue;
+          fields[current] += `${fields[current] ? "\n" : ""}${line}`;
+        }
+
+        return fields;
+      }
+
+      function normalizeStepFieldName(name) {
+        if (
+          name === "Mechanic" ||
+          name === "Mechanics" ||
+          name === "Why this matters"
+        ) {
+          return "Why this step exists";
+        }
+        if (name === "Hint") return "Implementation hint";
+        if (name === "What you’re building") return "What you're building";
+        return name;
+      }
+
+      async function setCurrentPhase(index) {
+        const lab = getSelectedLab();
+        const challenge = getSelectedChallenge();
+        if (!lab || !challenge) return;
+
+        state.selectedPhase = clamp(
+          index,
+          0,
+          Math.max(challenge.phaseCount - 1, 0),
+        );
+        state.expandedStepId = "";
+        state.helpOpen = false;
+        state.debugOpen = false;
+        state.progress = await patchProgress({
+          labId: lab.id,
+          challengeId: challenge.id,
+          currentPhase: state.selectedPhase,
+        });
+        render();
+      }
+
+      function getStepProgress(progress, phaseIndex) {
+        return new Set(progress.stepProgress?.[phaseIndex] || []);
+      }
+
+      async function selectChallenge(challengeId) {
+        const lab = getSelectedLab();
+        const challenge = lab?.challenges.find(
+          (item) => item.id === challengeId,
+        );
+        if (!lab || !challenge) return;
+
+        state.selectedChallengeId = challenge.id;
+        state.selectedPhase =
+          getChallengeProgress(lab, challenge).currentPhase || 0;
+        state.expandedStepId = "";
+        state.helpOpen = false;
+        state.debugOpen = false;
+        localStorage.setItem(
+          `nodebook:selectedChallenge:${lab.id}`,
+          challenge.id,
+        );
+        state.progress = await patchProgress({
+          labId: lab.id,
+          challengeId: challenge.id,
+          currentPhase: state.selectedPhase,
+        });
+        render();
+      }
+
+      async function movePhase(offset) {
+        await setCurrentPhase(state.selectedPhase + offset);
+      }
+
+      async function toggleComplete() {
+        const lab = getSelectedLab();
+        const challenge = getSelectedChallenge();
+        if (!lab || !challenge) return;
+
+        const completed = new Set(
+          getChallengeProgress(lab, challenge).completedPhases,
+        );
+        const isDone = completed.has(state.selectedPhase);
+        const nextPhase = isDone
+          ? state.selectedPhase
+          : Math.min(
+              state.selectedPhase + 1,
+              Math.max(challenge.phaseCount - 1, 0),
+            );
+
+        state.progress = await patchProgress({
+          labId: lab.id,
+          challengeId: challenge.id,
+          phaseIndex: state.selectedPhase,
+          completed: !isDone,
+          currentPhase: nextPhase,
+        });
+        state.selectedPhase = nextPhase;
+        state.expandedStepId = "";
+        state.helpOpen = false;
+        state.debugOpen = false;
+        render();
+      }
+
+      async function toggleStep(button) {
+        const lab = getSelectedLab();
+        const challenge = getSelectedChallenge();
+        if (!lab || !challenge || !button) return;
+
+        const stepId = button.dataset.stepId;
+        if (!stepId) return;
+
+        const progress = getChallengeProgress(lab, challenge);
+        const completedSteps = getStepProgress(progress, state.selectedPhase);
+        const isDone = completedSteps.has(stepId);
+
+        state.progress = await patchProgress({
+          labId: lab.id,
+          challengeId: challenge.id,
+          stepPhase: state.selectedPhase,
+          stepId,
+          stepCompleted: !isDone,
+        });
+        render();
+      }
+
+      async function resetCurrentLab() {
+        const lab = getSelectedLab();
+        if (!lab) return;
+        if (!confirm(`Reset progress and notes for ${lab.title}?`)) return;
+
+        const response = await fetch("/api/reset", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ labId: lab.id }),
+        });
+        const data = await response.json();
+        state.progress = data.progress;
+        state.selectedPhase = 0;
+        state.expandedStepId = "";
+        state.helpOpen = false;
+        state.debugOpen = false;
+        render();
+      }
+
+      function queueNoteSave(note) {
+        clearTimeout(state.noteTimer);
+        const status = document.querySelector("#noteStatus");
+        if (status) status.textContent = "Saving...";
+
+        state.noteTimer = setTimeout(async () => {
+          const lab = getSelectedLab();
+          const challenge = getSelectedChallenge();
+          if (!lab || !challenge) return;
+
+          state.progress = await patchProgress({
+            labId: lab.id,
+            challengeId: challenge.id,
+            notePhase: state.selectedPhase,
+            note,
+          });
+
+          const nextStatus = document.querySelector("#noteStatus");
+          if (nextStatus) nextStatus.textContent = "Saved locally";
+        }, 350);
+      }
+
+      async function patchProgress(payload) {
+        const response = await fetch("/api/progress", {
+          method: "PATCH",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+        if (!response.ok) throw new Error("Unable to save progress");
+        const data = await response.json();
+        return data.progress;
+      }
+
+      function renderMarkdown(markdown) {
+        if (!markdown || !markdown.trim()) {
+          return `<p><em>No content yet.</em></p>`;
+        }
+
+        const lines = markdown.replace(/\r\n/g, "\n").split("\n");
+        let html = "";
+        let list = null;
+        let paragraph = [];
+        let code = null;
+
+        const closeParagraph = () => {
+          if (paragraph.length === 0) return;
+          html += `<p>${inline(paragraph.join(" "))}</p>`;
+          paragraph = [];
+        };
+
+        const closeList = () => {
+          if (!list) return;
+          html += `</${list}>`;
+          list = null;
+        };
+
+        const closeCode = () => {
+          if (!code) return;
+          html += `<pre><code>${escapeHtml(code.lines.join("\n"))}</code></pre>`;
+          code = null;
+        };
+
+        for (const line of lines) {
+          const trimmed = line.trim();
+          if (trimmed.startsWith("```")) {
+            if (code) {
+              closeCode();
+            } else {
+              closeParagraph();
+              closeList();
+              code = { lines: [] };
+            }
+            continue;
+          }
+
+          if (code) {
+            code.lines.push(line);
+            continue;
+          }
+
+          if (!trimmed) {
+            closeParagraph();
+            closeList();
+            continue;
+          }
+
+          const heading = trimmed.match(/^#{1,6}\s+(.+)$/);
+          if (heading) {
+            closeParagraph();
+            closeList();
+            html += `<p><strong>${inline(heading[1])}</strong></p>`;
+            continue;
+          }
+
+          const bullet = trimmed.match(/^[-*]\s+(.+)$/);
+          if (bullet) {
+            closeParagraph();
+            if (list !== "ul") {
+              closeList();
+              list = "ul";
+              html += "<ul>";
+            }
+            html += `<li>${inline(bullet[1])}</li>`;
+            continue;
+          }
+
+          const numbered = trimmed.match(/^\d+\.\s+(.+)$/);
+          if (numbered) {
+            closeParagraph();
+            if (list !== "ol") {
+              closeList();
+              list = "ol";
+              html += "<ol>";
+            }
+            html += `<li>${inline(numbered[1])}</li>`;
+            continue;
+          }
+
+          closeList();
+          paragraph.push(trimmed);
+        }
+
+        closeParagraph();
+        closeList();
+        closeCode();
+        return html;
+      }
+
+      function stripFencedCode(markdown) {
+        return markdown.replace(/```[\s\S]*?```/g, "");
+      }
+
+      function inline(value) {
+        const codeSpans = [];
+        const stashCode = (_match, code) => {
+          const index = codeSpans.length;
+          codeSpans.push(`<code>${code}</code>`);
+          return `\\u0000CODE${index}\\u0000`;
+        };
+
+        return escapeHtml(value)
+          .replace(/`([^`]+)`/g, stashCode)
+          .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+          .replace(/(^|[^\w])_([^_\n]+)_($|[^\w])/g, "$1<em>$2</em>$3")
+          .replace(/\\u0000CODE(\d+)\\u0000/g, (_match, index) => {
+            return codeSpans[Number(index)] ?? "";
+          });
+      }
+
+      function escapeHtml(value) {
+        return String(value)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#039;");
+      }
+
+      function escapeAttr(value) {
+        return escapeHtml(value).replace(/`/g, "&#096;");
+      }
+
+      function clamp(value, min, max) {
+        return Math.min(Math.max(value, min), max);
+      }
+    </script>
+  </body>
+</html>

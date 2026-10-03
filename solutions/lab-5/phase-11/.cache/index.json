@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "root": "/nodebook-labs-workspace/lab-5/phase-11/watched",
+  "createdAt": "2026-05-21T01:24:05.328Z",
+  "updatedAt": "2026-05-21T01:38:12.609Z",
+  "options": {
+    "metadata": true,
+    "hash": true,
+    "followSymlinks": false
+  },
+  "filesByPath": {
+    "a.txt": {
+      "path": "a.txt",
+      "type": "file",
+      "size": 30,
+      "mtimeMs": 1779327491606.2375,
+      "ctimeMs": 1779327491606.2375,
+      "birthtimeMs": 1779327342060.115,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13118929,
+      "nlink": 1,
+      "identity": "66306:13118929",
+      "hashAlgorithm": "sha256",
+      "hash": "facd3f6899c369ae1a8e4d7c214c748b3d65bb383d2d640b6910f081a485e4ad",
+      "hashBytes": 30
+    },
+    "nested/c.txt": {
+      "path": "nested/c.txt",
+      "type": "file",
+      "size": 19,
+      "mtimeMs": 1779327324154.3284,
+      "ctimeMs": 1779327342060.115,
+      "birthtimeMs": 1779327342060.079,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13118928,
+      "nlink": 1,
+      "identity": "66306:13118928",
+      "hashAlgorithm": "sha256",
+      "hash": "3d0a4801879e40996e0ce69d0be8bd7ec518b763aabd915224b0261bd377a901",
+      "hashBytes": 19
+    },
+    "new.txt": {
+      "path": "new.txt",
+      "type": "file",
+      "size": 9,
+      "mtimeMs": 1779327324154.3284,
+      "ctimeMs": 1779327342060.217,
+      "birthtimeMs": 1779327342060.1716,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13118930,
+      "nlink": 1,
+      "identity": "66306:13118930",
+      "hashAlgorithm": "sha256",
+      "hash": "0f15384d18789b1ebf3043dc7b6bc27273c8576373fbeb6f3e15854b588141c0",
+      "hashBytes": 9
+    }
+  },
+  "buildCache": {
+    "version": 1,
+    "builderVersion": "lab-5-builder-v1",
+    "entries": {
+      "a.txt": {
+        "inputHash": "facd3f6899c369ae1a8e4d7c214c748b3d65bb383d2d640b6910f081a485e4ad",
+        "inputMetadata": {
+          "size": 30,
+          "mtimeMs": 1779327491606.2375,
+          "mode": 33188,
+          "identity": "66306:13118929",
+          "type": "file"
+        },
+        "outputPath": "build-output/a.txt.json",
+        "outputHash": "fe1cf6193b42b5782a4566424bbbea78ee755b4e54cbd1d5fbb857cf80f0e12a",
+        "builtAt": "2026-05-21T01:38:11.810Z",
+        "builderVersion": "lab-5-builder-v1"
+      },
+      "a/one.txt": {
+        "inputHash": "8658c513d419c7a094585052709f8f0e069a075aa28b10f4756ac486758945e7",
+        "inputMetadata": {
+          "size": 9,
+          "mtimeMs": 1779327161469.435,
+          "mode": 33188,
+          "identity": "66306:13116587",
+          "type": "file"
+        },
+        "outputPath": "build-output/a__one.txt.json",
+        "outputHash": "ca9a9d701c50c775414631ae8886b2ea8274feff7ddb20c3c5aad9338e742ad6",
+        "builtAt": "2026-05-21T01:33:18.916Z",
+        "builderVersion": "lab-5-builder-v1"
+      },
+      "b/two.txt": {
+        "inputHash": "27dd8ed44a83ff94d557f9fd0412ed5a8cbca69ea04922d88c01184a07300a5a",
+        "inputMetadata": {
+          "size": 4,
+          "mtimeMs": 1779326475140.5562,
+          "mode": 33188,
+          "identity": "66306:13116589",
+          "type": "file"
+        },
+        "outputPath": "build-output/b__two.txt.json",
+        "outputHash": "2144ddc4ab4c00171eadfd7efeeb54db8e80860313e6c2b3f88e7f0d42855377",
+        "builtAt": "2026-05-21T01:33:18.917Z",
+        "builderVersion": "lab-5-builder-v1"
+      },
+      "new.txt": {
+        "inputHash": "0f15384d18789b1ebf3043dc7b6bc27273c8576373fbeb6f3e15854b588141c0",
+        "inputMetadata": {
+          "size": 9,
+          "mtimeMs": 1779327324154.3284,
+          "mode": 33188,
+          "identity": "66306:13118930",
+          "type": "file"
+        },
+        "outputPath": "build-output/new.txt.json",
+        "outputHash": "a3c7af6963fd3eef3141a541f6da19948761ede79f299f1489f88abc8e7355c1",
+        "builtAt": "2026-05-21T01:38:10.656Z",
+        "builderVersion": "lab-5-builder-v1"
+      },
+      "target.txt": {
+        "inputHash": "c97ecfda4d205190b973232dcfdb0c29748521c2534dd866bcc782f30b086738",
+        "inputMetadata": {
+          "size": 7,
+          "mtimeMs": 1779326527044.7725,
+          "mode": 33188,
+          "identity": "66306:13116594",
+          "type": "file"
+        },
+        "outputPath": "build-output/target.txt.json",
+        "outputHash": "f306a0045fcd48c03b8674b2c4a90588f3e6d8456e9909f4485282cdf7650feb",
+        "builtAt": "2026-05-21T01:33:18.919Z",
+        "builderVersion": "lab-5-builder-v1"
+      },
+      "nested/c.txt": {
+        "inputHash": "3d0a4801879e40996e0ce69d0be8bd7ec518b763aabd915224b0261bd377a901",
+        "inputMetadata": {
+          "size": 19,
+          "mtimeMs": 1779327324154.3284,
+          "mode": 33188,
+          "identity": "66306:13118928",
+          "type": "file"
+        },
+        "outputPath": "build-output/nested__c.txt.json",
+        "outputHash": "d80547967267d2908f2f639b6615f7ded2b4cd6ab34c52530e210e74042e027b",
+        "builtAt": "2026-05-21T01:38:10.655Z",
+        "builderVersion": "lab-5-builder-v1"
+      }
+    }
+  }
+}

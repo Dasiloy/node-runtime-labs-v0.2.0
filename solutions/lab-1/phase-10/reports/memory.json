@@ -1,0 +1,19 @@
+{
+  "samples": [
+    {
+      "at": 32,
+      "type": "memory-sample",
+      "rss": 74911744,
+      "heapTotal": 7016448,
+      "heapUsed": 5269544,
+      "external": 1937010,
+      "arrayBuffers": 27494
+    }
+  ],
+  "peaks": {
+    "peakRss": 74911744,
+    "peakHeapUsed": 5269544,
+    "peakExternal": 1937010,
+    "peakArrayBuffers": 27494
+  }
+}

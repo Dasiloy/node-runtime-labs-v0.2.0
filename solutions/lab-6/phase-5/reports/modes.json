@@ -1,0 +1,74 @@
+{
+  "allSettled": {
+    "mode": "allSettled",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-5/tasks/mixed-results.json",
+    "startedCount": 5,
+    "settledCount": 5,
+    "stoppedReason": null,
+    "finalStatusCounts": {
+      "successCount": 3,
+      "failedCount": 2,
+      "timedOutCount": 0,
+      "canceledCount": 0,
+      "blockedCount": 0,
+      "skippedCount": 0,
+      "interruptedCount": 0
+    },
+    "maxActive": 3,
+    "queueLengthMax": 5
+  },
+  "all": {
+    "mode": "all",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-5/tasks/mixed-results.json",
+    "startedCount": 3,
+    "settledCount": 5,
+    "stoppedReason": "first_failure",
+    "finalStatusCounts": {
+      "successCount": 2,
+      "failedCount": 1,
+      "timedOutCount": 0,
+      "canceledCount": 0,
+      "blockedCount": 0,
+      "skippedCount": 2,
+      "interruptedCount": 0
+    },
+    "maxActive": 3,
+    "queueLengthMax": 5
+  },
+  "race": {
+    "mode": "race",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-5/tasks/mixed-results.json",
+    "startedCount": 3,
+    "settledCount": 5,
+    "stoppedReason": "first_settled",
+    "finalStatusCounts": {
+      "successCount": 2,
+      "failedCount": 1,
+      "timedOutCount": 0,
+      "canceledCount": 0,
+      "blockedCount": 0,
+      "skippedCount": 2,
+      "interruptedCount": 0
+    },
+    "maxActive": 3,
+    "queueLengthMax": 5
+  },
+  "any": {
+    "mode": "any",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-5/tasks/mixed-results.json",
+    "startedCount": 4,
+    "settledCount": 5,
+    "stoppedReason": "first_success",
+    "finalStatusCounts": {
+      "successCount": 2,
+      "failedCount": 2,
+      "timedOutCount": 0,
+      "canceledCount": 0,
+      "blockedCount": 0,
+      "skippedCount": 1,
+      "interruptedCount": 0
+    },
+    "maxActive": 3,
+    "queueLengthMax": 5
+  }
+}

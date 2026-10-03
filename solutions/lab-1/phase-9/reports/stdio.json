@@ -1,0 +1,16 @@
+{
+  "stdout": {
+    "bytes": 34
+  },
+  "stderr": {
+    "bytes": 0
+  },
+  "events": [
+    {
+      "type": "stdout",
+      "at": 55.653,
+      "bytes": 34,
+      "preview": "hanging server listening on 46659\n"
+    }
+  ]
+}

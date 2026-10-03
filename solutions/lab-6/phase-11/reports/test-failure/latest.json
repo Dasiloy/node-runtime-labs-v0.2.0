@@ -1,0 +1,99 @@
+{
+  "run": {
+    "runId": "ec140ec3-6f65-4702-bd8c-74bfc8dd6519",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-11/tasks/function-failure.json",
+    "mode": "allSettled",
+    "status": "failed",
+    "startedAt": "2026-05-21T02:11:59.219Z",
+    "endedAt": "2026-05-21T02:11:59.225Z",
+    "elapsedMs": 6.221348999999989,
+    "stoppedReason": null,
+    "canceledAt": null,
+    "cancelReason": null,
+    "canceledTaskIds": []
+  },
+  "metrics": {
+    "taskCount": 2,
+    "completedCount": 0,
+    "failedCount": 2,
+    "timedOutCount": 0,
+    "canceledCount": 0,
+    "blockedCount": 0,
+    "skippedCount": 0,
+    "startedCount": 2,
+    "settledCount": 2,
+    "retryCount": 0,
+    "maxActive": 1,
+    "queueLengthMax": 2,
+    "successCount": 0,
+    "interruptedCount": 0
+  },
+  "tasks": [
+    {
+      "taskId": "function-throw",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:11:59.219Z",
+      "timeoutMs": null,
+      "status": "failed",
+      "error": {
+        "kind": "thrown",
+        "message": "fixture threw",
+        "stack": "Error: fixture threw\n    at throwFailure (file:///nodebook-labs-workspace/lab-6/phase-11/tasks/fixtures.js:8:9)\n    at runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-11/src/runner.js:220:16)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-11/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-11/src/runner.js:329:20)"
+      },
+      "endedAt": "2026-05-21T02:11:59.219Z",
+      "elapsedMs": 0.22174699999999348,
+      "attempts": [
+        {
+          "taskId": "function-throw",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:11:59.219Z",
+          "timeoutMs": null,
+          "status": "failed",
+          "error": {
+            "kind": "thrown",
+            "message": "fixture threw",
+            "stack": "Error: fixture threw\n    at throwFailure (file:///nodebook-labs-workspace/lab-6/phase-11/tasks/fixtures.js:8:9)\n    at runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-11/src/runner.js:220:16)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-11/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-11/src/runner.js:329:20)"
+          },
+          "endedAt": "2026-05-21T02:11:59.219Z",
+          "elapsedMs": 0.22174699999999348
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:11:59.219Z",
+      "queueMs": 0
+    },
+    {
+      "taskId": "function-reject",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:11:59.219Z",
+      "timeoutMs": null,
+      "status": "failed",
+      "error": {
+        "kind": "rejected",
+        "message": "fixture rejected",
+        "stack": "Error: fixture rejected\n    at rejectFailure (file:///nodebook-labs-workspace/lab-6/phase-11/tasks/fixtures.js:13:9)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-11/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-11/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-11/src/runner.js:329:20)"
+      },
+      "endedAt": "2026-05-21T02:11:59.225Z",
+      "elapsedMs": 5.378685000000004,
+      "attempts": [
+        {
+          "taskId": "function-reject",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:11:59.219Z",
+          "timeoutMs": null,
+          "status": "failed",
+          "error": {
+            "kind": "rejected",
+            "message": "fixture rejected",
+            "stack": "Error: fixture rejected\n    at rejectFailure (file:///nodebook-labs-workspace/lab-6/phase-11/tasks/fixtures.js:13:9)\n    at async runFunctionTask (file:///nodebook-labs-workspace/lab-6/phase-11/src/runner.js:240:5)\n    at async runTask (file:///nodebook-labs-workspace/lab-6/phase-11/src/runner.js:279:14)\n    at async runTaskWithRetries (file:///nodebook-labs-workspace/lab-6/phase-11/src/runner.js:329:20)"
+          },
+          "endedAt": "2026-05-21T02:11:59.225Z",
+          "elapsedMs": 5.378685000000004
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:11:59.219Z",
+      "queueMs": 0
+    }
+  ]
+}

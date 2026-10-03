@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "type": "command",
+      "command": "node",
+      "args": [
+        "-e",
+        "console.log('missing id')"
+      ]
+    }
+  ]
+}

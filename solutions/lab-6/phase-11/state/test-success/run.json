@@ -1,0 +1,149 @@
+{
+  "runId": "c9b5fa4e-9ed1-4a9a-a6da-0f79f41bfd75",
+  "taskFile": "/nodebook-labs-workspace/lab-6/phase-11/tasks/function-success.json",
+  "startedAt": "2026-05-21T02:11:59.194Z",
+  "updatedAt": "2026-05-21T02:11:59.196Z",
+  "status": "success",
+  "options": {
+    "concurrency": 1,
+    "mode": "allSettled",
+    "timeout": null,
+    "cancelAfterMs": null
+  },
+  "tasksById": {
+    "function-success": {
+      "definition": {
+        "id": "function-success",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "success",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {}
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:11:59.195Z",
+      "startedAt": "2026-05-21T02:11:59.195Z",
+      "result": {
+        "taskId": "function-success",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:11:59.195Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:11:59.196Z",
+        "elapsedMs": 0.7689960000000013,
+        "attempts": [
+          {
+            "taskId": "function-success",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:11:59.195Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:11:59.196Z",
+            "elapsedMs": 0.7689960000000013
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:11:59.195Z",
+        "queueMs": 0
+      },
+      "attempts": [
+        {
+          "taskId": "function-success",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:11:59.195Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:11:59.196Z",
+          "elapsedMs": 0.7689960000000013
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:11:59.195Z",
+      "taskId": "function-success",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:11:59.196Z",
+      "taskId": "function-success",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:11:59.196Z",
+      "taskId": "function-success",
+      "status": "success"
+    }
+  ],
+  "endedAt": "2026-05-21T02:11:59.196Z",
+  "report": {
+    "run": {
+      "runId": "c9b5fa4e-9ed1-4a9a-a6da-0f79f41bfd75",
+      "taskFile": "/nodebook-labs-workspace/lab-6/phase-11/tasks/function-success.json",
+      "mode": "allSettled",
+      "status": "success",
+      "startedAt": "2026-05-21T02:11:59.194Z",
+      "endedAt": "2026-05-21T02:11:59.196Z",
+      "elapsedMs": 2.4279050000000026,
+      "stoppedReason": null,
+      "canceledAt": null,
+      "cancelReason": null,
+      "canceledTaskIds": []
+    },
+    "metrics": {
+      "taskCount": 1,
+      "completedCount": 1,
+      "failedCount": 0,
+      "timedOutCount": 0,
+      "canceledCount": 0,
+      "blockedCount": 0,
+      "skippedCount": 0,
+      "startedCount": 1,
+      "settledCount": 1,
+      "retryCount": 0,
+      "maxActive": 1,
+      "queueLengthMax": 1,
+      "successCount": 1,
+      "interruptedCount": 0
+    },
+    "tasks": [
+      {
+        "taskId": "function-success",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:11:59.195Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:11:59.196Z",
+        "elapsedMs": 0.7689960000000013,
+        "attempts": [
+          {
+            "taskId": "function-success",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:11:59.195Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:11:59.196Z",
+            "elapsedMs": 0.7689960000000013
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:11:59.195Z",
+        "queueMs": 0
+      }
+    ]
+  }
+}

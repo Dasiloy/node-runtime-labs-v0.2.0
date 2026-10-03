@@ -1,0 +1,8 @@
+{
+  "originalSize": 499993,
+  "recoveredSize": 499900,
+  "lostBytes": 93,
+  "failureOffset": 499900,
+  "failureReason": "incomplete-payload",
+  "validRecordCount": 4999
+}

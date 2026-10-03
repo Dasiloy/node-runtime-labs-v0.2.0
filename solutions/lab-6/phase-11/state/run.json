@@ -1,0 +1,255 @@
+{
+  "runId": "00a1b134-751f-42cb-82d1-319e6a61464b",
+  "taskFile": "/nodebook-labs-workspace/lab-6/phase-11/tasks/cancel-after.json",
+  "startedAt": "2026-05-21T02:12:16.330Z",
+  "updatedAt": "2026-05-21T02:12:22.727Z",
+  "status": "interrupted",
+  "options": {
+    "concurrency": 2,
+    "mode": "allSettled",
+    "timeout": null,
+    "cancelAfterMs": null
+  },
+  "tasksById": {
+    "cancel-1": {
+      "definition": {
+        "id": "cancel-1",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 1000
+        }
+      },
+      "status": "interrupted",
+      "queuedAt": "2026-05-21T02:12:16.331Z",
+      "startedAt": "2026-05-21T02:12:16.331Z",
+      "interruptedAt": "2026-05-21T02:12:22.727Z"
+    },
+    "cancel-2": {
+      "definition": {
+        "id": "cancel-2",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 1000
+        }
+      },
+      "status": "interrupted",
+      "queuedAt": "2026-05-21T02:12:16.331Z",
+      "startedAt": "2026-05-21T02:12:16.332Z",
+      "interruptedAt": "2026-05-21T02:12:22.727Z"
+    },
+    "cancel-3": {
+      "definition": {
+        "id": "cancel-3",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 1000
+        }
+      },
+      "status": "queued",
+      "queuedAt": "2026-05-21T02:12:16.331Z"
+    },
+    "cancel-4": {
+      "definition": {
+        "id": "cancel-4",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 1000
+        }
+      },
+      "status": "queued",
+      "queuedAt": "2026-05-21T02:12:16.331Z"
+    },
+    "cancel-5": {
+      "definition": {
+        "id": "cancel-5",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 1000
+        }
+      },
+      "status": "queued",
+      "queuedAt": "2026-05-21T02:12:16.331Z"
+    },
+    "cancel-6": {
+      "definition": {
+        "id": "cancel-6",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 1000
+        }
+      },
+      "status": "queued",
+      "queuedAt": "2026-05-21T02:12:16.331Z"
+    },
+    "cancel-7": {
+      "definition": {
+        "id": "cancel-7",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 1000
+        }
+      },
+      "status": "queued",
+      "queuedAt": "2026-05-21T02:12:16.331Z"
+    },
+    "cancel-8": {
+      "definition": {
+        "id": "cancel-8",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 1000
+        }
+      },
+      "status": "queued",
+      "queuedAt": "2026-05-21T02:12:16.331Z"
+    },
+    "cancel-9": {
+      "definition": {
+        "id": "cancel-9",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 1000
+        }
+      },
+      "status": "queued",
+      "queuedAt": "2026-05-21T02:12:16.331Z"
+    },
+    "cancel-10": {
+      "definition": {
+        "id": "cancel-10",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 1000
+        }
+      },
+      "status": "queued",
+      "queuedAt": "2026-05-21T02:12:16.331Z"
+    }
+  },
+  "events": [
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:16.331Z",
+      "taskId": "cancel-1",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:16.332Z",
+      "taskId": "cancel-2",
+      "attempt": 1,
+      "status": "running"
+    }
+  ]
+}

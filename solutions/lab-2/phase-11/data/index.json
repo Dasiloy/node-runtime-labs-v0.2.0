@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "segment": "/nodebook-labs-workspace/lab-2/phase-11/data/segment-0001.dat",
+  "segmentSize": 68,
+  "updatedAt": "2026-05-21T01:31:15.971Z",
+  "entries": [
+    {
+      "key": "name",
+      "type": "PUT",
+      "segment": "/nodebook-labs-workspace/lab-2/phase-11/data/segment-0001.dat",
+      "offset": 0,
+      "length": 36,
+      "timestamp": 1779327066159
+    },
+    {
+      "key": "a",
+      "type": "PUT",
+      "segment": "/nodebook-labs-workspace/lab-2/phase-11/data/segment-0001.dat",
+      "offset": 36,
+      "length": 32,
+      "timestamp": 1779326892968
+    }
+  ]
+}

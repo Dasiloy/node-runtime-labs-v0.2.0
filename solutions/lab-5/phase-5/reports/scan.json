@@ -1,0 +1,199 @@
+{
+  "root": "/nodebook-labs-workspace/lab-5/phase-5/watched",
+  "generatedAt": "2026-05-21T02:02:08.568Z",
+  "counts": {
+    "files": 7,
+    "directories": 3,
+    "ignored": 2,
+    "errors": 0
+  },
+  "files": [
+    {
+      "path": "a.txt",
+      "type": "file",
+      "size": 10,
+      "mtimeMs": 1779326695879.954,
+      "ctimeMs": 1779326695879.954,
+      "birthtimeMs": 1779326657679.5627,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13116342,
+      "nlink": 1,
+      "identity": "66306:13116342",
+      "hashAlgorithm": "sha256",
+      "hash": "4710fd5394a5f18dbaf4beaa40808d2dddfaa609f77a0871eb67aac5480ae04b",
+      "hashBytes": 10
+    },
+    {
+      "path": "a/one.txt",
+      "type": "file",
+      "size": 4,
+      "mtimeMs": 1779326475140.5562,
+      "ctimeMs": 1779326657679.3088,
+      "birthtimeMs": 1779326657679.2766,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13116333,
+      "nlink": 1,
+      "identity": "66306:13116333",
+      "hashAlgorithm": "sha256",
+      "hash": "2c8b08da5ce60398e1f19af0e5dccc744df274b826abe585eaba68c525434806",
+      "hashBytes": 4
+    },
+    {
+      "path": "b/two.txt",
+      "type": "file",
+      "size": 4,
+      "mtimeMs": 1779326475140.5562,
+      "ctimeMs": 1779326657679.3699,
+      "birthtimeMs": 1779326657679.3088,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13116335,
+      "nlink": 1,
+      "identity": "66306:13116335",
+      "hashAlgorithm": "sha256",
+      "hash": "27dd8ed44a83ff94d557f9fd0412ed5a8cbca69ea04922d88c01184a07300a5a",
+      "hashBytes": 4
+    },
+    {
+      "path": "link.txt",
+      "type": "symlink",
+      "size": 10,
+      "mtimeMs": 1779326527044.7725,
+      "ctimeMs": 1779326657679.5627,
+      "birthtimeMs": 1779326657679.5627,
+      "mode": 41471,
+      "permissions": "0777",
+      "dev": 66306,
+      "ino": 13116341,
+      "nlink": 1,
+      "identity": "66306:13116341",
+      "linkTarget": "target.txt"
+    },
+    {
+      "path": "new.txt",
+      "type": "file",
+      "size": 4,
+      "mtimeMs": 1779326695879.954,
+      "ctimeMs": 1779326695879.954,
+      "birthtimeMs": 1779326695878.7827,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13116415,
+      "nlink": 1,
+      "identity": "66306:13116415",
+      "hashAlgorithm": "sha256",
+      "hash": "7aa7a5359173d05b63cfd682e3c38487f3cb4f7f1d60659fe59fab1505977d4c",
+      "hashBytes": 4
+    },
+    {
+      "path": "target.txt",
+      "type": "file",
+      "size": 7,
+      "mtimeMs": 1779326527044.7725,
+      "ctimeMs": 1779326657679.5627,
+      "birthtimeMs": 1779326657679.5212,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13116340,
+      "nlink": 1,
+      "identity": "66306:13116340",
+      "hashAlgorithm": "sha256",
+      "hash": "c97ecfda4d205190b973232dcfdb0c29748521c2534dd866bcc782f30b086738",
+      "hashBytes": 7
+    },
+    {
+      "path": "verify-diff-1779328928303.txt",
+      "type": "file",
+      "size": 6,
+      "mtimeMs": 1779328928302.668,
+      "ctimeMs": 1779328928302.668,
+      "birthtimeMs": 1779328928302.668,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13119301,
+      "nlink": 1,
+      "identity": "66306:13119301",
+      "hashAlgorithm": "sha256",
+      "hash": "b640e840b19d378660b32fb51ae18d67dccb4a8596a29e7bd72c1b2ae5928f41",
+      "hashBytes": 6
+    }
+  ],
+  "directories": [
+    {
+      "path": ".",
+      "type": "directory",
+      "size": 4096,
+      "mtimeMs": 1779328928302.668,
+      "ctimeMs": 1779328928302.668,
+      "birthtimeMs": 1779326657679.1787,
+      "mode": 16877,
+      "permissions": "0755",
+      "dev": 66306,
+      "ino": 13116331,
+      "nlink": 6,
+      "identity": "66306:13116331"
+    },
+    {
+      "path": "a",
+      "type": "directory",
+      "size": 4096,
+      "mtimeMs": 1779326475139.4392,
+      "ctimeMs": 1779326657679.3088,
+      "birthtimeMs": 1779326657679.1787,
+      "mode": 16877,
+      "permissions": "0755",
+      "dev": 66306,
+      "ino": 13116332,
+      "nlink": 2,
+      "identity": "66306:13116332"
+    },
+    {
+      "path": "b",
+      "type": "directory",
+      "size": 4096,
+      "mtimeMs": 1779326475140.5562,
+      "ctimeMs": 1779326657679.3699,
+      "birthtimeMs": 1779326657679.3088,
+      "mode": 16877,
+      "permissions": "0755",
+      "dev": 66306,
+      "ino": 13116334,
+      "nlink": 2,
+      "identity": "66306:13116334"
+    }
+  ],
+  "ignored": [
+    {
+      "path": ".cache",
+      "reason": "default-ignore"
+    },
+    {
+      "path": "reports",
+      "reason": "default-ignore"
+    }
+  ],
+  "skipped": [
+    {
+      "path": "link.txt",
+      "kind": "symlink",
+      "action": "hash",
+      "reason": "non-regular-file"
+    }
+  ],
+  "errors": [],
+  "cache": {
+    "path": ".cache/index.json",
+    "loaded": true,
+    "loadMs": 1.0223830000000014,
+    "saveMs": 1.010080000000002,
+    "disabled": false
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "mode": "stream",
+  "status": "completed",
+  "input": {
+    "path": "data/access.ndjson",
+    "source": {
+      "kind": "file",
+      "inputPath": "/nodebook-labs-workspace/lab-3/phase-10/data/access.ndjson",
+      "compressed": false,
+      "declaredBytes": 1075872,
+      "readHwm": null
+    },
+    "bytes": 1075872
+  },
+  "output": {
+    "path": "out/stream.ndjson",
+    "bytes": 81932
+  },
+  "counts": {
+    "rows": 5000,
+    "matches": 381
+  },
+  "timing": {
+    "startedAt": "2026-05-21T01:59:28.490Z",
+    "endedAt": "2026-05-21T01:59:28.520Z",
+    "elapsedMs": 29.480686999999996
+  },
+  "memory": {
+    "current": {
+      "rss": 96411648,
+      "heapUsed": 6752376,
+      "heapTotal": 11210752,
+      "external": 2186653,
+      "arrayBuffers": 330464
+    },
+    "peak": {
+      "rss": 96411648,
+      "heapUsed": 6752376,
+      "heapTotal": 11210752,
+      "external": 2186653,
+      "arrayBuffers": 330464
+    }
+  },
+  "bytes": {
+    "bytesRead": 1075872,
+    "compressedBytesRead": 0,
+    "uncompressedBytesRead": 1075872,
+    "outputUncompressed": 81932,
+    "written": 81932
+  },
+  "details": {
+    "where": "status >= 500",
+    "plugins": {
+      "config": {
+        "redact": [],
+        "select": [],
+        "enrich": []
+      },
+      "executionOrder": [
+        "filter",
+        "stringify"
+      ]
+    }
+  },
+  "pipelineStatus": "completed",
+  "completed": true,
+  "errorCode": null,
+  "stageCloses": [
+    {
+      "name": "lineSplitter",
+      "closedAt": "2026-05-21T01:59:28.519Z"
+    },
+    {
+      "name": "jsonParser",
+      "closedAt": "2026-05-21T01:59:28.519Z"
+    },
+    {
+      "name": "filter",
+      "closedAt": "2026-05-21T01:59:28.519Z"
+    },
+    {
+      "name": "plugins",
+      "closedAt": "2026-05-21T01:59:28.519Z"
+    },
+    {
+      "name": "stringifier",
+      "closedAt": "2026-05-21T01:59:28.519Z"
+    },
+    {
+      "name": "source",
+      "closedAt": "2026-05-21T01:59:28.520Z"
+    },
+    {
+      "name": "destination",
+      "closedAt": "2026-05-21T01:59:28.520Z"
+    }
+  ]
+}

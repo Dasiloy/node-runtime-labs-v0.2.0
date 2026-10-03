@@ -1,0 +1,956 @@
+{
+  "run": {
+    "runId": "a2d7cb19-d88e-4d7b-8fdc-e22d82ca770b",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-13/tasks/bench/concurrency.json",
+    "mode": "allSettled",
+    "status": "success",
+    "startedAt": "2026-05-21T02:12:06.939Z",
+    "endedAt": "2026-05-21T02:12:08.166Z",
+    "elapsedMs": 1227.597443,
+    "stoppedReason": null,
+    "canceledAt": null,
+    "cancelReason": null,
+    "canceledTaskIds": [],
+    "shutdownStartedAt": null,
+    "shutdownSignal": null,
+    "shutdownMode": null
+  },
+  "metrics": {
+    "taskCount": 40,
+    "completedCount": 40,
+    "failedCount": 0,
+    "timedOutCount": 0,
+    "canceledCount": 0,
+    "blockedCount": 0,
+    "skippedCount": 0,
+    "startedCount": 40,
+    "settledCount": 40,
+    "retryCount": 0,
+    "maxActive": 1,
+    "queueLengthMax": 40,
+    "successCount": 40,
+    "interruptedCount": 0
+  },
+  "tasks": [
+    {
+      "taskId": "bench-delay-0",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:06.940Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:06.971Z",
+      "elapsedMs": 31.248742000000004,
+      "attempts": [
+        {
+          "taskId": "bench-delay-0",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:06.940Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:06.971Z",
+          "elapsedMs": 31.248742000000004
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 0
+    },
+    {
+      "taskId": "bench-delay-1",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:06.972Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.003Z",
+      "elapsedMs": 31.251177000000006,
+      "attempts": [
+        {
+          "taskId": "bench-delay-1",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:06.972Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.003Z",
+          "elapsedMs": 31.251177000000006
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 32
+    },
+    {
+      "taskId": "bench-delay-2",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.003Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.034Z",
+      "elapsedMs": 30.75806,
+      "attempts": [
+        {
+          "taskId": "bench-delay-2",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.003Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.034Z",
+          "elapsedMs": 30.75806
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 63
+    },
+    {
+      "taskId": "bench-delay-3",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.034Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.064Z",
+      "elapsedMs": 30.099671999999998,
+      "attempts": [
+        {
+          "taskId": "bench-delay-3",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.034Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.064Z",
+          "elapsedMs": 30.099671999999998
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 94
+    },
+    {
+      "taskId": "bench-delay-4",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.064Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.094Z",
+      "elapsedMs": 29.78779499999999,
+      "attempts": [
+        {
+          "taskId": "bench-delay-4",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.064Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.094Z",
+          "elapsedMs": 29.78779499999999
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 124
+    },
+    {
+      "taskId": "bench-delay-5",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.094Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.124Z",
+      "elapsedMs": 29.89113999999998,
+      "attempts": [
+        {
+          "taskId": "bench-delay-5",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.094Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.124Z",
+          "elapsedMs": 29.89113999999998
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 154
+    },
+    {
+      "taskId": "bench-delay-6",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.124Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.154Z",
+      "elapsedMs": 29.77458999999999,
+      "attempts": [
+        {
+          "taskId": "bench-delay-6",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.124Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.154Z",
+          "elapsedMs": 29.77458999999999
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 184
+    },
+    {
+      "taskId": "bench-delay-7",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.154Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.185Z",
+      "elapsedMs": 30.245765999999975,
+      "attempts": [
+        {
+          "taskId": "bench-delay-7",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.154Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.185Z",
+          "elapsedMs": 30.245765999999975
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 214
+    },
+    {
+      "taskId": "bench-delay-8",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.185Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.216Z",
+      "elapsedMs": 31.174582999999984,
+      "attempts": [
+        {
+          "taskId": "bench-delay-8",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.185Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.216Z",
+          "elapsedMs": 31.174582999999984
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 245
+    },
+    {
+      "taskId": "bench-delay-9",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.216Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.246Z",
+      "elapsedMs": 30.35853800000001,
+      "attempts": [
+        {
+          "taskId": "bench-delay-9",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.216Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.246Z",
+          "elapsedMs": 30.35853800000001
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 276
+    },
+    {
+      "taskId": "bench-delay-10",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.247Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.277Z",
+      "elapsedMs": 30.394405000000006,
+      "attempts": [
+        {
+          "taskId": "bench-delay-10",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.247Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.277Z",
+          "elapsedMs": 30.394405000000006
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 307
+    },
+    {
+      "taskId": "bench-delay-11",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.277Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.307Z",
+      "elapsedMs": 30.243693000000007,
+      "attempts": [
+        {
+          "taskId": "bench-delay-11",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.277Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.307Z",
+          "elapsedMs": 30.243693000000007
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 337
+    },
+    {
+      "taskId": "bench-delay-12",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.308Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.338Z",
+      "elapsedMs": 30.181505000000016,
+      "attempts": [
+        {
+          "taskId": "bench-delay-12",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.308Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.338Z",
+          "elapsedMs": 30.181505000000016
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 368
+    },
+    {
+      "taskId": "bench-delay-13",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.338Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.369Z",
+      "elapsedMs": 30.478894000000025,
+      "attempts": [
+        {
+          "taskId": "bench-delay-13",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.338Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.369Z",
+          "elapsedMs": 30.478894000000025
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 398
+    },
+    {
+      "taskId": "bench-delay-14",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.369Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.400Z",
+      "elapsedMs": 31.28034100000002,
+      "attempts": [
+        {
+          "taskId": "bench-delay-14",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.369Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.400Z",
+          "elapsedMs": 31.28034100000002
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 429
+    },
+    {
+      "taskId": "bench-delay-15",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.400Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.431Z",
+      "elapsedMs": 30.77117499999997,
+      "attempts": [
+        {
+          "taskId": "bench-delay-15",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.400Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.431Z",
+          "elapsedMs": 30.77117499999997
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 460
+    },
+    {
+      "taskId": "bench-delay-16",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.431Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.461Z",
+      "elapsedMs": 30.36565200000007,
+      "attempts": [
+        {
+          "taskId": "bench-delay-16",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.431Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.461Z",
+          "elapsedMs": 30.36565200000007
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 491
+    },
+    {
+      "taskId": "bench-delay-17",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.462Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.491Z",
+      "elapsedMs": 29.801109999999994,
+      "attempts": [
+        {
+          "taskId": "bench-delay-17",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.462Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.491Z",
+          "elapsedMs": 29.801109999999994
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 522
+    },
+    {
+      "taskId": "bench-delay-18",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.492Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.522Z",
+      "elapsedMs": 30.576188000000002,
+      "attempts": [
+        {
+          "taskId": "bench-delay-18",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.492Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.522Z",
+          "elapsedMs": 30.576188000000002
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 552
+    },
+    {
+      "taskId": "bench-delay-19",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.522Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.552Z",
+      "elapsedMs": 29.899285000000077,
+      "attempts": [
+        {
+          "taskId": "bench-delay-19",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.522Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.552Z",
+          "elapsedMs": 29.899285000000077
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 582
+    },
+    {
+      "taskId": "bench-delay-20",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.552Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.585Z",
+      "elapsedMs": 33.068182999999976,
+      "attempts": [
+        {
+          "taskId": "bench-delay-20",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.552Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.585Z",
+          "elapsedMs": 33.068182999999976
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 612
+    },
+    {
+      "taskId": "bench-delay-21",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.586Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.616Z",
+      "elapsedMs": 30.14074800000003,
+      "attempts": [
+        {
+          "taskId": "bench-delay-21",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.586Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.616Z",
+          "elapsedMs": 30.14074800000003
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 646
+    },
+    {
+      "taskId": "bench-delay-22",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.616Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.646Z",
+      "elapsedMs": 30.389085999999907,
+      "attempts": [
+        {
+          "taskId": "bench-delay-22",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.616Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.646Z",
+          "elapsedMs": 30.389085999999907
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 676
+    },
+    {
+      "taskId": "bench-delay-23",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.646Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.677Z",
+      "elapsedMs": 30.287905000000023,
+      "attempts": [
+        {
+          "taskId": "bench-delay-23",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.646Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.677Z",
+          "elapsedMs": 30.287905000000023
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 706
+    },
+    {
+      "taskId": "bench-delay-24",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.677Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.707Z",
+      "elapsedMs": 30.124799000000053,
+      "attempts": [
+        {
+          "taskId": "bench-delay-24",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.677Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.707Z",
+          "elapsedMs": 30.124799000000053
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 737
+    },
+    {
+      "taskId": "bench-delay-25",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.707Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.738Z",
+      "elapsedMs": 30.76231699999994,
+      "attempts": [
+        {
+          "taskId": "bench-delay-25",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.707Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.738Z",
+          "elapsedMs": 30.76231699999994
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 767
+    },
+    {
+      "taskId": "bench-delay-26",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.738Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.769Z",
+      "elapsedMs": 31.07626700000003,
+      "attempts": [
+        {
+          "taskId": "bench-delay-26",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.738Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.769Z",
+          "elapsedMs": 31.07626700000003
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 798
+    },
+    {
+      "taskId": "bench-delay-27",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.769Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.800Z",
+      "elapsedMs": 30.89354400000002,
+      "attempts": [
+        {
+          "taskId": "bench-delay-27",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.769Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.800Z",
+          "elapsedMs": 30.89354400000002
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 829
+    },
+    {
+      "taskId": "bench-delay-28",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.800Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.830Z",
+      "elapsedMs": 30.154935000000023,
+      "attempts": [
+        {
+          "taskId": "bench-delay-28",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.800Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.830Z",
+          "elapsedMs": 30.154935000000023
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 860
+    },
+    {
+      "taskId": "bench-delay-29",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.830Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.860Z",
+      "elapsedMs": 29.950039999999944,
+      "attempts": [
+        {
+          "taskId": "bench-delay-29",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.830Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.860Z",
+          "elapsedMs": 29.950039999999944
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 890
+    },
+    {
+      "taskId": "bench-delay-30",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.860Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.890Z",
+      "elapsedMs": 29.991126999999892,
+      "attempts": [
+        {
+          "taskId": "bench-delay-30",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.860Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.890Z",
+          "elapsedMs": 29.991126999999892
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 920
+    },
+    {
+      "taskId": "bench-delay-31",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.891Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.920Z",
+      "elapsedMs": 29.854981000000066,
+      "attempts": [
+        {
+          "taskId": "bench-delay-31",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.891Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.920Z",
+          "elapsedMs": 29.854981000000066
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 951
+    },
+    {
+      "taskId": "bench-delay-32",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.920Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.951Z",
+      "elapsedMs": 30.0765879999999,
+      "attempts": [
+        {
+          "taskId": "bench-delay-32",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.920Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.951Z",
+          "elapsedMs": 30.0765879999999
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 980
+    },
+    {
+      "taskId": "bench-delay-33",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.951Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:07.982Z",
+      "elapsedMs": 31.155216999999993,
+      "attempts": [
+        {
+          "taskId": "bench-delay-33",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.951Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:07.982Z",
+          "elapsedMs": 31.155216999999993
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 1011
+    },
+    {
+      "taskId": "bench-delay-34",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:07.982Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:08.012Z",
+      "elapsedMs": 30.37564999999995,
+      "attempts": [
+        {
+          "taskId": "bench-delay-34",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:07.982Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.012Z",
+          "elapsedMs": 30.37564999999995
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 1042
+    },
+    {
+      "taskId": "bench-delay-35",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:08.013Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:08.043Z",
+      "elapsedMs": 30.3072709999999,
+      "attempts": [
+        {
+          "taskId": "bench-delay-35",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.013Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.043Z",
+          "elapsedMs": 30.3072709999999
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 1073
+    },
+    {
+      "taskId": "bench-delay-36",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:08.043Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:08.074Z",
+      "elapsedMs": 30.876171000000113,
+      "attempts": [
+        {
+          "taskId": "bench-delay-36",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.043Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.074Z",
+          "elapsedMs": 30.876171000000113
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 1103
+    },
+    {
+      "taskId": "bench-delay-37",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:08.074Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:08.105Z",
+      "elapsedMs": 30.58809999999994,
+      "attempts": [
+        {
+          "taskId": "bench-delay-37",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.074Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.105Z",
+          "elapsedMs": 30.58809999999994
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 1134
+    },
+    {
+      "taskId": "bench-delay-38",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:08.105Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:08.135Z",
+      "elapsedMs": 30.125831000000062,
+      "attempts": [
+        {
+          "taskId": "bench-delay-38",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.105Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.135Z",
+          "elapsedMs": 30.125831000000062
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 1165
+    },
+    {
+      "taskId": "bench-delay-39",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:12:08.135Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:12:08.166Z",
+      "elapsedMs": 31.15734999999995,
+      "attempts": [
+        {
+          "taskId": "bench-delay-39",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.135Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.166Z",
+          "elapsedMs": 31.15734999999995
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:12:06.940Z",
+      "queueMs": 1195
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "allSettled": {
+    "mode": "allSettled",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-11/tasks/function-failure.json",
+    "startedCount": 2,
+    "settledCount": 2,
+    "stoppedReason": null,
+    "finalStatusCounts": {
+      "successCount": 0,
+      "failedCount": 2,
+      "timedOutCount": 0,
+      "canceledCount": 0,
+      "blockedCount": 0,
+      "skippedCount": 0,
+      "interruptedCount": 0
+    },
+    "maxActive": 1,
+    "queueLengthMax": 2
+  }
+}

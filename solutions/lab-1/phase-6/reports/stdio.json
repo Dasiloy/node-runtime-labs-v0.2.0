@@ -1,0 +1,58 @@
+{
+  "stdout": {
+    "bytes": 152
+  },
+  "stderr": {
+    "bytes": 0
+  },
+  "events": [
+    {
+      "type": "stdout",
+      "at": 129.745,
+      "bytes": 19,
+      "preview": "retained 1 buffers\n"
+    },
+    {
+      "type": "stdout",
+      "at": 228.393,
+      "bytes": 19,
+      "preview": "retained 2 buffers\n"
+    },
+    {
+      "type": "stdout",
+      "at": 329.239,
+      "bytes": 19,
+      "preview": "retained 3 buffers\n"
+    },
+    {
+      "type": "stdout",
+      "at": 429.713,
+      "bytes": 19,
+      "preview": "retained 4 buffers\n"
+    },
+    {
+      "type": "stdout",
+      "at": 530.529,
+      "bytes": 19,
+      "preview": "retained 5 buffers\n"
+    },
+    {
+      "type": "stdout",
+      "at": 630.286,
+      "bytes": 19,
+      "preview": "retained 6 buffers\n"
+    },
+    {
+      "type": "stdout",
+      "at": 730.302,
+      "bytes": 19,
+      "preview": "retained 7 buffers\n"
+    },
+    {
+      "type": "stdout",
+      "at": 832.682,
+      "bytes": 19,
+      "preview": "retained 8 buffers\n"
+    }
+  ]
+}

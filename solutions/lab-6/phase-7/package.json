@@ -1,0 +1,14 @@
+{
+  "name": "async-task-runtime-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "tasks": "node src/cli.js",
+    "bench": "node src/bench.js",
+    "test": "node --test"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "stdout": {
+    "bytes": 18
+  },
+  "stderr": {
+    "bytes": 0
+  },
+  "events": [
+    {
+      "type": "stdout",
+      "at": 31.212,
+      "bytes": 18,
+      "preview": "views retained: 6\n"
+    }
+  ]
+}

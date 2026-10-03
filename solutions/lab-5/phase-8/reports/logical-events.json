@@ -1,0 +1,23 @@
+[
+  {
+    "batchId": "batch-1",
+    "kind": "atomic-replace",
+    "path": "a.txt",
+    "reasons": [
+      "hash",
+      "size",
+      "mtimeMs",
+      "ctimeMs",
+      "identity"
+    ],
+    "tempPaths": [
+      ".a.txt.c9cebf1d.tmp"
+    ],
+    "rawEventIds": [
+      "event-1",
+      "event-2",
+      "event-3",
+      "event-4"
+    ]
+  }
+]

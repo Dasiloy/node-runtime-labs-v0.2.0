@@ -1,0 +1,25 @@
+{
+  "id": "04-module-resolution-inspector",
+  "number": "04",
+  "slug": "module-resolution-inspector",
+  "title": "Module Resolution Inspector",
+  "status": "draft",
+  "difficulty": "8/10",
+  "concepts": [
+    "module resolution traces",
+    "relative path probing",
+    "built-in modules",
+    "node_modules lookup",
+    "package.json metadata",
+    "package exports",
+    "conditional exports",
+    "CJS and ESM resolution modes",
+    "interop hazards",
+    "module cache graphs"
+  ],
+  "summary": "Build a CLI that explains how Node resolved a specifier, why it picked a file, which package rules applied, and where CJS/ESM interop can break.",
+  "challengeOrder": [
+    "main"
+  ],
+  "defaultChallenge": "main"
+}

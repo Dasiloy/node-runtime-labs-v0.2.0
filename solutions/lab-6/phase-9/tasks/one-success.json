@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "one-success",
+      "type": "command",
+      "command": "node",
+      "args": [
+        "-e",
+        "require('node:fs').writeFileSync(1, 'one success\\n')"
+      ]
+    }
+  ]
+}

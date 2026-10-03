@@ -1,0 +1,20 @@
+{
+  "allSettled": {
+    "mode": "allSettled",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-13/tasks/bench/retry-enabled.json",
+    "startedCount": 1,
+    "settledCount": 1,
+    "stoppedReason": null,
+    "finalStatusCounts": {
+      "successCount": 1,
+      "failedCount": 0,
+      "timedOutCount": 0,
+      "canceledCount": 0,
+      "blockedCount": 0,
+      "skippedCount": 0,
+      "interruptedCount": 0
+    },
+    "maxActive": 1,
+    "queueLengthMax": 1
+  }
+}

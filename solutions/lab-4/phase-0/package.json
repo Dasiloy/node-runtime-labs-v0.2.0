@@ -1,0 +1,15 @@
+{
+  "name": "module-resolution-inspector",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "resolve": "node src/cli.mjs resolve",
+    "fixtures": "node scripts/create-fixtures.mjs",
+    "cache": "node src/cli.mjs cache",
+    "inspect-package": "node src/cli.mjs inspect-package"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "one-failure",
+      "type": "command",
+      "command": "node",
+      "args": [
+        "-e",
+        "console.error('intentional failure'); process.exit(7)"
+      ]
+    }
+  ]
+}

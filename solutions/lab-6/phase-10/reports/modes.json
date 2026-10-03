@@ -1,0 +1,20 @@
+{
+  "allSettled": {
+    "mode": "allSettled",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-10/tasks/one-hundred-delays.json",
+    "startedCount": 100,
+    "settledCount": 100,
+    "stoppedReason": null,
+    "finalStatusCounts": {
+      "successCount": 100,
+      "failedCount": 0,
+      "timedOutCount": 0,
+      "canceledCount": 0,
+      "blockedCount": 0,
+      "skippedCount": 0,
+      "interruptedCount": 0
+    },
+    "maxActive": 5,
+    "queueLengthMax": 100
+  }
+}

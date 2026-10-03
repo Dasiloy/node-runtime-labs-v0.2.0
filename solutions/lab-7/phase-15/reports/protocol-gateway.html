@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Custom Binary Protocol Gateway Report</title>
+  <style>
+    body { font: 16px/1.5 system-ui, sans-serif; margin: 2rem auto; max-width: 920px; padding: 0 1rem; color: #111827; }
+    h1, h2 { line-height: 1.2; }
+    h2 { margin-top: 2rem; border-bottom: 1px solid #e5e7eb; padding-bottom: .25rem; }
+    ul { padding-left: 1.5rem; }
+    p { margin: .75rem 0; }
+  </style>
+</head>
+<body>
+<h1>Custom Binary Protocol Gateway Report</h1>
+
+<p>Generated at 2026-05-21T02:01:36.645Z.</p>
+
+<h2>Input Files</h2>
+
+<ul>
+<li>docs/protocol.md: present</li>
+<li>reports/load-latest.json: present</li>
+<li>reports/final-report.json: present</li>
+<li>reports/connections.jsonl: present</li>
+<li>reports/protocol-errors.jsonl: present</li>
+<li>reports/metrics.jsonl: present</li>
+</ul>
+
+<h2>Protocol Design</h2>
+
+<h1>Custom Binary Protocol</h1>
+
+<p>All numeric fields use big-endian byte order. Request ids are unsigned</p>
+<p>64-bit integers. Event, ACK, and error frame payloads are UTF-8 JSON. Heartbeat</p>
+<p>frames use an empty payload.</p>
+
+<h2>Header Layout</h2>
+
+<p>| Offset | Width | Field | Type | Meaning | Validation rule |</p>
+<p>| ---: | ---: | --- | --- | --- | --- |</p>
+<p>| 0 | 4 | magic | ASCII bytes | Protocol marker | Must equal `NBGW` |</p>
+<p>| 4 | 1 | version | `uint8` | Wire format version | Must equal `1` |</p>
+<p>| 5 | 1 | frame type | `uint8` | Payload routing value | Must be `1` EVENT, `2` HEARTBEAT, `3` ACK, or `4` ERROR |</p>
+<p>| 6 | 2 | flags | `uint16be` | Extension flags | Must equal `0` until a later extension defines flags |</p>
+<p>| 8 | 8 | request id | `uint64be` | Unsigned request id | Must fit in an unsigned 64-bit integer |</p>
+<p>| 16 | 4 | payload length | `uint32be` | Number of payload bytes after the header | Must be less than or equal to `1_048_576` |</p>
+<p>| 20 | 4 | checksum | `uint32be` | CRC32 integrity value | Must equal the CRC32 rule below |</p>
+<p>| 24 | ... | payload | bytes | Frame-specific payload bytes | UTF-8 JSON for EVENT, ACK, and ERROR frames; empty for HEARTBEAT |</p>
+
+<h2>Frame Types</h2>
+
+<p>| Value | Name | Payload |</p>
+<p>| ---: | --- | --- |</p>
+<p>| 1 | EVENT | UTF-8 JSON event object |</p>
+<p>| 2 | HEARTBEAT | Empty |</p>
+<p>| 3 | ACK | UTF-8 JSON acknowledgement object |</p>
+<p>| 4 | ERROR | UTF-8 JSON error object |</p>
+
+<h2>Checksum</h2>
+
+<p>The checksum is the CRC32 value for the complete frame bytes with header bytes</p>
+<p>`20..23` set to zero. The input to the CRC is the fixed 24-byte header followed</p>
+<p>by the payload bytes. The sender writes zero into the checksum field, computes</p>
+<p>CRC32 over those bytes, then writes the computed value back at offset `20`.</p>
+
+<p>The receiver repeats the same calculation against the received bytes while</p>
+<p>treating offset `20..23` as zero. A mismatch rejects the frame before the payload</p>
+<p>is accepted.</p>
+
+
+<p>The parser keeps one carry buffer per TCP connection. It appends new bytes only when a previous chunk ended before a complete frame, reads the payload length after the fixed header is present, decodes every complete frame in the current receive buffer, and stores only the incomplete tail for the next read.</p>
+
+<p>Malformed input policy is recorded by stable protocol error codes. The latest run observed 1 protocol error records.</p>
+
+<h2>Runtime Behavior</h2>
+
+<ul>
+<li>Connections closed: 65</li>
+<li>Frames observed from connection reports: 11320</li>
+<li>Bytes observed from connection reports: 4160894</li>
+<li>Last gateway framesReceived metric: 9</li>
+<li>Last gateway eventsForwarded metric: 9</li>
+<li>Protocol errors by code: {}</li>
+</ul>
+
+<h2>Backpressure And HTTP</h2>
+
+<ul>
+<li>Max active connections: 48</li>
+<li>Max file buffered bytes: 632660</li>
+<li>Max HTTP queue depth: 0</li>
+<li>Max RSS bytes: 117923840</li>
+<li>Socket pauses: 2</li>
+<li>Socket resumes: 0</li>
+</ul>
+
+<h2>Shutdown Result</h2>
+
+<ul>
+<li>Reason: SIGINT</li>
+<li>Open connections at shutdown: 0</li>
+<li>Dropped frames: 0</li>
+<li>Drained events: 9</li>
+<li>Forced socket closes: 0</li>
+<li>Sink close time ms: 0</li>
+</ul>
+
+<h2>Load Result</h2>
+
+<ul>
+<li>Frames sent: 10000</li>
+<li>Frames accepted by gateway metrics: 9</li>
+<li>Malformed frames injected: 0</li>
+<li>Protocol errors observed: 0</li>
+<li>Bytes sent: 3992500</li>
+<li>Throughput frames/sec: 41319.40</li>
+<li>Throughput bytes/sec: 16496771.82</li>
+<li>ACK count: 0</li>
+<li>ACK timeouts: 0</li>
+<li>ACK latency p50 ms: 0.00</li>
+<li>ACK latency p95 ms: 0.00</li>
+<li>Dropped frames: 0</li>
+</ul>
+
+<p>The systems rule from this lab: a protocol gateway owns every byte boundary, every queue boundary, and every shutdown boundary it creates.</p>
+</body>
+</html>

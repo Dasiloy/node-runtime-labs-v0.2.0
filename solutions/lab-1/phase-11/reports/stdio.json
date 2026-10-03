@@ -1,0 +1,22 @@
+{
+  "stdout": {
+    "bytes": 171
+  },
+  "stderr": {
+    "bytes": 0
+  },
+  "events": [
+    {
+      "type": "stdout",
+      "at": 28.188,
+      "bytes": 31,
+      "preview": "FLIGHT_RECORDER_DEMO: override\n"
+    },
+    {
+      "type": "stdout",
+      "at": 28.883,
+      "bytes": 140,
+      "preview": "NODE_OPTIONS: \nexecArgv: [\"--import\",\"file:///nodebook-labs-workspace/lab-1/phase-11/src/probe/register.js\"]\nargv: []\n"
+    }
+  ]
+}

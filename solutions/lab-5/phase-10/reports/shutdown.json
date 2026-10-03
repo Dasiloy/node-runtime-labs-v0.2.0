@@ -1,0 +1,15 @@
+{
+  "reason": "signal",
+  "signal": "SIGTERM",
+  "closed": {
+    "watchers": 2,
+    "pollers": 0,
+    "timers": 0
+  },
+  "cacheSaved": true,
+  "queueDrained": true,
+  "pendingJobs": [],
+  "activeJobs": [],
+  "pendingEvents": 0,
+  "durationMs": 0
+}

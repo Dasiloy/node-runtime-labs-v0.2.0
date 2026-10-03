@@ -1,0 +1,766 @@
+{
+  "runId": "995f2829-ec25-44ae-88f3-cf0a988172db",
+  "taskFile": "/nodebook-labs-workspace/lab-6/phase-7/tasks/cancel-after.json",
+  "startedAt": "2026-05-21T01:54:56.491Z",
+  "updatedAt": "2026-05-21T01:54:56.743Z",
+  "status": "failed",
+  "options": {
+    "concurrency": 2,
+    "mode": "allSettled",
+    "timeout": null,
+    "cancelAfterMs": 250,
+    "shutdownMode": "cancel"
+  },
+  "tasksById": {
+    "cancel-1": {
+      "definition": {
+        "id": "cancel-1",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 1000
+        }
+      },
+      "status": "canceled",
+      "queuedAt": "2026-05-21T01:54:56.492Z",
+      "startedAt": "2026-05-21T01:54:56.492Z",
+      "result": {
+        "taskId": "cancel-1",
+        "attempt": 1,
+        "startedAt": "2026-05-21T01:54:56.492Z",
+        "timeoutMs": null,
+        "status": "canceled",
+        "canceledAt": "2026-05-21T01:54:56.742Z",
+        "error": {
+          "kind": "canceled",
+          "message": "cancel-after:250ms"
+        },
+        "endedAt": "2026-05-21T01:54:56.743Z",
+        "elapsedMs": 250.502688,
+        "attempts": [
+          {
+            "taskId": "cancel-1",
+            "attempt": 1,
+            "startedAt": "2026-05-21T01:54:56.492Z",
+            "timeoutMs": null,
+            "status": "canceled",
+            "canceledAt": "2026-05-21T01:54:56.742Z",
+            "error": {
+              "kind": "canceled",
+              "message": "cancel-after:250ms"
+            },
+            "endedAt": "2026-05-21T01:54:56.743Z",
+            "elapsedMs": 250.502688
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T01:54:56.492Z",
+        "queueMs": 0
+      },
+      "attempts": [
+        {
+          "taskId": "cancel-1",
+          "attempt": 1,
+          "startedAt": "2026-05-21T01:54:56.492Z",
+          "timeoutMs": null,
+          "status": "canceled",
+          "canceledAt": "2026-05-21T01:54:56.742Z",
+          "error": {
+            "kind": "canceled",
+            "message": "cancel-after:250ms"
+          },
+          "endedAt": "2026-05-21T01:54:56.743Z",
+          "elapsedMs": 250.502688
+        }
+      ]
+    },
+    "cancel-2": {
+      "definition": {
+        "id": "cancel-2",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 1000
+        }
+      },
+      "status": "canceled",
+      "queuedAt": "2026-05-21T01:54:56.492Z",
+      "startedAt": "2026-05-21T01:54:56.493Z",
+      "result": {
+        "taskId": "cancel-2",
+        "attempt": 1,
+        "startedAt": "2026-05-21T01:54:56.493Z",
+        "timeoutMs": null,
+        "status": "canceled",
+        "canceledAt": "2026-05-21T01:54:56.742Z",
+        "error": {
+          "kind": "canceled",
+          "message": "cancel-after:250ms"
+        },
+        "endedAt": "2026-05-21T01:54:56.743Z",
+        "elapsedMs": 249.977991,
+        "attempts": [
+          {
+            "taskId": "cancel-2",
+            "attempt": 1,
+            "startedAt": "2026-05-21T01:54:56.493Z",
+            "timeoutMs": null,
+            "status": "canceled",
+            "canceledAt": "2026-05-21T01:54:56.742Z",
+            "error": {
+              "kind": "canceled",
+              "message": "cancel-after:250ms"
+            },
+            "endedAt": "2026-05-21T01:54:56.743Z",
+            "elapsedMs": 249.977991
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T01:54:56.492Z",
+        "queueMs": 1
+      },
+      "attempts": [
+        {
+          "taskId": "cancel-2",
+          "attempt": 1,
+          "startedAt": "2026-05-21T01:54:56.493Z",
+          "timeoutMs": null,
+          "status": "canceled",
+          "canceledAt": "2026-05-21T01:54:56.742Z",
+          "error": {
+            "kind": "canceled",
+            "message": "cancel-after:250ms"
+          },
+          "endedAt": "2026-05-21T01:54:56.743Z",
+          "elapsedMs": 249.977991
+        }
+      ]
+    },
+    "cancel-3": {
+      "definition": {
+        "id": "cancel-3",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 1000
+        }
+      },
+      "status": "canceled",
+      "queuedAt": "2026-05-21T01:54:56.492Z",
+      "result": {
+        "taskId": "cancel-3",
+        "status": "canceled",
+        "queuedAt": "2026-05-21T01:54:56.492Z",
+        "startedAt": null,
+        "endedAt": "2026-05-21T01:54:56.742Z",
+        "elapsedMs": 0,
+        "queueMs": 250,
+        "error": {
+          "kind": "canceled",
+          "message": "cancel-after:250ms"
+        }
+      },
+      "attempts": []
+    },
+    "cancel-4": {
+      "definition": {
+        "id": "cancel-4",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 1000
+        }
+      },
+      "status": "canceled",
+      "queuedAt": "2026-05-21T01:54:56.492Z",
+      "result": {
+        "taskId": "cancel-4",
+        "status": "canceled",
+        "queuedAt": "2026-05-21T01:54:56.492Z",
+        "startedAt": null,
+        "endedAt": "2026-05-21T01:54:56.742Z",
+        "elapsedMs": 0,
+        "queueMs": 250,
+        "error": {
+          "kind": "canceled",
+          "message": "cancel-after:250ms"
+        }
+      },
+      "attempts": []
+    },
+    "cancel-5": {
+      "definition": {
+        "id": "cancel-5",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 1000
+        }
+      },
+      "status": "canceled",
+      "queuedAt": "2026-05-21T01:54:56.492Z",
+      "result": {
+        "taskId": "cancel-5",
+        "status": "canceled",
+        "queuedAt": "2026-05-21T01:54:56.492Z",
+        "startedAt": null,
+        "endedAt": "2026-05-21T01:54:56.742Z",
+        "elapsedMs": 0,
+        "queueMs": 250,
+        "error": {
+          "kind": "canceled",
+          "message": "cancel-after:250ms"
+        }
+      },
+      "attempts": []
+    },
+    "cancel-6": {
+      "definition": {
+        "id": "cancel-6",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 1000
+        }
+      },
+      "status": "canceled",
+      "queuedAt": "2026-05-21T01:54:56.492Z",
+      "result": {
+        "taskId": "cancel-6",
+        "status": "canceled",
+        "queuedAt": "2026-05-21T01:54:56.492Z",
+        "startedAt": null,
+        "endedAt": "2026-05-21T01:54:56.742Z",
+        "elapsedMs": 0,
+        "queueMs": 250,
+        "error": {
+          "kind": "canceled",
+          "message": "cancel-after:250ms"
+        }
+      },
+      "attempts": []
+    },
+    "cancel-7": {
+      "definition": {
+        "id": "cancel-7",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 1000
+        }
+      },
+      "status": "canceled",
+      "queuedAt": "2026-05-21T01:54:56.492Z",
+      "result": {
+        "taskId": "cancel-7",
+        "status": "canceled",
+        "queuedAt": "2026-05-21T01:54:56.492Z",
+        "startedAt": null,
+        "endedAt": "2026-05-21T01:54:56.742Z",
+        "elapsedMs": 0,
+        "queueMs": 250,
+        "error": {
+          "kind": "canceled",
+          "message": "cancel-after:250ms"
+        }
+      },
+      "attempts": []
+    },
+    "cancel-8": {
+      "definition": {
+        "id": "cancel-8",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 1000
+        }
+      },
+      "status": "canceled",
+      "queuedAt": "2026-05-21T01:54:56.492Z",
+      "result": {
+        "taskId": "cancel-8",
+        "status": "canceled",
+        "queuedAt": "2026-05-21T01:54:56.492Z",
+        "startedAt": null,
+        "endedAt": "2026-05-21T01:54:56.742Z",
+        "elapsedMs": 0,
+        "queueMs": 250,
+        "error": {
+          "kind": "canceled",
+          "message": "cancel-after:250ms"
+        }
+      },
+      "attempts": []
+    },
+    "cancel-9": {
+      "definition": {
+        "id": "cancel-9",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 1000
+        }
+      },
+      "status": "canceled",
+      "queuedAt": "2026-05-21T01:54:56.492Z",
+      "result": {
+        "taskId": "cancel-9",
+        "status": "canceled",
+        "queuedAt": "2026-05-21T01:54:56.492Z",
+        "startedAt": null,
+        "endedAt": "2026-05-21T01:54:56.743Z",
+        "elapsedMs": 0,
+        "queueMs": 251,
+        "error": {
+          "kind": "canceled",
+          "message": "cancel-after:250ms"
+        }
+      },
+      "attempts": []
+    },
+    "cancel-10": {
+      "definition": {
+        "id": "cancel-10",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 1000
+        }
+      },
+      "status": "canceled",
+      "queuedAt": "2026-05-21T01:54:56.492Z",
+      "result": {
+        "taskId": "cancel-10",
+        "status": "canceled",
+        "queuedAt": "2026-05-21T01:54:56.492Z",
+        "startedAt": null,
+        "endedAt": "2026-05-21T01:54:56.743Z",
+        "elapsedMs": 0,
+        "queueMs": 251,
+        "error": {
+          "kind": "canceled",
+          "message": "cancel-after:250ms"
+        }
+      },
+      "attempts": []
+    }
+  },
+  "events": [
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T01:54:56.492Z",
+      "taskId": "cancel-1",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T01:54:56.493Z",
+      "taskId": "cancel-2",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T01:54:56.742Z",
+      "taskId": "cancel-3",
+      "status": "canceled"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T01:54:56.742Z",
+      "taskId": "cancel-4",
+      "status": "canceled"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T01:54:56.742Z",
+      "taskId": "cancel-5",
+      "status": "canceled"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T01:54:56.742Z",
+      "taskId": "cancel-6",
+      "status": "canceled"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T01:54:56.742Z",
+      "taskId": "cancel-7",
+      "status": "canceled"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T01:54:56.743Z",
+      "taskId": "cancel-8",
+      "status": "canceled"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T01:54:56.743Z",
+      "taskId": "cancel-9",
+      "status": "canceled"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T01:54:56.743Z",
+      "taskId": "cancel-10",
+      "status": "canceled"
+    },
+    {
+      "type": "task:failure",
+      "timestamp": "2026-05-21T01:54:56.743Z",
+      "taskId": "cancel-1",
+      "attempt": 1,
+      "status": "canceled",
+      "error": {
+        "kind": "canceled",
+        "message": "cancel-after:250ms"
+      }
+    },
+    {
+      "type": "task:failure",
+      "timestamp": "2026-05-21T01:54:56.743Z",
+      "taskId": "cancel-2",
+      "attempt": 1,
+      "status": "canceled",
+      "error": {
+        "kind": "canceled",
+        "message": "cancel-after:250ms"
+      }
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T01:54:56.743Z",
+      "taskId": "cancel-1",
+      "status": "canceled"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T01:54:56.743Z",
+      "taskId": "cancel-2",
+      "status": "canceled"
+    }
+  ],
+  "canceledAt": "2026-05-21T01:54:56.742Z",
+  "cancelReason": "cancel-after:250ms",
+  "endedAt": "2026-05-21T01:54:56.743Z",
+  "report": {
+    "run": {
+      "runId": "995f2829-ec25-44ae-88f3-cf0a988172db",
+      "taskFile": "/nodebook-labs-workspace/lab-6/phase-7/tasks/cancel-after.json",
+      "mode": "allSettled",
+      "status": "failed",
+      "startedAt": "2026-05-21T01:54:56.491Z",
+      "endedAt": "2026-05-21T01:54:56.743Z",
+      "elapsedMs": 252.10200500000002,
+      "stoppedReason": null,
+      "canceledAt": "2026-05-21T01:54:56.742Z",
+      "cancelReason": "cancel-after:250ms",
+      "canceledTaskIds": [
+        "cancel-3",
+        "cancel-4",
+        "cancel-5",
+        "cancel-6",
+        "cancel-7",
+        "cancel-8",
+        "cancel-9",
+        "cancel-10",
+        "cancel-1",
+        "cancel-2"
+      ],
+      "shutdownStartedAt": null,
+      "shutdownSignal": null,
+      "shutdownMode": null
+    },
+    "metrics": {
+      "taskCount": 10,
+      "completedCount": 0,
+      "failedCount": 0,
+      "timedOutCount": 0,
+      "canceledCount": 10,
+      "blockedCount": 0,
+      "skippedCount": 0,
+      "startedCount": 2,
+      "settledCount": 10,
+      "retryCount": 0,
+      "maxActive": 2,
+      "queueLengthMax": 10,
+      "successCount": 0,
+      "interruptedCount": 0
+    },
+    "tasks": [
+      {
+        "taskId": "cancel-1",
+        "attempt": 1,
+        "startedAt": "2026-05-21T01:54:56.492Z",
+        "timeoutMs": null,
+        "status": "canceled",
+        "canceledAt": "2026-05-21T01:54:56.742Z",
+        "error": {
+          "kind": "canceled",
+          "message": "cancel-after:250ms"
+        },
+        "endedAt": "2026-05-21T01:54:56.743Z",
+        "elapsedMs": 250.502688,
+        "attempts": [
+          {
+            "taskId": "cancel-1",
+            "attempt": 1,
+            "startedAt": "2026-05-21T01:54:56.492Z",
+            "timeoutMs": null,
+            "status": "canceled",
+            "canceledAt": "2026-05-21T01:54:56.742Z",
+            "error": {
+              "kind": "canceled",
+              "message": "cancel-after:250ms"
+            },
+            "endedAt": "2026-05-21T01:54:56.743Z",
+            "elapsedMs": 250.502688
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T01:54:56.492Z",
+        "queueMs": 0
+      },
+      {
+        "taskId": "cancel-2",
+        "attempt": 1,
+        "startedAt": "2026-05-21T01:54:56.493Z",
+        "timeoutMs": null,
+        "status": "canceled",
+        "canceledAt": "2026-05-21T01:54:56.742Z",
+        "error": {
+          "kind": "canceled",
+          "message": "cancel-after:250ms"
+        },
+        "endedAt": "2026-05-21T01:54:56.743Z",
+        "elapsedMs": 249.977991,
+        "attempts": [
+          {
+            "taskId": "cancel-2",
+            "attempt": 1,
+            "startedAt": "2026-05-21T01:54:56.493Z",
+            "timeoutMs": null,
+            "status": "canceled",
+            "canceledAt": "2026-05-21T01:54:56.742Z",
+            "error": {
+              "kind": "canceled",
+              "message": "cancel-after:250ms"
+            },
+            "endedAt": "2026-05-21T01:54:56.743Z",
+            "elapsedMs": 249.977991
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T01:54:56.492Z",
+        "queueMs": 1
+      },
+      {
+        "taskId": "cancel-3",
+        "status": "canceled",
+        "queuedAt": "2026-05-21T01:54:56.492Z",
+        "startedAt": null,
+        "endedAt": "2026-05-21T01:54:56.742Z",
+        "elapsedMs": 0,
+        "queueMs": 250,
+        "error": {
+          "kind": "canceled",
+          "message": "cancel-after:250ms"
+        }
+      },
+      {
+        "taskId": "cancel-4",
+        "status": "canceled",
+        "queuedAt": "2026-05-21T01:54:56.492Z",
+        "startedAt": null,
+        "endedAt": "2026-05-21T01:54:56.742Z",
+        "elapsedMs": 0,
+        "queueMs": 250,
+        "error": {
+          "kind": "canceled",
+          "message": "cancel-after:250ms"
+        }
+      },
+      {
+        "taskId": "cancel-5",
+        "status": "canceled",
+        "queuedAt": "2026-05-21T01:54:56.492Z",
+        "startedAt": null,
+        "endedAt": "2026-05-21T01:54:56.742Z",
+        "elapsedMs": 0,
+        "queueMs": 250,
+        "error": {
+          "kind": "canceled",
+          "message": "cancel-after:250ms"
+        }
+      },
+      {
+        "taskId": "cancel-6",
+        "status": "canceled",
+        "queuedAt": "2026-05-21T01:54:56.492Z",
+        "startedAt": null,
+        "endedAt": "2026-05-21T01:54:56.742Z",
+        "elapsedMs": 0,
+        "queueMs": 250,
+        "error": {
+          "kind": "canceled",
+          "message": "cancel-after:250ms"
+        }
+      },
+      {
+        "taskId": "cancel-7",
+        "status": "canceled",
+        "queuedAt": "2026-05-21T01:54:56.492Z",
+        "startedAt": null,
+        "endedAt": "2026-05-21T01:54:56.742Z",
+        "elapsedMs": 0,
+        "queueMs": 250,
+        "error": {
+          "kind": "canceled",
+          "message": "cancel-after:250ms"
+        }
+      },
+      {
+        "taskId": "cancel-8",
+        "status": "canceled",
+        "queuedAt": "2026-05-21T01:54:56.492Z",
+        "startedAt": null,
+        "endedAt": "2026-05-21T01:54:56.742Z",
+        "elapsedMs": 0,
+        "queueMs": 250,
+        "error": {
+          "kind": "canceled",
+          "message": "cancel-after:250ms"
+        }
+      },
+      {
+        "taskId": "cancel-9",
+        "status": "canceled",
+        "queuedAt": "2026-05-21T01:54:56.492Z",
+        "startedAt": null,
+        "endedAt": "2026-05-21T01:54:56.743Z",
+        "elapsedMs": 0,
+        "queueMs": 251,
+        "error": {
+          "kind": "canceled",
+          "message": "cancel-after:250ms"
+        }
+      },
+      {
+        "taskId": "cancel-10",
+        "status": "canceled",
+        "queuedAt": "2026-05-21T01:54:56.492Z",
+        "startedAt": null,
+        "endedAt": "2026-05-21T01:54:56.743Z",
+        "elapsedMs": 0,
+        "queueMs": 251,
+        "error": {
+          "kind": "canceled",
+          "message": "cancel-after:250ms"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "stdout": {
+    "bytes": 81
+  },
+  "stderr": {
+    "bytes": 0
+  },
+  "events": [
+    {
+      "type": "stdout",
+      "at": 30.548,
+      "bytes": 18,
+      "preview": "starting cpu loop\n"
+    },
+    {
+      "type": "stdout",
+      "at": 1230.465,
+      "bytes": 28,
+      "preview": "cpu loop finished 173985.07\n"
+    },
+    {
+      "type": "stdout",
+      "at": 1530.677,
+      "bytes": 35,
+      "preview": "cpu loop observation window closed\n"
+    }
+  ]
+}

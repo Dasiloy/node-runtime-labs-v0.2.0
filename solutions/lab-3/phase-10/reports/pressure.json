@@ -1,0 +1,145 @@
+{
+  "mode": "pressure",
+  "status": "completed",
+  "input": {
+    "path": "data/access.ndjson",
+    "source": {
+      "kind": "file",
+      "inputPath": "/nodebook-labs-workspace/lab-3/phase-10/data/access.ndjson",
+      "compressed": false,
+      "declaredBytes": 1075872,
+      "readHwm": null
+    },
+    "bytes": 1075872
+  },
+  "output": {
+    "path": null,
+    "bytes": 81932
+  },
+  "counts": {
+    "rows": 5000,
+    "matches": 381
+  },
+  "timing": {
+    "startedAt": "2026-05-21T01:59:28.654Z",
+    "endedAt": "2026-05-21T01:59:28.693Z",
+    "elapsedMs": 38.624341
+  },
+  "memory": {
+    "current": {
+      "rss": 96419840,
+      "heapUsed": 6141728,
+      "heapTotal": 11210752,
+      "external": 2055581,
+      "arrayBuffers": 199392
+    },
+    "peak": {
+      "rss": 96419840,
+      "heapUsed": 6141728,
+      "heapTotal": 11210752,
+      "external": 2055581,
+      "arrayBuffers": 199392
+    }
+  },
+  "bytes": {
+    "bytesRead": 1075872,
+    "compressedBytesRead": 0,
+    "uncompressedBytesRead": 1075872,
+    "outputUncompressed": 81932,
+    "written": 81932
+  },
+  "details": {
+    "where": "status >= 500",
+    "slowWriteMs": 5,
+    "writeHwm": 16384,
+    "sampleMs": 100,
+    "sink": {
+      "chunks": 2,
+      "bytes": 81932,
+      "drainCount": 1,
+      "writableLength": 0,
+      "writableHighWaterMark": 16384,
+      "maxBufferedBytes": 65734,
+      "writableLengthSamples": [
+        65734,
+        16198
+      ]
+    },
+    "plugins": {
+      "config": {
+        "redact": [],
+        "select": [],
+        "enrich": []
+      },
+      "executionOrder": [
+        "filter",
+        "stringify"
+      ]
+    }
+  },
+  "timeline": [
+    {
+      "elapsedMs": 38.472896,
+      "memory": {
+        "rss": 96419840,
+        "heapUsed": 6129208,
+        "external": 2055581
+      },
+      "readableLength": 0,
+      "writableLength": 0,
+      "bytesRead": 1075872,
+      "bytesWritten": 81932,
+      "rowsSeen": 5000,
+      "rowsMatched": 381,
+      "throughputBytesPerSec": 2129603.1367121413,
+      "drainCount": 1
+    }
+  ],
+  "drainEvents": [
+    {
+      "elapsedMs": 33.024961000000005,
+      "writableLength": 0
+    }
+  ],
+  "summary": {
+    "maxReadableLength": 0,
+    "maxWritableLength": 0,
+    "maxRss": 96419840,
+    "totalDrains": 1,
+    "totalBytes": 81932,
+    "elapsedMs": 38.624341
+  },
+  "pipelineStatus": "completed",
+  "completed": true,
+  "errorCode": null,
+  "stageCloses": [
+    {
+      "name": "lineSplitter",
+      "closedAt": "2026-05-21T01:59:28.686Z"
+    },
+    {
+      "name": "jsonParser",
+      "closedAt": "2026-05-21T01:59:28.687Z"
+    },
+    {
+      "name": "filter",
+      "closedAt": "2026-05-21T01:59:28.687Z"
+    },
+    {
+      "name": "plugins",
+      "closedAt": "2026-05-21T01:59:28.687Z"
+    },
+    {
+      "name": "source",
+      "closedAt": "2026-05-21T01:59:28.687Z"
+    },
+    {
+      "name": "stringifier",
+      "closedAt": "2026-05-21T01:59:28.687Z"
+    },
+    {
+      "name": "slowSink",
+      "closedAt": "2026-05-21T01:59:28.692Z"
+    }
+  ]
+}

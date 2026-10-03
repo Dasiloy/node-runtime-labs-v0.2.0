@@ -1,0 +1,59 @@
+{
+  "run": {
+    "runId": "1f11afe0-f236-46d7-8f45-110b3f5fb3d1",
+    "taskFile": "/nodebook-labs-workspace/lab-6/phase-13/tasks/function-success.json",
+    "mode": "allSettled",
+    "status": "success",
+    "startedAt": "2026-05-21T02:11:59.360Z",
+    "endedAt": "2026-05-21T02:11:59.364Z",
+    "elapsedMs": 4.077387999999999,
+    "stoppedReason": null,
+    "canceledAt": null,
+    "cancelReason": null,
+    "canceledTaskIds": [],
+    "shutdownStartedAt": null,
+    "shutdownSignal": null,
+    "shutdownMode": null
+  },
+  "metrics": {
+    "taskCount": 1,
+    "completedCount": 1,
+    "failedCount": 0,
+    "timedOutCount": 0,
+    "canceledCount": 0,
+    "blockedCount": 0,
+    "skippedCount": 0,
+    "startedCount": 1,
+    "settledCount": 1,
+    "retryCount": 0,
+    "maxActive": 1,
+    "queueLengthMax": 1,
+    "successCount": 1,
+    "interruptedCount": 0
+  },
+  "tasks": [
+    {
+      "taskId": "function-success",
+      "attempt": 1,
+      "startedAt": "2026-05-21T02:11:59.363Z",
+      "timeoutMs": null,
+      "status": "success",
+      "endedAt": "2026-05-21T02:11:59.364Z",
+      "elapsedMs": 1.1419679999999985,
+      "attempts": [
+        {
+          "taskId": "function-success",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:11:59.363Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:11:59.364Z",
+          "elapsedMs": 1.1419679999999985
+        }
+      ],
+      "attemptCount": 1,
+      "queuedAt": "2026-05-21T02:11:59.362Z",
+      "queueMs": 1
+    }
+  ]
+}

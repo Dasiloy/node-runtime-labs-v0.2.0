@@ -1,0 +1,2 @@
+{"at":27,"type":"probe-ready","pid":1352369,"nodeVersion":"v24.15.0","execArgv":["--trace-warnings","--import","file:///nodebook-labs-workspace/lab-1/phase-11/src/probe/register.js"],"runId":"11496e36-fdfc-42c5-88b5-888cf6bf1233"}
+{"at":28,"type":"memory-sample","rss":74563584,"heapTotal":7016448,"heapUsed":5269576,"external":1937010,"arrayBuffers":27494}

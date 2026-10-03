@@ -1,0 +1,185 @@
+{
+  "runId": "cde86f88-d337-4038-976a-819047319cd0",
+  "probeFile": "/nodebook-labs-workspace/lab-1/phase-14/out/probe-cde86f88-d337-4038-976a-819047319cd0.ndjson",
+  "events": [
+    {
+      "at": 27,
+      "type": "probe-ready",
+      "pid": 1352521,
+      "nodeVersion": "v24.15.0",
+      "execArgv": [
+        "--import",
+        "file:///nodebook-labs-workspace/lab-1/phase-14/src/probe/register.js"
+      ],
+      "runId": "cde86f88-d337-4038-976a-819047319cd0"
+    },
+    {
+      "at": 28,
+      "type": "memory-sample",
+      "rss": 74960896,
+      "heapTotal": 7016448,
+      "heapUsed": 5269536,
+      "external": 1937010,
+      "arrayBuffers": 27494
+    },
+    {
+      "at": 128,
+      "type": "memory-sample",
+      "rss": 88309760,
+      "heapTotal": 8065024,
+      "heapUsed": 4942936,
+      "external": 14519978,
+      "arrayBuffers": 12605731
+    },
+    {
+      "at": 128,
+      "type": "cpu-sample",
+      "userMicros": 4174,
+      "systemMicros": 1377,
+      "totalMicros": 5551,
+      "wallMs": 100.436,
+      "cpuPercent": 5.527
+    },
+    {
+      "at": 129,
+      "type": "event-loop-sample",
+      "unit": "nanoseconds",
+      "min": 10051584,
+      "max": 10903551,
+      "mean": 10167637.333333334,
+      "stddev": 259600.10118813298,
+      "p50": 10076159,
+      "p95": 10903551,
+      "p99": 10903551,
+      "exceeds": 0,
+      "intervalDriftNs": 36503.00000001039
+    },
+    {
+      "at": 129,
+      "type": "active-handles",
+      "resources": [
+        "PipeWrap",
+        "PipeWrap",
+        "Timeout"
+      ],
+      "resourceCounts": {
+        "PipeWrap": 2,
+        "Timeout": 1
+      },
+      "privateHandles": [
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Socket"
+        }
+      ]
+    },
+    {
+      "at": 228,
+      "type": "memory-sample",
+      "rss": 88702976,
+      "heapTotal": 8065024,
+      "heapUsed": 4977528,
+      "external": 14519978,
+      "arrayBuffers": 12605731
+    },
+    {
+      "at": 228,
+      "type": "cpu-sample",
+      "userMicros": 120,
+      "systemMicros": 1329,
+      "totalMicros": 1449,
+      "wallMs": 100.052,
+      "cpuPercent": 1.448
+    },
+    {
+      "at": 228,
+      "type": "event-loop-sample",
+      "unit": "nanoseconds",
+      "min": 10051584,
+      "max": 10092543,
+      "mean": 10064782.222222222,
+      "stddev": 11221.973224960411,
+      "p50": 10067967,
+      "p95": 10092543,
+      "p99": 10092543,
+      "exceeds": 0,
+      "intervalDriftNs": 108708.00000000713
+    },
+    {
+      "at": 229,
+      "type": "active-handles",
+      "resources": [
+        "PipeWrap",
+        "PipeWrap",
+        "Timeout"
+      ],
+      "resourceCounts": {
+        "PipeWrap": 2,
+        "Timeout": 1
+      },
+      "privateHandles": [
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Socket"
+        }
+      ]
+    },
+    {
+      "at": 327,
+      "type": "memory-sample",
+      "rss": 88702976,
+      "heapTotal": 8065024,
+      "heapUsed": 4994008,
+      "external": 14519978,
+      "arrayBuffers": 12605731
+    },
+    {
+      "at": 328,
+      "type": "cpu-sample",
+      "userMicros": 879,
+      "systemMicros": 0,
+      "totalMicros": 879,
+      "wallMs": 99.395,
+      "cpuPercent": 0.884
+    },
+    {
+      "at": 328,
+      "type": "event-loop-sample",
+      "unit": "nanoseconds",
+      "min": 9068544,
+      "max": 10117119,
+      "mean": 9956465.777777778,
+      "stddev": 312954.9971374222,
+      "p50": 10059775,
+      "p95": 10117119,
+      "p99": 10117119,
+      "exceeds": 0,
+      "intervalDriftNs": 0
+    },
+    {
+      "at": 328,
+      "type": "active-handles",
+      "resources": [
+        "PipeWrap",
+        "PipeWrap",
+        "Timeout"
+      ],
+      "resourceCounts": {
+        "PipeWrap": 2,
+        "Timeout": 1
+      },
+      "privateHandles": [
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Socket"
+        }
+      ]
+    }
+  ]
+}

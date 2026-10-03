@@ -1,0 +1,18 @@
+{
+  "name": "stream-processing-workbench",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "workbench": "node src/workbench.js",
+    "generate": "node src/generate.js",
+    "naive": "node src/naive.js",
+    "stream": "node src/stream.js",
+    "split-check": "node src/split-check.js",
+    "pressure": "node src/pressure.js",
+    "compare": "node src/compare.js"
+  }
+}

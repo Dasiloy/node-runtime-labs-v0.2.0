@@ -1,0 +1,41 @@
+{
+  "samples": [
+    {
+      "at": 128,
+      "type": "cpu-sample",
+      "userMicros": 4174,
+      "systemMicros": 1377,
+      "totalMicros": 5551,
+      "wallMs": 100.436,
+      "cpuPercent": 5.527
+    },
+    {
+      "at": 228,
+      "type": "cpu-sample",
+      "userMicros": 120,
+      "systemMicros": 1329,
+      "totalMicros": 1449,
+      "wallMs": 100.052,
+      "cpuPercent": 1.448
+    },
+    {
+      "at": 328,
+      "type": "cpu-sample",
+      "userMicros": 879,
+      "systemMicros": 0,
+      "totalMicros": 879,
+      "wallMs": 99.395,
+      "cpuPercent": 0.884
+    }
+  ],
+  "totalCpuMicros": 7879,
+  "hottestSample": {
+    "at": 128,
+    "type": "cpu-sample",
+    "userMicros": 4174,
+    "systemMicros": 1377,
+    "totalMicros": 5551,
+    "wallMs": 100.436,
+    "cpuPercent": 5.527
+  }
+}

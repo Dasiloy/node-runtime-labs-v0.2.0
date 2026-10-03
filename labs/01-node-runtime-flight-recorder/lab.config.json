@@ -1,0 +1,25 @@
+{
+  "id": "01-node-runtime-flight-recorder",
+  "number": "01",
+  "slug": "node-runtime-flight-recorder",
+  "title": "Node Runtime Flight Recorder",
+  "status": "draft",
+  "difficulty": "9/10",
+  "concepts": [
+    "child process observation",
+    "process lifecycle",
+    "standard I/O streaming",
+    "signal forwarding",
+    "preload probes",
+    "memory sampling",
+    "CPU usage",
+    "event loop delay",
+    "active handles",
+    "runtime reports"
+  ],
+  "summary": "Build a CLI that runs another Node program and records what the process did: memory, CPU, event loop delay, handles, warnings, crashes, stdio, signals, and exit behavior.",
+  "challengeOrder": [
+    "main"
+  ],
+  "defaultChallenge": "main"
+}

@@ -1,0 +1,272 @@
+{
+  "runId": "e2d0fee7-8528-49ec-a0ac-33f39754bc52",
+  "taskFile": "/nodebook-labs-workspace/lab-6/phase-4/tasks/dependent-failure.json",
+  "startedAt": "2026-05-21T01:58:57.661Z",
+  "updatedAt": "2026-05-21T01:58:57.693Z",
+  "status": "failed",
+  "options": {
+    "concurrency": 2,
+    "mode": "allSettled",
+    "timeout": null,
+    "cancelAfterMs": null,
+    "shutdownMode": "cancel"
+  },
+  "tasksById": {
+    "fails": {
+      "definition": {
+        "id": "fails",
+        "type": "command",
+        "command": "node",
+        "args": [
+          "-e",
+          "process.exit(2)"
+        ],
+        "module": null,
+        "export": null,
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {}
+      },
+      "status": "failed",
+      "queuedAt": "2026-05-21T01:58:57.662Z",
+      "startedAt": "2026-05-21T01:58:57.662Z",
+      "result": {
+        "taskId": "fails",
+        "attempt": 1,
+        "startedAt": "2026-05-21T01:58:57.663Z",
+        "timeoutMs": null,
+        "status": "failed",
+        "exitCode": 2,
+        "signal": null,
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "error": {
+          "kind": "non_zero_exit",
+          "message": "Command exited with code 2",
+          "exitCode": 2,
+          "signal": null
+        },
+        "endedAt": "2026-05-21T01:58:57.692Z",
+        "elapsedMs": 29.199758000000003,
+        "attempts": [
+          {
+            "taskId": "fails",
+            "attempt": 1,
+            "startedAt": "2026-05-21T01:58:57.663Z",
+            "timeoutMs": null,
+            "status": "failed",
+            "exitCode": 2,
+            "signal": null,
+            "stdoutBytes": 0,
+            "stderrBytes": 0,
+            "error": {
+              "kind": "non_zero_exit",
+              "message": "Command exited with code 2",
+              "exitCode": 2,
+              "signal": null
+            },
+            "endedAt": "2026-05-21T01:58:57.692Z",
+            "elapsedMs": 29.199758000000003
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T01:58:57.662Z",
+        "queueMs": 1
+      },
+      "attempts": [
+        {
+          "taskId": "fails",
+          "attempt": 1,
+          "startedAt": "2026-05-21T01:58:57.663Z",
+          "timeoutMs": null,
+          "status": "failed",
+          "exitCode": 2,
+          "signal": null,
+          "stdoutBytes": 0,
+          "stderrBytes": 0,
+          "error": {
+            "kind": "non_zero_exit",
+            "message": "Command exited with code 2",
+            "exitCode": 2,
+            "signal": null
+          },
+          "endedAt": "2026-05-21T01:58:57.692Z",
+          "elapsedMs": 29.199758000000003
+        }
+      ]
+    },
+    "blocked-child": {
+      "definition": {
+        "id": "blocked-child",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "./fixtures.js",
+        "export": "success",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [
+          "fails"
+        ],
+        "metadata": {}
+      },
+      "status": "blocked",
+      "result": {
+        "taskId": "blocked-child",
+        "status": "blocked",
+        "queuedAt": null,
+        "startedAt": null,
+        "endedAt": "2026-05-21T01:58:57.692Z",
+        "elapsedMs": 0,
+        "queueMs": 0,
+        "blockedBy": [
+          "fails"
+        ],
+        "error": {
+          "kind": "dependency_blocked",
+          "message": "Dependency blocked task: fails"
+        }
+      },
+      "attempts": []
+    }
+  },
+  "events": [
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T01:58:57.663Z",
+      "taskId": "fails",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:failure",
+      "timestamp": "2026-05-21T01:58:57.692Z",
+      "taskId": "fails",
+      "attempt": 1,
+      "status": "failed",
+      "error": {
+        "kind": "non_zero_exit",
+        "message": "Command exited with code 2",
+        "exitCode": 2,
+        "signal": null
+      }
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T01:58:57.692Z",
+      "taskId": "fails",
+      "status": "failed"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T01:58:57.692Z",
+      "taskId": "blocked-child",
+      "status": "blocked"
+    }
+  ],
+  "endedAt": "2026-05-21T01:58:57.692Z",
+  "report": {
+    "run": {
+      "runId": "e2d0fee7-8528-49ec-a0ac-33f39754bc52",
+      "taskFile": "/nodebook-labs-workspace/lab-6/phase-4/tasks/dependent-failure.json",
+      "mode": "allSettled",
+      "status": "failed",
+      "startedAt": "2026-05-21T01:58:57.661Z",
+      "endedAt": "2026-05-21T01:58:57.692Z",
+      "elapsedMs": 31.339662999999994,
+      "stoppedReason": null,
+      "canceledAt": null,
+      "cancelReason": null,
+      "canceledTaskIds": [],
+      "shutdownStartedAt": null,
+      "shutdownSignal": null,
+      "shutdownMode": null
+    },
+    "metrics": {
+      "taskCount": 2,
+      "completedCount": 0,
+      "failedCount": 1,
+      "timedOutCount": 0,
+      "canceledCount": 0,
+      "blockedCount": 1,
+      "skippedCount": 0,
+      "startedCount": 1,
+      "settledCount": 2,
+      "retryCount": 0,
+      "maxActive": 1,
+      "queueLengthMax": 1,
+      "successCount": 0,
+      "interruptedCount": 0
+    },
+    "tasks": [
+      {
+        "taskId": "fails",
+        "attempt": 1,
+        "startedAt": "2026-05-21T01:58:57.663Z",
+        "timeoutMs": null,
+        "status": "failed",
+        "exitCode": 2,
+        "signal": null,
+        "stdoutBytes": 0,
+        "stderrBytes": 0,
+        "error": {
+          "kind": "non_zero_exit",
+          "message": "Command exited with code 2",
+          "exitCode": 2,
+          "signal": null
+        },
+        "endedAt": "2026-05-21T01:58:57.692Z",
+        "elapsedMs": 29.199758000000003,
+        "attempts": [
+          {
+            "taskId": "fails",
+            "attempt": 1,
+            "startedAt": "2026-05-21T01:58:57.663Z",
+            "timeoutMs": null,
+            "status": "failed",
+            "exitCode": 2,
+            "signal": null,
+            "stdoutBytes": 0,
+            "stderrBytes": 0,
+            "error": {
+              "kind": "non_zero_exit",
+              "message": "Command exited with code 2",
+              "exitCode": 2,
+              "signal": null
+            },
+            "endedAt": "2026-05-21T01:58:57.692Z",
+            "elapsedMs": 29.199758000000003
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T01:58:57.662Z",
+        "queueMs": 1
+      },
+      {
+        "taskId": "blocked-child",
+        "status": "blocked",
+        "queuedAt": null,
+        "startedAt": null,
+        "endedAt": "2026-05-21T01:58:57.692Z",
+        "elapsedMs": 0,
+        "queueMs": 0,
+        "blockedBy": [
+          "fails"
+        ],
+        "error": {
+          "kind": "dependency_blocked",
+          "message": "Dependency blocked task: fails"
+        }
+      }
+    ]
+  }
+}

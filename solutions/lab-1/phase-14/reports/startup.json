@@ -1,0 +1,21 @@
+{
+  "nodeVersion": "v24.15.0",
+  "execPath": "/usr/bin/env node",
+  "execArgv": [
+    "--import",
+    "file:///nodebook-labs-workspace/lab-1/phase-14/src/probe/register.js"
+  ],
+  "nodeFlags": [
+    "--import",
+    "file:///nodebook-labs-workspace/lab-1/phase-14/src/probe/register.js"
+  ],
+  "envFiles": [],
+  "envFileKeys": [],
+  "envOverrides": {},
+  "command": [
+    "/usr/bin/env node",
+    "--import",
+    "file:///nodebook-labs-workspace/lab-1/phase-14/src/probe/register.js",
+    "/nodebook-labs-workspace/lab-1/phase-14/fixtures/buffer-view.js"
+  ]
+}

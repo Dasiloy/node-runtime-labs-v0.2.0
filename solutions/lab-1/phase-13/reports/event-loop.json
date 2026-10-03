@@ -1,0 +1,38 @@
+{
+  "samples": [
+    {
+      "at": 279,
+      "type": "event-loop-sample",
+      "unit": "nanoseconds",
+      "min": 8065024,
+      "max": 12206079,
+      "mean": 10055082.666666666,
+      "stddev": 604518.432282167,
+      "p50": 10067967,
+      "p95": 10108927,
+      "p99": 12206079,
+      "exceeds": 0,
+      "intervalDriftNs": 0
+    },
+    {
+      "at": 780,
+      "type": "event-loop-sample",
+      "unit": "nanoseconds",
+      "min": 9223372036854776000,
+      "max": 251476357.99999988,
+      "mean": 0,
+      "stddev": 0,
+      "p50": 511,
+      "p95": 251476357.99999988,
+      "p99": 251476357.99999988,
+      "exceeds": 0,
+      "intervalDriftNs": 251476357.99999988
+    }
+  ],
+  "summary": {
+    "maxDelayMs": 251.4763579999999,
+    "meanDelayMs": 10.055082666666666,
+    "p95Ms": 251.4763579999999,
+    "p99Ms": 251.4763579999999
+  }
+}

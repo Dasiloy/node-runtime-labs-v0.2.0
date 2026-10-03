@@ -1,0 +1,16 @@
+{
+  "stdout": {
+    "bytes": 0
+  },
+  "stderr": {
+    "bytes": 39
+  },
+  "events": [
+    {
+      "type": "stderr",
+      "at": 26.645,
+      "bytes": 39,
+      "preview": "exiting with a deliberate failure code\n"
+    }
+  ]
+}

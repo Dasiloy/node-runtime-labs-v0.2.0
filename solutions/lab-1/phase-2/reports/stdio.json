@@ -1,0 +1,58 @@
+{
+  "stdout": {
+    "bytes": 58
+  },
+  "stderr": {
+    "bytes": 66
+  },
+  "events": [
+    {
+      "type": "stdout",
+      "at": 23.98,
+      "bytes": 13,
+      "preview": "stdout: boot\n"
+    },
+    {
+      "type": "stderr",
+      "at": 24.493,
+      "bytes": 21,
+      "preview": "stderr: boot warning\n"
+    },
+    {
+      "type": "stdout",
+      "at": 104.394,
+      "bytes": 15,
+      "preview": "stdout: tick 1\n"
+    },
+    {
+      "type": "stderr",
+      "at": 104.535,
+      "bytes": 15,
+      "preview": "stderr: tick 1\n"
+    },
+    {
+      "type": "stdout",
+      "at": 184.666,
+      "bytes": 15,
+      "preview": "stdout: tick 2\n"
+    },
+    {
+      "type": "stderr",
+      "at": 184.847,
+      "bytes": 15,
+      "preview": "stderr: tick 2\n"
+    },
+    {
+      "type": "stdout",
+      "at": 264.876,
+      "bytes": 15,
+      "preview": "stdout: tick 3\n"
+    },
+    {
+      "type": "stderr",
+      "at": 265.03,
+      "bytes": 15,
+      "preview": "stderr: tick 3\n"
+    }
+  ]
+}

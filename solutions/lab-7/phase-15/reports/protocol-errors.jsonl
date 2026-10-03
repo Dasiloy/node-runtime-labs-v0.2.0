@@ -1,0 +1,2 @@
+{"timestamp":"2026-05-21T01:31:49.788Z","connectionId":1,"remoteAddress":"127.0.0.1","remotePort":51898,"code":"CHECKSUM_MISMATCH","details":{"expectedChecksum":645873313,"actualChecksum":192794924,"requestId":"1"},"message":"Frame checksum does not match frame bytes"}
+{"timestamp":"2026-05-21T02:02:47.536Z","connectionId":1,"remoteAddress":"127.0.0.1","remotePort":44596,"code":"BAD_MAGIC","details":{"actualHex":"00424757"},"message":"Frame magic bytes do not match protocol magic"}

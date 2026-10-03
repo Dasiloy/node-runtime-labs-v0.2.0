@@ -1,0 +1,104 @@
+{
+  "root": "/nodebook-labs-workspace/lab-5/phase-6/watched",
+  "generatedAt": "2026-05-21T02:01:34.314Z",
+  "platform": "linux",
+  "options": {
+    "metadata": true,
+    "hash": true,
+    "followSymlinks": false
+  },
+  "counts": {
+    "files": 3,
+    "directories": 2,
+    "ignored": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "files": [
+    {
+      "path": "a.txt",
+      "type": "file",
+      "size": 40,
+      "mtimeMs": 1779328894272.7395,
+      "ctimeMs": 1779328894272.7395,
+      "birthtimeMs": 1779327323876.327,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13116587,
+      "nlink": 1,
+      "identity": "66306:13116587",
+      "hashAlgorithm": "sha256",
+      "hash": "b0ed6777db53c24f2bf12338276e8b300856bbc4249c4887eb32b5ebf9a675fc",
+      "hashBytes": 40
+    },
+    {
+      "path": "nested/c.txt",
+      "type": "file",
+      "size": 19,
+      "mtimeMs": 1779327324154.3284,
+      "ctimeMs": 1779327324155.3284,
+      "birthtimeMs": 1779327324154.3284,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13118075,
+      "nlink": 1,
+      "identity": "66306:13118075",
+      "hashAlgorithm": "sha256",
+      "hash": "3d0a4801879e40996e0ce69d0be8bd7ec518b763aabd915224b0261bd377a901",
+      "hashBytes": 19
+    },
+    {
+      "path": "new.txt",
+      "type": "file",
+      "size": 9,
+      "mtimeMs": 1779327324154.3284,
+      "ctimeMs": 1779327324154.3284,
+      "birthtimeMs": 1779327324153.3284,
+      "mode": 33188,
+      "permissions": "0644",
+      "dev": 66306,
+      "ino": 13116604,
+      "nlink": 1,
+      "identity": "66306:13116604",
+      "hashAlgorithm": "sha256",
+      "hash": "0f15384d18789b1ebf3043dc7b6bc27273c8576373fbeb6f3e15854b588141c0",
+      "hashBytes": 9
+    }
+  ],
+  "directories": [
+    {
+      "path": ".",
+      "type": "directory",
+      "size": 4096,
+      "mtimeMs": 1779327324155.3284,
+      "ctimeMs": 1779327324155.3284,
+      "birthtimeMs": 1779327323875.327,
+      "mode": 16877,
+      "permissions": "0755",
+      "dev": 66306,
+      "ino": 13116585,
+      "nlink": 3,
+      "identity": "66306:13116585"
+    },
+    {
+      "path": "nested",
+      "type": "directory",
+      "size": 4096,
+      "mtimeMs": 1779327324155.3284,
+      "ctimeMs": 1779327324155.3284,
+      "birthtimeMs": 1779327323876.1616,
+      "mode": 16877,
+      "permissions": "0755",
+      "dev": 66306,
+      "ino": 13116586,
+      "nlink": 2,
+      "identity": "66306:13116586"
+    }
+  ],
+  "ignored": [],
+  "skipped": [],
+  "errors": [],
+  "notes": []
+}

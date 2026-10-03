@@ -1,0 +1,103 @@
+{
+  "generatedAt": "2026-05-21T02:00:05.742Z",
+  "counts": {
+    "added": 4,
+    "changed": 0,
+    "deleted": 0,
+    "unchanged": 8
+  },
+  "added": [
+    {
+      "path": "verify-1779328742424-1.txt",
+      "current": {
+        "path": "verify-1779328742424-1.txt",
+        "type": "file",
+        "size": 2,
+        "mtimeMs": 1779328742424.7039,
+        "ctimeMs": 1779328742424.7039,
+        "birthtimeMs": 1779328742423.7039,
+        "mode": 33188,
+        "permissions": "0644",
+        "dev": 66306,
+        "ino": 13118898,
+        "nlink": 1,
+        "identity": "66306:13118898",
+        "hashAlgorithm": "sha256",
+        "hash": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+        "hashBytes": 2
+      }
+    },
+    {
+      "path": "verify-1779328742424-2.txt",
+      "current": {
+        "path": "verify-1779328742424-2.txt",
+        "type": "file",
+        "size": 2,
+        "mtimeMs": 1779328742504.7043,
+        "ctimeMs": 1779328742504.7043,
+        "birthtimeMs": 1779328742504.7043,
+        "mode": 33188,
+        "permissions": "0644",
+        "dev": 66306,
+        "ino": 13119177,
+        "nlink": 1,
+        "identity": "66306:13119177",
+        "hashAlgorithm": "sha256",
+        "hash": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+        "hashBytes": 2
+      }
+    },
+    {
+      "path": "verify-1779328742424-3.txt",
+      "current": {
+        "path": "verify-1779328742424-3.txt",
+        "type": "file",
+        "size": 2,
+        "mtimeMs": 1779328742584.7046,
+        "ctimeMs": 1779328742584.7046,
+        "birthtimeMs": 1779328742584.7046,
+        "mode": 33188,
+        "permissions": "0644",
+        "dev": 66306,
+        "ino": 13119281,
+        "nlink": 1,
+        "identity": "66306:13119281",
+        "hashAlgorithm": "sha256",
+        "hash": "1121cfccd5913f0a63fec40a6ffd44ea64f9dc135c66634ba001d10bcf4302a2",
+        "hashBytes": 2
+      }
+    },
+    {
+      "path": "verify-1779328742424-4.txt",
+      "current": {
+        "path": "verify-1779328742424-4.txt",
+        "type": "file",
+        "size": 2,
+        "mtimeMs": 1779328742665.705,
+        "ctimeMs": 1779328742665.705,
+        "birthtimeMs": 1779328742665.705,
+        "mode": 33188,
+        "permissions": "0644",
+        "dev": 66306,
+        "ino": 13119282,
+        "nlink": 1,
+        "identity": "66306:13119282",
+        "hashAlgorithm": "sha256",
+        "hash": "7de1555df0c2700329e815b93b32c571c3ea54dc967b89e81ab73b9972b72d1d",
+        "hashBytes": 2
+      }
+    }
+  ],
+  "changed": [],
+  "deleted": [],
+  "unchanged": [
+    "1.txt",
+    "2.txt",
+    "3.txt",
+    "4.txt",
+    "5.txt",
+    "a.txt",
+    "nested/c.txt",
+    "new.txt"
+  ]
+}

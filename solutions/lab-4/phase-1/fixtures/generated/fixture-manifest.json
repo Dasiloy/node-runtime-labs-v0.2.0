@@ -1,0 +1,114 @@
+{
+  "labels": {
+    "relative": [
+      "app/src/local.js",
+      "app/src/local.json",
+      "app/src/dir-entry/index.js"
+    ],
+    "main": [
+      "pkg-main",
+      "pkg-main-broken"
+    ],
+    "exports": [
+      "pkg-exports",
+      "pkg-exports-blocked"
+    ],
+    "conditions": [
+      "pkg-conditions"
+    ],
+    "interop": [
+      "pkg-esm",
+      "pkg-cjs",
+      "pkg-dual",
+      "pkg-runtime-cjs"
+    ],
+    "shadow": [
+      "pkg-shadow"
+    ],
+    "cache": [
+      "cache-demo"
+    ],
+    "cycles": [
+      "cycles"
+    ],
+    "symlink": [
+      "workspace/app/node_modules/pkg-linked"
+    ]
+  },
+  "successCases": [
+    {
+      "importer": "app/src/index.cjs",
+      "specifier": "./local"
+    },
+    {
+      "importer": "app/src/index.cjs",
+      "specifier": "./local.json"
+    },
+    {
+      "importer": "app/src/index.cjs",
+      "specifier": "./dir-entry"
+    },
+    {
+      "importer": "app/src/index.cjs",
+      "specifier": "node:fs"
+    },
+    {
+      "importer": "app/src/index.cjs",
+      "specifier": "pkg-main"
+    },
+    {
+      "importer": "app/src/index.cjs",
+      "specifier": "pkg-exports"
+    },
+    {
+      "importer": "app/src/index.cjs",
+      "specifier": "pkg-exports/feature"
+    },
+    {
+      "importer": "app/src/nested/consumer.cjs",
+      "specifier": "pkg-shadow"
+    }
+  ],
+  "failureCases": [
+    {
+      "importer": "app/src/index.cjs",
+      "specifier": "./missing",
+      "reason": "missing relative target"
+    },
+    {
+      "importer": "app/src/index.cjs",
+      "specifier": "pkg-exports/internal.js",
+      "reason": "not exported"
+    },
+    {
+      "importer": "app/src/index.cjs",
+      "specifier": "pkg-exports-blocked/blocked",
+      "reason": "null export target"
+    },
+    {
+      "importer": "app/src/index.cjs",
+      "specifier": "missing-package",
+      "reason": "package not found"
+    }
+  ],
+  "packages": [
+    "fs",
+    "pkg-main",
+    "pkg-main-broken",
+    "pkg-exports",
+    "pkg-exports-blocked",
+    "pkg-conditions",
+    "pkg-esm",
+    "pkg-cjs",
+    "pkg-dual",
+    "pkg-runtime-cjs",
+    "pkg-shadow"
+  ],
+  "symlink": {
+    "requested": true,
+    "created": true,
+    "linkPath": "/nodebook-labs-workspace/lab-4/phase-1/fixtures/generated/workspace/app/node_modules/pkg-linked",
+    "targetPath": "/nodebook-labs-workspace/lab-4/phase-1/fixtures/generated/workspace/packages/pkg-linked",
+    "error": null
+  }
+}

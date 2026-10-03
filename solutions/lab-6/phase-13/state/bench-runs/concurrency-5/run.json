@@ -1,0 +1,4055 @@
+{
+  "runId": "d7739295-3205-4aed-b439-f86ac2746622",
+  "taskFile": "/nodebook-labs-workspace/lab-6/phase-13/tasks/bench/concurrency.json",
+  "startedAt": "2026-05-21T02:12:08.170Z",
+  "updatedAt": "2026-05-21T02:12:08.415Z",
+  "status": "success",
+  "options": {
+    "concurrency": 5,
+    "mode": "allSettled",
+    "timeout": null,
+    "cancelAfterMs": null,
+    "shutdownMode": "cancel"
+  },
+  "tasksById": {
+    "bench-delay-0": {
+      "definition": {
+        "id": "bench-delay-0",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.171Z",
+      "result": {
+        "taskId": "bench-delay-0",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.171Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.201Z",
+        "elapsedMs": 30.48599800000011,
+        "attempts": [
+          {
+            "taskId": "bench-delay-0",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.171Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.201Z",
+            "elapsedMs": 30.48599800000011
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 0
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-0",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.171Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.201Z",
+          "elapsedMs": 30.48599800000011
+        }
+      ]
+    },
+    "bench-delay-1": {
+      "definition": {
+        "id": "bench-delay-1",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.171Z",
+      "result": {
+        "taskId": "bench-delay-1",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.171Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.202Z",
+        "elapsedMs": 30.893494000000146,
+        "attempts": [
+          {
+            "taskId": "bench-delay-1",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.171Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.202Z",
+            "elapsedMs": 30.893494000000146
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 0
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-1",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.171Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.202Z",
+          "elapsedMs": 30.893494000000146
+        }
+      ]
+    },
+    "bench-delay-2": {
+      "definition": {
+        "id": "bench-delay-2",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.171Z",
+      "result": {
+        "taskId": "bench-delay-2",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.171Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.202Z",
+        "elapsedMs": 30.95574099999999,
+        "attempts": [
+          {
+            "taskId": "bench-delay-2",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.171Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.202Z",
+            "elapsedMs": 30.95574099999999
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 0
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-2",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.171Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.202Z",
+          "elapsedMs": 30.95574099999999
+        }
+      ]
+    },
+    "bench-delay-3": {
+      "definition": {
+        "id": "bench-delay-3",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.171Z",
+      "result": {
+        "taskId": "bench-delay-3",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.171Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.202Z",
+        "elapsedMs": 31.038587000000007,
+        "attempts": [
+          {
+            "taskId": "bench-delay-3",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.171Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.202Z",
+            "elapsedMs": 31.038587000000007
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 0
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-3",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.171Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.202Z",
+          "elapsedMs": 31.038587000000007
+        }
+      ]
+    },
+    "bench-delay-4": {
+      "definition": {
+        "id": "bench-delay-4",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.171Z",
+      "result": {
+        "taskId": "bench-delay-4",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.171Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.202Z",
+        "elapsedMs": 31.169163000000026,
+        "attempts": [
+          {
+            "taskId": "bench-delay-4",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.171Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.202Z",
+            "elapsedMs": 31.169163000000026
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 0
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-4",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.171Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.202Z",
+          "elapsedMs": 31.169163000000026
+        }
+      ]
+    },
+    "bench-delay-5": {
+      "definition": {
+        "id": "bench-delay-5",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.202Z",
+      "result": {
+        "taskId": "bench-delay-5",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.202Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.233Z",
+        "elapsedMs": 31.00607500000001,
+        "attempts": [
+          {
+            "taskId": "bench-delay-5",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.202Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.233Z",
+            "elapsedMs": 31.00607500000001
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 31
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-5",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.202Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.233Z",
+          "elapsedMs": 31.00607500000001
+        }
+      ]
+    },
+    "bench-delay-6": {
+      "definition": {
+        "id": "bench-delay-6",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.202Z",
+      "result": {
+        "taskId": "bench-delay-6",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.202Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.233Z",
+        "elapsedMs": 30.921425999999883,
+        "attempts": [
+          {
+            "taskId": "bench-delay-6",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.202Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.233Z",
+            "elapsedMs": 30.921425999999883
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 31
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-6",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.202Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.233Z",
+          "elapsedMs": 30.921425999999883
+        }
+      ]
+    },
+    "bench-delay-7": {
+      "definition": {
+        "id": "bench-delay-7",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.202Z",
+      "result": {
+        "taskId": "bench-delay-7",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.202Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.233Z",
+        "elapsedMs": 30.874447999999802,
+        "attempts": [
+          {
+            "taskId": "bench-delay-7",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.202Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.233Z",
+            "elapsedMs": 30.874447999999802
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 31
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-7",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.202Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.233Z",
+          "elapsedMs": 30.874447999999802
+        }
+      ]
+    },
+    "bench-delay-8": {
+      "definition": {
+        "id": "bench-delay-8",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.202Z",
+      "result": {
+        "taskId": "bench-delay-8",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.202Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.233Z",
+        "elapsedMs": 30.822019000000182,
+        "attempts": [
+          {
+            "taskId": "bench-delay-8",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.202Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.233Z",
+            "elapsedMs": 30.822019000000182
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 31
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-8",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.202Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.233Z",
+          "elapsedMs": 30.822019000000182
+        }
+      ]
+    },
+    "bench-delay-9": {
+      "definition": {
+        "id": "bench-delay-9",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.202Z",
+      "result": {
+        "taskId": "bench-delay-9",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.202Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.233Z",
+        "elapsedMs": 30.735938000000033,
+        "attempts": [
+          {
+            "taskId": "bench-delay-9",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.202Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.233Z",
+            "elapsedMs": 30.735938000000033
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 31
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-9",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.202Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.233Z",
+          "elapsedMs": 30.735938000000033
+        }
+      ]
+    },
+    "bench-delay-10": {
+      "definition": {
+        "id": "bench-delay-10",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.233Z",
+      "result": {
+        "taskId": "bench-delay-10",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.233Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.264Z",
+        "elapsedMs": 30.842407999999978,
+        "attempts": [
+          {
+            "taskId": "bench-delay-10",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.233Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.264Z",
+            "elapsedMs": 30.842407999999978
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 62
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-10",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.233Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.264Z",
+          "elapsedMs": 30.842407999999978
+        }
+      ]
+    },
+    "bench-delay-11": {
+      "definition": {
+        "id": "bench-delay-11",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.233Z",
+      "result": {
+        "taskId": "bench-delay-11",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.233Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.264Z",
+        "elapsedMs": 30.963404999999966,
+        "attempts": [
+          {
+            "taskId": "bench-delay-11",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.233Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.264Z",
+            "elapsedMs": 30.963404999999966
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 62
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-11",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.233Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.264Z",
+          "elapsedMs": 30.963404999999966
+        }
+      ]
+    },
+    "bench-delay-12": {
+      "definition": {
+        "id": "bench-delay-12",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.233Z",
+      "result": {
+        "taskId": "bench-delay-12",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.233Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.264Z",
+        "elapsedMs": 30.992169000000104,
+        "attempts": [
+          {
+            "taskId": "bench-delay-12",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.233Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.264Z",
+            "elapsedMs": 30.992169000000104
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 62
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-12",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.233Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.264Z",
+          "elapsedMs": 30.992169000000104
+        }
+      ]
+    },
+    "bench-delay-13": {
+      "definition": {
+        "id": "bench-delay-13",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.233Z",
+      "result": {
+        "taskId": "bench-delay-13",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.233Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.264Z",
+        "elapsedMs": 31.024008999999978,
+        "attempts": [
+          {
+            "taskId": "bench-delay-13",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.233Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.264Z",
+            "elapsedMs": 31.024008999999978
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 62
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-13",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.233Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.264Z",
+          "elapsedMs": 31.024008999999978
+        }
+      ]
+    },
+    "bench-delay-14": {
+      "definition": {
+        "id": "bench-delay-14",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.233Z",
+      "result": {
+        "taskId": "bench-delay-14",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.233Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.264Z",
+        "elapsedMs": 31.055369000000155,
+        "attempts": [
+          {
+            "taskId": "bench-delay-14",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.233Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.264Z",
+            "elapsedMs": 31.055369000000155
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 62
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-14",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.233Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.264Z",
+          "elapsedMs": 31.055369000000155
+        }
+      ]
+    },
+    "bench-delay-15": {
+      "definition": {
+        "id": "bench-delay-15",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.264Z",
+      "result": {
+        "taskId": "bench-delay-15",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.264Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.294Z",
+        "elapsedMs": 29.907069999999976,
+        "attempts": [
+          {
+            "taskId": "bench-delay-15",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.264Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.294Z",
+            "elapsedMs": 29.907069999999976
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 93
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-15",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.264Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.294Z",
+          "elapsedMs": 29.907069999999976
+        }
+      ]
+    },
+    "bench-delay-16": {
+      "definition": {
+        "id": "bench-delay-16",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.264Z",
+      "result": {
+        "taskId": "bench-delay-16",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.264Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.294Z",
+        "elapsedMs": 30.175194000000147,
+        "attempts": [
+          {
+            "taskId": "bench-delay-16",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.264Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.294Z",
+            "elapsedMs": 30.175194000000147
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 93
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-16",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.264Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.294Z",
+          "elapsedMs": 30.175194000000147
+        }
+      ]
+    },
+    "bench-delay-17": {
+      "definition": {
+        "id": "bench-delay-17",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.264Z",
+      "result": {
+        "taskId": "bench-delay-17",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.264Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.294Z",
+        "elapsedMs": 30.183869999999843,
+        "attempts": [
+          {
+            "taskId": "bench-delay-17",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.264Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.294Z",
+            "elapsedMs": 30.183869999999843
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 93
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-17",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.264Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.294Z",
+          "elapsedMs": 30.183869999999843
+        }
+      ]
+    },
+    "bench-delay-18": {
+      "definition": {
+        "id": "bench-delay-18",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.264Z",
+      "result": {
+        "taskId": "bench-delay-18",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.264Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.294Z",
+        "elapsedMs": 30.201182000000017,
+        "attempts": [
+          {
+            "taskId": "bench-delay-18",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.264Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.294Z",
+            "elapsedMs": 30.201182000000017
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 93
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-18",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.264Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.294Z",
+          "elapsedMs": 30.201182000000017
+        }
+      ]
+    },
+    "bench-delay-19": {
+      "definition": {
+        "id": "bench-delay-19",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.264Z",
+      "result": {
+        "taskId": "bench-delay-19",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.264Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.294Z",
+        "elapsedMs": 30.212764000000107,
+        "attempts": [
+          {
+            "taskId": "bench-delay-19",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.264Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.294Z",
+            "elapsedMs": 30.212764000000107
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 93
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-19",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.264Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.294Z",
+          "elapsedMs": 30.212764000000107
+        }
+      ]
+    },
+    "bench-delay-20": {
+      "definition": {
+        "id": "bench-delay-20",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.294Z",
+      "result": {
+        "taskId": "bench-delay-20",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.294Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.323Z",
+        "elapsedMs": 29.65966400000002,
+        "attempts": [
+          {
+            "taskId": "bench-delay-20",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.294Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.323Z",
+            "elapsedMs": 29.65966400000002
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 123
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-20",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.294Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.323Z",
+          "elapsedMs": 29.65966400000002
+        }
+      ]
+    },
+    "bench-delay-21": {
+      "definition": {
+        "id": "bench-delay-21",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.294Z",
+      "result": {
+        "taskId": "bench-delay-21",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.294Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.324Z",
+        "elapsedMs": 29.767326999999796,
+        "attempts": [
+          {
+            "taskId": "bench-delay-21",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.294Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.324Z",
+            "elapsedMs": 29.767326999999796
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 123
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-21",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.294Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.324Z",
+          "elapsedMs": 29.767326999999796
+        }
+      ]
+    },
+    "bench-delay-22": {
+      "definition": {
+        "id": "bench-delay-22",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.294Z",
+      "result": {
+        "taskId": "bench-delay-22",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.294Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.324Z",
+        "elapsedMs": 29.732371000000057,
+        "attempts": [
+          {
+            "taskId": "bench-delay-22",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.294Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.324Z",
+            "elapsedMs": 29.732371000000057
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 123
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-22",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.294Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.324Z",
+          "elapsedMs": 29.732371000000057
+        }
+      ]
+    },
+    "bench-delay-23": {
+      "definition": {
+        "id": "bench-delay-23",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.294Z",
+      "result": {
+        "taskId": "bench-delay-23",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.294Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.324Z",
+        "elapsedMs": 29.68219699999986,
+        "attempts": [
+          {
+            "taskId": "bench-delay-23",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.294Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.324Z",
+            "elapsedMs": 29.68219699999986
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 123
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-23",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.294Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.324Z",
+          "elapsedMs": 29.68219699999986
+        }
+      ]
+    },
+    "bench-delay-24": {
+      "definition": {
+        "id": "bench-delay-24",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.295Z",
+      "result": {
+        "taskId": "bench-delay-24",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.295Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.324Z",
+        "elapsedMs": 29.638795000000073,
+        "attempts": [
+          {
+            "taskId": "bench-delay-24",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.295Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.324Z",
+            "elapsedMs": 29.638795000000073
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 124
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-24",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.295Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.324Z",
+          "elapsedMs": 29.638795000000073
+        }
+      ]
+    },
+    "bench-delay-25": {
+      "definition": {
+        "id": "bench-delay-25",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.323Z",
+      "result": {
+        "taskId": "bench-delay-25",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.323Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.354Z",
+        "elapsedMs": 30.605761999999913,
+        "attempts": [
+          {
+            "taskId": "bench-delay-25",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.323Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.354Z",
+            "elapsedMs": 30.605761999999913
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 152
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-25",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.323Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.354Z",
+          "elapsedMs": 30.605761999999913
+        }
+      ]
+    },
+    "bench-delay-26": {
+      "definition": {
+        "id": "bench-delay-26",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.324Z",
+      "result": {
+        "taskId": "bench-delay-26",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.324Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.354Z",
+        "elapsedMs": 30.376731999999947,
+        "attempts": [
+          {
+            "taskId": "bench-delay-26",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.324Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.354Z",
+            "elapsedMs": 30.376731999999947
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 153
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-26",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.324Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.354Z",
+          "elapsedMs": 30.376731999999947
+        }
+      ]
+    },
+    "bench-delay-27": {
+      "definition": {
+        "id": "bench-delay-27",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.324Z",
+      "result": {
+        "taskId": "bench-delay-27",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.324Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.354Z",
+        "elapsedMs": 30.368877999999995,
+        "attempts": [
+          {
+            "taskId": "bench-delay-27",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.324Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.354Z",
+            "elapsedMs": 30.368877999999995
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 153
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-27",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.324Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.354Z",
+          "elapsedMs": 30.368877999999995
+        }
+      ]
+    },
+    "bench-delay-28": {
+      "definition": {
+        "id": "bench-delay-28",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.324Z",
+      "result": {
+        "taskId": "bench-delay-28",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.324Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.354Z",
+        "elapsedMs": 30.36137399999984,
+        "attempts": [
+          {
+            "taskId": "bench-delay-28",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.324Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.354Z",
+            "elapsedMs": 30.36137399999984
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 153
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-28",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.324Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.354Z",
+          "elapsedMs": 30.36137399999984
+        }
+      ]
+    },
+    "bench-delay-29": {
+      "definition": {
+        "id": "bench-delay-29",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.324Z",
+      "result": {
+        "taskId": "bench-delay-29",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.324Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.355Z",
+        "elapsedMs": 30.361292999999932,
+        "attempts": [
+          {
+            "taskId": "bench-delay-29",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.324Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.355Z",
+            "elapsedMs": 30.361292999999932
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 153
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-29",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.324Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.355Z",
+          "elapsedMs": 30.361292999999932
+        }
+      ]
+    },
+    "bench-delay-30": {
+      "definition": {
+        "id": "bench-delay-30",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.354Z",
+      "result": {
+        "taskId": "bench-delay-30",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.354Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.384Z",
+        "elapsedMs": 29.970908999999892,
+        "attempts": [
+          {
+            "taskId": "bench-delay-30",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.354Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.384Z",
+            "elapsedMs": 29.970908999999892
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 183
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-30",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.354Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.384Z",
+          "elapsedMs": 29.970908999999892
+        }
+      ]
+    },
+    "bench-delay-31": {
+      "definition": {
+        "id": "bench-delay-31",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.354Z",
+      "result": {
+        "taskId": "bench-delay-31",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.354Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.384Z",
+        "elapsedMs": 29.96525799999995,
+        "attempts": [
+          {
+            "taskId": "bench-delay-31",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.354Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.384Z",
+            "elapsedMs": 29.96525799999995
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 183
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-31",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.354Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.384Z",
+          "elapsedMs": 29.96525799999995
+        }
+      ]
+    },
+    "bench-delay-32": {
+      "definition": {
+        "id": "bench-delay-32",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.354Z",
+      "result": {
+        "taskId": "bench-delay-32",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.354Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.384Z",
+        "elapsedMs": 29.964717000000064,
+        "attempts": [
+          {
+            "taskId": "bench-delay-32",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.354Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.384Z",
+            "elapsedMs": 29.964717000000064
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 183
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-32",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.354Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.384Z",
+          "elapsedMs": 29.964717000000064
+        }
+      ]
+    },
+    "bench-delay-33": {
+      "definition": {
+        "id": "bench-delay-33",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.354Z",
+      "result": {
+        "taskId": "bench-delay-33",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.354Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.384Z",
+        "elapsedMs": 29.97208099999989,
+        "attempts": [
+          {
+            "taskId": "bench-delay-33",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.354Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.384Z",
+            "elapsedMs": 29.97208099999989
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 183
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-33",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.354Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.384Z",
+          "elapsedMs": 29.97208099999989
+        }
+      ]
+    },
+    "bench-delay-34": {
+      "definition": {
+        "id": "bench-delay-34",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.355Z",
+      "result": {
+        "taskId": "bench-delay-34",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.355Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.385Z",
+        "elapsedMs": 29.97453600000017,
+        "attempts": [
+          {
+            "taskId": "bench-delay-34",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.355Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.385Z",
+            "elapsedMs": 29.97453600000017
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 184
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-34",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.355Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.385Z",
+          "elapsedMs": 29.97453600000017
+        }
+      ]
+    },
+    "bench-delay-35": {
+      "definition": {
+        "id": "bench-delay-35",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.384Z",
+      "result": {
+        "taskId": "bench-delay-35",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.384Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.414Z",
+        "elapsedMs": 30.095783999999867,
+        "attempts": [
+          {
+            "taskId": "bench-delay-35",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.384Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.414Z",
+            "elapsedMs": 30.095783999999867
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 213
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-35",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.384Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.414Z",
+          "elapsedMs": 30.095783999999867
+        }
+      ]
+    },
+    "bench-delay-36": {
+      "definition": {
+        "id": "bench-delay-36",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.384Z",
+      "result": {
+        "taskId": "bench-delay-36",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.384Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.414Z",
+        "elapsedMs": 30.059616000000005,
+        "attempts": [
+          {
+            "taskId": "bench-delay-36",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.384Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.414Z",
+            "elapsedMs": 30.059616000000005
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 213
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-36",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.384Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.414Z",
+          "elapsedMs": 30.059616000000005
+        }
+      ]
+    },
+    "bench-delay-37": {
+      "definition": {
+        "id": "bench-delay-37",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.384Z",
+      "result": {
+        "taskId": "bench-delay-37",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.384Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.414Z",
+        "elapsedMs": 30.018047999999908,
+        "attempts": [
+          {
+            "taskId": "bench-delay-37",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.384Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.414Z",
+            "elapsedMs": 30.018047999999908
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 213
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-37",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.384Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.414Z",
+          "elapsedMs": 30.018047999999908
+        }
+      ]
+    },
+    "bench-delay-38": {
+      "definition": {
+        "id": "bench-delay-38",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.384Z",
+      "result": {
+        "taskId": "bench-delay-38",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.384Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.414Z",
+        "elapsedMs": 29.972623000000112,
+        "attempts": [
+          {
+            "taskId": "bench-delay-38",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.384Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.414Z",
+            "elapsedMs": 29.972623000000112
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 213
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-38",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.384Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.414Z",
+          "elapsedMs": 29.972623000000112
+        }
+      ]
+    },
+    "bench-delay-39": {
+      "definition": {
+        "id": "bench-delay-39",
+        "type": "function",
+        "command": null,
+        "args": [],
+        "module": "../fixtures.js",
+        "export": "delayTask",
+        "retries": {
+          "maxAttempts": 1,
+          "backoffMs": 0,
+          "factor": 1,
+          "retryOn": null
+        },
+        "dependsOn": [],
+        "metadata": {
+          "delayMs": 30
+        }
+      },
+      "status": "success",
+      "queuedAt": "2026-05-21T02:12:08.171Z",
+      "startedAt": "2026-05-21T02:12:08.385Z",
+      "result": {
+        "taskId": "bench-delay-39",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.385Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.414Z",
+        "elapsedMs": 29.929041000000097,
+        "attempts": [
+          {
+            "taskId": "bench-delay-39",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.385Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.414Z",
+            "elapsedMs": 29.929041000000097
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 214
+      },
+      "attempts": [
+        {
+          "taskId": "bench-delay-39",
+          "attempt": 1,
+          "startedAt": "2026-05-21T02:12:08.385Z",
+          "timeoutMs": null,
+          "status": "success",
+          "endedAt": "2026-05-21T02:12:08.414Z",
+          "elapsedMs": 29.929041000000097
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.171Z",
+      "taskId": "bench-delay-0",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.171Z",
+      "taskId": "bench-delay-1",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.171Z",
+      "taskId": "bench-delay-2",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.171Z",
+      "taskId": "bench-delay-3",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.171Z",
+      "taskId": "bench-delay-4",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.201Z",
+      "taskId": "bench-delay-0",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.202Z",
+      "taskId": "bench-delay-0",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.202Z",
+      "taskId": "bench-delay-5",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.202Z",
+      "taskId": "bench-delay-1",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.202Z",
+      "taskId": "bench-delay-1",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.202Z",
+      "taskId": "bench-delay-6",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.202Z",
+      "taskId": "bench-delay-2",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.202Z",
+      "taskId": "bench-delay-2",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.202Z",
+      "taskId": "bench-delay-7",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.202Z",
+      "taskId": "bench-delay-3",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.202Z",
+      "taskId": "bench-delay-3",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.202Z",
+      "taskId": "bench-delay-8",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.202Z",
+      "taskId": "bench-delay-4",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.202Z",
+      "taskId": "bench-delay-4",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.202Z",
+      "taskId": "bench-delay-9",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.233Z",
+      "taskId": "bench-delay-5",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.233Z",
+      "taskId": "bench-delay-5",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.233Z",
+      "taskId": "bench-delay-10",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.233Z",
+      "taskId": "bench-delay-6",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.233Z",
+      "taskId": "bench-delay-6",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.233Z",
+      "taskId": "bench-delay-11",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.233Z",
+      "taskId": "bench-delay-7",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.233Z",
+      "taskId": "bench-delay-7",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.233Z",
+      "taskId": "bench-delay-12",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.233Z",
+      "taskId": "bench-delay-8",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.233Z",
+      "taskId": "bench-delay-8",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.233Z",
+      "taskId": "bench-delay-13",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.233Z",
+      "taskId": "bench-delay-9",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.233Z",
+      "taskId": "bench-delay-9",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.233Z",
+      "taskId": "bench-delay-14",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.264Z",
+      "taskId": "bench-delay-10",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.264Z",
+      "taskId": "bench-delay-10",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.264Z",
+      "taskId": "bench-delay-15",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.264Z",
+      "taskId": "bench-delay-11",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.264Z",
+      "taskId": "bench-delay-11",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.264Z",
+      "taskId": "bench-delay-16",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.264Z",
+      "taskId": "bench-delay-12",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.264Z",
+      "taskId": "bench-delay-12",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.264Z",
+      "taskId": "bench-delay-17",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.264Z",
+      "taskId": "bench-delay-13",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.264Z",
+      "taskId": "bench-delay-13",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.264Z",
+      "taskId": "bench-delay-18",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.264Z",
+      "taskId": "bench-delay-14",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.264Z",
+      "taskId": "bench-delay-14",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.264Z",
+      "taskId": "bench-delay-19",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.294Z",
+      "taskId": "bench-delay-15",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.294Z",
+      "taskId": "bench-delay-15",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.294Z",
+      "taskId": "bench-delay-20",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.294Z",
+      "taskId": "bench-delay-16",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.294Z",
+      "taskId": "bench-delay-16",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.294Z",
+      "taskId": "bench-delay-21",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.294Z",
+      "taskId": "bench-delay-17",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.294Z",
+      "taskId": "bench-delay-17",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.294Z",
+      "taskId": "bench-delay-22",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.294Z",
+      "taskId": "bench-delay-18",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.294Z",
+      "taskId": "bench-delay-18",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.294Z",
+      "taskId": "bench-delay-23",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.294Z",
+      "taskId": "bench-delay-19",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.295Z",
+      "taskId": "bench-delay-19",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.295Z",
+      "taskId": "bench-delay-24",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.323Z",
+      "taskId": "bench-delay-20",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.323Z",
+      "taskId": "bench-delay-20",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.323Z",
+      "taskId": "bench-delay-25",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.324Z",
+      "taskId": "bench-delay-21",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.324Z",
+      "taskId": "bench-delay-21",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.324Z",
+      "taskId": "bench-delay-26",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.324Z",
+      "taskId": "bench-delay-22",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.324Z",
+      "taskId": "bench-delay-22",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.324Z",
+      "taskId": "bench-delay-27",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.324Z",
+      "taskId": "bench-delay-23",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.324Z",
+      "taskId": "bench-delay-23",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.324Z",
+      "taskId": "bench-delay-28",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.324Z",
+      "taskId": "bench-delay-24",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.324Z",
+      "taskId": "bench-delay-24",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.324Z",
+      "taskId": "bench-delay-29",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.354Z",
+      "taskId": "bench-delay-25",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.354Z",
+      "taskId": "bench-delay-25",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.354Z",
+      "taskId": "bench-delay-30",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.354Z",
+      "taskId": "bench-delay-26",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.354Z",
+      "taskId": "bench-delay-26",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.354Z",
+      "taskId": "bench-delay-31",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.354Z",
+      "taskId": "bench-delay-27",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.354Z",
+      "taskId": "bench-delay-27",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.354Z",
+      "taskId": "bench-delay-32",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.354Z",
+      "taskId": "bench-delay-28",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.354Z",
+      "taskId": "bench-delay-28",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.354Z",
+      "taskId": "bench-delay-33",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.355Z",
+      "taskId": "bench-delay-29",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.355Z",
+      "taskId": "bench-delay-29",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.355Z",
+      "taskId": "bench-delay-34",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.384Z",
+      "taskId": "bench-delay-30",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.384Z",
+      "taskId": "bench-delay-30",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.384Z",
+      "taskId": "bench-delay-35",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.384Z",
+      "taskId": "bench-delay-31",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.384Z",
+      "taskId": "bench-delay-31",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.384Z",
+      "taskId": "bench-delay-36",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.384Z",
+      "taskId": "bench-delay-32",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.384Z",
+      "taskId": "bench-delay-32",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.384Z",
+      "taskId": "bench-delay-37",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.384Z",
+      "taskId": "bench-delay-33",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.384Z",
+      "taskId": "bench-delay-33",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.384Z",
+      "taskId": "bench-delay-38",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.385Z",
+      "taskId": "bench-delay-34",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.385Z",
+      "taskId": "bench-delay-34",
+      "status": "success"
+    },
+    {
+      "type": "task:start",
+      "timestamp": "2026-05-21T02:12:08.385Z",
+      "taskId": "bench-delay-39",
+      "attempt": 1,
+      "status": "running"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.414Z",
+      "taskId": "bench-delay-35",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.414Z",
+      "taskId": "bench-delay-35",
+      "status": "success"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.414Z",
+      "taskId": "bench-delay-36",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.414Z",
+      "taskId": "bench-delay-36",
+      "status": "success"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.414Z",
+      "taskId": "bench-delay-37",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.414Z",
+      "taskId": "bench-delay-37",
+      "status": "success"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.414Z",
+      "taskId": "bench-delay-38",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.414Z",
+      "taskId": "bench-delay-38",
+      "status": "success"
+    },
+    {
+      "type": "task:success",
+      "timestamp": "2026-05-21T02:12:08.414Z",
+      "taskId": "bench-delay-39",
+      "attempt": 1,
+      "status": "success"
+    },
+    {
+      "type": "task:finish",
+      "timestamp": "2026-05-21T02:12:08.414Z",
+      "taskId": "bench-delay-39",
+      "status": "success"
+    }
+  ],
+  "endedAt": "2026-05-21T02:12:08.415Z",
+  "report": {
+    "run": {
+      "runId": "d7739295-3205-4aed-b439-f86ac2746622",
+      "taskFile": "/nodebook-labs-workspace/lab-6/phase-13/tasks/bench/concurrency.json",
+      "mode": "allSettled",
+      "status": "success",
+      "startedAt": "2026-05-21T02:12:08.170Z",
+      "endedAt": "2026-05-21T02:12:08.415Z",
+      "elapsedMs": 244.17875900000013,
+      "stoppedReason": null,
+      "canceledAt": null,
+      "cancelReason": null,
+      "canceledTaskIds": [],
+      "shutdownStartedAt": null,
+      "shutdownSignal": null,
+      "shutdownMode": null
+    },
+    "metrics": {
+      "taskCount": 40,
+      "completedCount": 40,
+      "failedCount": 0,
+      "timedOutCount": 0,
+      "canceledCount": 0,
+      "blockedCount": 0,
+      "skippedCount": 0,
+      "startedCount": 40,
+      "settledCount": 40,
+      "retryCount": 0,
+      "maxActive": 5,
+      "queueLengthMax": 40,
+      "successCount": 40,
+      "interruptedCount": 0
+    },
+    "tasks": [
+      {
+        "taskId": "bench-delay-0",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.171Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.201Z",
+        "elapsedMs": 30.48599800000011,
+        "attempts": [
+          {
+            "taskId": "bench-delay-0",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.171Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.201Z",
+            "elapsedMs": 30.48599800000011
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 0
+      },
+      {
+        "taskId": "bench-delay-1",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.171Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.202Z",
+        "elapsedMs": 30.893494000000146,
+        "attempts": [
+          {
+            "taskId": "bench-delay-1",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.171Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.202Z",
+            "elapsedMs": 30.893494000000146
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 0
+      },
+      {
+        "taskId": "bench-delay-2",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.171Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.202Z",
+        "elapsedMs": 30.95574099999999,
+        "attempts": [
+          {
+            "taskId": "bench-delay-2",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.171Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.202Z",
+            "elapsedMs": 30.95574099999999
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 0
+      },
+      {
+        "taskId": "bench-delay-3",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.171Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.202Z",
+        "elapsedMs": 31.038587000000007,
+        "attempts": [
+          {
+            "taskId": "bench-delay-3",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.171Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.202Z",
+            "elapsedMs": 31.038587000000007
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 0
+      },
+      {
+        "taskId": "bench-delay-4",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.171Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.202Z",
+        "elapsedMs": 31.169163000000026,
+        "attempts": [
+          {
+            "taskId": "bench-delay-4",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.171Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.202Z",
+            "elapsedMs": 31.169163000000026
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 0
+      },
+      {
+        "taskId": "bench-delay-5",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.202Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.233Z",
+        "elapsedMs": 31.00607500000001,
+        "attempts": [
+          {
+            "taskId": "bench-delay-5",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.202Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.233Z",
+            "elapsedMs": 31.00607500000001
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 31
+      },
+      {
+        "taskId": "bench-delay-6",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.202Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.233Z",
+        "elapsedMs": 30.921425999999883,
+        "attempts": [
+          {
+            "taskId": "bench-delay-6",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.202Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.233Z",
+            "elapsedMs": 30.921425999999883
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 31
+      },
+      {
+        "taskId": "bench-delay-7",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.202Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.233Z",
+        "elapsedMs": 30.874447999999802,
+        "attempts": [
+          {
+            "taskId": "bench-delay-7",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.202Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.233Z",
+            "elapsedMs": 30.874447999999802
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 31
+      },
+      {
+        "taskId": "bench-delay-8",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.202Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.233Z",
+        "elapsedMs": 30.822019000000182,
+        "attempts": [
+          {
+            "taskId": "bench-delay-8",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.202Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.233Z",
+            "elapsedMs": 30.822019000000182
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 31
+      },
+      {
+        "taskId": "bench-delay-9",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.202Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.233Z",
+        "elapsedMs": 30.735938000000033,
+        "attempts": [
+          {
+            "taskId": "bench-delay-9",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.202Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.233Z",
+            "elapsedMs": 30.735938000000033
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 31
+      },
+      {
+        "taskId": "bench-delay-10",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.233Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.264Z",
+        "elapsedMs": 30.842407999999978,
+        "attempts": [
+          {
+            "taskId": "bench-delay-10",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.233Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.264Z",
+            "elapsedMs": 30.842407999999978
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 62
+      },
+      {
+        "taskId": "bench-delay-11",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.233Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.264Z",
+        "elapsedMs": 30.963404999999966,
+        "attempts": [
+          {
+            "taskId": "bench-delay-11",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.233Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.264Z",
+            "elapsedMs": 30.963404999999966
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 62
+      },
+      {
+        "taskId": "bench-delay-12",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.233Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.264Z",
+        "elapsedMs": 30.992169000000104,
+        "attempts": [
+          {
+            "taskId": "bench-delay-12",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.233Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.264Z",
+            "elapsedMs": 30.992169000000104
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 62
+      },
+      {
+        "taskId": "bench-delay-13",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.233Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.264Z",
+        "elapsedMs": 31.024008999999978,
+        "attempts": [
+          {
+            "taskId": "bench-delay-13",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.233Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.264Z",
+            "elapsedMs": 31.024008999999978
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 62
+      },
+      {
+        "taskId": "bench-delay-14",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.233Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.264Z",
+        "elapsedMs": 31.055369000000155,
+        "attempts": [
+          {
+            "taskId": "bench-delay-14",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.233Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.264Z",
+            "elapsedMs": 31.055369000000155
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 62
+      },
+      {
+        "taskId": "bench-delay-15",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.264Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.294Z",
+        "elapsedMs": 29.907069999999976,
+        "attempts": [
+          {
+            "taskId": "bench-delay-15",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.264Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.294Z",
+            "elapsedMs": 29.907069999999976
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 93
+      },
+      {
+        "taskId": "bench-delay-16",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.264Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.294Z",
+        "elapsedMs": 30.175194000000147,
+        "attempts": [
+          {
+            "taskId": "bench-delay-16",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.264Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.294Z",
+            "elapsedMs": 30.175194000000147
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 93
+      },
+      {
+        "taskId": "bench-delay-17",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.264Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.294Z",
+        "elapsedMs": 30.183869999999843,
+        "attempts": [
+          {
+            "taskId": "bench-delay-17",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.264Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.294Z",
+            "elapsedMs": 30.183869999999843
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 93
+      },
+      {
+        "taskId": "bench-delay-18",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.264Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.294Z",
+        "elapsedMs": 30.201182000000017,
+        "attempts": [
+          {
+            "taskId": "bench-delay-18",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.264Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.294Z",
+            "elapsedMs": 30.201182000000017
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 93
+      },
+      {
+        "taskId": "bench-delay-19",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.264Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.294Z",
+        "elapsedMs": 30.212764000000107,
+        "attempts": [
+          {
+            "taskId": "bench-delay-19",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.264Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.294Z",
+            "elapsedMs": 30.212764000000107
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 93
+      },
+      {
+        "taskId": "bench-delay-20",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.294Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.323Z",
+        "elapsedMs": 29.65966400000002,
+        "attempts": [
+          {
+            "taskId": "bench-delay-20",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.294Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.323Z",
+            "elapsedMs": 29.65966400000002
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 123
+      },
+      {
+        "taskId": "bench-delay-21",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.294Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.324Z",
+        "elapsedMs": 29.767326999999796,
+        "attempts": [
+          {
+            "taskId": "bench-delay-21",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.294Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.324Z",
+            "elapsedMs": 29.767326999999796
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 123
+      },
+      {
+        "taskId": "bench-delay-22",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.294Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.324Z",
+        "elapsedMs": 29.732371000000057,
+        "attempts": [
+          {
+            "taskId": "bench-delay-22",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.294Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.324Z",
+            "elapsedMs": 29.732371000000057
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 123
+      },
+      {
+        "taskId": "bench-delay-23",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.294Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.324Z",
+        "elapsedMs": 29.68219699999986,
+        "attempts": [
+          {
+            "taskId": "bench-delay-23",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.294Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.324Z",
+            "elapsedMs": 29.68219699999986
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 123
+      },
+      {
+        "taskId": "bench-delay-24",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.295Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.324Z",
+        "elapsedMs": 29.638795000000073,
+        "attempts": [
+          {
+            "taskId": "bench-delay-24",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.295Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.324Z",
+            "elapsedMs": 29.638795000000073
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 124
+      },
+      {
+        "taskId": "bench-delay-25",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.323Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.354Z",
+        "elapsedMs": 30.605761999999913,
+        "attempts": [
+          {
+            "taskId": "bench-delay-25",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.323Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.354Z",
+            "elapsedMs": 30.605761999999913
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 152
+      },
+      {
+        "taskId": "bench-delay-26",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.324Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.354Z",
+        "elapsedMs": 30.376731999999947,
+        "attempts": [
+          {
+            "taskId": "bench-delay-26",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.324Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.354Z",
+            "elapsedMs": 30.376731999999947
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 153
+      },
+      {
+        "taskId": "bench-delay-27",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.324Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.354Z",
+        "elapsedMs": 30.368877999999995,
+        "attempts": [
+          {
+            "taskId": "bench-delay-27",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.324Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.354Z",
+            "elapsedMs": 30.368877999999995
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 153
+      },
+      {
+        "taskId": "bench-delay-28",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.324Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.354Z",
+        "elapsedMs": 30.36137399999984,
+        "attempts": [
+          {
+            "taskId": "bench-delay-28",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.324Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.354Z",
+            "elapsedMs": 30.36137399999984
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 153
+      },
+      {
+        "taskId": "bench-delay-29",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.324Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.355Z",
+        "elapsedMs": 30.361292999999932,
+        "attempts": [
+          {
+            "taskId": "bench-delay-29",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.324Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.355Z",
+            "elapsedMs": 30.361292999999932
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 153
+      },
+      {
+        "taskId": "bench-delay-30",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.354Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.384Z",
+        "elapsedMs": 29.970908999999892,
+        "attempts": [
+          {
+            "taskId": "bench-delay-30",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.354Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.384Z",
+            "elapsedMs": 29.970908999999892
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 183
+      },
+      {
+        "taskId": "bench-delay-31",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.354Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.384Z",
+        "elapsedMs": 29.96525799999995,
+        "attempts": [
+          {
+            "taskId": "bench-delay-31",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.354Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.384Z",
+            "elapsedMs": 29.96525799999995
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 183
+      },
+      {
+        "taskId": "bench-delay-32",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.354Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.384Z",
+        "elapsedMs": 29.964717000000064,
+        "attempts": [
+          {
+            "taskId": "bench-delay-32",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.354Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.384Z",
+            "elapsedMs": 29.964717000000064
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 183
+      },
+      {
+        "taskId": "bench-delay-33",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.354Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.384Z",
+        "elapsedMs": 29.97208099999989,
+        "attempts": [
+          {
+            "taskId": "bench-delay-33",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.354Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.384Z",
+            "elapsedMs": 29.97208099999989
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 183
+      },
+      {
+        "taskId": "bench-delay-34",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.355Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.385Z",
+        "elapsedMs": 29.97453600000017,
+        "attempts": [
+          {
+            "taskId": "bench-delay-34",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.355Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.385Z",
+            "elapsedMs": 29.97453600000017
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 184
+      },
+      {
+        "taskId": "bench-delay-35",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.384Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.414Z",
+        "elapsedMs": 30.095783999999867,
+        "attempts": [
+          {
+            "taskId": "bench-delay-35",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.384Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.414Z",
+            "elapsedMs": 30.095783999999867
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 213
+      },
+      {
+        "taskId": "bench-delay-36",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.384Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.414Z",
+        "elapsedMs": 30.059616000000005,
+        "attempts": [
+          {
+            "taskId": "bench-delay-36",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.384Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.414Z",
+            "elapsedMs": 30.059616000000005
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 213
+      },
+      {
+        "taskId": "bench-delay-37",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.384Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.414Z",
+        "elapsedMs": 30.018047999999908,
+        "attempts": [
+          {
+            "taskId": "bench-delay-37",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.384Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.414Z",
+            "elapsedMs": 30.018047999999908
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 213
+      },
+      {
+        "taskId": "bench-delay-38",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.384Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.414Z",
+        "elapsedMs": 29.972623000000112,
+        "attempts": [
+          {
+            "taskId": "bench-delay-38",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.384Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.414Z",
+            "elapsedMs": 29.972623000000112
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 213
+      },
+      {
+        "taskId": "bench-delay-39",
+        "attempt": 1,
+        "startedAt": "2026-05-21T02:12:08.385Z",
+        "timeoutMs": null,
+        "status": "success",
+        "endedAt": "2026-05-21T02:12:08.414Z",
+        "elapsedMs": 29.929041000000097,
+        "attempts": [
+          {
+            "taskId": "bench-delay-39",
+            "attempt": 1,
+            "startedAt": "2026-05-21T02:12:08.385Z",
+            "timeoutMs": null,
+            "status": "success",
+            "endedAt": "2026-05-21T02:12:08.414Z",
+            "elapsedMs": 29.929041000000097
+          }
+        ],
+        "attemptCount": 1,
+        "queuedAt": "2026-05-21T02:12:08.171Z",
+        "queueMs": 214
+      }
+    ]
+  }
+}

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Module Inspector Report</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 2rem; line-height: 1.45; color: #1f2937; }
+    code { background: #f3f4f6; padding: 0.1rem 0.25rem; border-radius: 0; }
+    section { border-top: 1px solid #d1d5db; padding-top: 1rem; margin-top: 1rem; }
+    .grid { display: grid; grid-template-columns: repeat(4, max-content); gap: 0.75rem 1.5rem; }
+  </style>
+</head>
+<body>
+  <h1>Module Inspector Report</h1>
+  <section>
+    <h2>Summary</h2>
+    <div class="grid">
+      <b>Traces</b><span>10</span>
+      <b>Resolved</b><span>8</span>
+      <b>Failed</b><span>2</span>
+      <b>Warnings</b><span>1</span>
+    </div>
+  </section>
+  <section>
+    <h2>Traces</h2>
+    
+    <section>
+      <h3>trace-01: <code>./local</code></h3>
+      <p><b>Status:</b> resolved </p>
+      <p><b>Importer:</b> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/index.cjs</code></p>
+      <p><b>Resolved:</b> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/local.js</code></p>
+      <ul>
+        <li>(none)</li>
+        <li>(none)</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h3>trace-02: <code>./missing</code></h3>
+      <p><b>Status:</b> failed </p>
+      <p><b>Importer:</b> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/index.cjs</code></p>
+      
+      <ul>
+        <li><b>missing-file</b>: Unable to resolve path specifier ./missing</li><li><b>missing-directory-entry</b>: No file, extension probe, or directory entry matched ./missing</li>
+        <li>(none)</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h3>trace-03: <code>node:fs</code></h3>
+      <p><b>Status:</b> resolved </p>
+      <p><b>Importer:</b> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/index.cjs</code></p>
+      <p><b>Resolved:</b> <code>node:fs</code></p>
+      <ul>
+        <li>(none)</li>
+        <li>(none)</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h3>trace-04: <code>pkg-main</code></h3>
+      <p><b>Status:</b> resolved <b>Format:</b> cjs</p>
+      <p><b>Importer:</b> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/index.cjs</code></p>
+      <p><b>Resolved:</b> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main/dist/index.cjs</code></p>
+      <ul>
+        <li>(none)</li>
+        <li>(none)</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h3>trace-05: <code>pkg-main-broken</code></h3>
+      <p><b>Status:</b> resolved <b>Format:</b> cjs</p>
+      <p><b>Importer:</b> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/index.cjs</code></p>
+      <p><b>Resolved:</b> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main-broken/index.js</code></p>
+      <ul>
+        <li>(none)</li>
+        <li>(none)</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h3>trace-06: <code>pkg-exports/feature</code></h3>
+      <p><b>Status:</b> resolved <b>Format:</b> cjs</p>
+      <p><b>Importer:</b> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/index.cjs</code></p>
+      <p><b>Resolved:</b> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-exports/dist/feature.js</code></p>
+      <ul>
+        <li>(none)</li>
+        <li>(none)</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h3>trace-07: <code>pkg-exports/internal.js</code></h3>
+      <p><b>Status:</b> failed </p>
+      <p><b>Importer:</b> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/index.cjs</code></p>
+      
+      <ul>
+        <li><b>ERR_PACKAGE_PATH_NOT_EXPORTED</b>: pkg-exports does not export ./internal.js</li>
+        <li>(none)</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h3>trace-08: <code>pkg-esm</code></h3>
+      <p><b>Status:</b> resolved <b>Format:</b> esm</p>
+      <p><b>Importer:</b> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/index.cjs</code></p>
+      <p><b>Resolved:</b> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-esm/index.js</code></p>
+      <ul>
+        <li>(none)</li>
+        <li><b>require-esm-namespace</b>: Treat the return value as an ESM namespace and check whether the target uses top-level await.</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h3>trace-09: <code>pkg-shadow</code></h3>
+      <p><b>Status:</b> resolved <b>Format:</b> cjs</p>
+      <p><b>Importer:</b> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/nested/consumer.cjs</code></p>
+      <p><b>Resolved:</b> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/nested/node_modules/pkg-shadow/index.cjs</code></p>
+      <ul>
+        <li>(none)</li>
+        <li>(none)</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h3>trace-10: <code>pkg-linked</code></h3>
+      <p><b>Status:</b> resolved <b>Format:</b> cjs</p>
+      <p><b>Importer:</b> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/src/index.cjs</code></p>
+      <p><b>Resolved:</b> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/node_modules/pkg-linked/index.cjs</code></p>
+      <ul>
+        <li>(none)</li>
+        <li>(none)</li>
+      </ul>
+    </section>
+  
+  </section>
+  <section>
+    <h2>Graph</h2>
+    <ul><li><code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/cycles/a.cjs</code> -> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/cycles/b.cjs</code></li><li><code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/cycles/b.cjs</code> -> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/cycles/a.cjs</code></li></ul>
+  </section>
+  <section>
+    <h2>Cycles</h2>
+    <ul><li><code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/cycles/a.cjs</code> -> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/cycles/b.cjs</code> -> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/cycles/a.cjs</code></li></ul>
+  </section>
+  <section>
+    <h2>Symlinks</h2>
+    <ul><li><b>resolved-path-realpath-differ</b> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/node_modules/pkg-linked/index.cjs</code> -> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/packages/pkg-linked/index.cjs</code></li><li><b>preserve-symlinks-identity</b> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/node_modules/pkg-linked/index.cjs</code> -> <code>/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/packages/pkg-linked/index.cjs</code></li></ul>
+  </section>
+</body>
+</html>

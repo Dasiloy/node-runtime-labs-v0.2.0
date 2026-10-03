@@ -1,0 +1,34 @@
+{
+  "stdout": {
+    "bytes": 30
+  },
+  "stderr": {
+    "bytes": 22
+  },
+  "events": [
+    {
+      "type": "stdout",
+      "at": 532.819,
+      "bytes": 10,
+      "preview": "working 1\n"
+    },
+    {
+      "type": "stdout",
+      "at": 1029.456,
+      "bytes": 10,
+      "preview": "working 2\n"
+    },
+    {
+      "type": "stdout",
+      "at": 1529.649,
+      "bytes": 10,
+      "preview": "working 3\n"
+    },
+    {
+      "type": "stderr",
+      "at": 1686.713,
+      "bytes": 22,
+      "preview": "child received SIGINT\n"
+    }
+  ]
+}

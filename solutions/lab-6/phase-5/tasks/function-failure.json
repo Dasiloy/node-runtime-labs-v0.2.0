@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "function-throw",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "throwFailure"
+    },
+    {
+      "id": "function-reject",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "rejectFailure"
+    }
+  ]
+}

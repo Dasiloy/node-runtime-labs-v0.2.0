@@ -1,0 +1,1081 @@
+{
+  "summary": {
+    "appRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app",
+    "resolved": 8,
+    "failed": 2
+  },
+  "traces": [
+    {
+      "importer": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/index.cjs",
+      "specifier": "./local",
+      "mode": "require",
+      "conditions": [],
+      "format": "json",
+      "preserveSymlinks": false,
+      "consumerFormat": "cjs",
+      "attempts": [
+        {
+          "path": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/local",
+          "kind": "file",
+          "result": "missing",
+          "reason": "exact-path"
+        },
+        {
+          "path": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/local.js",
+          "kind": "file",
+          "result": "found",
+          "reason": "extension-probe:.js"
+        }
+      ],
+      "packageCandidates": [],
+      "activeConditions": [],
+      "conditionChecks": [],
+      "metadata": [],
+      "symlinks": [],
+      "warnings": [],
+      "errors": [],
+      "status": "resolved",
+      "resolvedPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/local.js",
+      "branch": "path",
+      "packageLookupPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/local.js",
+      "realPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/local.js",
+      "cacheIdentityPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/local.js",
+      "symlinkFixture": {
+        "requested": true,
+        "created": true,
+        "linkPath": "workspace/app/node_modules/pkg-linked",
+        "targetPath": "workspace/packages/pkg-linked",
+        "error": null
+      },
+      "id": "trace-01"
+    },
+    {
+      "importer": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/index.cjs",
+      "specifier": "./missing",
+      "mode": "require",
+      "conditions": [],
+      "format": "json",
+      "preserveSymlinks": false,
+      "consumerFormat": "cjs",
+      "attempts": [
+        {
+          "path": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/missing",
+          "kind": "file",
+          "result": "missing",
+          "reason": "exact-path"
+        },
+        {
+          "path": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/missing.js",
+          "kind": "file",
+          "result": "missing",
+          "reason": "extension-probe:.js"
+        },
+        {
+          "path": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/missing.json",
+          "kind": "file",
+          "result": "missing",
+          "reason": "extension-probe:.json"
+        },
+        {
+          "path": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/missing.node",
+          "kind": "file",
+          "result": "missing",
+          "reason": "extension-probe:.node"
+        },
+        {
+          "path": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/missing",
+          "kind": "directory",
+          "result": "missing",
+          "reason": "not-a-directory"
+        }
+      ],
+      "packageCandidates": [],
+      "activeConditions": [],
+      "conditionChecks": [],
+      "metadata": [],
+      "symlinks": [],
+      "warnings": [],
+      "errors": [
+        {
+          "code": "missing-file",
+          "specifier": "./missing",
+          "importer": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/index.cjs",
+          "message": "Unable to resolve path specifier ./missing"
+        },
+        {
+          "code": "missing-directory-entry",
+          "specifier": "./missing",
+          "importer": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/index.cjs",
+          "message": "No file, extension probe, or directory entry matched ./missing"
+        }
+      ],
+      "status": "failed",
+      "id": "trace-02"
+    },
+    {
+      "importer": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/index.cjs",
+      "specifier": "node:fs",
+      "mode": "require",
+      "conditions": [],
+      "format": "json",
+      "preserveSymlinks": false,
+      "consumerFormat": "cjs",
+      "attempts": [],
+      "packageCandidates": [],
+      "activeConditions": [],
+      "conditionChecks": [],
+      "metadata": [],
+      "symlinks": [],
+      "warnings": [],
+      "errors": [],
+      "status": "resolved",
+      "resolvedPath": "node:fs",
+      "branch": "builtin",
+      "canonicalTarget": "node:fs",
+      "originalSpecifier": "node:fs",
+      "filesystemSearchSkipped": true,
+      "packageLookupSkipped": true,
+      "id": "trace-03"
+    },
+    {
+      "importer": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/index.cjs",
+      "specifier": "pkg-main",
+      "mode": "require",
+      "conditions": [],
+      "format": "json",
+      "preserveSymlinks": false,
+      "consumerFormat": "cjs",
+      "attempts": [
+        {
+          "path": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main/dist/index.cjs",
+          "kind": "file",
+          "result": "found",
+          "reason": "exact-path"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "searchDirectory": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/node_modules",
+          "packagePath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/node_modules/pkg-main",
+          "packageName": "pkg-main",
+          "result": "missing"
+        },
+        {
+          "searchDirectory": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules",
+          "packagePath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main",
+          "packageName": "pkg-main",
+          "result": "found"
+        }
+      ],
+      "activeConditions": [],
+      "conditionChecks": [],
+      "metadata": [
+        {
+          "kind": "package.json",
+          "result": "found",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main",
+          "packageJsonPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main/package.json"
+        },
+        {
+          "kind": "type",
+          "result": "selected",
+          "value": "commonjs",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main"
+        },
+        {
+          "kind": "main",
+          "result": "selected",
+          "value": "./dist/index.cjs",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main"
+        }
+      ],
+      "symlinks": [],
+      "warnings": [],
+      "errors": [],
+      "status": "resolved",
+      "packageName": "pkg-main",
+      "packageSubpath": ".",
+      "selectedPackageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main",
+      "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main",
+      "packageType": "commonjs",
+      "entryField": "main",
+      "moduleFormat": "cjs",
+      "resolvedPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main/dist/index.cjs",
+      "branch": "package",
+      "packageLookupPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main",
+      "realPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main/dist/index.cjs",
+      "cacheIdentityPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main/dist/index.cjs",
+      "symlinkFixture": {
+        "requested": true,
+        "created": true,
+        "linkPath": "workspace/app/node_modules/pkg-linked",
+        "targetPath": "workspace/packages/pkg-linked",
+        "error": null
+      },
+      "id": "trace-04"
+    },
+    {
+      "importer": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/index.cjs",
+      "specifier": "pkg-main-broken",
+      "mode": "require",
+      "conditions": [],
+      "format": "json",
+      "preserveSymlinks": false,
+      "consumerFormat": "cjs",
+      "attempts": [
+        {
+          "path": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main-broken/missing.cjs",
+          "kind": "file",
+          "result": "missing",
+          "reason": "exact-path"
+        },
+        {
+          "path": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main-broken/missing.cjs.js",
+          "kind": "file",
+          "result": "missing",
+          "reason": "extension-probe:.js"
+        },
+        {
+          "path": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main-broken/missing.cjs.json",
+          "kind": "file",
+          "result": "missing",
+          "reason": "extension-probe:.json"
+        },
+        {
+          "path": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main-broken/missing.cjs.node",
+          "kind": "file",
+          "result": "missing",
+          "reason": "extension-probe:.node"
+        },
+        {
+          "path": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main-broken/missing.cjs",
+          "kind": "directory",
+          "result": "missing",
+          "reason": "not-a-directory"
+        },
+        {
+          "path": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main-broken/index",
+          "kind": "file",
+          "result": "missing",
+          "reason": "exact-path"
+        },
+        {
+          "path": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main-broken/index.js",
+          "kind": "file",
+          "result": "found",
+          "reason": "extension-probe:.js"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "searchDirectory": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/node_modules",
+          "packagePath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/node_modules/pkg-main-broken",
+          "packageName": "pkg-main-broken",
+          "result": "missing"
+        },
+        {
+          "searchDirectory": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules",
+          "packagePath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main-broken",
+          "packageName": "pkg-main-broken",
+          "result": "found"
+        }
+      ],
+      "activeConditions": [],
+      "conditionChecks": [],
+      "metadata": [
+        {
+          "kind": "package.json",
+          "result": "found",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main-broken",
+          "packageJsonPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main-broken/package.json"
+        },
+        {
+          "kind": "type",
+          "result": "selected",
+          "value": "commonjs",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main-broken"
+        },
+        {
+          "kind": "main",
+          "result": "selected",
+          "value": "./missing.cjs",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main-broken"
+        },
+        {
+          "kind": "main",
+          "result": "invalid",
+          "value": "./missing.cjs",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main-broken",
+          "reason": "invalid-main-target"
+        },
+        {
+          "kind": "fallback",
+          "result": "selected",
+          "value": "index",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main-broken"
+        }
+      ],
+      "symlinks": [],
+      "warnings": [],
+      "errors": [],
+      "status": "resolved",
+      "packageName": "pkg-main-broken",
+      "packageSubpath": ".",
+      "selectedPackageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main-broken",
+      "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main-broken",
+      "packageType": "commonjs",
+      "entryField": "legacy-index-fallback",
+      "moduleFormat": "cjs",
+      "resolvedPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main-broken/index.js",
+      "branch": "package",
+      "packageLookupPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main-broken",
+      "realPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main-broken/index.js",
+      "cacheIdentityPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-main-broken/index.js",
+      "symlinkFixture": {
+        "requested": true,
+        "created": true,
+        "linkPath": "workspace/app/node_modules/pkg-linked",
+        "targetPath": "workspace/packages/pkg-linked",
+        "error": null
+      },
+      "id": "trace-05"
+    },
+    {
+      "importer": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/index.cjs",
+      "specifier": "pkg-exports/feature",
+      "mode": "require",
+      "conditions": [],
+      "format": "json",
+      "preserveSymlinks": false,
+      "consumerFormat": "cjs",
+      "attempts": [
+        {
+          "path": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-exports/dist/feature.js",
+          "kind": "file",
+          "result": "found",
+          "reason": "exact-path"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "searchDirectory": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/node_modules",
+          "packagePath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/node_modules/pkg-exports",
+          "packageName": "pkg-exports",
+          "result": "missing"
+        },
+        {
+          "searchDirectory": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules",
+          "packagePath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-exports",
+          "packageName": "pkg-exports",
+          "result": "found"
+        }
+      ],
+      "activeConditions": [
+        "node",
+        "require",
+        "module-sync",
+        "default"
+      ],
+      "conditionChecks": [],
+      "metadata": [
+        {
+          "kind": "package.json",
+          "result": "found",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-exports",
+          "packageJsonPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-exports/package.json"
+        },
+        {
+          "kind": "type",
+          "result": "selected",
+          "value": "commonjs",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-exports"
+        },
+        {
+          "kind": "exports",
+          "result": "present",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-exports",
+          "requestedSubpath": "./feature",
+          "normalizedSubpath": "./feature",
+          "availableExports": [
+            ".",
+            "./feature"
+          ]
+        },
+        {
+          "kind": "exports-match",
+          "result": "selected",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-exports",
+          "matchedKey": "./feature",
+          "target": "./dist/feature.js",
+          "conditionPath": []
+        }
+      ],
+      "symlinks": [],
+      "warnings": [],
+      "errors": [],
+      "status": "resolved",
+      "packageName": "pkg-exports",
+      "packageSubpath": "./feature",
+      "selectedPackageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-exports",
+      "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-exports",
+      "packageType": "commonjs",
+      "exportSubpath": "./feature",
+      "availableExports": [
+        ".",
+        "./feature"
+      ],
+      "entryField": "exports",
+      "matchedExport": {
+        "key": "./feature",
+        "target": "./dist/feature.js",
+        "conditionPath": []
+      },
+      "moduleFormat": "cjs",
+      "resolvedPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-exports/dist/feature.js",
+      "branch": "package",
+      "packageLookupPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-exports",
+      "realPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-exports/dist/feature.js",
+      "cacheIdentityPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-exports/dist/feature.js",
+      "symlinkFixture": {
+        "requested": true,
+        "created": true,
+        "linkPath": "workspace/app/node_modules/pkg-linked",
+        "targetPath": "workspace/packages/pkg-linked",
+        "error": null
+      },
+      "id": "trace-06"
+    },
+    {
+      "importer": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/index.cjs",
+      "specifier": "pkg-exports/internal.js",
+      "mode": "require",
+      "conditions": [],
+      "format": "json",
+      "preserveSymlinks": false,
+      "consumerFormat": "cjs",
+      "attempts": [],
+      "packageCandidates": [
+        {
+          "searchDirectory": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/node_modules",
+          "packagePath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/node_modules/pkg-exports",
+          "packageName": "pkg-exports",
+          "result": "missing"
+        },
+        {
+          "searchDirectory": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules",
+          "packagePath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-exports",
+          "packageName": "pkg-exports",
+          "result": "found"
+        }
+      ],
+      "activeConditions": [
+        "node",
+        "require",
+        "module-sync",
+        "default"
+      ],
+      "conditionChecks": [],
+      "metadata": [
+        {
+          "kind": "package.json",
+          "result": "found",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-exports",
+          "packageJsonPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-exports/package.json"
+        },
+        {
+          "kind": "type",
+          "result": "selected",
+          "value": "commonjs",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-exports"
+        },
+        {
+          "kind": "exports",
+          "result": "present",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-exports",
+          "requestedSubpath": "./internal.js",
+          "normalizedSubpath": "./internal.js",
+          "availableExports": [
+            ".",
+            "./feature"
+          ]
+        }
+      ],
+      "symlinks": [],
+      "warnings": [],
+      "errors": [
+        {
+          "code": "ERR_PACKAGE_PATH_NOT_EXPORTED",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-exports",
+          "requestedSubpath": "./internal.js",
+          "availableExports": [
+            ".",
+            "./feature"
+          ],
+          "message": "pkg-exports does not export ./internal.js"
+        }
+      ],
+      "status": "failed",
+      "packageName": "pkg-exports",
+      "packageSubpath": "./internal.js",
+      "selectedPackageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-exports",
+      "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-exports",
+      "packageType": "commonjs",
+      "exportSubpath": "./internal.js",
+      "availableExports": [
+        ".",
+        "./feature"
+      ],
+      "id": "trace-07"
+    },
+    {
+      "importer": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/index.cjs",
+      "specifier": "pkg-esm",
+      "mode": "require",
+      "conditions": [],
+      "format": "json",
+      "preserveSymlinks": false,
+      "consumerFormat": "cjs",
+      "attempts": [
+        {
+          "path": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-esm/index.js",
+          "kind": "file",
+          "result": "found",
+          "reason": "exact-path"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "searchDirectory": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/node_modules",
+          "packagePath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/node_modules/pkg-esm",
+          "packageName": "pkg-esm",
+          "result": "missing"
+        },
+        {
+          "searchDirectory": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules",
+          "packagePath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-esm",
+          "packageName": "pkg-esm",
+          "result": "found"
+        }
+      ],
+      "activeConditions": [],
+      "conditionChecks": [],
+      "metadata": [
+        {
+          "kind": "package.json",
+          "result": "found",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-esm",
+          "packageJsonPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-esm/package.json"
+        },
+        {
+          "kind": "type",
+          "result": "selected",
+          "value": "module",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-esm"
+        },
+        {
+          "kind": "main",
+          "result": "selected",
+          "value": "./index.js",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-esm"
+        }
+      ],
+      "symlinks": [],
+      "warnings": [
+        {
+          "type": "require-esm-namespace",
+          "evidence": {
+            "resolvedPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-esm/index.js",
+            "packageType": "module",
+            "moduleFormat": "esm"
+          },
+          "suggestion": "Treat the return value as an ESM namespace and check whether the target uses top-level await."
+        }
+      ],
+      "errors": [],
+      "status": "resolved",
+      "packageName": "pkg-esm",
+      "packageSubpath": ".",
+      "selectedPackageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-esm",
+      "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-esm",
+      "packageType": "module",
+      "entryField": "main",
+      "moduleFormat": "esm",
+      "resolvedPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-esm/index.js",
+      "branch": "package",
+      "packageLookupPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-esm",
+      "realPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-esm/index.js",
+      "cacheIdentityPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-esm/index.js",
+      "symlinkFixture": {
+        "requested": true,
+        "created": true,
+        "linkPath": "workspace/app/node_modules/pkg-linked",
+        "targetPath": "workspace/packages/pkg-linked",
+        "error": null
+      },
+      "id": "trace-08"
+    },
+    {
+      "importer": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/nested/consumer.cjs",
+      "specifier": "pkg-shadow",
+      "mode": "require",
+      "conditions": [],
+      "format": "json",
+      "preserveSymlinks": false,
+      "consumerFormat": "cjs",
+      "attempts": [
+        {
+          "path": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/nested/node_modules/pkg-shadow/index.cjs",
+          "kind": "file",
+          "result": "found",
+          "reason": "exact-path"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "searchDirectory": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/nested/node_modules",
+          "packagePath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/nested/node_modules/pkg-shadow",
+          "packageName": "pkg-shadow",
+          "result": "found"
+        }
+      ],
+      "activeConditions": [],
+      "conditionChecks": [],
+      "metadata": [
+        {
+          "kind": "package-lookup",
+          "result": "closest-package-wins",
+          "packageName": "pkg-shadow",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/nested/node_modules/pkg-shadow"
+        },
+        {
+          "kind": "package.json",
+          "result": "found",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/nested/node_modules/pkg-shadow",
+          "packageJsonPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/nested/node_modules/pkg-shadow/package.json"
+        },
+        {
+          "kind": "type",
+          "result": "selected",
+          "value": "commonjs",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/nested/node_modules/pkg-shadow"
+        },
+        {
+          "kind": "main",
+          "result": "selected",
+          "value": "./index.cjs",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/nested/node_modules/pkg-shadow"
+        }
+      ],
+      "symlinks": [],
+      "warnings": [],
+      "errors": [],
+      "status": "resolved",
+      "packageName": "pkg-shadow",
+      "packageSubpath": ".",
+      "selectedPackageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/nested/node_modules/pkg-shadow",
+      "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/nested/node_modules/pkg-shadow",
+      "packageType": "commonjs",
+      "entryField": "main",
+      "moduleFormat": "cjs",
+      "resolvedPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/nested/node_modules/pkg-shadow/index.cjs",
+      "branch": "package",
+      "packageLookupPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/nested/node_modules/pkg-shadow",
+      "realPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/nested/node_modules/pkg-shadow/index.cjs",
+      "cacheIdentityPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/nested/node_modules/pkg-shadow/index.cjs",
+      "symlinkFixture": {
+        "requested": true,
+        "created": true,
+        "linkPath": "workspace/app/node_modules/pkg-linked",
+        "targetPath": "workspace/packages/pkg-linked",
+        "error": null
+      },
+      "id": "trace-09"
+    },
+    {
+      "importer": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/src/index.cjs",
+      "specifier": "pkg-linked",
+      "mode": "require",
+      "conditions": [],
+      "format": "json",
+      "preserveSymlinks": true,
+      "consumerFormat": "cjs",
+      "attempts": [
+        {
+          "path": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/node_modules/pkg-linked/index.cjs",
+          "kind": "file",
+          "result": "found",
+          "reason": "exact-path"
+        }
+      ],
+      "packageCandidates": [
+        {
+          "searchDirectory": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/src/node_modules",
+          "packagePath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/src/node_modules/pkg-linked",
+          "packageName": "pkg-linked",
+          "result": "missing"
+        },
+        {
+          "searchDirectory": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/node_modules",
+          "packagePath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/node_modules/pkg-linked",
+          "packageName": "pkg-linked",
+          "result": "found"
+        }
+      ],
+      "activeConditions": [],
+      "conditionChecks": [],
+      "metadata": [
+        {
+          "kind": "package.json",
+          "result": "found",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/node_modules/pkg-linked",
+          "packageJsonPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/node_modules/pkg-linked/package.json"
+        },
+        {
+          "kind": "type",
+          "result": "selected",
+          "value": "commonjs",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/node_modules/pkg-linked"
+        },
+        {
+          "kind": "main",
+          "result": "selected",
+          "value": "./index.cjs",
+          "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/node_modules/pkg-linked"
+        }
+      ],
+      "symlinks": [
+        {
+          "type": "resolved-path-realpath-differ",
+          "resolvedPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/node_modules/pkg-linked/index.cjs",
+          "realPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/packages/pkg-linked/index.cjs"
+        },
+        {
+          "type": "preserve-symlinks-identity",
+          "resolvedPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/node_modules/pkg-linked/index.cjs",
+          "realPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/packages/pkg-linked/index.cjs",
+          "cacheIdentityPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/node_modules/pkg-linked/index.cjs"
+        }
+      ],
+      "warnings": [],
+      "errors": [],
+      "status": "resolved",
+      "packageName": "pkg-linked",
+      "packageSubpath": ".",
+      "selectedPackageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/node_modules/pkg-linked",
+      "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/node_modules/pkg-linked",
+      "packageType": "commonjs",
+      "entryField": "main",
+      "moduleFormat": "cjs",
+      "resolvedPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/node_modules/pkg-linked/index.cjs",
+      "branch": "package",
+      "packageLookupPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/node_modules/pkg-linked",
+      "realPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/packages/pkg-linked/index.cjs",
+      "cacheIdentityPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/node_modules/pkg-linked/index.cjs",
+      "symlinkFixture": {
+        "requested": true,
+        "created": true,
+        "linkPath": "workspace/app/node_modules/pkg-linked",
+        "targetPath": "workspace/packages/pkg-linked",
+        "error": null
+      },
+      "id": "trace-10"
+    }
+  ],
+  "warnings": [
+    {
+      "traceId": "trace-08",
+      "type": "require-esm-namespace",
+      "evidence": {
+        "resolvedPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-esm/index.js",
+        "packageType": "module",
+        "moduleFormat": "esm"
+      },
+      "suggestion": "Treat the return value as an ESM namespace and check whether the target uses top-level await."
+    }
+  ],
+  "errors": [
+    {
+      "traceId": "trace-02",
+      "code": "missing-file",
+      "specifier": "./missing",
+      "importer": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/index.cjs",
+      "message": "Unable to resolve path specifier ./missing"
+    },
+    {
+      "traceId": "trace-02",
+      "code": "missing-directory-entry",
+      "specifier": "./missing",
+      "importer": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/src/index.cjs",
+      "message": "No file, extension probe, or directory entry matched ./missing"
+    },
+    {
+      "traceId": "trace-07",
+      "code": "ERR_PACKAGE_PATH_NOT_EXPORTED",
+      "packageRoot": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/app/node_modules/pkg-exports",
+      "requestedSubpath": "./internal.js",
+      "availableExports": [
+        ".",
+        "./feature"
+      ],
+      "message": "pkg-exports does not export ./internal.js"
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "/nodebook-labs-workspace/lab-4/phase-13/src/probes/cache-probe.cjs",
+        "filename": "/nodebook-labs-workspace/lab-4/phase-13/src/probes/cache-probe.cjs",
+        "loaded": true
+      },
+      {
+        "id": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/cycles/a.cjs",
+        "filename": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/cycles/a.cjs",
+        "loaded": true
+      },
+      {
+        "id": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/cycles/b.cjs",
+        "filename": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/cycles/b.cjs",
+        "loaded": true
+      }
+    ],
+    "edges": [
+      {
+        "from": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/cycles/a.cjs",
+        "to": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/cycles/b.cjs"
+      },
+      {
+        "from": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/cycles/b.cjs",
+        "to": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/cycles/a.cjs"
+      }
+    ]
+  },
+  "cycles": [
+    {
+      "path": [
+        "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/cycles/a.cjs",
+        "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/cycles/b.cjs",
+        "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/cycles/a.cjs"
+      ],
+      "closingEdge": {
+        "from": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/cycles/b.cjs",
+        "to": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/cycles/a.cjs"
+      }
+    }
+  ],
+  "timeline": [
+    {
+      "traceId": "trace-01",
+      "type": "classify",
+      "detail": "./local used path branch"
+    },
+    {
+      "traceId": "trace-02",
+      "type": "classify",
+      "detail": "./missing used failed branch"
+    },
+    {
+      "traceId": "trace-02",
+      "type": "error",
+      "detail": "missing-file"
+    },
+    {
+      "traceId": "trace-02",
+      "type": "error",
+      "detail": "missing-directory-entry"
+    },
+    {
+      "traceId": "trace-03",
+      "type": "classify",
+      "detail": "node:fs used builtin branch"
+    },
+    {
+      "traceId": "trace-04",
+      "type": "classify",
+      "detail": "pkg-main used package branch"
+    },
+    {
+      "traceId": "trace-04",
+      "type": "metadata",
+      "detail": "package.json found"
+    },
+    {
+      "traceId": "trace-04",
+      "type": "metadata",
+      "detail": "type selected"
+    },
+    {
+      "traceId": "trace-04",
+      "type": "metadata",
+      "detail": "main selected"
+    },
+    {
+      "traceId": "trace-05",
+      "type": "classify",
+      "detail": "pkg-main-broken used package branch"
+    },
+    {
+      "traceId": "trace-05",
+      "type": "metadata",
+      "detail": "package.json found"
+    },
+    {
+      "traceId": "trace-05",
+      "type": "metadata",
+      "detail": "type selected"
+    },
+    {
+      "traceId": "trace-05",
+      "type": "metadata",
+      "detail": "main selected"
+    },
+    {
+      "traceId": "trace-05",
+      "type": "metadata",
+      "detail": "main invalid"
+    },
+    {
+      "traceId": "trace-05",
+      "type": "metadata",
+      "detail": "fallback selected"
+    },
+    {
+      "traceId": "trace-06",
+      "type": "classify",
+      "detail": "pkg-exports/feature used package branch"
+    },
+    {
+      "traceId": "trace-06",
+      "type": "metadata",
+      "detail": "package.json found"
+    },
+    {
+      "traceId": "trace-06",
+      "type": "metadata",
+      "detail": "type selected"
+    },
+    {
+      "traceId": "trace-06",
+      "type": "metadata",
+      "detail": "exports present"
+    },
+    {
+      "traceId": "trace-06",
+      "type": "metadata",
+      "detail": "exports-match selected"
+    },
+    {
+      "traceId": "trace-07",
+      "type": "classify",
+      "detail": "pkg-exports/internal.js used failed branch"
+    },
+    {
+      "traceId": "trace-07",
+      "type": "metadata",
+      "detail": "package.json found"
+    },
+    {
+      "traceId": "trace-07",
+      "type": "metadata",
+      "detail": "type selected"
+    },
+    {
+      "traceId": "trace-07",
+      "type": "metadata",
+      "detail": "exports present"
+    },
+    {
+      "traceId": "trace-07",
+      "type": "error",
+      "detail": "ERR_PACKAGE_PATH_NOT_EXPORTED"
+    },
+    {
+      "traceId": "trace-08",
+      "type": "classify",
+      "detail": "pkg-esm used package branch"
+    },
+    {
+      "traceId": "trace-08",
+      "type": "metadata",
+      "detail": "package.json found"
+    },
+    {
+      "traceId": "trace-08",
+      "type": "metadata",
+      "detail": "type selected"
+    },
+    {
+      "traceId": "trace-08",
+      "type": "metadata",
+      "detail": "main selected"
+    },
+    {
+      "traceId": "trace-08",
+      "type": "warning",
+      "detail": "require-esm-namespace"
+    },
+    {
+      "traceId": "trace-09",
+      "type": "classify",
+      "detail": "pkg-shadow used package branch"
+    },
+    {
+      "traceId": "trace-09",
+      "type": "metadata",
+      "detail": "package-lookup closest-package-wins"
+    },
+    {
+      "traceId": "trace-09",
+      "type": "metadata",
+      "detail": "package.json found"
+    },
+    {
+      "traceId": "trace-09",
+      "type": "metadata",
+      "detail": "type selected"
+    },
+    {
+      "traceId": "trace-09",
+      "type": "metadata",
+      "detail": "main selected"
+    },
+    {
+      "traceId": "trace-10",
+      "type": "classify",
+      "detail": "pkg-linked used package branch"
+    },
+    {
+      "traceId": "trace-10",
+      "type": "metadata",
+      "detail": "package.json found"
+    },
+    {
+      "traceId": "trace-10",
+      "type": "metadata",
+      "detail": "type selected"
+    },
+    {
+      "traceId": "trace-10",
+      "type": "metadata",
+      "detail": "main selected"
+    },
+    {
+      "type": "runtime-cache",
+      "detail": "loaded 3 modules"
+    }
+  ],
+  "symlinks": [
+    {
+      "traceId": "trace-10",
+      "type": "resolved-path-realpath-differ",
+      "resolvedPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/node_modules/pkg-linked/index.cjs",
+      "realPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/packages/pkg-linked/index.cjs"
+    },
+    {
+      "traceId": "trace-10",
+      "type": "preserve-symlinks-identity",
+      "resolvedPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/node_modules/pkg-linked/index.cjs",
+      "realPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/packages/pkg-linked/index.cjs",
+      "cacheIdentityPath": "/nodebook-labs-workspace/lab-4/phase-13/fixtures/generated/workspace/app/node_modules/pkg-linked/index.cjs"
+    }
+  ]
+}

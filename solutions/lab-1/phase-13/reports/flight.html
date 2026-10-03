@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Flight Recorder Report</title>
+  <style>
+    body { font-family: ui-sans-serif, system-ui, sans-serif; margin: 32px; color: #17202a; background: #f7f8fa; }
+    h1, h2 { margin: 0 0 12px; }
+    section { margin: 28px 0; }
+    .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+    .card { background: white; border: 1px solid #d9dee5; border-radius: 0; padding: 14px; }
+    .label { color: #5f6b7a; font-size: 12px; text-transform: uppercase; }
+    .value { font-size: 22px; font-weight: 700; margin-top: 6px; }
+    table { width: 100%; border-collapse: collapse; background: white; border: 1px solid #d9dee5; }
+    th, td { text-align: left; border-bottom: 1px solid #e7ebf0; padding: 8px 10px; vertical-align: top; }
+    th { background: #eef1f5; }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    pre { white-space: pre-wrap; margin: 0; max-height: 180px; overflow: auto; }
+  </style>
+</head>
+<body>
+  <h1>Flight Recorder Report</h1>
+  <p><code>fixtures/mixed-load.js</code></p>
+  <section class="summary">
+    <div class="card"><div class="label">Exit</div><div class="value">0</div></div>
+<div class="card"><div class="label">Duration</div><div class="value">933.79 ms</div></div>
+<div class="card"><div class="label">Peak RSS</div><div class="value">88.52 MiB</div></div>
+<div class="card"><div class="label">CPU</div><div class="value">505.33 ms</div></div>
+<div class="card"><div class="label">Max Loop Delay</div><div class="value">251.48 ms</div></div>
+  </section>
+  <section>
+    <h2>Metrics</h2>
+    <table>
+      <tbody>
+        <tr><th>Stdout</th><td>56 bytes</td></tr>
+        <tr><th>Stderr</th><td>154 bytes</td></tr>
+        <tr><th>Memory Samples</th><td>3</td></tr>
+        <tr><th>CPU Samples</th><td>2</td></tr>
+        <tr><th>Event Loop Samples</th><td>2</td></tr>
+        <tr><th>Active Handles</th><td><pre>{
+  &quot;ipc&quot;: 2,
+  &quot;timer&quot;: 1
+}</pre></td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2>Warnings And Failures</h2>
+    <table>
+      <thead><tr><th>Type</th><th>At</th><th>Message</th><th>Stack</th></tr></thead>
+      <tbody>
+        <tr><td>warning</td><td>30</td><td>mixed-load warning</td><td><pre>Warning: mixed-load warning
+    at file:///nodebook-labs-workspace/lab-1/phase-13/fixtures/mixed-load.js:1:9
+    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async node:internal/modules/esm/loader:639:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)</pre></td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2>Timeline</h2>
+    <table>
+      <thead><tr><th>At ms</th><th>Type</th><th>Source</th><th>Data</th></tr></thead>
+      <tbody>
+        <tr><td>0</td><td>lifecycle-start</td><td>parent</td><td><pre>{&quot;startedAt&quot;:&quot;2026-05-21T02:01:39.219Z&quot;}</pre></td></tr>
+<tr><td>28</td><td>probe-ready</td><td>probe</td><td><pre>{&quot;pid&quot;:1352442,&quot;nodeVersion&quot;:&quot;v24.15.0&quot;,&quot;execArgv&quot;:[&quot;--import&quot;,&quot;file:///nodebook-labs-workspace/lab-1/phase-13/src/probe/register.js&quot;],&quot;runId&quot;:&quot;a6351573-ee72-422e-b834-efe88482fb5e&quot;}</pre></td></tr>
+<tr><td>28</td><td>memory-sample</td><td>probe</td><td><pre>{&quot;rss&quot;:75091968,&quot;heapTotal&quot;:6754304,&quot;heapUsed&quot;:5269608,&quot;external&quot;:1937010,&quot;arrayBuffers&quot;:27494}</pre></td></tr>
+<tr><td>29.26</td><td>stdout</td><td>child-stdio</td><td><pre>{&quot;bytes&quot;:17,&quot;preview&quot;:&quot;mixed load start\n&quot;}</pre></td></tr>
+<tr><td>29.784</td><td>stderr</td><td>child-stdio</td><td><pre>{&quot;bytes&quot;:128,&quot;preview&quot;:&quot;(node:1352442) [MIXED_LOAD] Warning: mixed-load warning\n(Use `node --trace-warnings ...` to show where the warning was created)\n&quot;}</pre></td></tr>
+<tr><td>30</td><td>warning</td><td>probe</td><td><pre>{&quot;name&quot;:&quot;Warning&quot;,&quot;message&quot;:&quot;mixed-load warning&quot;,&quot;stack&quot;:&quot;Warning: mixed-load warning\n    at file:///nodebook-labs-workspace/lab-1/phase-13/fixtures/mixed-load.js:1:9\n    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async node:internal/modules/esm/loader:639:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)&quot;,&quot;code&quot;:&quot;MIXED_LOAD&quot;}</pre></td></tr>
+<tr><td>131.738</td><td>stderr</td><td>child-stdio</td><td><pre>{&quot;bytes&quot;:26,&quot;preview&quot;:&quot;allocated external memory\n&quot;}</pre></td></tr>
+<tr><td>278</td><td>memory-sample</td><td>probe</td><td><pre>{&quot;rss&quot;:84275200,&quot;heapTotal&quot;:7802880,&quot;heapUsed&quot;:4996848,&quot;external&quot;:10320983,&quot;arrayBuffers&quot;:8411427}</pre></td></tr>
+<tr><td>279</td><td>cpu-sample</td><td>probe</td><td><pre>{&quot;userMicros&quot;:2163,&quot;systemMicros&quot;:3181,&quot;totalMicros&quot;:5344,&quot;wallMs&quot;:250.214,&quot;cpuPercent&quot;:2.136}</pre></td></tr>
+<tr><td>279</td><td>event-loop-sample</td><td>probe</td><td><pre>{&quot;unit&quot;:&quot;nanoseconds&quot;,&quot;min&quot;:8065024,&quot;max&quot;:12206079,&quot;mean&quot;:10055082.666666666,&quot;stddev&quot;:604518.432282167,&quot;p50&quot;:10067967,&quot;p95&quot;:10108927,&quot;p99&quot;:12206079,&quot;exceeds&quot;:0,&quot;intervalDriftNs&quot;:0}</pre></td></tr>
+<tr><td>280</td><td>active-handles</td><td>probe</td><td><pre>{&quot;resources&quot;:[&quot;PipeWrap&quot;,&quot;PipeWrap&quot;,&quot;Timeout&quot;,&quot;Timeout&quot;],&quot;resourceCounts&quot;:{&quot;PipeWrap&quot;:2,&quot;Timeout&quot;:2},&quot;privateHandles&quot;:[{&quot;className&quot;:&quot;Socket&quot;},{&quot;className&quot;:&quot;Socket&quot;}]}</pre></td></tr>
+<tr><td>779.369</td><td>stdout</td><td>child-stdio</td><td><pre>{&quot;bytes&quot;:19,&quot;preview&quot;:&quot;cpu spike finished\n&quot;}</pre></td></tr>
+<tr><td>780</td><td>memory-sample</td><td>probe</td><td><pre>{&quot;rss&quot;:92819456,&quot;heapTotal&quot;:8065024,&quot;heapUsed&quot;:5357776,&quot;external&quot;:10320983,&quot;arrayBuffers&quot;:8411427}</pre></td></tr>
+<tr><td>780</td><td>cpu-sample</td><td>probe</td><td><pre>{&quot;userMicros&quot;:499445,&quot;systemMicros&quot;:538,&quot;totalMicros&quot;:499983,&quot;wallMs&quot;:501.308,&quot;cpuPercent&quot;:99.736}</pre></td></tr>
+<tr><td>780</td><td>event-loop-sample</td><td>probe</td><td><pre>{&quot;unit&quot;:&quot;nanoseconds&quot;,&quot;min&quot;:9223372036854776000,&quot;max&quot;:251476357.99999988,&quot;mean&quot;:0,&quot;stddev&quot;:0,&quot;p50&quot;:511,&quot;p95&quot;:251476357.99999988,&quot;p99&quot;:251476357.99999988,&quot;exceeds&quot;:0,&quot;intervalDriftNs&quot;:251476357.99999988}</pre></td></tr>
+<tr><td>784</td><td>active-handles</td><td>probe</td><td><pre>{&quot;resources&quot;:[&quot;PipeWrap&quot;,&quot;PipeWrap&quot;,&quot;Timeout&quot;],&quot;resourceCounts&quot;:{&quot;PipeWrap&quot;:2,&quot;Timeout&quot;:1},&quot;privateHandles&quot;:[{&quot;className&quot;:&quot;Socket&quot;},{&quot;className&quot;:&quot;Socket&quot;}]}</pre></td></tr>
+<tr><td>929.203</td><td>stdout</td><td>child-stdio</td><td><pre>{&quot;bytes&quot;:20,&quot;preview&quot;:&quot;retained buffers: 1\n&quot;}</pre></td></tr>
+<tr><td>933.791</td><td>lifecycle-close</td><td>parent</td><td><pre>{&quot;exitCode&quot;:0,&quot;signal&quot;:null,&quot;timedOut&quot;:false}</pre></td></tr>
+      </tbody>
+    </table>
+  </section>
+</body>
+</html>

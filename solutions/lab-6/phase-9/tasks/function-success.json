@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "function-success",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "success"
+    }
+  ]
+}

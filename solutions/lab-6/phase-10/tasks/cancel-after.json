@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "cancel-1",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 1000
+      }
+    },
+    {
+      "id": "cancel-2",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 1000
+      }
+    },
+    {
+      "id": "cancel-3",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 1000
+      }
+    },
+    {
+      "id": "cancel-4",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 1000
+      }
+    },
+    {
+      "id": "cancel-5",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 1000
+      }
+    },
+    {
+      "id": "cancel-6",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 1000
+      }
+    },
+    {
+      "id": "cancel-7",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 1000
+      }
+    },
+    {
+      "id": "cancel-8",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 1000
+      }
+    },
+    {
+      "id": "cancel-9",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 1000
+      }
+    },
+    {
+      "id": "cancel-10",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "delayTask",
+      "metadata": {
+        "delayMs": 1000
+      }
+    }
+  ]
+}

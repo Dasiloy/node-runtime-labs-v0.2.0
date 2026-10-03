@@ -1,0 +1,13 @@
+{
+  "sourcePath": "symlink-target.txt",
+  "builtAt": "2026-05-21T02:02:35.419Z",
+  "builderVersion": "lab-5-builder-v1",
+  "inputHash": "c97ecfda4d205190b973232dcfdb0c29748521c2534dd866bcc782f30b086738",
+  "inputMetadata": {
+    "size": 7,
+    "mtimeMs": 1779328928300.668,
+    "mode": 33188,
+    "identity": "66306:13119299",
+    "type": "file"
+  }
+}

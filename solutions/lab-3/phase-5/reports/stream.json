@@ -1,0 +1,50 @@
+{
+  "mode": "stream",
+  "status": "completed",
+  "input": {
+    "path": null,
+    "source": {
+      "kind": "stdin",
+      "inputPath": null,
+      "compressed": false,
+      "declaredBytes": null,
+      "readHwm": null
+    },
+    "bytes": 1075872
+  },
+  "output": {
+    "path": null,
+    "bytes": 0
+  },
+  "counts": {
+    "rows": 5000,
+    "matches": 0
+  },
+  "timing": {
+    "startedAt": "2026-05-21T01:59:27.380Z",
+    "endedAt": "2026-05-21T01:59:27.396Z",
+    "elapsedMs": 15.606576999999998
+  },
+  "memory": {
+    "current": {
+      "rss": 86097920,
+      "heapUsed": 5791480,
+      "heapTotal": 9113600,
+      "external": 2118198,
+      "arrayBuffers": 248730
+    },
+    "peak": {
+      "rss": 86097920,
+      "heapUsed": 5791480,
+      "heapTotal": 9113600,
+      "external": 2118198,
+      "arrayBuffers": 248730
+    }
+  },
+  "bytes": {
+    "bytesRead": 1075872,
+    "compressedBytesRead": 0,
+    "uncompressedBytesRead": 1075872
+  },
+  "details": {}
+}

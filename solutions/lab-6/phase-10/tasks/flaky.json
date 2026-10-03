@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "flaky-second-attempt",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "flaky",
+      "retries": {
+        "maxAttempts": 2,
+        "backoffMs": 20,
+        "factor": 1
+      },
+      "metadata": {
+        "failuresBeforeSuccess": 1,
+        "delayMs": 5
+      }
+    },
+    {
+      "id": "flaky-third-attempt",
+      "type": "function",
+      "module": "./fixtures.js",
+      "export": "flaky",
+      "retries": {
+        "maxAttempts": 3,
+        "backoffMs": 20,
+        "factor": 2
+      },
+      "metadata": {
+        "failuresBeforeSuccess": 2,
+        "delayMs": 5
+      }
+    }
+  ]
+}

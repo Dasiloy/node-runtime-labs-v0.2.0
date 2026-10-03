@@ -1,0 +1,25 @@
+{
+  "id": "06-async-task-runtime-local-job-orchestrator",
+  "number": "06",
+  "slug": "async-task-runtime-local-job-orchestrator",
+  "title": "Async Task Runtime / Local Job Orchestrator",
+  "status": "draft",
+  "difficulty": "8/10",
+  "concepts": [
+    "async task orchestration",
+    "task definition validation",
+    "failure classification",
+    "concurrency limiting",
+    "Promise combinator modes",
+    "timeouts and cancellation",
+    "retry policy",
+    "EventEmitter lifecycle events",
+    "async iterator progress",
+    "persistent task state"
+  ],
+  "summary": "Build a local task runner with concurrency limits, retries, timeouts, cancellation, progress events, persistence, and graceful shutdown.",
+  "challengeOrder": [
+    "main"
+  ],
+  "defaultChallenge": "main"
+}

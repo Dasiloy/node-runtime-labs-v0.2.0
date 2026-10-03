@@ -1,0 +1,182 @@
+{
+  "samples": [
+    {
+      "at": 282,
+      "type": "active-handles",
+      "resources": [
+        "PipeWrap",
+        "PipeWrap",
+        "TCPServerWrap"
+      ],
+      "resourceCounts": {
+        "PipeWrap": 2,
+        "TCPServerWrap": 1
+      },
+      "privateHandles": [
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Server"
+        }
+      ],
+      "categoryCounts": {
+        "ipc": 2,
+        "server": 1
+      }
+    },
+    {
+      "at": 531,
+      "type": "active-handles",
+      "resources": [
+        "PipeWrap",
+        "PipeWrap",
+        "TCPServerWrap"
+      ],
+      "resourceCounts": {
+        "PipeWrap": 2,
+        "TCPServerWrap": 1
+      },
+      "privateHandles": [
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Server"
+        }
+      ],
+      "categoryCounts": {
+        "ipc": 2,
+        "server": 1
+      }
+    },
+    {
+      "at": 781,
+      "type": "active-handles",
+      "resources": [
+        "PipeWrap",
+        "PipeWrap",
+        "TCPServerWrap"
+      ],
+      "resourceCounts": {
+        "PipeWrap": 2,
+        "TCPServerWrap": 1
+      },
+      "privateHandles": [
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Server"
+        }
+      ],
+      "categoryCounts": {
+        "ipc": 2,
+        "server": 1
+      }
+    },
+    {
+      "at": 1031,
+      "type": "active-handles",
+      "resources": [
+        "PipeWrap",
+        "PipeWrap",
+        "TCPServerWrap"
+      ],
+      "resourceCounts": {
+        "PipeWrap": 2,
+        "TCPServerWrap": 1
+      },
+      "privateHandles": [
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Server"
+        }
+      ],
+      "categoryCounts": {
+        "ipc": 2,
+        "server": 1
+      }
+    },
+    {
+      "at": 1281,
+      "type": "active-handles",
+      "resources": [
+        "PipeWrap",
+        "PipeWrap",
+        "TCPServerWrap"
+      ],
+      "resourceCounts": {
+        "PipeWrap": 2,
+        "TCPServerWrap": 1
+      },
+      "privateHandles": [
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Socket"
+        },
+        {
+          "className": "Server"
+        }
+      ],
+      "categoryCounts": {
+        "ipc": 2,
+        "server": 1
+      }
+    }
+  ],
+  "latest": {
+    "at": 1281,
+    "type": "active-handles",
+    "resources": [
+      "PipeWrap",
+      "PipeWrap",
+      "TCPServerWrap"
+    ],
+    "resourceCounts": {
+      "PipeWrap": 2,
+      "TCPServerWrap": 1
+    },
+    "privateHandles": [
+      {
+        "className": "Socket"
+      },
+      {
+        "className": "Socket"
+      },
+      {
+        "className": "Server"
+      }
+    ],
+    "categoryCounts": {
+      "ipc": 2,
+      "server": 1
+    }
+  },
+  "summary": {
+    "categoryCounts": {
+      "ipc": 2,
+      "server": 1
+    },
+    "resourceCounts": {
+      "PipeWrap": 2,
+      "TCPServerWrap": 1
+    }
+  }
+}

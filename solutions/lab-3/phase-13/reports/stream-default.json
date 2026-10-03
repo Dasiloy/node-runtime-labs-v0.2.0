@@ -1,0 +1,123 @@
+{
+  "mode": "stream",
+  "status": "completed",
+  "input": {
+    "path": "data/access.ndjson",
+    "source": {
+      "kind": "file",
+      "inputPath": "/nodebook-labs-workspace/lab-3/phase-13/data/access.ndjson",
+      "compressed": false,
+      "declaredBytes": 1075872,
+      "readHwm": null
+    },
+    "bytes": 1075872
+  },
+  "output": {
+    "path": "out/compare-stream.ndjson",
+    "bytes": 81932
+  },
+  "counts": {
+    "rows": 5000,
+    "matches": 381
+  },
+  "timing": {
+    "startedAt": "2026-05-21T01:59:29.543Z",
+    "endedAt": "2026-05-21T01:59:29.574Z",
+    "elapsedMs": 31.14702
+  },
+  "memory": {
+    "current": {
+      "rss": 96501760,
+      "heapUsed": 5856896,
+      "heapTotal": 10948608,
+      "external": 2046499,
+      "arrayBuffers": 190310
+    },
+    "peak": {
+      "rss": 96501760,
+      "heapUsed": 5856896,
+      "heapTotal": 10948608,
+      "external": 2046499,
+      "arrayBuffers": 190310
+    }
+  },
+  "bytes": {
+    "bytesRead": 1075872,
+    "compressedBytesRead": 0,
+    "uncompressedBytesRead": 1075872,
+    "outputUncompressed": 81932,
+    "outputCompressed": 0,
+    "written": 81932
+  },
+  "details": {
+    "where": "status >= 500",
+    "plugins": {
+      "config": {
+        "redact": [],
+        "select": [],
+        "enrich": []
+      },
+      "executionOrder": [
+        "filter",
+        "stringify"
+      ]
+    },
+    "abort": {
+      "abortAfterRows": null,
+      "abortAfterMs": null,
+      "rowThresholdCounts": "parsed rows",
+      "keepPartial": false
+    },
+    "cleanup": {
+      "tempOutputPath": "/nodebook-labs-workspace/lab-3/phase-13/out/compare-stream.ndjson.tmp",
+      "partialBytes": 0,
+      "partialRemoved": false,
+      "finalPromoted": true,
+      "cleanupError": null
+    },
+    "compression": {
+      "gzip": false,
+      "gzipLevel": null,
+      "compressedBytes": null,
+      "uncompressedBytes": 81932,
+      "ratio": null
+    }
+  },
+  "pipelineStatus": "completed",
+  "completed": true,
+  "errorCode": null,
+  "stageCloses": [
+    {
+      "name": "lineSplitter",
+      "closedAt": "2026-05-21T01:59:29.573Z"
+    },
+    {
+      "name": "jsonParser",
+      "closedAt": "2026-05-21T01:59:29.573Z"
+    },
+    {
+      "name": "abortAfterRows",
+      "closedAt": "2026-05-21T01:59:29.573Z"
+    },
+    {
+      "name": "filter",
+      "closedAt": "2026-05-21T01:59:29.573Z"
+    },
+    {
+      "name": "plugins",
+      "closedAt": "2026-05-21T01:59:29.574Z"
+    },
+    {
+      "name": "stringifier",
+      "closedAt": "2026-05-21T01:59:29.574Z"
+    },
+    {
+      "name": "source",
+      "closedAt": "2026-05-21T01:59:29.574Z"
+    },
+    {
+      "name": "destination",
+      "closedAt": "2026-05-21T01:59:29.574Z"
+    }
+  ]
+}

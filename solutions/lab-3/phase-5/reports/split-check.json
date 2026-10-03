@@ -1,0 +1,46 @@
+{
+  "mode": "split-check",
+  "status": "passed",
+  "input": {
+    "path": "data/access.ndjson",
+    "bytes": null
+  },
+  "output": {
+    "path": null,
+    "bytes": 0
+  },
+  "counts": {
+    "expectedLines": 5000,
+    "seenLines": 5000,
+    "rows": 5000,
+    "matches": 0
+  },
+  "timing": {
+    "startedAt": "2026-05-21T01:59:24.550Z",
+    "endedAt": "2026-05-21T01:59:27.102Z",
+    "elapsedMs": 2551.583098
+  },
+  "memory": {
+    "current": {
+      "rss": 100036608,
+      "heapUsed": 8361056,
+      "heapTotal": 12820480,
+      "external": 1852090,
+      "arrayBuffers": 27696
+    },
+    "peak": {
+      "rss": 100036608,
+      "heapUsed": 8925360,
+      "heapTotal": 12820480,
+      "external": 1855212,
+      "arrayBuffers": 30608
+    }
+  },
+  "bytes": {
+    "readHwm": 7
+  },
+  "details": {
+    "readHwm": 7,
+    "passed": true
+  }
+}

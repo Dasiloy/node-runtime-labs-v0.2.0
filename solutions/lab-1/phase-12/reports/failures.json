@@ -1,0 +1,14 @@
+{
+  "warnings": [
+    {
+      "at": 28,
+      "type": "warning",
+      "name": "Warning",
+      "message": "mixed-load warning",
+      "stack": "Warning: mixed-load warning\n    at file:///nodebook-labs-workspace/lab-1/phase-12/fixtures/mixed-load.js:1:9\n    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async node:internal/modules/esm/loader:639:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)",
+      "code": "MIXED_LOAD"
+    }
+  ],
+  "unhandledRejections": [],
+  "uncaughtExceptions": []
+}

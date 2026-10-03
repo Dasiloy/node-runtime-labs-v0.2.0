@@ -1,0 +1,22 @@
+{
+  "stdout": {
+    "bytes": 26
+  },
+  "stderr": {
+    "bytes": 28
+  },
+  "events": [
+    {
+      "type": "stdout",
+      "at": 50.144,
+      "bytes": 26,
+      "preview": "server listening on 38347\n"
+    },
+    {
+      "type": "stderr",
+      "at": 1506.252,
+      "bytes": 28,
+      "preview": "server closed after SIGTERM\n"
+    }
+  ]
+}

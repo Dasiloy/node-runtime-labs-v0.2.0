@@ -1,0 +1,13 @@
+{
+  "name": "node-runtime-labs",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Paid phase-based Node.js runtime lab manuals for The Node.js Guide.",
+  "type": "module",
+  "scripts": {
+    "check": "node labs.js --check",
+    "labs": "node labs.js",
+    "start": "node labs.js",
+    "dev": "node --watch sandbox.js"
+  }
+}
