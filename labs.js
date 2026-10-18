@@ -1,6 +1,6 @@
-import { createServer } from "node:http";
-import { readFile, readdir, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
+import { readFile, readdir, writeFile } from "node:fs/promises";
+import { createServer } from "node:http";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -49,7 +49,10 @@ function startServer() {
     try {
       const url = new URL(req.url ?? "/", `http://${req.headers.host}`);
 
-      if (req.method === "GET" && (url.pathname === "/" || url.pathname === "/index.html")) {
+      if (
+        req.method === "GET" &&
+        (url.pathname === "/" || url.pathname === "/index.html")
+      ) {
         await sendFile(res, indexFile, "text/html; charset=utf-8");
         return;
       }
@@ -86,9 +89,13 @@ function startServer() {
 
   server.on("error", (error) => {
     if (error.code === "EADDRINUSE") {
-      console.error(`Port ${port} is already in use. Try PORT=3218 node labs.js.`);
+      console.error(
+        `Port ${port} is already in use. Try PORT=3218 node labs.js.`,
+      );
     } else if (error.code === "EPERM") {
-      console.error(`Cannot listen on ${host}:${port}. Try a different PORT or host.`);
+      console.error(
+        `Cannot listen on ${host}:${port}. Try a different PORT or host.`,
+      );
     } else {
       console.error(error);
     }
@@ -106,7 +113,10 @@ async function runCheck() {
     .slice(2)
     .filter((arg) => arg !== "--check");
   const labs = await readLabs({ requestedLabs });
-  const challengeCount = labs.reduce((total, lab) => total + lab.challengeCount, 0);
+  const challengeCount = labs.reduce(
+    (total, lab) => total + lab.challengeCount,
+    0,
+  );
   const phaseCount = labs.reduce((total, lab) => total + lab.phaseCount, 0);
 
   console.log(
@@ -114,7 +124,9 @@ async function runCheck() {
   );
 
   for (const lab of labs) {
-    console.log(`- ${lab.id}: ${lab.challengeCount} challenge${plural(lab.challengeCount)}, ${lab.phaseCount} phase${plural(lab.phaseCount)}`);
+    console.log(
+      `- ${lab.id}: ${lab.challengeCount} challenge${plural(lab.challengeCount)}, ${lab.phaseCount} phase${plural(lab.phaseCount)}`,
+    );
   }
 }
 
@@ -156,7 +168,9 @@ async function readLabs(options = {}) {
 
   if (options.requestedLabs?.length) {
     labFolders = labFolders.filter((folderName) => {
-      return options.requestedLabs.some((requested) => matchesRequestedFolder(folderName, requested));
+      return options.requestedLabs.some((requested) =>
+        matchesRequestedFolder(folderName, requested),
+      );
     });
   }
 
@@ -165,7 +179,10 @@ async function readLabs(options = {}) {
     try {
       labs.push(await readLab(folderName));
     } catch (error) {
-      if (!options.requestedLabs?.length && error.code === "LAB_CONFIG_MISSING") {
+      if (
+        !options.requestedLabs?.length &&
+        error.code === "LAB_CONFIG_MISSING"
+      ) {
         continue;
       }
       throw error;
@@ -181,7 +198,11 @@ async function readLabs(options = {}) {
 
   const requested = new Set(options.requestedLabs);
   const filtered = labs.filter((lab) => {
-    return requested.has(lab.id) || requested.has(lab.slug) || requested.has(lab.number);
+    return (
+      requested.has(lab.id) ||
+      requested.has(lab.slug) ||
+      requested.has(lab.number)
+    );
   });
   const matched = new Set(
     filtered.flatMap((lab) => [lab.id, lab.slug, lab.number].filter(Boolean)),
@@ -206,28 +227,47 @@ async function readLab(folderName) {
   const id = stringValue(config.id, folderName);
 
   if (id !== folderName) {
-    throw new Error(`${relativePath(folder)}/lab.config.json id must match its folder name.`);
+    throw new Error(
+      `${relativePath(folder)}/lab.config.json id must match its folder name.`,
+    );
   }
 
   const challenges = await readChallenges(folder, config);
-  const defaultChallenge = stringValue(config.defaultChallenge, challenges[0]?.id ?? "");
+  const defaultChallenge = stringValue(
+    config.defaultChallenge,
+    challenges[0]?.id ?? "",
+  );
 
-  if (defaultChallenge && !challenges.some((challenge) => challenge.id === defaultChallenge)) {
-    throw new Error(`${relativePath(folder)}/lab.config.json defaultChallenge does not exist.`);
+  if (
+    defaultChallenge &&
+    !challenges.some((challenge) => challenge.id === defaultChallenge)
+  ) {
+    throw new Error(
+      `${relativePath(folder)}/lab.config.json defaultChallenge does not exist.`,
+    );
   }
 
   return {
     id,
     number: stringValue(config.number, parseLabNumber(id)),
     slug: stringValue(config.slug, stripLabNumber(id)),
-    title: requiredString(config.title, `${relativePath(folder)}/lab.config.json title`),
-    status: stringValue(config.status, challenges.length > 0 ? "draft" : "planned"),
+    title: requiredString(
+      config.title,
+      `${relativePath(folder)}/lab.config.json title`,
+    ),
+    status: stringValue(
+      config.status,
+      challenges.length > 0 ? "draft" : "planned",
+    ),
     difficulty: stringValue(config.difficulty, ""),
     concepts: stringArray(config.concepts),
     summary: stringValue(config.summary, ""),
     defaultChallenge,
     challengeCount: challenges.length,
-    phaseCount: challenges.reduce((total, challenge) => total + challenge.phaseCount, 0),
+    phaseCount: challenges.reduce(
+      (total, challenge) => total + challenge.phaseCount,
+      0,
+    ),
     challenges,
   };
 }
@@ -238,7 +278,10 @@ async function readChallenges(folder, config) {
   const files = entries
     .filter((entry) => entry.isFile())
     .map((entry) => entry.name)
-    .filter((name) => name.endsWith(".md") && !name.startsWith(".") && !name.startsWith("_"))
+    .filter(
+      (name) =>
+        name.endsWith(".md") && !name.startsWith(".") && !name.startsWith("_"),
+    )
     .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
 
   const challenges = [];
@@ -246,7 +289,11 @@ async function readChallenges(folder, config) {
     challenges.push(await readChallenge(path.join(challengeDir, fileName)));
   }
 
-  return orderChallenges(challenges, stringArray(config.challengeOrder), folder);
+  return orderChallenges(
+    challenges,
+    stringArray(config.challengeOrder),
+    folder,
+  );
 }
 
 async function readChallenge(file) {
@@ -269,15 +316,21 @@ function orderChallenges(challenges, order, folder) {
     return challenges;
   }
 
-  const byId = new Map(challenges.map((challenge) => [challenge.id, challenge]));
+  const byId = new Map(
+    challenges.map((challenge) => [challenge.id, challenge]),
+  );
   const unknown = order.filter((id) => !byId.has(id));
   if (unknown.length > 0) {
-    throw new Error(`${relativePath(folder)}/lab.config.json challengeOrder includes unknown challenge: ${unknown.join(", ")}`);
+    throw new Error(
+      `${relativePath(folder)}/lab.config.json challengeOrder includes unknown challenge: ${unknown.join(", ")}`,
+    );
   }
 
   const ordered = order.map((id) => byId.get(id));
   const orderedIds = new Set(order);
-  const remaining = challenges.filter((challenge) => !orderedIds.has(challenge.id));
+  const remaining = challenges.filter(
+    (challenge) => !orderedIds.has(challenge.id),
+  );
   return [...ordered, ...remaining];
 }
 
@@ -306,7 +359,9 @@ async function readJsonFile(file) {
   try {
     return JSON.parse(raw);
   } catch (error) {
-    throw new Error(`${relativePath(file)} contains invalid JSON: ${error.message}`);
+    throw new Error(
+      `${relativePath(file)} contains invalid JSON: ${error.message}`,
+    );
   }
 }
 
@@ -317,7 +372,8 @@ function parseTitle(markdown) {
 
 function parseLead(markdown) {
   const withoutTitle = markdown.replace(/^#\s+.+$/m, "").trim();
-  const beforeFirstPhase = withoutTitle.split(/^## Phase\s+\d+:/m)[0]?.trim() ?? "";
+  const beforeFirstPhase =
+    withoutTitle.split(/^## Phase\s+\d+:/m)[0]?.trim() ?? "";
   const firstParagraph = beforeFirstPhase
     .split(/\n{2,}/)
     .map((part) => part.trim())
@@ -383,7 +439,8 @@ function normalizeProgress(labs, progress) {
 
   for (const lab of labs) {
     const saved = progress.labs?.[lab.id] ?? {};
-    const currentChallenge = validChallengeId(lab, saved.currentChallenge) ?? lab.defaultChallenge;
+    const currentChallenge =
+      validChallengeId(lab, saved.currentChallenge) ?? lab.defaultChallenge;
 
     next.labs[lab.id] = {
       currentChallenge,
@@ -410,7 +467,10 @@ function normalizeChallengeProgress(challenge, saved) {
     Array.isArray(saved.completedPhases) ? saved.completedPhases : [],
   );
   const validCompleted = [...completed]
-    .filter((index) => Number.isInteger(index) && index >= 0 && index < challenge.phaseCount)
+    .filter(
+      (index) =>
+        Number.isInteger(index) && index >= 0 && index < challenge.phaseCount,
+    )
     .sort((a, b) => a - b);
 
   return {
@@ -440,7 +500,9 @@ function normalizeStepProgress(value) {
     }
 
     if (unique.size > 0) {
-      normalized[index] = [...unique].sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+      normalized[index] = [...unique].sort((a, b) =>
+        a.localeCompare(b, undefined, { numeric: true }),
+      );
     }
   }
 
@@ -460,7 +522,8 @@ async function updateProgress(labs, body) {
   if (!lab) throw new Error("Unknown lab");
 
   const labProgress = progress.labs[lab.id];
-  const challengeId = validChallengeId(lab, body.challengeId) ?? labProgress.currentChallenge;
+  const challengeId =
+    validChallengeId(lab, body.challengeId) ?? labProgress.currentChallenge;
   const challenge = lab.challenges.find((item) => item.id === challengeId);
 
   if (challenge) {
@@ -475,7 +538,10 @@ async function updateProgress(labs, body) {
     }
 
     if (Number.isInteger(body.currentPhase)) {
-      challengeProgress.currentPhase = clampPhase(body.currentPhase, challenge.phaseCount);
+      challengeProgress.currentPhase = clampPhase(
+        body.currentPhase,
+        challenge.phaseCount,
+      );
     }
 
     if (Number.isInteger(body.notePhase)) {
@@ -488,10 +554,14 @@ async function updateProgress(labs, body) {
       const stepId = body.stepId.trim();
       if (stepId) {
         challengeProgress.stepProgress ??= {};
-        const completedSteps = new Set(challengeProgress.stepProgress[stepPhase] ?? []);
+        const completedSteps = new Set(
+          challengeProgress.stepProgress[stepPhase] ?? [],
+        );
         if (body.stepCompleted === true) completedSteps.add(stepId);
         if (body.stepCompleted === false) completedSteps.delete(stepId);
-        const nextSteps = [...completedSteps].sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+        const nextSteps = [...completedSteps].sort((a, b) =>
+          a.localeCompare(b, undefined, { numeric: true }),
+        );
 
         if (nextSteps.length > 0) {
           challengeProgress.stepProgress[stepPhase] = nextSteps;
@@ -517,15 +587,24 @@ async function resetProgress(labs, body) {
     if (!lab) throw new Error("Unknown lab");
 
     if (body.challengeId) {
-      const challenge = lab.challenges.find((item) => item.id === body.challengeId);
+      const challenge = lab.challenges.find(
+        (item) => item.id === body.challengeId,
+      );
       if (!challenge) throw new Error("Unknown challenge");
-      progress.labs[lab.id].challenges[challenge.id] = normalizeChallengeProgress(challenge, {});
+      progress.labs[lab.id].challenges[challenge.id] =
+        normalizeChallengeProgress(challenge, {});
     } else {
-      progress.labs[lab.id] = normalizeProgress([lab], { version: 2, labs: {} }).labs[lab.id];
+      progress.labs[lab.id] = normalizeProgress([lab], {
+        version: 2,
+        labs: {},
+      }).labs[lab.id];
     }
   } else {
     for (const lab of labs) {
-      progress.labs[lab.id] = normalizeProgress([lab], { version: 2, labs: {} }).labs[lab.id];
+      progress.labs[lab.id] = normalizeProgress([lab], {
+        version: 2,
+        labs: {},
+      }).labs[lab.id];
     }
   }
 
@@ -540,7 +619,9 @@ async function writeProgress(progress) {
 
 function validChallengeId(lab, challengeId) {
   if (typeof challengeId !== "string") return null;
-  return lab.challenges.some((challenge) => challenge.id === challengeId) ? challengeId : null;
+  return lab.challenges.some((challenge) => challenge.id === challengeId)
+    ? challengeId
+    : null;
 }
 
 function assertUnique(items, key) {
@@ -570,7 +651,9 @@ function stringValue(value, fallback) {
 
 function stringArray(value) {
   if (!Array.isArray(value)) return [];
-  return value.filter((item) => typeof item === "string" && item.trim()).map((item) => item.trim());
+  return value
+    .filter((item) => typeof item === "string" && item.trim())
+    .map((item) => item.trim());
 }
 
 function parseLabNumber(id) {

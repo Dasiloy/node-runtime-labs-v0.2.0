@@ -8,6 +8,9 @@
     "check": "node labs.js --check",
     "labs": "node labs.js",
     "start": "node labs.js",
-    "dev": "node --watch sandbox.js"
+    "dev": "tsx watch sandbox.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.15"
   }
 }
